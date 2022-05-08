@@ -1,4 +1,4 @@
-[![SK's GitHub Banner](./assets/banner.png)]
+[![SK's GitHub Banner](./assets/banner.jpg)]
 
 Hey, I am Sarthak 💀
 
