@@ -1,4 +1,4 @@
-[![SK's GitHub Banner](./assets/Programming and coding - Kit8.png)]
+[![SK's GitHub Banner](./assets/Banner.png)]
 
 Hey, I am Sarthak 💀
 
@@ -10,8 +10,6 @@ Here's a quick intro about me :
 
 💬 Ask me about anything you want ;)
 
-📫 How to reach me: Check https://linktr.ee/_itsskofficial_
-
 😄 Pronouns: He/Him/His
 
 ⚡ Fun fact: There is no fun for me in this life, maybe next one :)
@@ -19,11 +17,11 @@ Here's a quick intro about me :
 
 My socials : 
 
-[![Visits Badge](https://badges.pufler.dev/visits/braydoncoyer/braydoncoyer)](https:braydoncoyer.dev)
+[![Visits Badge](https://badges.pufler.dev/visits/itsskofficial/itsskofficial)]
 [![Instagram Badge](https://img.shields.io/badge/Instagram-Profile-informational?style=flat&logo=instagram&logoColor=white&color=C13584)](https://instagram.com/_itsskofficial_)
 [![Youtube Badge](https://img.shields.io/badge/Youtube-Profile-informational?style=flat&logo=youtube&logoColor=white&color=FF0000)](https://youtube.com/c/itsskofficial)
 [![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=1CA2F1)](https://twitter.com/_itsskofficial_)
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/braydon-coyer/)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
 
 
 
