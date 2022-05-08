@@ -35,15 +35,27 @@ GitHub Stats :
 Skills :
 
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=3776AB)
-![](https://img.shields.io/badge/Code-Javascript-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
+![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=007396)
 ![](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=A8B9CC)
 ![](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=c++&logoColor=white&color=00599C)
 ![](https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=html5&logoColor=white&color=E34F26)
 ![](https://img.shields.io/badge/Code-CSS3-informational?style=flat&logo=css3&logoColor=white&color=1572B6)
+![](https://img.shields.io/badge/Code-Javascript-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
 ![](https://img.shields.io/badge/Code-ReactNative-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
+
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
 ![](https://img.shields.io/badge/Software-Audacity-informational?style=flat&logo=audacity&logoColor=white&color=0000CC)
 ![](https://img.shields.io/badge/Software-DavinciResolve-informational?style=flat)
+![](https://img.shields.io/badge/Software-Trello-informational?style=flat&logo=trello&logoColor=white&color=0052CC)
+![](https://img.shields.io/badge/Software-Asana-informational?style=flat&logo=asana&logoColor=white&color=273347)
+![](https://img.shields.io/badge/Software-GIMP-informational?style=flat&logo=gimp&logoColor=white&color=5C5543)
+![](https://img.shields.io/badge/Software-Slack-informational?style=flat&logo=slack&logoColor=white&color=4A154B)
+![](https://img.shields.io/badge/Software-Jira-informational?style=flat&logo=jira&logoColor=white&color=0052CC)
+![](https://img.shields.io/badge/Software-Confluence-informational?style=flat&logo=confluence&logoColor=white&color=172B4D)
+![](https://img.shields.io/badge/Software-Wordpress-informational?style=flat&logo=wordpress&logoColor=white&color=21759B)
+
+
+
 
