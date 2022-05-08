@@ -32,6 +32,8 @@ GitHub Stats :
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=4AB097&bg_color=1A2B34" alt="Braydon's GitHub Stats" />
 </a>
 
+![SK's GitHub Contributions](https://github-readme-streak-stats.herokuapp.com/?&theme=dark&ring=FFB19A&hide_border=true&currStreakNum=F6A085&fire=F6A085&currStreakLabel=F6A085&user=itsskofficial)
+
 Skills :
 
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=3776AB)
