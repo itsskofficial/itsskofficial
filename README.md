@@ -47,7 +47,7 @@ Skills :
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
 ![](https://img.shields.io/badge/Software-Audacity-informational?style=flat&logo=audacity&logoColor=white&color=0000CC)
-![](https://img.shields.io/badge/Software-DavinciResolve-informational?style=flat)
+![](https://img.shields.io/badge/Software-DavinciResolve-informational?style=flat&color=FFFF00)
 ![](https://img.shields.io/badge/Software-Trello-informational?style=flat&logo=trello&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/Software-Asana-informational?style=flat&logo=asana&logoColor=white&color=273347)
 ![](https://img.shields.io/badge/Software-GIMP-informational?style=flat&logo=gimp&logoColor=white&color=5C5543)
