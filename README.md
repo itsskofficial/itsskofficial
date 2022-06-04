@@ -58,6 +58,6 @@ Skills :
 ![](https://img.shields.io/badge/Software-Confluence-informational?style=flat&logo=confluence&logoColor=white&color=172B4D)
 ![](https://img.shields.io/badge/Software-Wordpress-informational?style=flat&logo=wordpress&logoColor=white&color=21759B)
 
-
+<!--START_SECTION:activity-->
 
 
