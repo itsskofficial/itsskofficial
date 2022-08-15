@@ -57,9 +57,3 @@ Skills :
 ![](https://img.shields.io/badge/Software-Jira-informational?style=flat&logo=jira&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/Software-Confluence-informational?style=flat&logo=confluence&logoColor=white&color=172B4D)
 ![](https://img.shields.io/badge/Software-Wordpress-informational?style=flat&logo=wordpress&logoColor=white&color=21759B)
-
-Recent Activity :
-
-<!--START_SECTION:activity-->
-
-
