@@ -45,6 +45,15 @@ Skills :
 ![](https://img.shields.io/badge/Code-Javascript-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
 ![](https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
 ![](https://img.shields.io/badge/Code-ReactNative-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
+![](https://img.shields.io/badge/Code-NodeJS-informational?style=flat&logo=node.js&logoColor=white&color=339933)
+![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
+![](https://img.shields.io/badge/Code-EJS-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
+
+
+
+
+
 
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
@@ -57,3 +66,5 @@ Skills :
 ![](https://img.shields.io/badge/Software-Jira-informational?style=flat&logo=jira&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/Software-Confluence-informational?style=flat&logo=confluence&logoColor=white&color=172B4D)
 ![](https://img.shields.io/badge/Software-Wordpress-informational?style=flat&logo=wordpress&logoColor=white&color=21759B)
+![](https://img.shields.io/badge/Software-LMMS-informational?style=flat&logo=lmms&logoColor=white&color=10B146)
+
