@@ -4,7 +4,7 @@ Hey, I am Sarthak 💀
 
 Here's a quick intro about me :
 
-🔭 I’m currently working on Aesthetic Arts, a custom gift ecommerce startup
+🔭 I’m currently working on Aesthetic Art, a custom gift ecommerce startup
 
 🌱 I’m currently learning data science & machine learning with Python
 
