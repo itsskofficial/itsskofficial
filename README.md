@@ -4,9 +4,9 @@ Hey, I am Sarthak 💀
 
 Here's a quick intro about me :
 
-🔭 I’m currently working on Aesthetic Art, a custom gift ecommerce startup
+🔭 I’m currently working on Bookaholic, a Metaverse startup, essentially the world's first virtual library
 
-🌱 I’m currently learning data science & machine learning with Python
+🌱 I’m currently into AI and Web3
 
 💬 Ask me about anything you want ;)
 
@@ -37,6 +37,7 @@ GitHub Stats :
 Skills :
 
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=3776AB)
+![](https://img.shields.io/badge/Code-EJS-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=java&logoColor=white&color=007396)
 ![](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=A8B9CC)
 ![](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=c++&logoColor=white&color=00599C)
@@ -48,7 +49,12 @@ Skills :
 ![](https://img.shields.io/badge/Code-NodeJS-informational?style=flat&logo=node.js&logoColor=white&color=339933)
 ![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
-![](https://img.shields.io/badge/Code-EJS-informational?style=flat&logo=javascript&logoColor=white&color=F7DF1E)
+![](https://img.shields.io/badge/Code-ReactJS-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
+![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=next-js&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
+![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
+![](https://img.shields.io/badge/Code-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=150458)
+![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
 
 
 
