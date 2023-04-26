@@ -16,9 +16,10 @@ const NavBar = () => {
                 })} */}
                 <li>
                     {navlinks.map(link => {
-                        <li>
+                        return(<li>
                             {link}
                         </li>
+                        )
                     })}
                 </li>
             </ul>
