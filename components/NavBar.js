@@ -22,7 +22,9 @@ const NavBar = () => {
                         )
                     })}
                 </ul>
-                <
+                <h2 className={styles.logo}>
+                    SK
+                </h2>
             </div>
         </Fragment>
     )
