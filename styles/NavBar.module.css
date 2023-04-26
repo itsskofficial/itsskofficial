@@ -1,4 +1,5 @@
 .navlist{
     display:flex;
+    align-items: center;
     
 }
