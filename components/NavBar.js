@@ -1,10 +1,14 @@
 import Link from "next/link"
+import { Fragment } from "react"
 
 const NavBar = () => {
     return (
-        <ul className={navlist}>
+        <Fragment>
+            <ul className={navlist}>
             <Link
-        </ul>
+            </ul>
+        </Fragment>
+        
          
     )
 }
