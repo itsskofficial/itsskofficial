@@ -4,10 +4,11 @@ import { Fragment } from "react"
 const NavBar = () => {
 
     const navlinks = ["Home", "About", "Skills", "Projects", "Contact"]
+
     return (
         <Fragment>
             <ul className={navlist}>
-                ,<li>
+                <li>
                     <Link href='/' className={navlink}>
                         Home
                     </Link>
