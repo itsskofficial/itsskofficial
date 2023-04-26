@@ -3,7 +3,7 @@ import { Fragment } from "react"
 
 const NavBar = () => {
 
-    const navlinks = 
+    const navlinks = []
     return (
         <Fragment>
             <ul className={navlist}>
