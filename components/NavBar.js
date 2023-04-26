@@ -8,9 +8,9 @@ const NavBar = () => {
 
     return (
         <Fragment>
-            <ul className={navlist}>
+            <ul className={styles.navlist}>
                 {navlinks.map(link => {
-                    <Link href={link == "Home" ? "/" : `/#${link}`} className={navlink}>
+                    <Link href={link == "Home" ? "/" : `/#${link}`} className={styles.navlink}>
                         {link}
                     </Link>
                 })}
