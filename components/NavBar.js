@@ -14,7 +14,8 @@ const NavBar = () => {
                         {link}
                     </Link>
                 })} */}
-                
+                <li>
+                    Hello
             </ul>
         </Fragment>
     )
