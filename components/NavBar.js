@@ -15,7 +15,9 @@ const NavBar = () => {
                     </Link>
                 })} */}
                 <li>
-                    {navlinks.map(link)}
+                    {navlinks.map(link => {
+                        <li>
+                    })}
                     Hello
                 </li>
             </ul>
