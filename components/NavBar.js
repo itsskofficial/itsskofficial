@@ -23,7 +23,7 @@ const NavBar = () => {
                     })}
                 </ul>
                 <h2 className={styles.logo}>
-                    SK
+                    Mode
                 </h2>
             </div>
         </Fragment>
