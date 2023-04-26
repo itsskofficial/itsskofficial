@@ -8,16 +8,10 @@ const NavBar = () => {
 
     return (
         <Fragment>
-            <div className={styles.}
-            <ul className={styles.navlist}>
-                {navlinks.map(link => {
-                    return(
-                        <Link href={link == "Home" ? "/" : `/#${link}`} className={styles.navlink}>
-                            {link}
-                        </Link>
-                    )
-                })}
-            </ul>
+            <div className={styles.parent}>
+
+            </div>
+            <
         </Fragment>
     )
 }
