@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Fragment } from "react"
+import styles from ""
 
 const NavBar = () => {
 
