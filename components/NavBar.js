@@ -10,9 +10,9 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className={styles.parent}>
-                <h3 className={styles.logo}>
+                <h2 className={styles.logo}>
                     SK
-                </h3>
+                </h2>
                 <ul className={styles.navlist}>
                     {navlinks.map(link => {
                         return(
