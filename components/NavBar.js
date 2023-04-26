@@ -8,11 +8,7 @@ const NavBar = () => {
     return (
         <Fragment>
             <ul className={navlist}>
-                <li>
-                    <Link href='/' className={navlink}>
-                        Home
-                    </Link>
-                </li>
+                {}
             </ul>
         </Fragment>
     )
