@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Fragment } from "react"
 import styles from "@styles/NavBar.module.css"
+import Image from "next/image"
 
 const NavBar = () => {
 
@@ -9,7 +10,7 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className={styles.parent}>
-                <Image
+                <Image src={}
                 <ul className={styles.navlist}>
                     {navlinks.map(link => {
                         return(
