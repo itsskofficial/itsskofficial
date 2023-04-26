@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className={styles.parent}>
-                <h3 className={}>
+                <h3 className={styles.logo}>
                     SK
                 </h3>
                 <ul className={styles.navlist}>
