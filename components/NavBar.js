@@ -10,7 +10,9 @@ const NavBar = () => {
             <ul className={navlist}>
                 {navlinks.map(link => {
                     <Link href={
-                        if `/#{}`} className={navlink}
+                        if link!= "Home",
+                        `/#{}`
+                } className = { navlink }
                 })}
             </ul>
         </Fragment>
