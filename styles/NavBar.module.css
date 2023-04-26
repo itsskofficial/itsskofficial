@@ -1,5 +1,6 @@
 .navlist{
     display:flex;
+    align-self: center;
     align-items: center;
     justify-content: space-evenly;
     width:70%;
