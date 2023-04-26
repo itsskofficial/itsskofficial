@@ -10,7 +10,7 @@ const NavBar = () => {
             <ul className={navlist}>
                 {navlinks.map(link => {
                     <Link href={
-                        if link!= "Home",
+                        if (link!= "Home")
                         `/#{}`
                 } className = { navlink }
                 })}
