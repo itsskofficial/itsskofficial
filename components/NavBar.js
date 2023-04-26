@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className={styles.parent}>
-                <Image src="/public/assets/images/"
+                <h3></h3>
                 <ul className={styles.navlist}>
                     {navlinks.map(link => {
                         return(
