@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Fragment } from "react"
-import styles from ""
+import styles from "@styles/NavBar.module.css"
 
 const NavBar = () => {
 
