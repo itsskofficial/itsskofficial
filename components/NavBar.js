@@ -9,7 +9,7 @@ const NavBar = () => {
         <Fragment>
             <ul className={navlist}>
                 {navlinks.map(link => {
-                    <Link href={link=="Home"?"/":"/#"
+                    <Link href={link=="Home"?"/":"#"
                 } className = { navlink }
                 })}
             </ul>
