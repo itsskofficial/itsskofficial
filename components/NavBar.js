@@ -16,7 +16,7 @@ const NavBar = () => {
                 <ul className={styles.navlist}>
                     {navlinks.map(link => {
                         return(
-                            <Link href=`/#${}` className={styles.navlink}>
+                            <Link href={`/#${link}`} className={styles.navlink}>
                                 {link}
                             </Link>
                         )
