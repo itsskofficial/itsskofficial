@@ -20,7 +20,6 @@ const NavBar = () => {
                             {link}
                         </li>
                     })}
-                    "Hello"
                 </li>
             </ul>
         </Fragment>
