@@ -5,7 +5,9 @@ const NavBar = () => {
     return (
         <Fragment>
             <ul className={navlist}>
-                ,<li></li>
+                ,<li>
+                    <Link></Link>
+                </li>
             </ul>
         </Fragment>
     )
