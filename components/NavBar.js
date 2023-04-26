@@ -16,6 +16,7 @@ const NavBar = () => {
                 })} */}
                 <li>
                     Hello
+                </li>
             </ul>
         </Fragment>
     )
