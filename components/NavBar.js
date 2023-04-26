@@ -15,6 +15,7 @@ const NavBar = () => {
                     </Link>
                 })} */}
                 <li>
+                    {navlinks.map(link)}
                     Hello
                 </li>
             </ul>
