@@ -9,7 +9,7 @@ const NavBar = () => {
         <Fragment>
             <ul className={navlist}>
                 {navlinks.map(link => {
-                    
+                    <Link className={navlink}
                 })}
             </ul>
         </Fragment>
