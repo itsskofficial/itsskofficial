@@ -22,6 +22,7 @@ const NavBar = () => {
                         )
                     })}
                 </ul>
+                <
             </div>
         </Fragment>
     )
