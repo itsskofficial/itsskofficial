@@ -1,4 +1,5 @@
 import styles from '@styles/Header.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
                 </button>
             </div>
             <div className={styles.headImage}>
-                <ima
+                <Image sr
             </div>
         </div>
         
