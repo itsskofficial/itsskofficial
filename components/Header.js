@@ -1,4 +1,5 @@
 import styles from '@styles/Header.module.css'
+import Link from 'next/link'
 
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
@@ -11,7 +12,9 @@ const Header = () => {
                 I am an {roles[0]} developer
             </h2>
             <button className={headContact}>
-                
+                <Link>
+                    
+                </Link>
             </button>
         </div>
     )
