@@ -1,7 +1,7 @@
 import styles from '@styles/Header.module.css'
 
 const Header = () => {
-    const roles = ["Web", "Blockcha"]
+    const roles = ["Web", "Blockchain", ""]
     return (
         <div className={headtext}>
             <h1>
