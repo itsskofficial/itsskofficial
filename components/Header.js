@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <div>
+        <div className={header}>
             <div className={headText}>
                 <h1 className={headTitle}>
                     Hey, I'm Sarthak
