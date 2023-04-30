@@ -8,7 +8,7 @@ const Header = () => {
                 Hey, I'm Sarthak
             </h1>
             <h2>
-                I a
+                I am a
             </h2>
         </div>
     )
