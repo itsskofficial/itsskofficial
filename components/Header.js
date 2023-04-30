@@ -4,15 +4,15 @@ import Link from 'next/link'
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <div className={parent}>
-            <div className={headText}>
-                <h1 className={headTitle}>
+        <div className={styles.parent}>
+            <div className={styles.headText}>
+                <h1 className={styles.headTitle}>
                     Hey, I'm Sarthak
                 </h1>
-                <h2 className={headSubtitle}>
+                <h2 className={styles.headSubtitle}>
                     I am an {roles[0]} developer
                 </h2>
-                <button className={headContact}>
+                <button className={styles.headContact}>
                     <Link href='#contact'>
                         Contact Me
                     </Link>
