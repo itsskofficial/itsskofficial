@@ -10,9 +10,7 @@ const Header = () => {
             <h2 className={headsubtitle}>
                 I am an {roles[0]} developer
             </h2>
-            <h3 className={}>
-
-            </h3>
+            
         </div>
     )
 }
