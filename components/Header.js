@@ -4,7 +4,7 @@ const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
         <div className={headtext}>
-            <h1 className={>
+            <h1 className={}>
                 Hey, I'm Sarthak
             </h1>
             <h2>
