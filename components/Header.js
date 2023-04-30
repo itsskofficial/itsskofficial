@@ -1,1 +1,3 @@
-const Header = ()
+const Header = () => {
+    
+}
