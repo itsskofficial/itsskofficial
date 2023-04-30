@@ -3,7 +3,7 @@ import styles from '@styles/Header.module.css'
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <div className={headtext}>
+        <div className={headText}>
             <h1 className={headTitle}>
                 Hey, I'm Sarthak
             </h1>
