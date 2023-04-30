@@ -1,8 +1,8 @@
-import styles from @st
+import styles from '@styles/Header.module.css'
 
 const Header = () => {
     return (
-        <div className={}>
+        <div className={head}>
 
         </div>
     )
