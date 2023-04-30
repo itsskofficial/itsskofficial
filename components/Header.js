@@ -8,7 +8,7 @@ const Header = () => {
                 Hey, I'm Sarthak
             </h1>
             <h2>
-                I am {} developer
+                I am an {roles[0]} developer
             </h2>
         </div>
     )
