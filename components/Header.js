@@ -13,7 +13,7 @@ const Header = () => {
             </h2>
             <button className={headContact}>
                 <Link href='#contact'>
-                    
+                    Contact Me
                 </Link>
             </button>
         </div>
