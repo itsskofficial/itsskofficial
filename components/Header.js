@@ -10,7 +10,7 @@ const Header = () => {
             <h2>
                 I am an {roles[0]} developer
             </h2>
-            <
+            
         </div>
     )
 }
