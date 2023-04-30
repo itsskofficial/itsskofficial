@@ -18,7 +18,9 @@ const Header = () => {
                     </Link>
                 </button>
             </div>
-            <div className={styles.}></div>
+            <div className={styles.headImage}>
+                <ima
+            </div>
         </div>
         
     )
