@@ -6,6 +6,7 @@ const Header = () => {
             <h1>
                 Hey, I'm Sarthak
             </h1>
+            <
         </div>
     )
 }
