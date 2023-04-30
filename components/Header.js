@@ -18,7 +18,7 @@ const Header = () => {
                     </Link>
                 </button>
             </div>
-            <div></div>
+            <div className={styles.}></div>
         </div>
         
     )
