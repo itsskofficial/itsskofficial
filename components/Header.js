@@ -20,7 +20,7 @@ const Header = () => {
                 </button>
             </div>
             <div className={styles.headImage}>
-                <Image src='../' width='300' height='300'/>
+                <Image src='/../public/assets/headImage.jpg' width='300' height='300'/>
             </div>
         </div>
         
