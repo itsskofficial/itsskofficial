@@ -20,7 +20,9 @@ const Skills = () => {
                         Code
                     </button>
                     <button className={styles.skillsTools} onClick={() => {
-                        
+                        if (skillsOption != 'tools') {
+                            setSkillsOption('tools)
+                        }
                     }}>
                         Tools
                     </button>
