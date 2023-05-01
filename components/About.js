@@ -1,7 +1,7 @@
 import styles from '@styles/About.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import 
+import useDownloader from 'react-use-downloader'
 
 const About = () => {
     return (
