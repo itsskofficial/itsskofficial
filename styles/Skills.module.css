@@ -22,6 +22,10 @@
     font-size:40px;
 }
 
+.skillsOption{
+    width:30%;
+}
+
 .skillsOption .skillsOptionKnob::before{
     content: "Code";
     width: 50px;
