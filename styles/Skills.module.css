@@ -104,6 +104,6 @@
   color: #fff;
 }
 
-.skillsOption .SkillsOptionCheckbox ~ .layer {
+.skillsOption .SkillsOptionCheckbox ~ .SkillsOptionLayer {
   background-color: #fcebeb;
 }
