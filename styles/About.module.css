@@ -4,6 +4,12 @@
     justify-content: space-evenly;
 }
 
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
 .aboutTitle{
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
