@@ -8,7 +8,7 @@ const SkillsSkin = (props) => {
         
         return (
             option.map((i) => {
-                    
+                <i class={`fa-brands fa-${option[i]}`} style={{color: 'white'}} />
                 })
             )
     }
