@@ -14,6 +14,7 @@ export default function Home() {
       <main>
         <NavBar />
         <Header />
+        <About />
       </main>
     </>
   )
