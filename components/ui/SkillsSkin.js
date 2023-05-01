@@ -6,7 +6,7 @@ const SkillsSkin = (props) => {
             <div className = { skillsSkinRow } >
                 <i class='fa-brands fa-js fa-3x' />
             </div>
-        }
+    )
 
     const toolsIcons = () => {
         return (
