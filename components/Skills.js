@@ -1,4 +1,4 @@
-import ''
+import '@styles/Skills.module.css'
 
 const Skills = () => {
     return (
