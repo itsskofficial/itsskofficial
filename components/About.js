@@ -5,7 +5,9 @@ const About = () => {
                 <Image src='/../public/assets/images/aboutImage.jpg' width='400' height='500' alt='About Image' />
             </div>
             <div className={styles.aboutText}>
-                
+                <h1>
+                    About
+                </h1>
             </div>
         </section>
     )
