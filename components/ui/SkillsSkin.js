@@ -18,8 +18,6 @@ const SkillsSkin = (props) => {
         )
     }
 
-        
-    }
     return (
         <div className={styles.parent}>
             {props.option == 'code' ? codeIcons : toolsIcons}
