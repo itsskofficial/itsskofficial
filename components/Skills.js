@@ -1,8 +1,8 @@
 const Skills = () => {
     return (
         <section className={styles.parent}>
-            <div>
-                
+            <div className={styles.skillsText}>
+
             </div>
         </section>
     )
