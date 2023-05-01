@@ -9,3 +9,5 @@ const SkillsSkin = (props) => {
         </div>
     )
 }
+
+export default SkillsSkin
