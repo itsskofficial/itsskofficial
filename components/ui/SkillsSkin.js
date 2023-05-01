@@ -4,7 +4,7 @@ import Image from 'next/image'
 const SkillsSkin = (props) => {
 
     const codeIcons = (
-        
+        <div className=></div>
             <div className = {styles.skillsSkinRow } >
                 <i class='fa-brands fa-python fa-3x' />
                 <i class='fa-brands fa-js fa-3x' />
