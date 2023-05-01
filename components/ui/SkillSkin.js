@@ -5,7 +5,7 @@ const SkillsSkin = (props) => {
     const tools = ['figma', 'canva', 'gimp']
 
     const renderIcons = (option) => {
-        for (var i = 0; i < lengthoption; i++){
+        for (var i = 0; i < option.length; i++){
             <i class={`fa-brands fa-${option[i]}`} style="color: #000000;" />
         }
     }
