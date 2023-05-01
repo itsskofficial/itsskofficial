@@ -26,32 +26,6 @@
     width:30%
 }
 
-.skillsOption .skillsOptionKnob::before{
-    content: "Code";
-    width: 50px;
-    height: 20px;
-    color:#171717;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 1;
-    padding: 9px 4px;
-    background-color: white;
-    border-radius: 7px;
-    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
-}
-
-.skillsOption .skillsOptionSkillsOptionCheckbox + .skillsOptionKnob::before{
-    content: "Tools";
-    left: 42px;
-    background-color: white;
-}
-
-.skillsOption .skillsOptionKnob,
-.skillsOption .skillsOptionKnob::before {
-  transition: 0.3s ease all;
-}
-
 .skillsIcons{
     width: 30%;
 }
