@@ -2,8 +2,8 @@ import styles from '@styles/SkillsSkin.module.css'
 
 const SkillsSkin = (props) => {
 
-    const codeIcons = {
-            < div className = { skillsSkinRow } >
+    const codeIcons = (
+            <div className = { skillsSkinRow } >
                 <i class='fa-brands fa-js fa-3x' />
             </div>
         }
