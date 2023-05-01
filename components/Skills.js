@@ -13,7 +13,10 @@ const Skills = () => {
                     <div className={styles.skillsOptionLayer} />
                 </button>
             </div>
-            <div className={styles.skillsIcons}
+            <div className={styles.skillsIcons}>
+                <SkillSk
+                
+            </div>
         </section>
     )
 }
