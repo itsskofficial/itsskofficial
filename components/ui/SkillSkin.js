@@ -1,10 +1,10 @@
 const { default: Image } = require("next/image")
 
-const SkillsSkin = () => {
+const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     return (
         <div className={styles.parent}>
-            
+            {props.}
         </div>
     )
 }
