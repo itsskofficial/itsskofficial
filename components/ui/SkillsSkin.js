@@ -8,13 +8,11 @@ const SkillsSkin = (props) => {
             </div>
     )
 
-    const toolsIcons = () => {
-        return (
+    const toolsIcons = (
             <div className={skillsSkinRow}>
                 <i class='fa-brands fa-figma fa-3x' />
             </div>
         )
-    }
 
     return (
         <div className={styles.parent}>
