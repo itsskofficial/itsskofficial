@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
+    height:80vh;
 }
 
 .skillsText{
@@ -41,5 +42,5 @@
 
 .skillsIcons{
   width: 30%;
-  
+
 }
