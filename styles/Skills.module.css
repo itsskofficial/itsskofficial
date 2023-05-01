@@ -43,11 +43,11 @@
     z-index: 3;
   }
 
-  .SkillsOptionKnob {
+  .skillsOptionKnob {
     z-index: 2;
   }
 
-  .layer {
+  .skillsOptionlayer {
     width: 100%;
     background-color: #ebf7fc;
     transition: 0.3s ease all;
