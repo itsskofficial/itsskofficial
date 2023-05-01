@@ -1,7 +1,9 @@
 const About = () => {
     return (
         <section className={styles.parent}>
-            <div
+            <div className={styles.aboutImage}>
+                
+            </div>
         </section>
     )
 }
