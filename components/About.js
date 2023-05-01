@@ -20,7 +20,7 @@ const About = () => {
                 <button className={styles.aboutResume} onClick={()=> {
                     download('/../public/assets/resources/resume.pdf', 'Resume.pdf')
                 }}>
-                    
+                    Resume
                 </button>
             </div>
         </section>
