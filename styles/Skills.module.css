@@ -47,7 +47,7 @@
 }
 
 .skillsOption .skillsOptionKnob,
-.skillsOption .s:before,
+.skillsOption .skillsOptionKnob::before,
 #button-1 .layer {
   transition: 0.3s ease all;
 }
