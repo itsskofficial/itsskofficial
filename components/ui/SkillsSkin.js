@@ -8,7 +8,8 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-js fa-3x' />
                 <i class='fa-brands fa-c fa-3x' />
                 <i class='fa-brands fa-cpp fa-3x' />
-                <i class='fa-brands fa-c fa-3x' />
+                <i class='fa-brands fa-html fa-3x' />
+                <i class='fa-brands fa-html fa-3x' />
             </div>
     )
 
