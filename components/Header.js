@@ -11,7 +11,7 @@ const Header = () => {
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={styles.headSubtitle}>
-                    I am an {roles[0]} developer...
+                    I am an {roles[0]} developer
                 </h2>
                 <button className={styles.headContact}>
                     <Link href='#contact'>
