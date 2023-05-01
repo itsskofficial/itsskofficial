@@ -23,7 +23,13 @@
 }
 
 .skillsOption{
-    width:30%
+    width:30%;
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
 }
 
 .skillsIcons{
