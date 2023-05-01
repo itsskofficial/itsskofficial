@@ -1,4 +1,5 @@
 import styles from '@styles/SkillsSkin.module.css'
+import Image from 'next/image'
 
 const SkillsSkin = (props) => {
 
