@@ -5,6 +5,9 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
+                <h2 className={styles.skills}>
+
+                </h2>
             </div>
         </section>
     )
