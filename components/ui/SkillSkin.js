@@ -4,7 +4,7 @@ const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     return (
         <div className={styles.parent}>
-            {props.option=='code'?}
+            {props.option=='code'?renderIcons(code)}
         </div>
     )
 }
