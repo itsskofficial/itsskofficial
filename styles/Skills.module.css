@@ -29,8 +29,7 @@
   justify-content: space-evenly;
 }
 
-.skillsCode{
-  margin-right: auto;
+.skillsCode, {
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
