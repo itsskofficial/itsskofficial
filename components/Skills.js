@@ -2,6 +2,7 @@ import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillSkin'
 
 const Skills = () => {
+    const [s]
     return (
         <section className={styles.parent}>
             <div className={styles.skillsText}>
