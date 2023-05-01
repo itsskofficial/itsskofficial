@@ -6,7 +6,7 @@ const Skills = () => {
                     Skills
                 </h1>
                 <button className={styles.skillsOption}>
-                    <input type="checkbox" class="checkbox" />
+                    <input type="checkbox" className="checkbox" />
                     <div className={styles.skillsOptionKnob } />
                     <div className={styles.skillsOptionLayer} />
                 </button>
