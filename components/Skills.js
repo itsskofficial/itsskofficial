@@ -14,6 +14,8 @@ const Skills = () => {
                     <button className={styles.skillsCode} onClick={() => {
                         if (skillsOption != 'code')
                             setSkillsOption('code')
+                        else
+                            
                     }}>
                         Code
                     </button>
