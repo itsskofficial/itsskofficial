@@ -41,8 +41,7 @@
 }
 
 .skillsOption .skillsOptionCheckbox:checked + .skillsOptionKnob::before{
-        content: "NO";
-        left: 42px;
-        background-color: #f44336;
-      }
+    content: "NO";
+    left: 42px;
+    background-color: #f44336;
 }
