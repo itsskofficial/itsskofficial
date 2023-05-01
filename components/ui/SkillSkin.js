@@ -6,7 +6,7 @@ const SkillsSkin = (props) => {
 
     const renderIcons = (option) => {
         for (i = 0; i < length(option); i++){
-            <i class={`fa-brands fa-${react}`} style="color: #000000;" />
+            <i class={`fa-brands fa-${option[i]}`} style="color: #000000;" />
         }
     }
     return (
