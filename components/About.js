@@ -1,5 +1,6 @@
 import styles from '@styles/About.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
                     A passionate guy who likes all things digital, from design to coding to deployment. Majorly interested in AI, IOT and Metaverse. Likes reading a lot and learns from movies/web series. Thinking about a cool future? Hit me up!
                 </h2>
                 <button className={styles.aboutResume}>
-                    
+                    <Link
                 </button>
             </div>
         </section>
