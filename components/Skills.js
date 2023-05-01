@@ -1,8 +1,9 @@
 import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillSkin'
+import { useState } from 'react'
 
 const Skills = () => {
-    const [skillsOption]
+    const [skillsOption, setSkillsOption] = useState
     return (
         <section className={styles.parent}>
             <div className={styles.skillsText}>
