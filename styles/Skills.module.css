@@ -22,6 +22,14 @@
     font-size:40px;
 }
 
+.button-cover {
+    height: 100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px
+  }
+
 .skillsOption{
     position: relative;
     width:50%;
