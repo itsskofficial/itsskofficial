@@ -10,7 +10,9 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                <div className={skillsOptionCover}
+                <div className={skillsOptionCover}>
+                    
+                </div>
                 <button className={styles.skillsOption} onClick={() => {
                     if (skillsOption == 'code') {
                         setSkillsOption('tools')
