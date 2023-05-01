@@ -27,7 +27,9 @@
   margin: 50px 0px 50px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align
   width:100%;
 }
 
