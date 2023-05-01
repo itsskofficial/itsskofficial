@@ -36,6 +36,6 @@
     line-height: 1;
     padding: 9px 4px;
     background-color: #03a9f4;
-    border-radius: 50%;
+    border-radius: 7px;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
