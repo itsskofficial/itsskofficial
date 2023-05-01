@@ -70,7 +70,7 @@ z-index: 1;
 .skillsOption .skillsOptionKnob:after,
 .skillsOption .skillsOptionKnob span {
     position: absolute;
-  width: 50px;
+  width: 100px;
   height: 10px;
   font-size: 10px;
   font-weight: bold;
