@@ -71,8 +71,6 @@ z-index: 1;
 .skillsOption .SkillsOptionKnob:before,
 .skillsOption .SkillsOptionKnob:after,
 .skillsOption .SkillsOptionKnob span {
-  position: absolute;
-  top: 4px;
   width: 20px;
   height: 10px;
   font-size: 10px;
