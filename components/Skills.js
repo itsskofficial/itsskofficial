@@ -8,7 +8,7 @@ const Skills = () => {
                 <button className={styles.skillsOption}>
                     <input type="checkbox" class="checkbox" />
                     <div className={styles.skillsOptionKnob } />
-                    <div class={styles.ski/>
+                    <div className={styles.skillsOptionLayer} />
                 </button>
             </div>
         </section>
