@@ -1,8 +1,6 @@
 import styles from '@styles/SkillsSkin.module.css'
 
 const SkillsSkin = (props) => {
-    const code = ['html', 'css', 'js']
-    const tools = ['figma', 'canva', 'gimp']
 
     const codeIcons = () => {
         return (
@@ -12,7 +10,6 @@ const SkillsSkin = (props) => {
         )
     }
 
-    const renderIcons = (option) => {
         
     }
     return (
