@@ -25,5 +25,6 @@
 
 .skillsToggle{
   display: flex;
-  align
+  align-items: center;
+  justify-content: space-evenly;
 }
