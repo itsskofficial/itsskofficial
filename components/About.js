@@ -1,1 +1,5 @@
-const About = () 
+const About = () => {
+    return (
+        <section 
+    )
+}
