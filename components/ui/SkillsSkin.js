@@ -17,7 +17,7 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-css3 fa-3x' />
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
-                <Image src='/../public/assets/images/cpp.svg' width='50' heigh='50' alt='CPP Icon'/>
+                <Image src='/../public/assets/images/ejs.svg' width='50' heigh='50' alt='CPP Icon'/>
                 <i class='fa-brands fa-html5 fa-3x' />
             </div>
         </Fragment>
