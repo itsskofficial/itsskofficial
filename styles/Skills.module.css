@@ -113,6 +113,6 @@ z-index: 1;
   color: #fff;
 }
 
-.skillsOption .skillsOptionCheckbox ~ .SkillsOptionLayer {
+.skillsOption .skillsOptionCheckbox ~ .skillsOptionLayer {
   background-color: #fcebeb;
 }
