@@ -3,9 +3,3 @@
     justify-content: space-evenly;
     align-items: center;
 }
-
-.skillsSkinRow i{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
