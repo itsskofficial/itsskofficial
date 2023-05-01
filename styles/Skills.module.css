@@ -32,7 +32,7 @@
 
 .skillsOption{
     position: relative;
-
+    top:50%;
     width:100%;
     margin: -20px auto 0 auto;
     overflow: hidden;
