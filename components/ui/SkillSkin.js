@@ -1,5 +1,7 @@
 const SkillSkin = () => {
     return (
-        <div className={styles.}
+        <div className={styles.skillBox}>
+            
+        </div>
     )
 }
