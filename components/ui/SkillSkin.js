@@ -1,5 +1,3 @@
-const { default: Image } = require("next/image")
-
 const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     const tools = ['figma', 'canva', 'gimp']
