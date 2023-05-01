@@ -4,7 +4,9 @@ const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     const tools = ['figma', 'canva', 'gimp']
 
-    const codeIcons = ()
+    const codeIcons = () => {
+        retur
+    }
 
     const renderIcons = (option) => {
         
