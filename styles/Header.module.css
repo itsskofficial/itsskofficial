@@ -46,7 +46,6 @@
 .headImage{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     width: 30%;
     height: 100%;
 }
