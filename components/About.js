@@ -17,7 +17,7 @@ const About = () => {
                 <h2 className={styles.aboutInfo}>
                     A passionate guy who likes all things digital, from design to coding to deployment. Majorly interested in AI, IOT and Metaverse. Likes reading a lot and learns from movies/web series. Thinking about a cool future? Hit me up!
                 </h2>
-                <button className={styles.aboutResume} onClick={}>
+                <button className={styles.aboutResume} onClick={()=> {}}>
                     <Link href='/../public/assets/resources/resume.pdf'
                 </button>
             </div>
