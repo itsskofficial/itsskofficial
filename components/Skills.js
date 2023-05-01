@@ -15,7 +15,7 @@ const Skills = () => {
                 </button>
             </div>
             <div className={styles.skillsIcons}>
-                <SkillsSkin 
+                <SkillsSkin option=
             </div>
         </section>
     )
