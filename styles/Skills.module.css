@@ -91,7 +91,7 @@ z-index: 1;
 }
 
 .skillsOption .SkillsOptionKnob:after {
-  content: "NO";
+  content: "Tools";
   right: 4px;
   color: #4e4e4e;
 }
