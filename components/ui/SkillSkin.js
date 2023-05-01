@@ -1,6 +1,6 @@
 const { default: Image } = require("next/image")
 
-const SkillSkin = () => {
+const SkillsSkin = () => {
     return (
         <div className={styles.skillBox}>
             <svg >
