@@ -10,25 +10,14 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                <div className={styles.skillsOptionCover}>
-                    <div className={styles.skillsOption} onClick={() => {
-                        if (skillsOption == 'code') {
-                            setSkillsOption('tools')
-                        }
-                        else{
-                            setSkillsOption('code')
-                        }
-                    }}>
-                        <input type="checkbox" className={styles.skillsOptionCheckbox} />
-                        <div className={styles.skillsOptionKnob} >
-                            <span>
-                                Code
-                            </span>
-                        </div>
-                        <div className={styles.skillsOptionLayer} />
-                    </div>
-                </div>
-            </div>
+                <div class="button-cover">
+        <div class="button b2" id="button-10">
+          <input type="checkbox" class="checkbox" />
+          <div class="knobs">
+            <span>Code</span>
+          </div>
+          <div class="layer"></div>
+        </div>
             <div className={styles.skillsIcons}>
                 <SkillsSkin option={skillsOption} />
             </div>
