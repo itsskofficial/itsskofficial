@@ -1,7 +1,7 @@
 const { default: Image } = require("next/image")
 
 const SkillsSkin = () => {
-    const code = ['React', '']
+    const code = ['react', '']
     return (
         <div className={styles.parent}>
             
