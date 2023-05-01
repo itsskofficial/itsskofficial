@@ -6,7 +6,9 @@ const SkillsSkin = (props) => {
 
     const codeIcons = () => {
         return (
-            <div className={skillsS}
+            <div className={skillsSkinRow}>
+                <i
+            </div>
         )
     }
 
