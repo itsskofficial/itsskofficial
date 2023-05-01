@@ -11,7 +11,9 @@ const Skills = () => {
                     Skills
                 </h1>
                 <div className={styles.skillsOptions}>
-                    <button 
+                    <button className={styles.skillsCode}>
+                        
+                    </button>
                 </div>
 
             </div>
