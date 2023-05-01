@@ -66,9 +66,9 @@ z-index: 1;
 }
 
 
-.skillsOption .SkillsOptionKnob:before,
-.skillsOption .SkillsOptionKnob:after,
-.skillsOption .SkillsOptionKnob span {
+.skillsOption .skillsOptionKnob:before,
+.skillsOption .skillsOptionKnob:after,
+.skillsOption .skillsOptionKnob span {
     position: absolute;
   width: 50px;
   height: 10px;
@@ -81,35 +81,35 @@ z-index: 1;
   transition: 0.3s ease all;
 }
 
-.skillsOption .SkillsOptionKnob:before {
+.skillsOption .skillsOptionKnob:before {
   content: "";
   left: 4px;
   background-color: #03a9f4;
 }
 
-.skillsOption .SkillsOptionKnob:after {
+.skillsOption .skillsOptionKnob:after {
   content: "Tools";
   right: 4px;
   color: #4e4e4e;
 }
 
-.skillsOption .SkillsOptionKnob span {
+.skillsOption .skillsOptionKnob span {
   display: inline-block;
   left: 4px;
   color: #fff;
   z-index: 1;
 }
 
-.skillsOption .skillsOptionCheckbox + .SkillsOptionKnob span {
+.skillsOption .skillsOptionCheckbox + .skillsOptionKnob span {
   color: #4e4e4e;
 }
 
-.skillsOption .skillsOptionCheckbox + .SkillsOptionKnob:before {
+.skillsOption .skillsOptionCheckbox + .skillsOptionKnob:before {
   left: 42px;
   background-color: #f44336;
 }
 
-.skillsOption .skillsOptionCheckbox + .SkillsOptionKnob:after {
+.skillsOption .skillsOptionCheckbox + .skillsOptionKnob:after {
   color: #fff;
 }
 
