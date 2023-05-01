@@ -58,15 +58,6 @@ z-index: 1;
     width: 30%;
 }
 
-.skillsOptionCover,
-.SkillsOptionKnob,
-.SkillsOptionLayer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
 .skillsOption .SkillsOptionKnob:before,
 .skillsOption .SkillsOptionKnob:after,
