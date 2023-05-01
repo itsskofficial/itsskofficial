@@ -1,3 +1,5 @@
+import styles from '@styles/SkillsSkin.module.css'
+
 const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     const tools = ['figma', 'canva', 'gimp']
