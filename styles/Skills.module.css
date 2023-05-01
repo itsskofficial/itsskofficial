@@ -23,7 +23,7 @@
 }
 
 .skillsOption .skillsOptionKnob::before{
-    content: "Languages";
+    content: "Code";
     position: absolute;
     top: 4px;
     left: 4px;
