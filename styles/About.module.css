@@ -30,7 +30,14 @@
 }
 
 .aboutResume{
-    
+    margin-left: auto;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+    color: #171717;
+    font-weight: 600;
 }
 
 .aboutImage{
