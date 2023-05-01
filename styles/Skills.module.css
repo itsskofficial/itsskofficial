@@ -27,7 +27,7 @@
   margin: 50px 0px 50px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width:100%;
 }
 
