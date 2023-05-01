@@ -10,7 +10,7 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-python fa-3x' />
                 <i class='fa-brands fa-js fa-3x' />
                 <i class='fa-brands fa-c fa-3x' />
-                <Image src='/../public/assets/images/cpp.svg' width='50' height='50' alt='CPP Icon'/>
+                <Image src='/../../public/assets/images/cpp.svg' width='50' height='50' alt='CPP Icon'/>
                 <i class='fa-brands fa-html5 fa-3x' />
             </div>
             <div className = {styles.skillsSkinRow } >
@@ -18,7 +18,7 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
                 <Image src='/../public/assets/images/esjs.svg' width='50' height='50' alt='EJs Icon'/>
-                <Image src='/../public/assets/images/mongodb.svg' width='50' height='50' alt='EJs Icon'/>
+                <Image src='/../../public/assets/images/mongodb.svg' width='50' height='50' alt='EJs Icon'/>
             </div>
             <div className = {styles.skillsSkinRow } >
                 <Image src='/../public/assets/images/tf.svg' width='50' height='50' alt='EJs Icon'/>
