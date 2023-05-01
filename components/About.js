@@ -1,5 +1,5 @@
 const About = () => {
     return (
-        <section 
+        <section className=
     )
 }
