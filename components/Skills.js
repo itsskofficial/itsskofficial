@@ -12,7 +12,7 @@ const Skills = () => {
                 </h1>
                 <div className={styles.skillsOptions}>
                     <button className={styles.skillsCode}>
-                        
+                        Code
                     </button>
                 </div>
 
