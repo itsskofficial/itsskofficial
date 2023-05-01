@@ -6,7 +6,9 @@ const SkillsSkin = (props) => {
             <div className = {styles.skillsSkinRow } >
                 <i class='fa-brands fa-python fa-3x' />
                 <i class='fa-brands fa-js fa-3x' />
-                <i class='fa-brands fa-js fa-3x' />
+                <i class='fa-brands fa-c fa-3x' />
+                <i class='fa-brands fa-c fa-3x' />
+                <i class='fa-brands fa-c fa-3x' />
             </div>
     )
 
