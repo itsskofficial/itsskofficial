@@ -31,8 +31,8 @@
 }
 
 .skillsOptionCover,
-.knobs,
-.layer {
+.SkillsOptionKnob,
+.Ski {
   position: absolute;
   top: 0;
   right: 0;
