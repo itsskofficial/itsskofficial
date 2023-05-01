@@ -12,8 +12,9 @@ const Skills = () => {
                 </h1>
                 <button className={styles.skillsOption} onClick={() => {
                     if (skillsOption == 'code') {
-                        
+                        setSkillsOption('tools')
                     }
+                    else
                 }}>
                     <input type="checkbox" className={styles.skillsOptionCheckbox} />
                     <div className={styles.skillsOptionKnob } />
