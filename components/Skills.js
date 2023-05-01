@@ -18,6 +18,7 @@ const Skills = () => {
                         </div>
                         <div class="layer"></div>
                     </div>
+                </div>
             <div className={styles.skillsIcons}>
                 <SkillsSkin option={skillsOption} />
             </div>
