@@ -7,8 +7,9 @@ const SkillsSkin = (props) => {
     const renderIcons = (option) => {
         
         return (
-                option.map((opti))
-                <i class={`fa-brands fa-${option[i]}`} style={{color: 'white'}} />
+            option.map((i) => {
+                    
+                })
             )
     }
     return (
