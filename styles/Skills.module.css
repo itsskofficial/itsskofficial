@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align
+  align-content: flex-start;
   width:100%;
 }
 
