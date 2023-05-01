@@ -13,6 +13,7 @@ const Skills = () => {
                     <div className={styles.skillsOptionLayer} />
                 </button>
             </div>
+            <div 
         </section>
     )
 }
