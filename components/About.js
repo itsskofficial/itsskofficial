@@ -1,3 +1,5 @@
+import styles from ''
+
 const About = () => {
     return (
         <section className={styles.parent}>
