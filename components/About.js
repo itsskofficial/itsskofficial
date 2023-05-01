@@ -9,7 +9,7 @@ const About = () => {
                     About
                 </h1>
                 <h2 className={styles.aboutInfo}>
-                    A passionate guy who likes all things digital, from design to coding to deployment. Enthusiast
+                    A passionate guy who likes all things digital, from design to coding to deployment. Majorly 
                 </h2>
             </div>
         </section>
