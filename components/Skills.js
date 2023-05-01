@@ -1,4 +1,5 @@
 import styles from '@styles/Skills.module.css'
+import SkillsSkin from './ui/SkillSkin'
 
 const Skills = () => {
     return (
@@ -14,8 +15,7 @@ const Skills = () => {
                 </button>
             </div>
             <div className={styles.skillsIcons}>
-                <SkillSk
-                
+                <SkillsSkin 
             </div>
         </section>
     )
