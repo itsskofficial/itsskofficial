@@ -1,6 +1,6 @@
 .parent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px;
 }
