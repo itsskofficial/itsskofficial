@@ -10,7 +10,7 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                <div >
+                <div className={styles.skills}>
 
             </div>
             <div className={styles.skillsIcons}>
