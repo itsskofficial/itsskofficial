@@ -23,7 +23,7 @@
 }
 
 .skillsOption{
-    width:30%;
+    width:30%
 }
 
 .skillsOption .skillsOptionKnob::before{
@@ -44,7 +44,7 @@
 .skillsOption .skillsOptionCheckbox:checked + .skillsOptionKnob::before{
     content: "Tools";
     left: 42px;
-    background-color: none;
+    background-color: white;
 }
 
 .skillsOption .skillsOptionKnob,
