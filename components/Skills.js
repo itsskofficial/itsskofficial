@@ -11,7 +11,7 @@ const Skills = () => {
                     Skills
                 </h1>
                 <button className={styles.skillsOption} onClick={() => {
-                    if skillsOption
+                    if (skillsOption == 'code'
                 }}>
                     <input type="checkbox" className={styles.skillsOptionCheckbox} />
                     <div className={styles.skillsOptionKnob } />
