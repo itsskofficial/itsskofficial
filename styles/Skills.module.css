@@ -81,7 +81,7 @@ transition: 0.3s ease all;
 }
 
 .skillsOption .skillsOptionKnob:before {
-  content: "";
+  content: "Code";
   left: 4px;
   background-color: #03a9f4;
 }
