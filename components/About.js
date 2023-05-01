@@ -4,7 +4,7 @@ import Link from 'next/link'
 import useDownloader from 'react-use-downloader'
 
 const About = () => {
-    const {download}
+    const {download} = useDownloader()
     return (
         <section className={styles.parent}>
             <div className={styles.aboutImage}>
