@@ -21,10 +21,10 @@ const SkillsSkin = (props) => {
                 <Image src='/../../public/assets/images/mongodb.svg' width='50' height='50' alt='EJs Icon'/>
             </div>
             <div className = {styles.skillsSkinRow } >
-                <Image src='/../../public/assets/images/tf.svg' width='50' height='50' alt='EJs Icon'/>
+                <img src='/../../public/assets/images/tf.svg' width='50' height='50' alt='EJs Icon'/>
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
-                <Image src='/../public/assets/images/esjs.svg' width='50' height='50' alt='EJs Icon'/>
+                <img src='/../public/assets/images/esjs.svg' width='50' height='50' alt='EJs Icon'/>
                 <Image src='/../public/assets/images/mongodb.svg' width='50' height='50' alt='EJs Icon'/>
             </div>
         </Fragment>
