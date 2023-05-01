@@ -41,7 +41,7 @@
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
-.skillsOption .skillsOptionCheckbox.SkillsOptionCheckbox + .skillsOptionKnob::before{
+.skillsOption .skillsOptionSkillsOptionCheckbox + .skillsOptionKnob::before{
     content: "Tools";
     left: 42px;
     background-color: white;
@@ -91,19 +91,19 @@
   z-index: 1;
 }
 
-.skillsOption .checkbox.SkillsOptionCheckbox + .SkillsOptionKnob span {
+.skillsOption .SkillsOptionCheckbox + .SkillsOptionKnob span {
   color: #4e4e4e;
 }
 
-.skillsOption .checkbox.SkillsOptionCheckbox + .SkillsOptionKnob:before {
+.skillsOption .SkillsOptionCheckbox + .SkillsOptionKnob:before {
   left: 42px;
   background-color: #f44336;
 }
 
-.skillsOption .checkbox.SkillsOptionCheckbox + .SkillsOptionKnob:after {
+.skillsOption .SkillsOptionCheckbox + .SkillsOptionKnob:after {
   color: #fff;
 }
 
-.skillsOption .checkbox.SkillsOptionCheckbox ~ .layer {
+.skillsOption .SkillsOptionCheckbox ~ .layer {
   background-color: #fcebeb;
 }
