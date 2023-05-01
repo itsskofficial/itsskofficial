@@ -21,7 +21,9 @@ const Skills = () => {
                     <input type="checkbox" className={styles.skillsOptionCheckbox} />
                     <div className={styles.skillsOptionKnob} >
                         <span>
-                            Code</span>
+                            Code
+                        </span>
+                    </div>
                     <div className={styles.skillsOptionLayer} />
                 </button>
             </div>
