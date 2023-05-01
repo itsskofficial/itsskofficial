@@ -47,18 +47,17 @@
     margin: 0;
     opacity: 0;
     cursor: pointer;
-    z-index: 3;
 }
 
 .skillsOptionKnob{
-z-index: 2;
+
 }
 
 .skillsOptionlayer{
 width: 100%;
 background-color: #ebf7fc;
 transition: 0.3s ease all;
-z-index: 1;
+
 }
 
 .skillsIcons{
