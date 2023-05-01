@@ -11,7 +11,22 @@ const Skills = () => {
                     Skills
                 </h1>
                 <div className={skillsOptionCover}>
-
+                    <button className={styles.skillsOption} onClick={() => {
+                        if (skillsOption == 'code') {
+                            setSkillsOption('tools')
+                        }
+                        else{
+                            setSkillsOption('code')
+                        }
+                    }}>
+                        <input type="checkbox" className={styles.skillsOptionCheckbox} />
+                        <div className={styles.skillsOptionKnob} >
+                            <span>
+                                Code
+                            </span>
+                        </div>
+                        <div className={styles.skillsOptionLayer} />
+                    </button>
                 </div>
                 
             </div>
