@@ -12,6 +12,7 @@ const Skills = () => {
                 </h1>
                 <div className={styles.skillsToggle}>
                     <button className={styles.skillsCode} onClick={() => {
+                        if ()
                         setSkillsOption('code')
                     }}>
                         Code
