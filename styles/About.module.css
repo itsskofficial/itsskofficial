@@ -1,5 +1,7 @@
 .parent{
-    display: ;
+    display: flex;
+    align-items: center;
+    justify
 }
 
 .aboutTitle{
