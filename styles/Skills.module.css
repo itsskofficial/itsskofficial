@@ -43,6 +43,17 @@
     z-index: 3;
   }
 
+  .skillsOptionCheckbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+
 .skillsIcons{
     width: 30%;
 }
