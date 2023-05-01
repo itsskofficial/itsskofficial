@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <section className={parent}>
             <div className={contactIcons}>
-                <i class=''
+                <i class='fa'
 
             </div>
         </section>
