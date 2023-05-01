@@ -3,7 +3,7 @@ const SkillsSkin = (props) => {
     const tools = ['figma', 'canva', 'gimp']
 
     const renderIcons = (option) => {
-        for 
+        for (i = 0;i)
     }
     return (
         <div className={styles.parent}>
