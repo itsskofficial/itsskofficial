@@ -10,6 +10,14 @@ const SkillsSkin = (props) => {
         )
     }
 
+    const toolsIcons = () => {
+        return (
+            <div className={skillsSkinRow}>
+                <i class='fa-brands fa-react fa-3x' />
+            </div>
+        )
+    }
+
         
     }
     return (
