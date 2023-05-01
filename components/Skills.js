@@ -10,7 +10,9 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                <button className={styles.skillsOption} onClick={}>
+                <button className={styles.skillsOption} onClick={() => {
+                    
+                }}>
                     <input type="checkbox" className={styles.skillsOptionCheckbox} />
                     <div className={styles.skillsOptionKnob } />
                     <div className={styles.skillsOptionLayer} />
