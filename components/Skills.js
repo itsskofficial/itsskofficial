@@ -10,7 +10,7 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                <div className={styles.skillsOptions}>
+                <div className={styles.skillsToggle}>
                     <button className={styles.skillsCode}>
                         Code
                     </button>
