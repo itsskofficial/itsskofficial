@@ -4,7 +4,7 @@ const SkillsSkin = (props) => {
 
     const renderIcons = (option) => {
         for (i = 0; i < length(option); i++){
-            <icon
+            <icon 
         }
     }
     return (
