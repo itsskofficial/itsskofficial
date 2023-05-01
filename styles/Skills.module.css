@@ -24,9 +24,6 @@
 
 .skillsOption .skillsOptionKnob::before{
     content: "Code";
-    position: absolute;
-    top: 4px;
-    left: 4px;
     width: 20px;
     height: 10px;
     color:#171717;
