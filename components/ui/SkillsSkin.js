@@ -4,13 +4,10 @@ const SkillsSkin = (props) => {
     const code = ['html', 'css', 'js']
     const tools = ['figma', 'canva', 'gimp']
 
+    const 
+
     const renderIcons = (option) => {
         
-        return (
-            option.map((i) => {
-                { <i class={`fa-brands fa-${option[i]}`} style={{ color: 'white' }} /> }
-                })
-            )
     }
     return (
         <div className={styles.parent}>
