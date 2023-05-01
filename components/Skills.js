@@ -28,7 +28,6 @@ const Skills = () => {
                         <div className={styles.skillsOptionLayer} />
                     </button>
                 </div>
-                
             </div>
             <div className={styles.skillsIcons}>
                 <SkillsSkin option={skillsOption} />
