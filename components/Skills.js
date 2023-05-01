@@ -14,7 +14,9 @@ const Skills = () => {
                     if (skillsOption == 'code') {
                         setSkillsOption('tools')
                     }
-                    else
+                    else{
+                        setSkillsOption('code')
+                    }
                 }}>
                     <input type="checkbox" className={styles.skillsOptionCheckbox} />
                     <div className={styles.skillsOptionKnob } />
