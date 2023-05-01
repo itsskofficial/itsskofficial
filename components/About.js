@@ -9,7 +9,7 @@ const About = () => {
                     About
                 </h1>
                 <h2 className={styles.aboutInfo}>
-                    A passionate 
+                    A passionate guy who likes all things digital
                 </h2>
             </div>
         </section>
