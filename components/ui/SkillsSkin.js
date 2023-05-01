@@ -1,10 +1,13 @@
 import styles from '@styles/SkillsSkin.module.css'
 import Image from 'next/image'
+import { Fragment } from 'react'
 
 const SkillsSkin = (props) => {
 
     const codeIcons = (
-        ></div>
+        <Fragment>
+            
+        </Fragment>
             <div className = {styles.skillsSkinRow } >
                 <i class='fa-brands fa-python fa-3x' />
                 <i class='fa-brands fa-js fa-3x' />
