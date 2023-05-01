@@ -1,5 +1,5 @@
 import styles from '@styles/Skills.module.css'
-import SkillsSkin from './ui/SkillSkin'
+import SkillsSkin from './ui/SkillsSkin'
 import { useState } from 'react'
 
 const Skills = () => {
