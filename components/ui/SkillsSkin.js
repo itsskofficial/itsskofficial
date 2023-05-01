@@ -3,13 +3,13 @@ import styles from '@styles/SkillsSkin.module.css'
 const SkillsSkin = (props) => {
 
     const codeIcons = (
-            <div className = { skillsSkinRow } >
+            <div className = {styles.skillsSkinRow } >
                 <i class='fa-brands fa-js fa-3x' />
             </div>
     )
 
     const toolsIcons = (
-            <div className={skillsSkinRow}>
+            <div className={styles.skillsSkinRow}>
                 <i class='fa-brands fa-figma fa-3x' />
             </div>
         )
