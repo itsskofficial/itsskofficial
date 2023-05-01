@@ -13,7 +13,7 @@ const Skills = () => {
                 <div className={styles.skillsToggle}>
                     <button className={styles.skillsCode} onClick={() => {
                         if (skillsOption != 'code')
-                        setSkillsOption('code')
+                            setSkillsOption('code')
                     }}>
                         Code
                     </button>
