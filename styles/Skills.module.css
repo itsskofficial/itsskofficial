@@ -26,7 +26,7 @@
 .skillsToggle{
   margin: 50px 0px 50px 0px;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: space-evenly;
   width:100%;
 }
