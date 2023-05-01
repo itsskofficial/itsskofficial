@@ -15,10 +15,9 @@ const Skills = () => {
                         Code
                     </button>
                     <button className={styles.skillsTools}>
-                        
+                        Tools
                     </button>
                 </div>
-
             </div>
             <div className={styles.skillsIcons}>
                 <SkillsSkin option={skillsOption} />
