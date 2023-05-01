@@ -12,7 +12,7 @@ const Skills = () => {
                 </h1>
                 <div className={styles.skillsToggle}>
                     <button className={styles.skillsCode} onClick={() => {
-                        set
+                        setSkillsOption('code')
                     }}>
                         Code
                     </button>
