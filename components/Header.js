@@ -15,7 +15,9 @@ const Header = () => {
                     I am an
                     <TypeAnimation 
                         sequence={[
-                            'AI'
+                            'AI',
+                            1000,
+                            'IOT'
                         ]}
                         developer
                 </h2>
