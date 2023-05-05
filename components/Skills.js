@@ -12,7 +12,24 @@ const Skills = () => {
                 </h1>
                 {useEffect(()=> {
                     return (
-                        
+                        <div className={styles.skillsToggle}>
+                        <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                            if (skillsOption != 'code') {
+                                setSkillsOption('code')
+                            }
+                            
+                                
+                        }}>
+                            <i class='fa-solid fa-code' style={{marginRight: '10px'}} />Code
+                        </button>
+                        <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                            if (skillsOption != 'tools') {
+                                setSkillsOption('tools')
+                            }
+                        }}>
+                            <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
+                        </button>
+                    </div>
                     )
                 })}
                 <div className={styles.skillsToggle}>
