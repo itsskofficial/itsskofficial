@@ -8,7 +8,9 @@ const Skills = () => {
 
     useEffect(() => {
         if (optionChanged) {
-            setTimeout()
+            setTimeout(() => {
+                setOptionChanged(false)
+            },3000)
         }
     }, [skillsOption])
     
