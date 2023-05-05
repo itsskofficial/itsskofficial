@@ -12,7 +12,7 @@ const NavBar = () => {
             <ul className={styles.navList}>
                 {navlinks.map(link => {
                     return(
-                        <a href={`/#${link.toLowerCase()}`} className={styles.navLink} onClick={}>
+                        <a href={`/#${link.toLowerCase()}`} className={styles.navLink} onClick={link}>
                             {link}
                         </a>
                     )
