@@ -20,7 +20,7 @@ const Skills = () => {
                     }}>
                         Code
                     </button>
-                    <button className={styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                    <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
                             setSkillsOption('tools')
                         }
