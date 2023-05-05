@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
-    const codeButtonClasses = classNames([
+    var codeButtonClasses = classNames([
         
     ])
     return (
