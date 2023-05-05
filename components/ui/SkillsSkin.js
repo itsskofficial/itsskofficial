@@ -1,7 +1,7 @@
 import styles from '@styles/SkillsSkin.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
-import {TFS}
+import {ReactComponent as TFSvg }
 
 const SkillsSkin = (props) => {
 
