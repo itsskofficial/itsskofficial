@@ -30,7 +30,7 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            {optionChan}
+            {optionChanged?}
         </section>
     )
 }
