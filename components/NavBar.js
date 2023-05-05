@@ -1,7 +1,7 @@
 import styles from "@styles/NavBar.module.css"
 
 const NavBar = () => {
-    
+
     const navlinks = ["Home", "About", "Skills", "Projects", "Contact"]
 
     return (
@@ -12,7 +12,7 @@ const NavBar = () => {
             <ul className={styles.navList}>
                 {navlinks.map(link => {
                     return(
-                        <a href={`/#${link.toLowerCase()}`} className={styles.navLink}>
+                        <a href={`/#${link.toLowerCase()}`} className={styles.navLink} onClick={}>
                             {link}
                         </a>
                     )
