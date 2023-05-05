@@ -3,7 +3,7 @@ import styles from '@styles/Footer.module.css'
 const Footer = () => {
     return (
         <section className={styles.parent}>
-            <div className={styles.footerText}>
+            <div className={styles.footer}>
                 <h3 className={styles.footerLogo}>
                     SK
                 </h3>
