@@ -21,7 +21,8 @@ const Header = () => {
                             1000,
                             'Metaverse',
                             1000
-                        ]}
+                        ]} 
+                        repeat={}
                         developer
                 </h2>
                 <button className={styles.headContact}>
