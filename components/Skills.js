@@ -28,7 +28,9 @@ const Skills = () => {
                 </div>
             </div>
             {useEffect(() => {
-
+                <div className={styles.skillsIcons}>
+                <SkillsSkin option={skillsOption} />
+            </div>
             })}
             
         </section>
