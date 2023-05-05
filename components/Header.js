@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <section id='' className={styles.parent}>
+        <section id='home' className={styles.parent}>
             <div className={styles.headText}>
                 <h1 className={styles.headTitle}>
                     Hey, I'm Sarthak
@@ -22,7 +22,7 @@ const Header = () => {
             <div className={styles.headImage}>
                 <Image src='/../public/assets/images/headImage.jpg' width='500' height='500' alt='Hero Image'/>
             </div>
-        </div>
+        </section>
         
     )
 }
