@@ -7,7 +7,7 @@ const Footer = () => {
                 <h3 className={styles.footerLogo}>
                     SK
                 </h3>
-                <i
+                <i class="fa-regular fa-copyright"></i>
                 <h3 className={styles.footerLogo}>
                     2023
                 </h3>
