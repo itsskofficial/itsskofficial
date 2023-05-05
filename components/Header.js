@@ -17,7 +17,8 @@ const Header = () => {
                         sequence={[
                             'AI',
                             1000,
-                            'IOT'
+                            'IOT',
+                            1000
                         ]}
                         developer
                 </h2>
