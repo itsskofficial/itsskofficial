@@ -11,4 +11,7 @@
     justify-content: space-evenly;
 }
 
-.contact
+.contactText{
+    display: flex;
+    flex-direction: column;
+}
