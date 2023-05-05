@@ -5,12 +5,12 @@
     padding: 30px;
 }
 
-.navbarlogo{
+.navbarLogo{
     font-family: 'Allura', cursive;
     font-weight: 600;
 }
 
-.navlist{
+.navList{
     display:flex;
     text-align: center;
     align-items: center;
@@ -18,7 +18,7 @@
     width: 50%;
 }
 
-.navlink{
+.navLink{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
