@@ -8,10 +8,10 @@ const Contact = () => {
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-4x'/>
                 </Link>
-                <Link href='mailto:sarthakkarandikar03@gmail.com'>
+                <Link href='mailto:sk@itsskofficial.com'>
                     <i class='fa-solid fa-envelope fa-4x'/>
                 </Link>
-                <Link href='tel:'>
+                <Link href='tel:+918275017823'>
                     <i class='fa-solid fa-phone fa-4x'/>
                 </Link>
             </div>
