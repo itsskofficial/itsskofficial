@@ -13,8 +13,8 @@ const NavBar = () => {
                 {navlinks.map(link => {
                     return(
                         <a href={`/#${link.toLowerCase()}`} className={styles.navLink} onClick={() => {
-                            navlinks.forEach(() => {
-                                
+                            navlinks.forEach((link) => {
+                               link 
                             })
                         }}>
                             {link}
