@@ -6,5 +6,6 @@
 }
 
 .contactIcons{
-    display
+    display:flex;
+    
 }
