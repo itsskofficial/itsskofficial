@@ -11,8 +11,7 @@ const Skills = () => {
                     Skills
                 </h1>
 
-                {useEffect(()=> {
-                    return {
+
                         <div className={styles.skillsToggle}>
                             <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                                 if (skillsOption != 'code') {
