@@ -1,6 +1,7 @@
 import styles from '@styles/Header.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { TypeAnimation } from 'react-type-animation'
 
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
@@ -11,7 +12,7 @@ const Header = () => {
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={styles.headSubtitle}>
-                    I am an  developer
+                    I am an <TypeAnimation developer
                 </h2>
                 <button className={styles.headContact}>
                     <Link href='#contact'>
