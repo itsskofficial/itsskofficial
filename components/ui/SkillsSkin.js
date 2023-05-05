@@ -1,7 +1,6 @@
 import styles from '@styles/SkillsSkin.module.css'
 import Image from 'next/image'
 import { Fragment } from 'react'
-import {ReactComponent as TFSvg } from '../../public/assets/images/tf.svg'
 
 const SkillsSkin = (props) => {
 
@@ -15,7 +14,6 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-html5 fa-3x' />
             </div>
             <div className={styles.skillsSkinRow} >
-                <TFSvg/>
                 <i class='fa-brands fa-css3 fa-3x' />
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
