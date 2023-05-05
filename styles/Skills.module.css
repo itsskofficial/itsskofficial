@@ -62,5 +62,6 @@
   width: 30%;
   justify-content: center;
   align-items: center;
-  ani;
+  animation: fadeIn 0s 0.6s;
+  animation-fill-mode: backwards;
 }
