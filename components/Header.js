@@ -28,9 +28,9 @@ const Header = () => {
                     developer
                 </h2>
                 <button className={styles.headContact}>
-                    <Link href='#contact'>
-                    <i class='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
-                    </Link>
+                    <a href='#contact'>
+                        <i class='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
+                    </a>
                 </button>
             </div>
             <div className={styles.headImage}>
