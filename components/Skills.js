@@ -16,7 +16,7 @@ const Skills = () => {
                             setSkillsOption('code')
                         }
 
-                        class
+                        className={}
                             
                     }}>
                         Code
