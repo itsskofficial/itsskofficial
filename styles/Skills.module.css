@@ -41,6 +41,7 @@
     background-color: #171717;
     color:white;
     border: 1px solid white;
+    cursor: pointer;
     font-weight: 800;
 }
 
