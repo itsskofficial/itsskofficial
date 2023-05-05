@@ -15,7 +15,7 @@ const Header = () => {
                 </h2>
                 <button className={styles.headContact}>
                     <Link href='#contact'>
-                    <i class='fa-solid fa-address-book' style={{marginRight: '10px'}} />Contact Me
+                    <i class='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
                     </Link>
                 </button>
             </div>
