@@ -6,7 +6,9 @@ const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
 
-    useEffect
+    useEffect(()=> {
+        
+    })
     return (
         <section id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
