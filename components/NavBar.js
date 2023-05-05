@@ -35,7 +35,7 @@ const NavBar = () => {
                             })
                             navlinks[0]['classes']=[styles.navLink]
                             link['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
-                            console.log(navlinks[0]['classes'])
+                            console.log(navlinks[0])
                         }}>
                             {link['name']}
                         </a>
