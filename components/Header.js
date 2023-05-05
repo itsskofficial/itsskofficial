@@ -1,6 +1,5 @@
 import styles from '@styles/Header.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
 
 const Header = () => {
