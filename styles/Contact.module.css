@@ -14,7 +14,7 @@
 }
 
 .contactIcons i:hover{
-    animation: gentle;
+    animation: gentle-tilt 0.25s infinite;
 }
 
 .contactText{
@@ -38,3 +38,4 @@
     text-align: justify;
     text-justify: distribute-all-lines;
 }
+
