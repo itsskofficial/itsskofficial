@@ -10,9 +10,9 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
-                
+
                 {useEffect(()=> {
-                    return (
+                    return {
                         <div className={styles.skillsToggle}>
                             <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                                 if (skillsOption != 'code') {
@@ -29,7 +29,7 @@ const Skills = () => {
                                 <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
                             </button>
                         </div>
-                    )
+                    }
                 }), [skillsOption]}
                 
                 <div className={styles.skillsToggle}>
