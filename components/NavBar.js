@@ -9,15 +9,15 @@ const NavBar = () => {
         },
         {
             name: "About",
-            classes: [styles.navLink, styles.navLinkActive].join(' ')
+            classes: [styles.navLink]
         },
         {
             name: "Skills",
-            classes: [styles.navLink, styles.navLinkActive].join(' ')
+            classes: [styles.navLink]
         },
         {
             name: "Contact",
-            classes: [styles.navLink, styles.navLinkActive].join(' ')
+            classes: [styles.navLink]
         }
     ]
 
