@@ -8,11 +8,7 @@ const NavBar = () => {
             classes: [styles.navlink, styles.navlinkActive].join(' ')
         },
         {
-            name: "Home",
-            classes: [styles.navlink, styles.navlinkActive].join(' ')
-        }
-        {
-            name: "Home",
+            name: "About",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
         }
         {
