@@ -16,7 +16,7 @@ const Contact = () => {
                 <h2 className={styles.contactTitle}>
                     Contact
                 </h2>
-                <h3>
+                <h3 className={styles.contactInfo}>
                     I am available on LinkedIn for discussions and stuff. If LinkedIn is not convenient you can mail me too
                 </h3>
             </div>
