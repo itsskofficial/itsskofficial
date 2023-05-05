@@ -30,7 +30,7 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            {if}
+            {optionChan}
         </section>
     )
 }
