@@ -14,7 +14,7 @@
 }
 
 .contactIcons i:hover{
-    
+    animation: gentle;
 }
 
 .contactText{
