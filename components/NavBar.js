@@ -2,7 +2,7 @@ import styles from "@styles/NavBar.module.css"
 
 const NavBar = () => {
 
-    const navlinks = [
+    var navlinks = [
         {
             name: "Home",
             classes: [styles.navLink, styles.navLinkActive].join(' ')
