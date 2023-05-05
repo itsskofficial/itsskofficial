@@ -12,11 +12,11 @@ const NavBar = () => {
             classes: [styles.navlink, styles.navlinkActive].join(' ')
         }
         {
-            name: "Home",
+            name: "Skills",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
         }
         {
-            name: "Home",
+            name: "Contact",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
         }
     ]
