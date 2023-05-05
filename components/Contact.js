@@ -13,7 +13,7 @@ const Contact = () => {
                 </Link>
             </div>
             <div className=[styles.contactText]>
-                <h1
+                <h2
         </section>
     )
 }
