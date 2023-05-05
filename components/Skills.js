@@ -30,11 +30,7 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            {useEffect(() => {
-                <div className={styles.skillsIcons}>
-                    <SkillsSkin option={skillsOption} />
-                </div>
-            },[skillsOption])} 
+            {if}
         </section>
     )
 }
