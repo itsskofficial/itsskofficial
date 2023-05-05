@@ -5,7 +5,7 @@ import { useState } from 'react'
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
     var codeButtonClasses = classNames([
-        'styles.skills'
+        'styles.skillsCode'
     ])
     return (
         <section className={styles.parent}>
@@ -14,7 +14,7 @@ const Skills = () => {
                     Skills
                 </h1>
                 <div className={styles.skillsToggle}>
-                    <button className={styles.skillsCode} onClick={() => {
+                    <button className={[styles.skillsCode} onClick={() => {
                         if (skillsOption != 'code') {
                             setSkillsOption('code')
                         }
