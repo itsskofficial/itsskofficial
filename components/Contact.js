@@ -2,8 +2,8 @@ import Link from "next/link"
 
 const Contact = () => {
     return (
-        <section className={parent}>
-            <div className={contactIcons}>
+        <section className={styles.parent}>
+            <div className={styles.contactIcons}>
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-4x'/>
                 </Link>
