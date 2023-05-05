@@ -34,7 +34,7 @@ const NavBar = () => {
                                link 
                             })
                         }}>
-                            {link}
+                            {link['name']}
                         </a>
                     )
                 })}
