@@ -4,11 +4,13 @@ const NavBar = () => {
 
     const navlinks = [
         {
-        name: "Home",
-        classes: [styles.navlink, styles.navlinkActive].join(' '),
+            name: "Home",
+            classes: [styles.navlink, styles.navlinkActive].join(' '),
         },
-        name: "Home",
-        classes: [styles.navlink, styles.navlinkActive].join(' ')
+        {
+            name: "Home",
+            classes: [styles.navlink, styles.navlinkActive].join(' ')
+        }
     ]
 
     return (
