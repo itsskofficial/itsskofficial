@@ -1,5 +1,5 @@
 import Link from "next/link"
-import styles from '@styles/'
+import styles from '@styles/Contact.module.css'
 
 const Contact = () => {
     return (
