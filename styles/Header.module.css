@@ -43,7 +43,7 @@
     border: 2px solid white;
     font-weight: 800;
     cursor: pointer;
-    tran
+    transition: all 0.3s ease-in-out;
 }
 
 .headContact:hover{
