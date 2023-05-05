@@ -1,4 +1,4 @@
-const { Link } = require("next/link")
+import Link from "next/link"
 
 const Contact = () => {
     return (
