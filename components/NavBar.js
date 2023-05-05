@@ -1,7 +1,7 @@
 import styles from "@styles/NavBar.module.css"
 
 const NavBar = () => {
-
+    
     const navlinks = ["Home", "About", "Skills", "Projects", "Contact"]
 
     return (
