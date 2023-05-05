@@ -29,7 +29,8 @@ const Skills = () => {
                             </button>
                         </div>
                     )
-                })}
+                }),[skillsOption]}
+                
                 <div className={styles.skillsToggle}>
                     <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
