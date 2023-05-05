@@ -1,6 +1,6 @@
 import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillsSkin'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
@@ -10,6 +10,7 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
+                {useEffect()}
                 <div className={styles.skillsToggle}>
                     <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
