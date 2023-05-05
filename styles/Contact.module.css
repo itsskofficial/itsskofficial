@@ -8,9 +8,9 @@
 
 .contactIcons{
     display:flex;
-    align-items: flex-start;
+    align-items: center;
     width: 30%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .contactText{
