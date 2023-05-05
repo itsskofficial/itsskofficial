@@ -7,7 +7,7 @@ const Contact = () => {
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-4x'/>
                 </Link>
-                <Link href='mailto:'>
+                <Link href='mailto:sk@itsskofficial.com'>
                     <i class='fa-brands fa-envelope fa-4x'/>
                 </Link>
             </div>
