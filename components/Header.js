@@ -22,7 +22,7 @@ const Header = () => {
                             'Metaverse',
                             1000
                         ]} 
-                        repeat={}
+                        repeat={Infinity}
                         developer
                 </h2>
                 <button className={styles.headContact}>
