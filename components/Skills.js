@@ -15,6 +15,8 @@ const Skills = () => {
                         if (skillsOption != 'code') {
                             setSkillsOption('code')
                         }
+
+                        class
                             
                     }}>
                         Code
