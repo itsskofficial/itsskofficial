@@ -13,7 +13,7 @@ const Footer = () => {
                 <h3 className={styles.footerYear}>
                     2023
                 </h3>
-                <h3 className={styles.footerYear}>
+                <h3 className={styles.footerText}>
                     2023
                 </h3>
             </div>
