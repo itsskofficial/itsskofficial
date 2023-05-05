@@ -5,7 +5,7 @@ const NavBar = () => {
     var navlinks = [
         {
             name: "Home",
-            classes: [styles.navLink, styles.navLinkActive].join(' ')
+            'classes': [styles.navLink, styles.navLinkActive].join(' ')
         },
         {
             name: "About",
