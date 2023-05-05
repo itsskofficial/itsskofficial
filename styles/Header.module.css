@@ -47,7 +47,7 @@
 .headContact:hover{
     background-color: white;
     color: #171717;
-    transform: scale();
+    transform: scale(1.2);
 }
 
 .headImage{
