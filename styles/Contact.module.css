@@ -11,7 +11,8 @@
     align-items: center;
     width: 30%;
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
+    justify-items: flex-start;
 }
 
 .contactText{
