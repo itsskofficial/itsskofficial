@@ -11,7 +11,7 @@ const Contact = () => {
                 <Link href='mailto:sarthakkarandikar03@gmail.com'>
                     <i class='fa-solid fa-envelope fa-4x'/>
                 </Link>
-                <Link href='mailto:sarthakkarandikar03@gmail.com'>
+                <Link href='tel:'>
                     <i class='fa-solid fa-phone fa-4x'/>
                 </Link>
             </div>
