@@ -1,6 +1,6 @@
 import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillsSkin'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
