@@ -14,7 +14,7 @@ const Footer = () => {
                     2023
                 </h3>
                 <h3 className={styles.footerText}>
-                    All rig
+                    All Rights Reserved
                 </h3>
             </div>
         </section>
