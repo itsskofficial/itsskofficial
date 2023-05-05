@@ -5,7 +5,7 @@ import { useState } from 'react'
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
     return (
-        <section className={styles.parent}>
+        <section id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
                 <h1 className={styles.skillsTitle}>
                     Skills
