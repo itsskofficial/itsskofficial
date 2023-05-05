@@ -12,7 +12,9 @@ const Header = () => {
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={styles.headSubtitle}>
-                    I am an <TypeAnimation developer
+                    I am an
+                    <TypeAnimation
+                        developer
                 </h2>
                 <button className={styles.headContact}>
                     <Link href='#contact'>
