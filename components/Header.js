@@ -13,7 +13,10 @@ const Header = () => {
                 </h1>
                 <h2 className={styles.headSubtitle}>
                     I am an
-                    <TypeAnimation
+                    <TypeAnimation 
+                        sequence={[
+                            'AI'
+                        ]}
                         developer
                 </h2>
                 <button className={styles.headContact}>
