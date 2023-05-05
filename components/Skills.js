@@ -24,7 +24,7 @@ const Skills = () => {
                     <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
                             setSkillsOption('tools')
-                            setOptionChanged(optionChanged=>!optionChanged)
+                            setOptionChanged(true)
                         }
                     }}>
                         <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
