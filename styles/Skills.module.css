@@ -44,7 +44,12 @@
     font-weight: 800;
 }
 
-.skillsCode, .skillsTools:hover
+.skillsCode:hover, .skillsTools:hover{
+    background-color: white;
+  color: #171717;
+ transform: scale(1.1);
+}
+}
 
 .skillsActiveButton{
   background-color: white;
