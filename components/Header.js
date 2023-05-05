@@ -18,6 +18,8 @@ const Header = () => {
                             'AI',
                             1000,
                             'IOT',
+                            1000,
+                            'Metaverse',
                             1000
                         ]}
                         developer
