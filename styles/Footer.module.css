@@ -5,7 +5,9 @@
     padding: 30px;
 } 
 
-
+.footerText{
+    display:flex
+}
 .footerLogo{
     font-family: 'Allura', cursive;
     font-weight: 600;
