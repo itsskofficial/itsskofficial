@@ -4,7 +4,9 @@ import { useState } from 'react'
 
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
-    const codeButtonClasses
+    const codeButtonClasses = classNames([
+        
+    ])
     return (
         <section className={styles.parent}>
             <div className={styles.skillsText}>
