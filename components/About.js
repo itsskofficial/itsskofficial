@@ -6,7 +6,7 @@ import useDownloader from 'react-use-downloader'
 const About = () => {
     const {download} = useDownloader()
     return (
-        <section className={styles.parent}>
+        <section idclassName={styles.parent}>
             <div className={styles.aboutImage}>
                 <Image src='/../public/assets/images/aboutImage.jpeg' width='400' height='500' alt='About Image' />
             </div>
