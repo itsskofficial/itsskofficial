@@ -5,7 +5,9 @@ const Footer = () => {
                 <span className={styles.footerCopyright}>
                     &#8364
                 </span>
-                <h3
+                <h3>
+                    SK 202
+                </h3>
             </div>
         </section>
     )
