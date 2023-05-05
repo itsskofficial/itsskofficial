@@ -1,4 +1,4 @@
-const { default: Link } = require("next/link")
+const { Link } = require("next/link")
 
 const Contact = () => {
     return (
