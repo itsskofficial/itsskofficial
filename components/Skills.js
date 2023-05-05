@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
-    // const [optionChanged, setOptionChanged] = useState(false)
+    const [optionChanged, setOptionChanged] = useState(false)
 
     return (
         <section id='skills' className={styles.parent}>
@@ -24,6 +24,7 @@ const Skills = () => {
                     <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
                             setSkillsOption('tools')
+                            setOptionChanged(true)
                         }
                     }}>
                         <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
