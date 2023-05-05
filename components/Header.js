@@ -16,9 +16,9 @@ const Header = () => {
                     <TypeAnimation 
                         sequence={[
                             'AI',
-                            1000,
+                            3000,
                             'IOT',
-                            1000,
+                            3000,
                             'Metaverse',
                             1000
                         ]} 
