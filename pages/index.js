@@ -4,6 +4,7 @@ import Header from '@components/Header'
 import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
+import Footer from '@components/Footer'
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
         <Header />
         <About />
         <Skills />
-        <Contact/>
+        <Contact />
+        <Footer />
       </main>
     </>
   )
