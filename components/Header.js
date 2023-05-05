@@ -23,7 +23,8 @@ const Header = () => {
                             3000
                         ]} 
                         repeat={Infinity}
-                        speed={5} />
+                        speed={20}
+                        deletionSpeed={20} />
                     developer
                 </h2>
                 <button className={styles.headContact}>
