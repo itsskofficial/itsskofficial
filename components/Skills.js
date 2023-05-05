@@ -25,7 +25,7 @@ const Skills = () => {
                             setSkillsOption('tools')
                         }
                     }}>
-                        Tools
+                        <i class='fa-solid fa-code' style={{marginRight: '10px'}} />Tools
                     </button>
                 </div>
             </div>
