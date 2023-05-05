@@ -17,7 +17,7 @@ const Contact = () => {
                     Contact
                 </h2>
                 <h3>
-                    I am available on LinkedIn for discussions and stuff. If 
+                    I am available on LinkedIn for discussions and stuff. If LinkedIn is not convenient you can mail me too
                 </h3>
             </div>
         </section>
