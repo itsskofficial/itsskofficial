@@ -1,3 +1,10 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
 .footerLogo{
     font-family: 'Allura', cursive;
     font-weight: 600;
