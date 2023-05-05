@@ -34,6 +34,7 @@ const NavBar = () => {
                                link['classes'] = [styles.navLink]
                             })
                             link['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
+                            console.log(navlinks)
                         }}>
                             {link['name']}
                         </a>
