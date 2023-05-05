@@ -17,7 +17,7 @@ const Contact = () => {
                     Contact
                 </h2>
                 <h3>
-                    I am 
+                    I a
                 </h3>
             </div>
         </section>
