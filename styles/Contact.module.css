@@ -10,7 +10,8 @@
     display:flex;
     align-items: center;
     width: 30%;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    
 }
 
 .contactText{
