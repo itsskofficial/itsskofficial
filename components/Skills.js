@@ -14,9 +14,7 @@ const Skills = () => {
                     <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
                             setSkillsOption('code')
-                        }
-
-                            
+                        }   
                     }}>
                         <i class='fa-solid fa-code' style={{marginRight: '10px'}} />Code
                     </button>
@@ -29,9 +27,10 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            <div className={styles.skillsIcons}>
-                <SkillsSkin option={skillsOption} />
-            </div>
+            {useEffect(() => {
+
+            })}
+            
         </section>
     )
 }
