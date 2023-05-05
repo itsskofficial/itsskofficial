@@ -31,7 +31,7 @@ const NavBar = () => {
                     return(
                         <a href={`/#${link.toLowerCase()}`} className={styles.navLink} onClick={() => {
                             navlinks.forEach((link) => {
-                               link['classes'] = {styles.navLink}
+                               link['classes'] = [styles.navLink]
                             })
                         }}>
                             {link['name']}
