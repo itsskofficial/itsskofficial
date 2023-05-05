@@ -10,11 +10,11 @@ const Footer = () => {
                 <h3 className={styles.footerCopyright}>
                     &copy;
                 </h3>
-                <h3 className={styles.footerYear}>
+                <h3 className={styles.footerText}>
                     2023
                 </h3>
                 <h3 className={styles.footerText}>
-                    2023
+                    All rig
                 </h3>
             </div>
         </section>
