@@ -8,7 +8,7 @@ const Footer = () => {
                     SK
                 </h3>
                 <h3>
-                    
+                    &#168;
                 </h3>
                 <i class='fa-thin fa-copyright fa-1x'/>
                 <h3 className={styles.footerYear}>
