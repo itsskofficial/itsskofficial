@@ -39,13 +39,12 @@
     border-radius: 7px;
     font-size: 18px;
     background-color: #171717;
-    color:white
+    color:white;
     border: 1px solid white;
     font-weight: 800;
 }
 
 .skillsActiveButton{
-  
   background-color: white;
   color: #171717;
 }
