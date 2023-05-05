@@ -33,6 +33,7 @@ const NavBar = () => {
                             navlinks.forEach((link) => {
                                link['classes'] = [styles.navLink]
                             })
+                            
                         }}>
                             {link['name']}
                         </a>
