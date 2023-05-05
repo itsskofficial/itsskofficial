@@ -14,7 +14,8 @@ const SkillsSkin = (props) => {
                 <Image src='/../../public/assets/images/cpp.svg' width='50' height='50' alt='CPP Icon'/>
                 <i class='fa-brands fa-html5 fa-3x' />
             </div>
-            <div className = {styles.skillsSkinRow } >
+            <div className={styles.skillsSkinRow} >
+                <Tf
                 <i class='fa-brands fa-css3 fa-3x' />
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
