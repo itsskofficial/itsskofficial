@@ -20,7 +20,7 @@ const Header = () => {
                             'IOT',
                             3000,
                             'Metaverse',
-                            1000
+                            3000
                         ]} 
                         repeat={Infinity} />
                     developer
