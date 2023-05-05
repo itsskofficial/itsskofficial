@@ -10,10 +10,10 @@ const NavBar = () => {
     return (
         <Fragment>
             <div className={styles.parent}>
-                <h2 className={styles.logo}>
+                <h2 className={styles.navbarLogo}>
                     SK
                 </h2>
-                <ul className={styles.navlist}>
+                <ul className={styles.navList}>
                     {navlinks.map(link => {
                         return(
                             <Link href={`/#${link.toLowerCase()}`} className={styles.navlink}>
