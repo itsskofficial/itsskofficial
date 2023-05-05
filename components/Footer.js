@@ -1,3 +1,5 @@
+import 
+
 const Footer = () => {
     return (
         <section className={styles.parent}>
