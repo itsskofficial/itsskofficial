@@ -6,7 +6,7 @@ const Footer = () => {
                     &#8364
                 </span>
                 <h3>
-                    SK 202
+                    SK
                 </h3>
             </div>
         </section>
