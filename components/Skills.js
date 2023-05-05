@@ -10,6 +10,7 @@ const Skills = () => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
+                
                 {useEffect(()=> {
                     return (
                         <div className={styles.skillsToggle}>
@@ -29,7 +30,7 @@ const Skills = () => {
                             </button>
                         </div>
                     )
-                }),[skillsOption]}
+                }), [skillsOption]}
                 
                 <div className={styles.skillsToggle}>
                     <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
