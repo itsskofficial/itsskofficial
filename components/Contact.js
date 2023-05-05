@@ -12,7 +12,8 @@ const Contact = () => {
                     <i class='fa-brands fa-envelope fa-4x'/>
                 </Link>
             </div>
-            <div className=[styles.]
+            <div className=[styles.contactText]>
+            
         </section>
     )
 }
