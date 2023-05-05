@@ -35,7 +35,7 @@ const Skills = () => {
                 <div className={[styles.skillsIcons, styles.skillsIconsAnimate].join()}>
                     <SkillsSkin option={skillsOption} />
                 </div> :
-                <div className={[styles.skillsIcons].join()}>
+                <div className={[styles.skillsIcons]}>
                     <SkillsSkin option={skillsOption} />
                 </div> :
                 }
