@@ -6,7 +6,10 @@ const NavBar = () => {
         {
         name: "Home",
         classes: [styles.navlink, styles.navlinkActive].join(' '),
-    } "About", "Skills", "Projects", "Contact"]
+        },
+        name: "Home",
+        classes: [styles.navlink, styles.navlinkActive].join(' ')
+    ]
 
     return (
         <div className={styles.parent}>
