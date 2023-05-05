@@ -31,5 +31,5 @@
 
 .navLink:hover{
     font-weight: 600;
-    tra
+    transform: scale(1.1);
 }
