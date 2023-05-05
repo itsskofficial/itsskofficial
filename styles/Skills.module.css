@@ -38,14 +38,15 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
     font-size: 18px;
-    background-color: white;
-    color: #171717;
+    
     font-weight: 800;
 }
 
 .skillsActiveButton{
   background-color: #171717;
   border: 1px solid white;
+  background-color: white;
+    color: #171717;
 }
 
 .skillsIcons{
