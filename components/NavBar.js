@@ -33,6 +33,7 @@ const NavBar = () => {
                             navlinks.forEach((link) => {
                                link['classes'] = [styles.navLink]
                             })
+                            
                             link['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
                             console.log(navlinks[0]['classes'])
                         }}>
