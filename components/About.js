@@ -20,7 +20,7 @@ const About = () => {
                 <button className={styles.aboutResume} onClick={()=> {
                     download('/../public/assets/resources/resume.pdf', 'Resume.pdf')
                 }}>
-                    <i class="fa-solid fa-screwdriver-wrench"></i>Resume
+                    <i class="fa-solid fa-screwdriver-wrench" />Resume
                 </button>
             </div>
         </section>
