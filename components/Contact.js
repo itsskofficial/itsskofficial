@@ -11,6 +11,9 @@ const Contact = () => {
                 <Link href='mailto:sarthakkarandikar03@gmail.com'>
                     <i class='fa-solid fa-envelope fa-4x'/>
                 </Link>
+                <Link href='mailto:sarthakkarandikar03@gmail.com'>
+                    <i class='fa-solid fa-envelope fa-4x'/>
+                </Link>
             </div>
             <div className={styles.contactText}>
                 <h2 className={styles.contactTitle}>
