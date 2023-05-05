@@ -32,7 +32,7 @@ const Skills = () => {
                 </div>
             </div>
             {optionChanged ?
-                <div className={styles.skillsIcons}>
+                <div className={[styles.skillsIcons, ]}>
                     <SkillsSkin option={skillsOption} />
                 </div> :
                 }
