@@ -43,6 +43,7 @@
     border: 1px solid white;
     cursor: pointer;
     font-weight: 800;
+    transition: all 0.3s ease-in-out;
 }
 
 .skillsCode:hover, .skillsTools:hover{
