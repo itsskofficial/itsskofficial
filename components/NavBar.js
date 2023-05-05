@@ -10,11 +10,11 @@ const NavBar = () => {
         {
             name: "About",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
-        }
+        },
         {
             name: "Skills",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
-        }
+        },
         {
             name: "Contact",
             classes: [styles.navlink, styles.navlinkActive].join(' ')
