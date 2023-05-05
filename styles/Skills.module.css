@@ -62,8 +62,10 @@
   width: 30%;
   justify-content: center;
   align-items: center;
+}
+
+.skillsIconsAnimate{
   animation: fadeIn 3s ease-in;
-  animation-fill-mode: backwards;
 }
 
 @keyframes fadeIn {
