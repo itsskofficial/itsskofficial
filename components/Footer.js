@@ -13,6 +13,9 @@ const Footer = () => {
                 <h3 className={styles.footerYear}>
                     2023
                 </h3>
+                <h3 className={styles.footerYear}>
+                    2023
+                </h3>
             </div>
         </section>
     )
