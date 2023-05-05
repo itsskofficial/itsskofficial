@@ -47,6 +47,7 @@
 .skillsActiveButton{
   background-color: white;
   color: #171717;
+  border: none;
 }
 
 .skillsIcons{
