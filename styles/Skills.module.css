@@ -65,7 +65,7 @@
 }
 
 .skillsIconsAnimate{
-  animation: fadeIn 3s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 
 @keyframes fadeIn {
