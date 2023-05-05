@@ -30,7 +30,11 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            {optionChanged?}
+            {optionChanged ?
+                <div className={styles.skillsIcons}>
+                    <SkillsSkin option={skillsOption} />
+                </div> :
+                }
         </section>
     )
 }
