@@ -32,7 +32,11 @@ const SkillsSkin = (props) => {
                             <path d="M16,39.609l7,4v-39.609l-7,4z"/>
                             <path d="M23,12.433l-17,9.817v-8.5l17,-9.817z" />
                             <path d="M32,39.609l-7,4v-39.609l7,4z" />
-                            <path d="M25,12.433l17,9.817v-8.5l-17,-9.817z"/><path d="M29,19.732v7.633l7,4.042v-7.632z"></path></g></g></svg>
+                            <path d="M25,12.433l17,9.817v-8.5l-17,-9.817z" />
+                            <path d="M29,19.732v7.633l7,4.042v-7.632z" />
+                        </g>
+                    </g>
+                </svg>
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
                 <img src='/../public/assets/images/ejs.svg' width='50' height='50' alt='EJs Icon'/>
