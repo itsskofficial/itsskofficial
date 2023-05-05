@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 const Skills = () => {
     const [skillsOption, setSkillsOption] = useState('code')
     // const [optionChanged, setOptionChanged] = useState(false)
-    var animate
+    var animateDiv = false;
 
     return (
         <section id='skills' className={styles.parent}>
