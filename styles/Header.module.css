@@ -38,10 +38,15 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
     font-size: 18px;
+    background-color: white;
+    color: #171717;
     font-weight: 800;
 }
 
-.headContact::ho
+.headContact:hover{
+    background-color: white;
+    color: #171717;
+}
 
 .headImage{
     display: flex;
