@@ -18,7 +18,7 @@ const Skills = () => {
                         
                             
                     }}>
-                        Code
+                        <spanCode
                     </button>
                     <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
