@@ -19,6 +19,7 @@ export default function Home() {
         <Header />
         <About />
         <Skills />
+        <Contact/>
       </main>
     </>
   )
