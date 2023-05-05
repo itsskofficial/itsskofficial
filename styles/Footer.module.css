@@ -6,7 +6,8 @@
 } 
 
 .footerText{
-    display:flex
+    display:flex;
+    align
 }
 .footerLogo{
     font-family: 'Allura', cursive;
