@@ -17,7 +17,7 @@ const Header = () => {
                         sequence={[
                             'an AI',
                             1000,
-                            'IOT',
+                            'an IOT',
                             1000,
                             'Metaverse',
                             1000
