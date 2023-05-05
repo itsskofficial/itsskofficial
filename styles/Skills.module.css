@@ -45,10 +45,9 @@
 }
 
 .skillsCode:hover, .skillsTools:hover{
-    background-color: white;
+  background-color: white;
   color: #171717;
- transform: scale(1.1);
-}
+  transform: scale(1.1);
 }
 
 .skillsActiveButton{
