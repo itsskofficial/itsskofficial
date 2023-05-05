@@ -8,7 +8,6 @@ const NavBar = () => {
     const navlinks = ["Home", "About", "Skills", "Projects", "Contact"]
 
     return (
-        <Fragment>
             <div className={styles.parent}>
                 <h2 className={styles.navbarLogo}>
                     SK
@@ -26,7 +25,6 @@ const NavBar = () => {
                     Mode
                 </h2>
             </div>
-        </Fragment>
     )
 }
 
