@@ -2,7 +2,7 @@ import styles from "@styles/NavBar.module.css"
 
 const NavBar = () => {
 
-    const navlinks = [{ name: "Home", classes:[styles.navlink, ] "About", "Skills", "Projects", "Contact"]
+    const navlinks = [{ name: "Home", classes:[styles.navlink, styles.navlinkActive].join(' ') "About", "Skills", "Projects", "Contact"]
 
     return (
         <div className={styles.parent}>
