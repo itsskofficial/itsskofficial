@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    position: ;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .navbarLogo{
