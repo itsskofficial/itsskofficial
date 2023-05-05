@@ -10,6 +10,7 @@ const SkillsSkin = (props) => {
                 <i class='fa-brands fa-python fa-3x' />
                 <i class='fa-brands fa-js fa-3x' />
                 <i class='fa-brands fa-c fa-3x' />
+                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
                 <Image src='/../../public/assets/images/cpp.png' width='100' height='100' alt='CPP Icon'/>
                 <i class='fa-brands fa-html5 fa-3x' />
             </div>
