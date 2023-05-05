@@ -5,19 +5,19 @@ const NavBar = () => {
     const navlinks = [
         {
             name: "Home",
-            classes: [styles.navlink, styles.navlinkActive].join(' ')
+            classes: [styles.navLink, styles.navlinkActive].join(' ')
         },
         {
             name: "About",
-            classes: [styles.navlink, styles.navlinkActive].join(' ')
+            classes: [styles.navLink, styles.navlinkActive].join(' ')
         },
         {
             name: "Skills",
-            classes: [styles.navlink, styles.navlinkActive].join(' ')
+            classes: [styles.navLink, styles.navlinkActive].join(' ')
         },
         {
             name: "Contact",
-            classes: [styles.navlink, styles.navlinkActive].join(' ')
+            classes: [styles.navLink, styles.navlinkActive].join(' ')
         }
     ]
 
