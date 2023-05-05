@@ -20,8 +20,6 @@ const SkillsSkin = (props) => {
             <div className = {styles.skillsSkinRow } >
                 <i class='fa-brands fa-react fa-3x' />
                 <i class='fa-brands fa-node fa-3x' />
-                <img src='/../public/assets/images/ejs.svg' width='50' height='50' alt='EJs Icon'/>
-                <Image src='/../public/assets/images/mongodb.svg' width='50' height='50' alt='EJs Icon'/>
             </div>
         </Fragment>
             
