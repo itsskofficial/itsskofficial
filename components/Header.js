@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <div className={styles.parent}>
+        <section id='' className={styles.parent}>
             <div className={styles.headText}>
                 <h1 className={styles.headTitle}>
                     Hey, I'm Sarthak
