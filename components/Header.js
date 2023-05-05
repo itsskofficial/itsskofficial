@@ -12,12 +12,12 @@ const Header = () => {
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={styles.headSubtitle}>
-                    I am
+                    I am a
                     <TypeAnimation 
                         sequence={[
-                            'an AI',
+                            'AI',
                             1000,
-                            'an IOT',
+                            'IOT',
                             1000,
                             'Metaverse',
                             1000
