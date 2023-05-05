@@ -8,7 +8,7 @@ const Contact = () => {
                     <i class='fa-brands fa-linkedin fa-4x'/>
                 </Link>
                 <Link href='https://linkedin.com/'>
-                    <i class='fa-brands fa-linkedin fa-4x'/>
+                    <i class='fa-brands fa-envelope fa-4x'/>
                 </Link>
             </div>
         </section>
