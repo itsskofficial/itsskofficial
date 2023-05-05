@@ -3,5 +3,6 @@ const Footer = () => {
         <span>
             &#8364
         </span>
+        <s
     )
 }
