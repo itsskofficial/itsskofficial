@@ -10,7 +10,7 @@ const Skills = () => {
         if (optionChanged) {
             setTimeout(() => {
                 setOptionChanged(false)
-            },3000)
+            },2000)
         }
     }, [skillsOption])
     
