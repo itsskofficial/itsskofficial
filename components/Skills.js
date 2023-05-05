@@ -31,14 +31,9 @@ const Skills = () => {
                     </button>
                 </div>
             </div>
-            {optionChanged ?
                 <div className={[styles.skillsIcons, styles.skillsIconsAnimate].join()}>
                     <SkillsSkin option={skillsOption} />
-                </div> :
-                <div className={[styles.skillsIcons]}>
-                    <SkillsSkin option={skillsOption} />
-                </div>
-                }
+                </div> 
         </section>
     )
 }
