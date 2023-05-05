@@ -3,7 +3,7 @@ import styles from '@styles/Contact.module.css'
 
 const Contact = () => {
     return (
-        <section className={styles.parent}>
+        <section id=className={styles.parent}>
             <div className={styles.contactIcons}>
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-4x'/>
