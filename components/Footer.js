@@ -9,7 +9,7 @@ const Footer = () => {
                     &#8364
                 </span>
                 <h3 className={styles.footerLogo}>
-                    SK
+                    2023
                 </h3>
             </div>
         </section>
