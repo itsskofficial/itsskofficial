@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <span>
+        <span className={}>
             &#8364
         </span>
         <
