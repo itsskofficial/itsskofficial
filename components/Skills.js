@@ -7,7 +7,7 @@ const Skills = () => {
     const [optionChanged, setOptionChanged] = useState(false)
 
     useEffect(() => {
-        animate
+        optionChanged
     }, [skillsOption])
     
     return (
