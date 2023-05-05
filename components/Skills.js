@@ -8,7 +8,8 @@ const Skills = () => {
 
     useEffect(() => {
         
-    },[skillsOption])
+    }, [skillsOption])
+    
     return (
         <section id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
