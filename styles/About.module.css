@@ -35,8 +35,9 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
     font-size: 18px;
-    background-color: white;
-    color: #171717;
+    background-color: #171717;
+    color: white;
+    border: 2px solid white;
     font-weight: 800;
 }
 
