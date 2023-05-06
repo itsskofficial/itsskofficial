@@ -9,12 +9,13 @@ import { useRef, useState } from 'react'
 
 export default function Home() {
 
-  const [activeSection,setActiveSection] = useState(['Home','About','Contact'])
+  const [activeSection,setActiveSection] = useState(['Home'])
   const headerRef = useRef()
   const aboutRef = useRef()
   const skillsRef = useRef()
   const contactRef = useRef()
 
+  
   
   
   return (
