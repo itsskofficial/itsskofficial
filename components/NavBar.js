@@ -135,7 +135,7 @@ const NavBar = (props) => {
 
 
     return (
-        typeof window !== 'undefined' ? window.screen.width>1200:bigScreen:smallScreen
+        typeof window !== 'undefined' ? window.screen.width>1200?bigScreen:smallScreen
     )
 }
 
