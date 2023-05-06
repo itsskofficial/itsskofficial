@@ -92,9 +92,7 @@ const NavBar = (props) => {
 
 
     return (
-        {
-             > 1200 ? bigScreen : smallScreen
-        }
+        
     )
 }
 
