@@ -18,15 +18,6 @@ export default function Home() {
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
   useEffect(() => {
-    // if (typeof window !== 'undefined') {
-    //   window.addEventListener('scroll', () => {
-    //     const activeRef = refs.filter((ref) => {
-    //       window.pageYOffset >= ref.current.offsetTop
-    //     })
-    //     setActiveSection(activeRef.current.id)
-    //     console.log(activeSection)
-    //   })
-    // }
 
     const observer = new IntersectionObserver((entries) => {
       const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
