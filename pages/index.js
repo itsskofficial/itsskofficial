@@ -13,7 +13,7 @@ export default function Home() {
   const headerRef = createRef()
   const aboutRef = createRef()
   const skillsRef = createRef()
-  const contactRef = useRef()
+  const contactRef = createRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
   useEffect(() => {
