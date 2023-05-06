@@ -23,7 +23,7 @@ export default function Home() {
       const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
       if (intersectedEntry) {
         console.log(intersectedEntry.target.id,activeSection)
-        if (intersectedEntry.target.id != activeSection) {
+        if (intersectedEntry.target.id !== activeSection) {
           setActiveSection(intersectedEntry.target.id)
         }
       }
