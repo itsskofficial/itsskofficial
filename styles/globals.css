@@ -107,7 +107,8 @@ a {
 .bm-burger-button {
   position: relative;
   width: 36px;
-  left
+  height:36px;
+}
 
 #react-burger-menu-button{
   width:30%;
