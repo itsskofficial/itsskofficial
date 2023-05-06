@@ -23,7 +23,7 @@ export default function Home() {
       })
       setActiveSection(activeRef.current.id)
     })
-  }, [window])
+  }, [window.scro])
 
   return (
     <>
