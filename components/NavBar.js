@@ -63,7 +63,7 @@ const NavBar = (props) => {
     //     }
     // ])
     
-    useCallback(() => {
+    useEffect(() => {
         setNavlinks(initialNavlinks)
     },[initialNavlinks])
 
