@@ -39,10 +39,8 @@ const NavBar = (props) => {
     } :
         link
     )
-    console.log(initialNavlinks)
 
     const [navlinks, setNavlinks] = useState(initialNavlinks)
-    console.log(navlinks)
 
     return (
         <div className={styles.parent}>
