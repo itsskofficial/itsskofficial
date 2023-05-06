@@ -26,7 +26,9 @@ const NavBar = () => {
         }
     ])
 
-    useEffect(())
+    useEffect(() => {
+        
+    })
 
     return (
         <div className={styles.parent}>
