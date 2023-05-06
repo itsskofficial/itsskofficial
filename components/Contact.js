@@ -29,7 +29,6 @@ const Contact = forwardRef((props,ref) => {
 
     const smallScreen =
         <section ref={ref} id='contact' className={styles.parent}>
-            
             <div className={styles.contactText}>
                 <h2 className={styles.contactTitle}>
                     Contact
