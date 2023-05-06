@@ -34,7 +34,7 @@ const NavBar = () => {
                             setNavlinks(navlinks.map((link) => {
                                link['classes'] = [styles.navLink].join(' ')
                             }))
-                            newarray=navlinks.map((link) => {
+                            const newarray=navlinks.map((link) => {
                                link['classes'] = [styles.navLink].join(' ')
                             })
                             console.log(newarray)
