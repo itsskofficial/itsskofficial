@@ -50,7 +50,7 @@ const NavBar = (props) => {
     <h2 className={styles.navbarLogo}>
         SK
     </h2>
-    <ul className={styles.navList}>
+    
         {navlinks.map(link => {
             return(
                 <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
@@ -83,7 +83,6 @@ const NavBar = (props) => {
                 </a>
             )
         })}
-    </ul>
     <h2 className={styles.logo}>
         Mode
     </h2>
