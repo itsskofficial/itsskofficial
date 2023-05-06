@@ -1,6 +1,7 @@
 import styles from "@styles/NavBar.module.css"
 import { slide as Menu } from "react-burger-menu"
 import { useEffect, useState } from "react"
+impot useMedia
 
 const NavBar = (props) => {
     const tempActiveSection = props.activeSection
