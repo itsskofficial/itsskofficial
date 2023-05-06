@@ -22,6 +22,7 @@ export default function Home() {
     const observer = new IntersectionObserver((entries) => {
       const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
       if (intersectedEntry) {
+        console.log(intersectionEntry.target)
         if (intersectedEntry.target.id != activeSection) {
           setActiveSection(intersectedEntry.target.id)
         }
