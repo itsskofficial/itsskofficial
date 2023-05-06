@@ -1,5 +1,5 @@
 import styles from "@styles/NavBar.module.css"
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 const NavBar = (props) => {
     const tempActiveSection = props.activeSection
@@ -61,9 +61,9 @@ const NavBar = (props) => {
         }
     ])
     
-    useEffect(() => {
+    useCallback(() => {
         setNavlinks(initialNavlinks)
-    },[])
+    },[initialNavlinks])
 
     return (
         <div className={styles.parent}>
