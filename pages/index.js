@@ -17,10 +17,9 @@ export default function Home() {
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
   window.onscroll(() => {
-    const activeRefrefs.filter((ref) => {
+    const activeRef= refs.filter((ref) => {
       window.pageXOffset>=ref.current.offsetTop
     })
-    if (window.pageYOffset>=)
   })
   
   
