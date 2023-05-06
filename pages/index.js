@@ -25,8 +25,8 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
-        <Header ref={ } />
-        <About />
+        <Header ref={ headerRef } />
+        <About ref={ headerRef } />
         <Skills />
         <Contact />
         <Footer />
