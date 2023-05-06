@@ -1,8 +1,7 @@
 @media only screen and (min-width: 1201px) {
 .parent{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 30px;
     height: 85vh;
@@ -65,6 +64,7 @@
 @media only screen and (max-width: 600px) {
     .parent{
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-evenly;
         align-items: center;
         padding: 30px;
