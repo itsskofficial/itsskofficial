@@ -77,8 +77,6 @@
         align-items: center;
         width: 30%;
         height: 100%;
-        flex-wrap: wrap;
-        align-content: flex-start;
     }
     
     .headTitle{
