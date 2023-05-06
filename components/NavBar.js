@@ -8,7 +8,7 @@ const NavBar = (props) => {
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
 
-    c
+    var tempNavlinks
     const [navlinks, setNavlinks] = useState()
 
 
