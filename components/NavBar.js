@@ -97,7 +97,7 @@ const NavBar = (props) => {
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
-            <Menu className= {right width={150}>
+            <Menu className= {styles.navbarright width={150}>
                 {navlinks.map(link => {
                     return (
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
