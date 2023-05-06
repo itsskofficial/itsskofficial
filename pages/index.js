@@ -36,7 +36,7 @@ export default function Home() {
       </Head>
       <main>
         <NavBar activeSection={activeSection} />
-        <Header getOffset={  } />
+        <Header getOffset={ getHeaderOffset } />
         <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
