@@ -65,9 +65,6 @@ const NavBar = (props) => {
     
     useEffect(() => {
         setNavlinks(initialNavlinks)
-        setTimeout(() => {
-            
-        },3000)
     },[initialNavlinks])
 
     
