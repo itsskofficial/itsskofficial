@@ -28,9 +28,8 @@ export default function Home() {
     // }
 
     const observer = new IntersectionObserver((entries) => {
-      console.log(entries)
-      // const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
-      // console.log(intersectedEntry)
+      const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
+      console.log(intersectedEntry)
     })
     refs.forEach((ref) => {
       observer.observe(ref)
