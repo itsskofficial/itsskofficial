@@ -39,7 +39,8 @@ const NavBar = (props) => {
         link
     )
 
-    coons [navlinks,setNavlinks] = useState(initialNavlinks) : setState(initialNavlinks)     
+    const [navlinks, setNavlinks] = useState(initialNavlinks)
+    
     useEffect(() => {
         setNavlinks(initialNavlinks)
     },[activeSection])
