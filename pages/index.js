@@ -5,10 +5,11 @@ import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
+import { useRef } from 'react'
 
 export default function Home() {
 
-  const aboutRef = 
+  const aboutRef = useRef()
   return (
     <>
       <Head>
