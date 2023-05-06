@@ -64,6 +64,7 @@
         align-items: center;
         width: 80%;
         justify-content: space-between;
+        margin-bottom: 50px;
     }
     
     .contactIcons i:hover{
