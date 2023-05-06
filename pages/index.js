@@ -15,7 +15,9 @@ export default function Home() {
   const skillsRef = useRef()
   const contactRef = useRef()
 
-  window.onscroll()
+  window.onscroll(() => {
+    if
+  })
   
   
   return (
