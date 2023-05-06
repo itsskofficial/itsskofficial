@@ -2,7 +2,7 @@ import styles from "@styles/NavBar.module.css"
 import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
-    const activeSec
+    const activeSection=props.activeSection
     const [navlinks, setNavlinks] = useState([
         {
             id:0,
