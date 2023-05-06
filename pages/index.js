@@ -13,6 +13,7 @@ export default function Home() {
   const aboutRef = useRef()
   const skillsRef = useRef()
   const contactRef = useRef()
+
   
   
   return (
