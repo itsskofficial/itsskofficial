@@ -42,5 +42,42 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .parent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        position: sticky;
+        top:0;
+        background-color: #171717;
+    }
 
+    .navbarLogo{
+        font-family: 'Allura', cursive;
+        font-weight: 600;
+    }
+
+    .navList{
+        display:flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .navLink{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .navLink:hover{
+        font-weight: 600;
+        transform: scale(1.1);
+    }
+
+    .navLinkActive{
+        font-weight: 600;
+    }
 }
