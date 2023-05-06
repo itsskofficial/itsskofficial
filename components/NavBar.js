@@ -47,7 +47,7 @@ const NavBar = (props) => {
             setIsInitialRender(false)
             setNavlinks(initialNavlinks)
         }
-    },[initialNavlinks])
+    },[activeSection])
 
     return (
         <div className={styles.parent}>
