@@ -20,7 +20,7 @@ export default function Home() {
     const activeRef= refs.filter((ref) => {
       window.pageXOffset>=ref.current.offsetTop
     })
-    setActiveSection()
+    setActiveSection(active)
   })
   
   
