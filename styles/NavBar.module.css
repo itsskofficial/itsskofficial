@@ -1,5 +1,4 @@
 @media only screen and (min-width: 1201px) {
-
 .parent{
     display: flex;
     justify-content: space-between;
@@ -38,4 +37,6 @@
 
 .navLinkActive{
     font-weight: 600;
+}
+
 }
