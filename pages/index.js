@@ -50,7 +50,7 @@ export default function Home() {
         
       </Head>
       <main>
-        <Script src='<script src="https://kit.fontawesome.com/638bbcf842.js" crossorigin="anonymous"></script>'
+        <Script src='https://kit.fontawesome.com/638bbcf842.js" crossorigin="anonymous"></script>'
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
         <About ref={ aboutRef } />
