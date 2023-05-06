@@ -107,7 +107,7 @@ a {
 .bm-burger-button {
   position: relative;
   width: 36px;
-  align-self: ;
+  align-self: flex-end;
 }
 
 #react-burger-menu-button{
