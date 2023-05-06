@@ -49,7 +49,7 @@ const NavBar = () => {
                                 classes: [styles.navLink]
                             }
                         ])
-                            setNavlinks([...navlinks, link = { name: link['name'], classes: [styles.navLink, styles.navLinkActive].join(' ') }])
+                            setNavlinks(navLinks=>[...navlinks, link = { name: link['name'], classes: [styles.navLink, styles.navLinkActive].join(' ') }])
                             console.log(navlinks)
                         }}>
                             {link['name']}
