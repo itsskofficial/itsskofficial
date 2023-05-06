@@ -31,7 +31,7 @@ const NavBar = (props) => {
         }
     ]
 
-    const 
+    const initialNavlinks = tempNavlinks.map()
     const [navlinks, setNavlinks] = useState()
 
 
