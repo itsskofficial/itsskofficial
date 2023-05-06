@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <main>
         <NavBar />
-        <Header />
+        <Header ref={ } />
         <About />
         <Skills />
         <Contact />
