@@ -6,7 +6,7 @@ import useDownloader from 'react-use-downloader'
 
 const About = () => {
     const aboutRef = useRef()
-    console.log(a)
+    console.log(aboutRef.current.offsetTop)
     const {download} = useDownloader()
     return (
         <section ref={aboutRef} id='about' className={styles.parent}>
