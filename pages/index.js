@@ -38,7 +38,6 @@ export default function Home() {
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        
       </Head>
       <main>
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
