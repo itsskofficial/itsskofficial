@@ -1,5 +1,5 @@
 import styles from "@styles/NavBar.module.css"
-import { slide asMenu } from "react-burger-menu"
+import { slide as Menu } from "react-burger-menu"
 import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
