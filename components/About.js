@@ -8,7 +8,7 @@ const About = forwardRef((props,ref) => {
     return (
         <section ref={ref} id='about' className={styles.parent}>
             <div className={styles.aboutImage}>
-                <Image src='/../public/assets/images/aboutImage.jpeg' width='300' height='300' alt='About Image' />
+                <Image src='/../public/assets/images/aboutImage.jpeg' width='300' height='400' alt='About Image' />
             </div>
             <div className={styles.aboutText}>
                 <h1 className={styles.aboutTitle}>
