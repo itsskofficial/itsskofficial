@@ -46,9 +46,10 @@ export default function Home() {
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/638bbcf842.js" crossorigin="anonymous"></script>
+        
       </Head>
       <main>
+        <Scr
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
         <About ref={ aboutRef } />
