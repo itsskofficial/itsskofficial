@@ -28,7 +28,8 @@ export default function Home() {
     // }
 
     const observer = new IntersectionObserver((entries) => {
-    
+      const entry = entries[0]
+      
     })
   },[])
   
