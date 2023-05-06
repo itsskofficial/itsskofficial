@@ -49,7 +49,8 @@ const NavBar = (props) => {
         <div className={styles.parent}>
     <h2 className={styles.navbarLogo}>
         SK
-    </h2>
+            </h2>
+            <Menu
     
         {navlinks.map(link => {
             return(
