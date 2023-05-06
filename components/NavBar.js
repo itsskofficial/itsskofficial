@@ -42,11 +42,12 @@ const NavBar = () => {
                                 classes: [styles.navLink]
                             },
                                 {
-                                    id:0,
+                                    id:1,
                                 name: "About",
                                 classes: [styles.navLink]
                             },
-                            {
+                                {
+                                    id:2,
                                 name: "Skills",
                                 classes: [styles.navLink]
                             },
