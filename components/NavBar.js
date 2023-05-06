@@ -63,9 +63,9 @@ const NavBar = (props) => {
     //     }
     // ])
     
-    // useCallback(() => {
-    //     setNavlinks(initialNavlinks)
-    // },[initialNavlinks])
+    useCallback(() => {
+        setNavlinks(initialNavlinks)
+    },[initialNavlinks])
 
     return (
         <div className={styles.parent}>
