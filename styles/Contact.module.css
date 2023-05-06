@@ -91,7 +91,7 @@
         font-weight: 400;
         text-align: justify;
         text-justify: distribute-all-lines;
-        font
+        font-size: 20px;
     }
     
     @keyframes gentle-tilt {
