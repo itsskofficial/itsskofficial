@@ -1,9 +1,10 @@
 import Link from "next/link"
 import styles from '@styles/Contact.module.css'
+import { forwardRef } from "react"
 
-const Contact = () => {
+const Contact = forwardRef((props,ref) => {
     return (
-        <section id='contact' className={styles.parent}>
+        <section ref={id='contact' className={styles.parent}>
             <div className={styles.contactIcons}>
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-3x'/>
