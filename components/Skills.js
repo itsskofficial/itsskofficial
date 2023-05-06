@@ -1,10 +1,12 @@
 import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillsSkin'
 import { useState, useEffect, forwardRef } from 'react'
+import { useMediaQuery } from 'usehooks-ts'
 
 const Skills = forwardRef((props,ref) => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
+    const mediaMatch = useMediaQuery(())
 
     useEffect(() => {
         if (optionChanged) {
