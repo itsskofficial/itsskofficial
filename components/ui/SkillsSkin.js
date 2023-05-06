@@ -28,7 +28,7 @@ const SkillsSkin = (props) => {
 
     const toolsIcons = (
             <div className = {styles.skillsSkinRow }>
-                <i class=`fa-brands fa-figma fa-${mediaMatch?'3x':'2x'}` />
+            <i class={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
             </div>
         )
 
