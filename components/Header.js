@@ -1,11 +1,12 @@
 import styles from '@styles/Header.module.css'
 import Image from 'next/image'
+import { forwardRef } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
-const Header = () => {
+const Header = forwardRef(props,ref) => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
-        <section id='home' className={styles.parent}>
+        <section ref={ref} id='home' className={styles.parent}>
             <div className={styles.headText}>
                 <h1 className={styles.headTitle}>
                     Hey, I'm Sarthak
