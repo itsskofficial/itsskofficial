@@ -32,7 +32,7 @@ export default function Home() {
       console.log(intersectedEntry)
     })
     refs.forEach((ref) => {
-      observer.observe(ref)
+      observer.observe(ref.current)
     })
   },[])
   
