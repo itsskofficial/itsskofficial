@@ -62,10 +62,10 @@ const NavBar = (props) => {
     //         classes: [styles.navLink]
     //     }
     // ])
-    
-    useEffect(() => {
-        setNavlinks(initialNavlinks)
-    },[])
+    setNavlinks(initialNavlinks)
+    // useEffect(() => {
+        
+    // },[])
 
     return (
         <div className={styles.parent}>
