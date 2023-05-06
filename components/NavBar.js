@@ -1,7 +1,7 @@
 import styles from "@styles/NavBar.module.css"
 import { useEffect, useState } from "react"
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     const [navlinks, setNavlinks] = useState([
         {
