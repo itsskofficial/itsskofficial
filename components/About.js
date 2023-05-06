@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { forwardRef, useRef } from 'react'
 import useDownloader from 'react-use-downloader'
 
-const About = forwardRef(props,ref) => {
+const About = forwardRef((props,ref) => {
     const aboutRef = useRef()
     const { download } = useDownloader()
     const printOffset = () => {
