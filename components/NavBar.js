@@ -45,7 +45,6 @@ const NavBar = (props) => {
     },[activeSection])
 
     return (
-        @matchMedia()
         <div className={styles.parent}>
             <h2 className={styles.navbarLogo}>
                 SK
