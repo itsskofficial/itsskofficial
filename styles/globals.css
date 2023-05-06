@@ -104,7 +104,7 @@ a {
 }
 
 /* Position and sizing of burger button */
-.bm-burger-button {
+.bm-burger-button button {
   width: 10%;
 }
 
