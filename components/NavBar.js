@@ -92,7 +92,7 @@ const NavBar = (props) => {
 
     return (
         {
-            (window.screen.width > 1200 ? bigScreen : smallScreen
+            (window.screen.width > 1200) ? bigScreen : smallScreen
         }
     )
 }
