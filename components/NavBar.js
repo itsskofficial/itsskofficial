@@ -10,6 +10,7 @@ const NavBar = (props) => {
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
     const mediaMatch = useMediaQuery('(min-width:1201px)')
+    const [isMenuOpen, setI]
 
     const tempNavlinks = [
         {
