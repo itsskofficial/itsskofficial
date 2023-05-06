@@ -10,10 +10,12 @@ const NavBar = () => {
             classes: [styles.navLink, styles.navLinkActive].join(' ')
         },
         {
+            id:1,
             name: "About",
             classes: [styles.navLink]
         },
         {
+            id:2,
             name: "Skills",
             classes: [styles.navLink]
         },
