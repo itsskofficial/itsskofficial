@@ -28,7 +28,7 @@ export default function Home() {
     // }
 
     const observer = new IntersectionObserver((entries) => {
-      const  = entries.find(entry)
+      const intersectedEntry = entries.find(entry => )
       console.log(entry)
     })
     observer.observe(headerRef.current, aboutRef.current, skillsRef.current, contactRef.current)
