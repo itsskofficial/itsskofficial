@@ -2,6 +2,7 @@ import styles from '@styles/SkillsSkin.module.css'
 import { Fragment } from 'react'
 
 const SkillsSkin = (props) => {
+    
 
     const codeIcons = (
         <Fragment>
