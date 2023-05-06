@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const activeRef = refs.filter((ref) => {
-        window.pageXOffset >= ref.current.offsetTop
+        window.pageYOffset >= ref.current.offsetTop
       })
       setActiveSection(activeRef.current.id)
     })
