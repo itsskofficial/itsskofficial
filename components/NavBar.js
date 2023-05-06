@@ -91,7 +91,7 @@ const NavBar = (props) => {
 
 
     return (
-        {window.screen.width}
+        {window.screen.width>1200:}
     )
 }
 
