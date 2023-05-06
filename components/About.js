@@ -5,7 +5,8 @@ import { useRef } from 'react'
 import useDownloader from 'react-use-downloader'
 
 const About = () => {
-    const aboutRef=useRef()
+    const aboutRef = useRef()
+    console.log(a)
     const {download} = useDownloader()
     return (
         <section ref={aboutRef} id='about' className={styles.parent}>
