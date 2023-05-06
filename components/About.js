@@ -28,7 +28,7 @@ const About = forwardRef((props,ref) => {
                 </button>
             </div>
         </section>
-    )
+    ))
 }
 
 export default About
