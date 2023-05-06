@@ -50,6 +50,9 @@ const Skills = forwardRef((props,ref) => {
                 <h1 className={styles.skillsTitle}>
                     Skills
                 </h1>
+                <div className={[styles.skillsIcons, optionChanged ? styles.skillsIconsAnimate:null].join(' ')}>
+                    <SkillsSkin option={skillsOption} />
+                </div> 
                 <div className={styles.skillsToggle}>
                     <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
