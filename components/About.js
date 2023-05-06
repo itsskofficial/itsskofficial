@@ -1,10 +1,11 @@
 import styles from '@styles/About.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRef } from 'react'
 import useDownloader from 'react-use-downloader'
 
 const About = () => {
-    const aboutRef
+    const aboutRef=useRef()
     const {download} = useDownloader()
     return (
         <section ref={props.ref} id='about' className={styles.parent}>
