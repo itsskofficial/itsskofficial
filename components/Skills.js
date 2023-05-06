@@ -43,6 +43,36 @@ const Skills = forwardRef((props,ref) => {
                     <SkillsSkin option={skillsOption} />
                 </div> 
         </section>
+
+    const smallScreen =
+        <section ref={ref} id='skills' className={styles.parent}>
+            <div className={styles.skillsText}>
+                <h1 className={styles.skillsTitle}>
+                    Skills
+                </h1>
+                <div className={styles.skillsToggle}>
+                    <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                        if (skillsOption != 'code') {
+                            setSkillsOption('code')
+                            setOptionChanged(true)
+                        }   
+                    }}>
+                        <i class='fa-solid fa-code' style={{marginRight: '10px'}} />Code
+                    </button>
+                    <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                        if (skillsOption != 'tools') {
+                            setSkillsOption('tools')
+                            setOptionChanged(true)
+                        }
+                    }}>
+                        <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
+                    </button>
+                </div>
+            </div>
+                <div className={[styles.skillsIcons, optionChanged ? styles.skillsIconsAnimate:null].join(' ')}>
+                    <SkillsSkin option={skillsOption} />
+                </div> 
+        </section>
     
     return (
         
