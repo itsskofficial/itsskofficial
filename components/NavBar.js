@@ -34,7 +34,9 @@ const NavBar = (props) => {
         }
     ]
 
-    const closeMenu
+    const closeMenu = () => {
+        set
+    }
 
     const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
         id: link['id'],
