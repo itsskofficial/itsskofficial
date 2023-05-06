@@ -38,7 +38,9 @@ const NavBar = (props) => {
     } :
         link
     )
-
+    if (!navlinks) {
+        
+    }
     const [navlinks,setNavlinks] = useState(initialNavlinks)
     const [isInitialRender, setIsInitialRender] = useState(true)
     
