@@ -32,7 +32,7 @@ const NavBar = (props) => {
     ]
 
     const initialNavlinks = tempNavlinks.map((link) => {
-        if (link.name)
+        if (link['name']==ac)
     })
     const [navlinks, setNavlinks] = useState()
 
