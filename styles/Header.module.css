@@ -1,5 +1,4 @@
-@media only ()
-
+@media only screen and (min-width: 1201px) {
 .parent{
     display: flex;
     justify-content: space-evenly;
