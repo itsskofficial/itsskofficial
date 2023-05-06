@@ -47,3 +47,55 @@
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+}
+
+@media only screen and (min-width: 1201px) {
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 30px;
+        margin: 100px 0px 100px 0px;
+    }
+    
+    .contactIcons{
+        display:flex;
+        align-items: center;
+        width: 30%;
+        justify-content: space-between;
+    }
+    
+    .contactIcons i:hover{
+        animation: gentle-tilt 0.25s infinite;
+    }
+    
+    .contactText{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .contactTitle{
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        font-size:40px;
+    }
+    
+    .contactInfo{
+        margin: 50px 0px 50px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: justify;
+        text-justify: distribute-all-lines;
+    }
+    
+    @keyframes gentle-tilt {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0eg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+    }
