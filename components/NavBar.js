@@ -135,7 +135,7 @@ const NavBar = (props) => {
 
 
     return (
-        typeof window !== 'undefined' 
+        typeof window !== 'undefined' ? window.screen.
     )
 }
 
