@@ -38,7 +38,7 @@ const NavBar = (props) => {
     } :
         link
     )
-    if (!navlinks) 
+    (!navlinks)?
         [navlinks,setNavlinks] = useState(initialNavlinks)
     else 
         setState(initialNavlinks) 
