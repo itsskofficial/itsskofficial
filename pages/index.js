@@ -5,12 +5,12 @@ import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, createRef } from 'react'
 
 export default function Home() {
 
   const [activeSection, setActiveSection] = useState('home')
-  const headerRef = create
+  const headerRef = createRef()
   const aboutRef = useRef()
   const skillsRef = useRef()
   const contactRef = useRef()
