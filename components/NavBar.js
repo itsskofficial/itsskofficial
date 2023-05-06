@@ -62,7 +62,6 @@ const NavBar = (props) => {
     //         classes: [styles.navLink]
     //     }
     // ])
-    const changeNavlinks = useCallback
     
     useEffect(() => {
         setNavlinks((navlinks)=>initialNavlinks)
