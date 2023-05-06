@@ -72,4 +72,8 @@
     .navLinkActive{
         font-weight: 600;
     }
+
+    .navbarLogo{
+        width: 30%;
+    }
 }
