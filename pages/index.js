@@ -15,7 +15,6 @@ export default function Home() {
   const skillsRef = useRef()
   const contactRef = useRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
-  console.log(headerRef.current.offsetTop)
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
