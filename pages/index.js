@@ -11,8 +11,8 @@ export default function Home() {
 
   const [activeSection, setActiveSection] = useState('home')
   const headerRef = createRef()
-  const aboutRef = useRef()
-  const skillsRef = useRef()
+  const aboutRef = createRef()
+  const skillsRef = createRef()
   const contactRef = useRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
