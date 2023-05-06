@@ -26,9 +26,9 @@ const NavBar = () => {
         }
     ])
 
-    useEffect(() => {
-        window.onscroll
-    })
+    // useEffect(() => {
+    //     window.onscroll
+    // })
 
     return (
         <div className={styles.parent}>
