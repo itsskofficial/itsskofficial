@@ -95,8 +95,6 @@ const NavBar = (props) => {
                 SK
             </h2>
             <Menu>
-                
-            </Menu>
             {navlinks.map(link => {
                 return(
                     <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
@@ -132,6 +130,8 @@ const NavBar = (props) => {
             <h2 className={styles.logo}>
                 Mode
             </h2>
+            </Menu>
+            
         </ul>
         
     </div>
