@@ -32,8 +32,10 @@ export default function Home() {
       // const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
       // console.log(intersectedEntry)
     })
-    refs.
-    observer.observe(headerRef.current)
+    refs.forEach((ref) => {
+      
+    })
+    
     obser
   },[])
   
