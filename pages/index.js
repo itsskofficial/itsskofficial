@@ -26,7 +26,7 @@ export default function Home() {
         console.log(activeSection)
       })
     }
-  },[window])
+  },[])
   
 
   return (
