@@ -1,3 +1,5 @@
+@media only screen and (max-width: 1200px) {
+
 .parent{
     display: flex;
     align-items: center;
