@@ -5,7 +5,7 @@ import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 export default function Home() {
 
