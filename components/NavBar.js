@@ -45,13 +45,14 @@ const NavBar = () => {
                                     id:1,
                                 name: "About",
                                 classes: [styles.navLink]
-                            },
+                                },
                                 {
                                     id:2,
-                                name: "Skills",
-                                classes: [styles.navLink]
-                            },
-                            {
+                                    name: "Skills",
+                                    classes: [styles.navLink]
+                                },
+                                {
+                                    id:3,
                                 name: "Contact",
                                 classes: [styles.navLink]
                             }
