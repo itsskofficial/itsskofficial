@@ -36,9 +36,8 @@ const NavBar = (props) => {
             link['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
         }
     })
-    
-    const [navlinks, setNavlinks] = useState(initialNavlinks)
 
+    const [navlinks, setNavlinks] = useState(initialNavlinks)
 
     return (
         <div className={styles.parent}>
