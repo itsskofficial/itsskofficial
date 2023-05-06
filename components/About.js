@@ -7,7 +7,7 @@ const About = () => {
     const aboutRef = useRef()
     const { download } = useDownloader()
     const printOffset = () => {
-        console.log(aboutRef)
+        console.log(aboutRef.current.offsetTop)
     }
     return (
         <section ref={aboutRef} onMouseEnter={printOffset} id='about' className={styles.parent}>
