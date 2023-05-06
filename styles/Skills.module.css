@@ -100,7 +100,7 @@
   .skillsTitle{
       font-family: 'Montserrat', sans-serif;
       font-weight:600;
-      font-size:40px;
+      font-size:30px;
   }
   
   
@@ -116,7 +116,7 @@
       padding: 15px;
       font-family: 'Montserrat', sans-serif;
       border-radius: 7px;
-      font-size: 18px;
+      font-size: 15px;
       background-color: #171717;
       color:white;
       border: 1px solid white;
