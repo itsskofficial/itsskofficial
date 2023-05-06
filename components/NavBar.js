@@ -35,7 +35,7 @@ const NavBar = () => {
                 {navlinks.map(link => {
                     return(
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
-                            setNavlinks([
+                            var tempNavlinks([
                                 {
                                     id:0,
                                     name: "Home",
