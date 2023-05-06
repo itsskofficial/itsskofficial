@@ -35,7 +35,8 @@ const NavBar = (props) => {
     const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
         name: link['name'],
         classes : [styles.navLink, styles.navLinkActive].join(' ')
-        }
+    } :
+        link
     })
     console.log(initialNavlinks)
 
