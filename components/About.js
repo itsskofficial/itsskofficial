@@ -7,7 +7,7 @@ const About = forwardRef((props,ref) => {
     const aboutRef = useRef()
     const { download } = useDownloader()
     return (
-        <section ref={ref} onMouseEnter={printOffset} id='about' className={styles.parent}>
+        <section ref={ref} id='about' className={styles.parent}>
             <div className={styles.aboutImage}>
                 <Image src='/../public/assets/images/aboutImage.jpeg' width='400' height='500' alt='About Image' />
             </div>
