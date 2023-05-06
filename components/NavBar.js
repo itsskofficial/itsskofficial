@@ -5,6 +5,7 @@ const NavBar = () => {
 
     const [navlinks, setNavlinks] = useState([
         {
+            id:0,
             name: "Home",
             classes: [styles.navLink, styles.navLinkActive].join(' ')
         },
