@@ -39,6 +39,6 @@ const Header = forwardRef((props,ref) => {
         </section>
         
     )
-}
+})
 
 export default Header
