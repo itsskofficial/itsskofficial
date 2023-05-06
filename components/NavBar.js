@@ -34,7 +34,9 @@ const NavBar = () => {
                             setNavlinks(navlinks.forEach((link) => {
                                link['classes'] = [styles.navLink].join(' ')
                             }))
-                            console.log(navlinks)
+                            console.log(navlinks.forEach((link) => {
+                               link['classes'] = [styles.navLink].join(' ')
+                            }))
                             setNavlinks([...navlinks, link = { name: link['name'], classes: [styles.navLink, styles.navLinkActive].join(' ') }])
                             console.log(navlinks)
                         }}>
