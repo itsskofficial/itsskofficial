@@ -17,7 +17,7 @@ export default function Home() {
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
   window.onscroll(() => {
-    refs.
+    refs.filter()
     if (window.pageYOffset>=)
   })
   
