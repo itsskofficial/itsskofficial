@@ -2,7 +2,7 @@
 .parent{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 30px;
     height: 85vh;
