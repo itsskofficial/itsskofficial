@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
     const tempActiveSection = props.activeSection
+    console.log(tempActiveSection)
     const firstLetter = tempActiveSection.charAt(0)
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
