@@ -103,7 +103,6 @@
         font-weight: 800;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
-        width: %;
     }
 
     .aboutResume:hover{
