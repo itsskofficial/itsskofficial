@@ -15,7 +15,7 @@ const Skills = forwardRef((props,ref) => {
     }, [skillsOption])
     
     return (
-        <section id='skills' className={styles.parent}>
+        <section ref={ref} id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
                 <h1 className={styles.skillsTitle}>
                     Skills
@@ -44,6 +44,6 @@ const Skills = forwardRef((props,ref) => {
                 </div> 
         </section>
     )
-}
+})
 
 export default Skills
