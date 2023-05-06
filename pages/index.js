@@ -27,7 +27,7 @@ export default function Home() {
     //   })
     // }
 
-    c
+    const observer = new IntersectionObserver()
   },[])
   
 
