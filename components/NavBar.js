@@ -135,10 +135,7 @@ const NavBar = (props) => {
 
 
     return (
-        { if(typeof window !== 'undefined') {
-                   
-    }
-}
+        if 
     )
 }
 
