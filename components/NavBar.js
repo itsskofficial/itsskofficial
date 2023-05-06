@@ -27,7 +27,7 @@ const NavBar = () => {
     ])
 
     useEffect(() => {
-        
+        window.onscroll
     })
 
     return (
