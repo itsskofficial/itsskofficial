@@ -1,5 +1,5 @@
 import styles from "@styles/NavBar.module.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const NavBar = () => {
 
@@ -26,7 +26,7 @@ const NavBar = () => {
         }
     ])
 
-    
+    useEffect(())
 
     return (
         <div className={styles.parent}>
