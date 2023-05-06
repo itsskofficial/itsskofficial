@@ -105,7 +105,7 @@ a {
 
 /* Position and sizing of burger button */
 .bm-burger-button button {
-  width: 10%;
+  position: absolute;
 }
 
 #react-burger-menu-button{
