@@ -1,8 +1,8 @@
 import styles from '@styles/Skills.module.css'
 import SkillsSkin from './ui/SkillsSkin'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, forwardRef } from 'react'
 
-const Skills = () => {
+const Skills = forwardRef((props,ref) => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
 
