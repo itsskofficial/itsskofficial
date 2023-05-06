@@ -1,4 +1,5 @@
 import styles from "@styles/NavBar.module.css"
+import { waitUntilSymbol } from "next/dist/server/web/spec-extension/fetch-event"
 import { useCallback, useEffect, useState } from "react"
 
 const NavBar = (props) => {
@@ -92,7 +93,7 @@ const NavBar = (props) => {
 
 
     return (
-        
+        window.screen.width>1200:bigScreen:smallScreen
     )
 }
 
