@@ -6,7 +6,7 @@ const NavBar = (props) => {
     const firstLetter = activeSection.charAt(0)
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = activeSection.slice(1)
-    const capitalizedWord = firstLetterCap + remainingLetters
+    const activeSection = firstLetterCap + remainingLetters
 
     const [navlinks, setNavlinks] = useState([
         {
