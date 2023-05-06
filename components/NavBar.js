@@ -88,10 +88,10 @@ const NavBar = (props) => {
     </h2>
 </div>
     
-    
+
 
     return (
-        
+        {window.screen.width}
     )
 }
 
