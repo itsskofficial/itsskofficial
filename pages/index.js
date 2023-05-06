@@ -16,13 +16,13 @@ export default function Home() {
   const contactRef = createRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
-    window.addEventListener('scroll', () => {
-      const activeRef = refs.filter((ref) => {
-        window.pageYOffset >= ref.current.offsetTop
-      })
-      setActiveSection(activeRef.current.id)
-      console.log(activeSection)
+  if (window!=undefined)window.addEventListener('scroll', () => {
+    const activeRef = refs.filter((ref) => {
+      window.pageYOffset >= ref.current.offsetTop
     })
+    setActiveSection(activeRef.current.id)
+    console.log(activeSection)
+  })
   
 
   return (
