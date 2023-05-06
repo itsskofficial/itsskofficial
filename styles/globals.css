@@ -105,11 +105,7 @@ a {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  
-  width: 36px;
-  height: 30px;
-  left: 100px;
-  top: 36px;
+  width: 30%;
 }
 
 /* Color/shape of burger icon bars */
