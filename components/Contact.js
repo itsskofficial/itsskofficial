@@ -1,8 +1,10 @@
 import Link from "next/link"
 import styles from '@styles/Contact.module.css'
 import { forwardRef } from "react"
+import { useMediaQuery } from "usehooks-ts"
 
-const Contact = forwardRef((props,ref) => {
+const Contact = forwardRef((props, ref) => {
+    const mediaMatch = useMediaQuery
 
     const bigScreen =
         <section ref={ref} id='contact' className={styles.parent}>
