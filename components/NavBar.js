@@ -87,9 +87,6 @@ const NavBar = (props) => {
                     )
                 })}
             </ul>
-            <h2 className={styles.logo}>
-                Mode
-            </h2>
         </div>
 
     const smallScreen =
@@ -130,9 +127,6 @@ const NavBar = (props) => {
                         </a>
                     )
                 })}
-                <h2 className={styles.logo}>
-                    Mode
-                </h2>
             </Menu>
         </div>
 
