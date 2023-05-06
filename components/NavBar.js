@@ -31,7 +31,7 @@ const NavBar = () => {
                 {navlinks.map(link => {
                     return(
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
-                            setNavlinks(navlinks.forEach((link) => {
+                            setNavlinks(navlinks.map((link) => {
                                link['classes'] = [styles.navLink].join(' ')
                             }))
                             console.log(navlinks.map((link) => {
