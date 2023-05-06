@@ -22,7 +22,7 @@ export default function Home() {
     //     window.pageYOffset >= ref.current.offsetTop
     //   })
     //   setActiveSection(activeRef.current.id)
-    console.log(ab)
+    console.log(aboutRef.current.offsetTop)
     })
   }, [])
 
