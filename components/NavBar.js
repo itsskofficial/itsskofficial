@@ -19,7 +19,7 @@ const NavBar = () => {
             name: "Contact",
             classes: [styles.navLink]
         }
-    ]
+    ])
 
     return (
         <div className={styles.parent}>
