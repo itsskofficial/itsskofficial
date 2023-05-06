@@ -10,7 +10,7 @@ const About = forwardRef((props,ref) => {
         console.log(aboutRef.current.offsetTop)
     }
     return (
-        <section ref={aboutRef} onMouseEnter={printOffset} id='about' className={styles.parent}>
+        <section ref={ref} onMouseEnter={printOffset} id='about' className={styles.parent}>
             <div className={styles.aboutImage}>
                 <Image src='/../public/assets/images/aboutImage.jpeg' width='400' height='500' alt='About Image' />
             </div>
