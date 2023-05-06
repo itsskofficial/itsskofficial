@@ -6,7 +6,7 @@ import { useMediaQuery } from 'usehooks-ts'
 const Skills = forwardRef((props,ref) => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
-    const mediaMatch = useMediaQuery(())
+    const mediaMatch = useMediaQuery(('min-width:1201px'))
 
     useEffect(() => {
         if (optionChanged) {
@@ -77,7 +77,7 @@ const Skills = forwardRef((props,ref) => {
         </section>
     
     return (
-        
+        mediaMatch
     )
 })
 
