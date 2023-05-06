@@ -50,7 +50,7 @@ const Contact = forwardRef((props,ref) => {
             </div>
         </section>
     return (
-        
+        mediaMatch?bigScreen:smallScreen
     )
 })
 
