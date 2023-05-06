@@ -7,7 +7,6 @@ const NavBar = (props) => {
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
-    console.log(activeSection)
 
     const tempNavlinks = [
         {
