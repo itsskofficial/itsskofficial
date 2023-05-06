@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import useDownloader from 'react-use-downloader'
 
-const About = (props) => {
+const About = () => {
+    const aboutRef
     const {download} = useDownloader()
     return (
         <section ref={props.ref} id='about' className={styles.parent}>
