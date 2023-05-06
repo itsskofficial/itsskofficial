@@ -22,6 +22,8 @@ export default function Home() {
     })
     setActiveSection(activeRef.current.id)
   })
+
+  window.onscr
   
   
   return (
