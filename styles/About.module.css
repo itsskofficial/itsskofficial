@@ -70,7 +70,7 @@
     .aboutText{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 80%;
         height: 100%;
         justify-content: center;
     }
