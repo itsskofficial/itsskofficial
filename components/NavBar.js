@@ -44,7 +44,7 @@ const NavBar = (props) => {
     
     useEffect(() => {
         if (isInitialRender) {
-            setIsInitialRender(false);
+            setIsInitialRender(false)
         setNavlinks(initialNavlinks)
     },[initialNavlinks])
 
