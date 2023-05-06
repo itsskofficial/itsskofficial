@@ -64,7 +64,7 @@ const NavBar = (props) => {
     console.log(initialNavlinks)
     
 
-    setNav
+    setNavlinks(initialNavlinks)
 
     console.log(navlinks)
     
