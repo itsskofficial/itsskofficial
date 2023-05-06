@@ -135,6 +135,7 @@ const NavBar = (props) => {
 
 
     return (
+        if (typeof)
         
     )
 }
