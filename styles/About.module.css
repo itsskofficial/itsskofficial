@@ -60,8 +60,9 @@
     
     .parent{
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         padding: 30px;
         height: 85vh;
         margin: 100px 0px 100px 0px;
