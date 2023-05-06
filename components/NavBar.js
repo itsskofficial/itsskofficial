@@ -35,7 +35,7 @@ const NavBar = () => {
                 {navlinks.map(link => {
                     return(
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
-                            var tempNavlinks([
+                            var tempNavlinks = [
                                 {
                                     id:0,
                                     name: "Home",
@@ -56,7 +56,7 @@ const NavBar = () => {
                                     name: "Contact",
                                     classes: [styles.navLink]
                                 }
-                            ])
+                            ]
                             var tempNavlinks = navlinks
                             tempNavlinks[link['id']]['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
                             console.log(tempNavlinks)
