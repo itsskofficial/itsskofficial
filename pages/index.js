@@ -6,6 +6,7 @@ import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
 import { useRef, useState, useEffect, createRef } from 'react'
+import Script from 'next/script'
 
 export default function Home() {
 
@@ -49,7 +50,7 @@ export default function Home() {
         
       </Head>
       <main>
-        <Scr
+        <Script src='<script src="https://kit.fontawesome.com/638bbcf842.js" crossorigin="anonymous"></script>'
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
         <About ref={ aboutRef } />
