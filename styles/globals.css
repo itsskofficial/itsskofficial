@@ -137,7 +137,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 */
 .bm-menu-wrap {
   position: relative;
-  height: 10%;
+  height: 30%;
 }
 
 /* General sidebar styles */
