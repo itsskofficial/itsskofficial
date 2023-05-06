@@ -10,7 +10,7 @@ const NavBar = (props) => {
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
     const mediaMatch = useMediaQuery('(min-width:1200px)')
-    
+
     const tempNavlinks = [
         {
             id: 0,
@@ -138,7 +138,7 @@ const NavBar = (props) => {
 
 
     return (
-        typeof window !== 'undefined' ? window.screen.width>1200?bigScreen:smallScreen:null
+        mediaMatch?bigScreen:smallScreen
     )
 }
 
