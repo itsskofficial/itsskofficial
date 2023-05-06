@@ -87,7 +87,7 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         text-align: justify;
-        text-justify: d;
+        text-justify:auto;
         font-size: 20px;
     }
 
