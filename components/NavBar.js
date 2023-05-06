@@ -9,7 +9,7 @@ const NavBar = (props) => {
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
-    const mediaMatch
+    const mediaMatch = useMediaQuery('min-width:1200')
     const tempNavlinks = [
         {
             id: 0,
