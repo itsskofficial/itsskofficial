@@ -26,6 +26,8 @@ const NavBar = () => {
         }
     ])
 
+    
+
     return (
         <div className={styles.parent}>
             <h2 className={styles.navbarLogo}>
