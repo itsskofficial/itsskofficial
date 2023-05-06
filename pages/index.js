@@ -18,7 +18,7 @@ export default function Home() {
 
   window.onscroll(() => {
     refs.filter((ref) => {
-      window.pageXOffset
+      window.pageXOffset>=
     })
     if (window.pageYOffset>=)
   })
