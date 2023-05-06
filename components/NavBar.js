@@ -7,7 +7,6 @@ const NavBar = (props) => {
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
-    console.log(activeSection)
 
     const tempNavlinks = [
         {
@@ -61,18 +60,10 @@ const NavBar = (props) => {
             classes: [styles.navLink]
         }
     ])
-    console.log(initialNavlinks)
     
     useEffect(() => {
         setNavlinks(initialNavlinks)
     },[initialNavlinks])
-
-    
-
-    console.log(navlinks)
-    
-
-    
 
     return (
         <div className={styles.parent}>
