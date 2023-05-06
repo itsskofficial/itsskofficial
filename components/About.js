@@ -4,7 +4,6 @@ import { forwardRef, useRef } from 'react'
 import useDownloader from 'react-use-downloader'
 
 const About = forwardRef((props,ref) => {
-    const aboutRef = useRef()
     const { download } = useDownloader()
     return (
         <section ref={ref} id='about' className={styles.parent}>
