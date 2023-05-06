@@ -37,13 +37,13 @@ const Contact = forwardRef((props, ref) => {
                 </h2>
                 <div className={styles.contactIcons}>
                     <Link href='https://linkedin.com/'>
-                        <i class='fa-brands fa-linkedin fa-3x'/>
+                        <i class='fa-brands fa-linkedin fa-2x'/>
                     </Link>
                     <Link href='mailto:sarthakkarandikar03@gmail.com'>
-                        <i class='fa-solid fa-envelope fa-3x'/>
+                        <i class='fa-solid fa-envelope fa-2x'/>
                     </Link>
                     <Link href='tel:+918275017823'>
-                        <i class='fa-solid fa-phone fa-3x'/>
+                        <i class='fa-solid fa-phone fa-2x'/>
                     </Link>
                 </div>
                 <h3 className={styles.contactInfo}>
