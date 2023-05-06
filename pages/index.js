@@ -21,9 +21,8 @@ export default function Home() {
 
     const observer = new IntersectionObserver((entries) => {
       const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
-      if (intersectedEntry) {
+      
           setActiveSection(intersectedEntry.target.id)
-        }
     })
     refs.forEach((ref) => {
       observer.observe(ref.current)
