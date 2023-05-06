@@ -90,7 +90,6 @@ const NavBar = (props) => {
                             ]
                             tempNavlinks[link['id']]['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
                             setNavlinks(tempNavlinks)
-                            closeMenu
                         }}>
                             {link['name']}
                         </a>
@@ -104,7 +103,7 @@ const NavBar = (props) => {
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
-            <Menu className={styles.navbarMenu}  right width={150}>
+            <Menu className={styles.navbarMenu}  right width={150} on>
                 {navlinks.map(link => {
                     return (
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
