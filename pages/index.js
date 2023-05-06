@@ -35,8 +35,6 @@ export default function Home() {
     refs.forEach((ref) => {
       observer.observe(ref)
     })
-    
-    obser
   },[])
   
 
