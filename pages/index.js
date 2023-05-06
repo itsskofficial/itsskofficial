@@ -9,7 +9,7 @@ import { useRef } from 'react'
 
 export default function Home() {
 
-  const aboutRef = useRef()
+  const aboutRef = useRef(about)
   return (
     <>
       <Head>
