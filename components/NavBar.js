@@ -53,9 +53,9 @@ const NavBar = () => {
                                 },
                                 {
                                     id:3,
-                                name: "Contact",
-                                classes: [styles.navLink]
-                            }
+                                    name: "Contact",
+                                    classes: [styles.navLink]
+                                }
                             ])
                             const tempNavlinks = navlinks
                             tempNavlinks[link]['classes'] =  [styles.navLink, styles.navLinkActive].join(' ')
