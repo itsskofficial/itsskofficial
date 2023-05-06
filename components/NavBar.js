@@ -3,11 +3,11 @@ import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
     const activeSection = props.activeSection
-    const firstLetter = word.charAt(0)
+    const firstLetter = activeSection.charAt(0)
     const firstLetterCap = firstLetter.toUpperCase()
-    const remainingLetters = word.slice(1)
+    const remainingLetters = activeSection.slice(1)
     const capitalizedWord = firstLetterCap + remainingLetters
-    
+
     const [navlinks, setNavlinks] = useState([
         {
             id:0,
