@@ -32,7 +32,9 @@ const NavBar = (props) => {
     ]
 
     const initialNavlinks = tempNavlinks.map((link) => {
-        if (link['name']==activeSection)
+        if (link['name'] == activeSection) {
+            link['classes'] = 
+        }
     })
     const [navlinks, setNavlinks] = useState()
 
