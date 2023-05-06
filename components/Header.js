@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { forwardRef } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 
-const Header = forwardRef(props,ref) => {
+const Header = forwardRef((props,ref) => {
     const roles = ["AI", "IOT", "Metaverse"]
     return (
         <section ref={ref} id='home' className={styles.parent}>
