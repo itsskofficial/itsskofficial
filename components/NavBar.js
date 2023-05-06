@@ -39,7 +39,7 @@ const NavBar = (props) => {
         setIsMenuOpen(false)
     }
 
-    const openMenu = () => {
+    const handleMenuChange = () => {
         setIsMenuOpen(true)
     }
 
