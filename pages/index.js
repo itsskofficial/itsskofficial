@@ -31,7 +31,7 @@ export default function Home() {
       const entry = entries[0]
       console.log(entry.isIntersecting)
     })
-    observer.observe(headerRef.current, aboutRef)
+    observer.observe(headerRef.current, aboutRef.current, skillsRef.current, contactRef.current)
   },[])
   
 
