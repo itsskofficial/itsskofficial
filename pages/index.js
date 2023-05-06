@@ -16,7 +16,7 @@ export default function Home() {
   const contactRef = useRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
-  window.onscroll(() => {
+  window.addEventListener('scroll',() => {
     const activeRef= refs.filter((ref) => {
       window.pageXOffset>=ref.current.offsetTop
     })
