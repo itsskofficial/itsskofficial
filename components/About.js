@@ -6,7 +6,9 @@ import useDownloader from 'react-use-downloader'
 const About = () => {
     const aboutRef = useRef()
     const { download } = useDownloader()
-    const printOffset =
+    const printOffset = () => {
+        
+    }
     return (
         <section ref={aboutRef} onMouseEnter={printOffset} id='about' className={styles.parent}>
             <div className={styles.aboutImage}>
