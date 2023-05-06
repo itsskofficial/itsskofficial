@@ -4,7 +4,7 @@ import { forwardRef } from "react"
 
 const Contact = forwardRef((props,ref) => {
     return (
-        <section ref={id='contact' className={styles.parent}>
+        <section ref={ref} id='contact' className={styles.parent}>
             <div className={styles.contactIcons}>
                 <Link href='https://linkedin.com/'>
                     <i class='fa-brands fa-linkedin fa-3x'/>
@@ -26,6 +26,6 @@ const Contact = forwardRef((props,ref) => {
             </div>
         </section>
     )
-}
+})
 
 export default Contact
