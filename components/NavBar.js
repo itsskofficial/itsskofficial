@@ -3,9 +3,9 @@ import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
     const tempActiveSection = props.activeSection
-    const firstLetter = tempAactiveSection.charAt(0)
+    const firstLetter = tempActiveSection.charAt(0)
     const firstLetterCap = firstLetter.toUpperCase()
-    const remainingLetters = activeSection.slice(1)
+    const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
 
     const [navlinks, setNavlinks] = useState([
