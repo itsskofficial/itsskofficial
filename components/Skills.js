@@ -69,9 +69,6 @@ const Skills = forwardRef((props,ref) => {
                     </button>
                 </div>
             </div>
-                <div className={[styles.skillsIcons, optionChanged ? styles.skillsIconsAnimate:null].join(' ')}>
-                    <SkillsSkin option={skillsOption} />
-                </div> 
         </section>
     
     return (
