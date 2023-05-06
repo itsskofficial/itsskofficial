@@ -127,6 +127,9 @@ const NavBar = (props) => {
                     </a>
                 )
             })}
+            <h2 className={styles.logo}>
+                Mode
+            </h2>
         </ul>
         
     </div>
