@@ -108,7 +108,9 @@ a {
   width: 10%;
 }
 
-#react-burger-menu-button
+#react-burger-menu-button{
+  width:30%;
+}
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
