@@ -16,12 +16,14 @@ export default function Home() {
   const contactRef = useRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
-  useEffect(()=>{window.addEventListener('scroll',() => {
-    const activeRef= refs.filter((ref) => {
-      window.pageXOffset>=ref.current.offsetTop
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const activeRef = refs.filter((ref) => {
+        window.pageXOffset >= ref.current.offsetTop
+      })
+      setActiveSection(activeRef.current.id)
     })
-    setActiveSection(activeRef.current.id)
-  })
+  }
 
   return (
     <>
