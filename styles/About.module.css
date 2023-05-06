@@ -86,8 +86,8 @@
         margin: 50px 0px 50px 0px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        text-align: center;
-        text-justify: distribute;
+        text-align: justify;
+        text-justify: d;
         font-size: 20px;
     }
 
