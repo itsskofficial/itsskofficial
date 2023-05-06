@@ -32,7 +32,8 @@ export default function Home() {
       // const intersectedEntry = entries.find((entry) => entry.isIntersecting==true)
       // console.log(intersectedEntry)
     })
-    observer.observe(headerRef.current, aboutRef.current, skillsRef.current, contactRef.current)
+    observer.observe(headerRef.current)
+    obser
   },[])
   
 
