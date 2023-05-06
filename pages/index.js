@@ -17,13 +17,13 @@ export default function Home() {
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
   useEffect(() => {
-    // window.addEventListener('scroll', () => {
-    //   const activeRef = refs.filter((ref) => {
-    //     window.pageYOffset >= ref.current.offsetTop
-    //   })
-    //   setActiveSection(activeRef.current.id)
+    window.addEventListener('scroll', () => {
+      const activeRef = refs.filter((ref) => {
+        window.pageYOffset >= ref.current.offsetTop
+      })
+      setActiveSection(activeRef.current.id)
     console.log(aboutRef.current.offsetTop)
-    // })
+    })
   }, [])
 
   return (
