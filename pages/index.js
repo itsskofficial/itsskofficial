@@ -16,7 +16,7 @@ export default function Home() {
   const contactRef = createRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
 
-    window.addEventListener('scroll', () => {
+    Window.addEventListener('scroll', () => {
       const activeRef = refs.filter((ref) => {
         window.pageYOffset >= ref.current.offsetTop
       })
