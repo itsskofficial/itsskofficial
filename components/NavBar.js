@@ -87,6 +87,7 @@ const NavBar = (props) => {
         Mode
     </h2>
 </div>
+
     
 
 
