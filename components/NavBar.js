@@ -89,7 +89,7 @@ const NavBar = (props) => {
     </h2>
 </div>
 
-    smallScreen = 
+    const smallScreen = 
             <div className={styles.parent}>
             <h2 className={styles.navbarLogo}>
                 SK
