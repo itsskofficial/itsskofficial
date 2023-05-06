@@ -57,18 +57,10 @@
         font-weight: 600;
     }
 
-    .navList{
-        display:flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 50%;
-    }
-
     .navLink{
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 400;
     }
 
