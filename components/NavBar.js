@@ -36,6 +36,7 @@ const NavBar = () => {
                             }))
                             console.log(navlinks)
                             setNavlinks([...navlinks, link = { name: link['name'], classes: [styles.navLink, styles.navLinkActive].join(' ') }])
+                            console.log(navlinks)
                         }}>
                             {link['name']}
                         </a>
