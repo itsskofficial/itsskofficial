@@ -31,7 +31,7 @@ export default function Home() {
       const entry = entries[0]
       console.log(entry)
     })
-    observer.observe(headerRef.current)
+    observer.observe(headerRef.current, aboutRef.current, skillsRef.current, contactRef.current)
   },[])
   
 
