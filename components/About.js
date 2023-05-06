@@ -1,9 +1,9 @@
 import styles from '@styles/About.module.css'
 import Image from 'next/image'
-import { useRef } from 'react'
+import { forwardRef, useRef } from 'react'
 import useDownloader from 'react-use-downloader'
 
-const About = () => {
+const About = forwardRef(props,ref) => {
     const aboutRef = useRef()
     const { download } = useDownloader()
     const printOffset = () => {
