@@ -16,7 +16,7 @@ export default function Home() {
   const contactRef = useRef()
 
   window.onscroll(() => {
-    if (window.pageYOffset)
+    if (window.pageYOffset>=)
   })
   
   
