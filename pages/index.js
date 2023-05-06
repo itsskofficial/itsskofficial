@@ -9,10 +9,11 @@ import { useRef } from 'react'
 
 export default function Home() {
 
+  const headerRef = useRef()
   const aboutRef = useRef()
   const skillsRef = useRef()
   const contactRef = useRef()
-  const skillsRef = useRef()
+  
   return (
     <>
       <Head>
