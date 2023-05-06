@@ -58,7 +58,7 @@ const NavBar = () => {
                                 }
                             ])
                             const tempNavlinks = navlinks
-                            tempNavlinks[link]['classes'] =  [styles.navLink, styles.navLinkActive].join(' ')
+                            tempNavlinks[link['id']]['classes'] =  [styles.navLink, styles.navLinkActive].join(' ')
                             setNavlinks(tempNavlinks)
                             console.log(navlinks)
                         }}>
