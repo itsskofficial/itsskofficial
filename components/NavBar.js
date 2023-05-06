@@ -44,7 +44,7 @@ const NavBar = (props) => {
         setNavlinks(initialNavlinks)
     }, [activeSection])
     
-    
+    const 
 
     return (
         
