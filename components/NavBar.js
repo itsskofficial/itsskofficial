@@ -40,28 +40,6 @@ const NavBar = (props) => {
     )
 
     const [navlinks,setNavlinks] = useState(initialNavlinks)
-    // const [navlinks, setNavlinks] = useState([
-    //     {
-    //         id:0,
-    //         name: "Home",
-    //         classes: [styles.navLink]
-    //     },
-    //     {
-    //         id:1,
-    //         name: "About",
-    //         classes: [styles.navLink]
-    //     },
-    //     {
-    //         id:2,
-    //         name: "Skills",
-    //         classes: [styles.navLink]
-    //     },
-    //     {
-    //         id:3,
-    //         name: "Contact",
-    //         classes: [styles.navLink]
-    //     }
-    // ])
     
     useEffect(() => {
         setNavlinks(initialNavlinks)
