@@ -28,7 +28,7 @@ export default function Home() {
         <Header ref={ headerRef } />
         <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
-        <Contact ref={ headerRef } />
+        <Contact ref={ contactRef } />
         <Footer />
       </main>
     </>
