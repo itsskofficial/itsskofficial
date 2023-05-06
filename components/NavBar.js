@@ -68,7 +68,7 @@ const NavBar = (props) => {
     
     useEffect(() => {
         changeNavlinks()
-    },[changeNavlinks])
+    },[])
 
     return (
         <div className={styles.parent}>
