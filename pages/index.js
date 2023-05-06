@@ -10,7 +10,7 @@ import { useRef, useState, useEffect } from 'react'
 export default function Home() {
 
   const [activeSection, setActiveSection] = useState('home')
-  const headerRef = createRef()
+  const headerRef = create
   const aboutRef = useRef()
   const skillsRef = useRef()
   const contactRef = useRef()
