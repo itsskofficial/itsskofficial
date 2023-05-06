@@ -1,4 +1,5 @@
 import styles from "@styles/NavBar.module.css"
+import sli
 import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
