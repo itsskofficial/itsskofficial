@@ -39,7 +39,7 @@ const NavBar = (props) => {
         link
     )
 
-    const [navlinks,setNavlinks]
+    const [navlinks,setNavlinks] = useState(initialNavlinks)
     // const [navlinks, setNavlinks] = useState([
     //     {
     //         id:0,
