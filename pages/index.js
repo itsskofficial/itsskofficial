@@ -9,7 +9,7 @@ import { useRef, useState } from 'react'
 
 export default function Home() {
 
-  const [activeSection,setActiveSection] = useState(['home'])
+  const [activeSection, setActiveSection] = useState(['home'])
   const headerRef = useRef()
   const aboutRef = useRef()
   const skillsRef = useRef()
@@ -23,7 +23,7 @@ export default function Home() {
       })
       setActiveSection(activeRef.current.id)
     })
-  }
+  }, [window])
 
   return (
     <>
