@@ -89,7 +89,7 @@ const NavBar = (props) => {
     </h2>
 </div>
 
-    
+    smallScreen = 
 
 
     return (
