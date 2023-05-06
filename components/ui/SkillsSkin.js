@@ -8,19 +8,19 @@ const SkillsSkin = (props) => {
     const codeIcons = (
         <Fragment>
             <div className={styles.skillsSkinRow} >
-                <i class='fa-brands fa-python fa-3x' />
-                <i class='fa-brands fa-js fa-3x' />
-                <i class='fa-brands fa-c fa-3x' />
-                <i class='fa-brands fa-html5 fa-3x' />
+                <i class='fa-brands fa-python fa-${}' />
+                <i class='fa-brands fa-js fa-${}' />
+                <i class='fa-brands fa-c fa-${}' />
+                <i class='fa-brands fa-html5 fa-${}' />
             </div>
             <div className={styles.skillsSkinRow} >
-                <i class='fa-brands fa-css3 fa-3x' />
-                <i class='fa-brands fa-react fa-3x' />
-                <i class='fa-brands fa-node fa-3x' />
+                <i class='fa-brands fa-css3 fa-${}' />
+                <i class='fa-brands fa-react fa-${}' />
+                <i class='fa-brands fa-node fa-${}' />
             </div>
             <div className = {styles.skillsSkinRow } >
-                <i class='fa-brands fa-react fa-3x' />
-                <i class='fa-brands fa-node fa-3x' />
+                <i class='fa-brands fa-react fa-${}' />
+                <i class='fa-brands fa-node fa-${}' />
             </div>
         </Fragment>
             
@@ -28,7 +28,7 @@ const SkillsSkin = (props) => {
 
     const toolsIcons = (
             <div className = {styles.skillsSkinRow }>
-                <i class='fa-brands fa-figma fa-3x' />
+                <i class='fa-brands fa-figma fa-${}' />
             </div>
         )
 
