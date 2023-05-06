@@ -49,7 +49,7 @@
 }
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (max-width: 600px) {
     .parent{
         display: flex;
         align-items: center;
