@@ -34,7 +34,7 @@ const NavBar = () => {
                             setNavlinks([
                             {
                                 name: "Home",
-                                classes: [styles.navLink, styles.navLinkActive].join(' ')
+                                classes: [styles.navLink]
                             },
                             {
                                 name: "About",
