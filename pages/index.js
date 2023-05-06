@@ -31,7 +31,7 @@ export default function Home() {
       const entry = entries[0]
       console.log(entry.isIntersecting)
     })
-    const ob
+    observer.observe(aboutRef.current)
   },[])
   
 
