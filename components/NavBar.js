@@ -44,7 +44,8 @@ const NavBar = (props) => {
         setNavlinks(initialNavlinks)
     }, [activeSection])
     
-    const bigScreen = <div className={styles.parent}>
+    const bigScreen =
+        <div className={styles.parent}>
     <h2 className={styles.navbarLogo}>
         SK
     </h2>
