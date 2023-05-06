@@ -50,7 +50,9 @@ const NavBar = (props) => {
     <h2 className={styles.navbarLogo}>
         SK
             </h2>
-            <Menu
+            <Menu>
+
+            
     
         {navlinks.map(link => {
             return(
