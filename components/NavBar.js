@@ -2,8 +2,8 @@ import styles from "@styles/NavBar.module.css"
 import { useEffect, useState } from "react"
 
 const NavBar = (props) => {
-    const activeSection = props.activeSection
-    const firstLetter = activeSection.charAt(0)
+    const tempActiveSection = props.activeSection
+    const firstLetter = tempAactiveSection.charAt(0)
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = activeSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
