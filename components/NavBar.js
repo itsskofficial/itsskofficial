@@ -90,11 +90,13 @@ const NavBar = (props) => {
 </div>
 
     smallScreen = 
-        <div className={styles.parent}>
-        <h2 className={styles.navbarLogo}>
-            SK
-        </h2>
-        <ul className={styles.navList}>
+            <div className={styles.parent}>
+            <h2 className={styles.navbarLogo}>
+                SK
+            </h2>
+            <Menu>
+                
+        </Menu>
             {navlinks.map(link => {
                 return(
                     <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
