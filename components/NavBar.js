@@ -41,7 +41,7 @@ const NavBar = (props) => {
 
     const handleMenuChange = (state) => {
         console.log(isMenuOpen)
-        setIsMenuOpen(!isMenuOpen)
+        setIsMenuOpen(state.isOpen)
         console.log(isMenuOpen)
     }
 
