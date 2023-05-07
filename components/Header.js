@@ -36,7 +36,7 @@ const Header = forwardRef((props,ref) => {
                 </button>
             </div>
             <div className={styles.headImage}>
-                <Image src='/../public/assets/images/headImage.jpg' width={mediaMatch ? '500' : '300'} height={mediaMatch?'300' alt='Hero Image'/>
+                <Image src='/../public/assets/images/headImage.jpg' width={mediaMatch ? '500' : '300'} height={mediaMatch ? '500' : '300'} alt='Hero Image'/>
             </div>
         </section>
         
