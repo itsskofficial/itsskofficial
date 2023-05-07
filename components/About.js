@@ -2,8 +2,10 @@ import styles from '@styles/About.module.css'
 import Image from 'next/image'
 import { forwardRef, useRef } from 'react'
 import useDownloader from 'react-use-downloader'
+import { useMediaQuery } from 'usehooks-ts'
 
-const About = forwardRef((props,ref) => {
+const About = forwardRef((props, ref) => {
+    const mediaMatch = useMediaQuery(('min-width:1201px'))
     const { download } = useDownloader()
     return (
         <section ref={ref} id='about' className={styles.parent}>
