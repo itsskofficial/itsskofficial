@@ -62,7 +62,7 @@ const NavBar = (props) => {
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
-            <ul className={styles.navList} style={}>
+            <ul className={styles.navList} style={{listStyleType:}}>
                 {navlinks.map(link => {
                     return (
                         <li key={link['id']} >
