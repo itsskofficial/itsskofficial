@@ -12,7 +12,7 @@ const SkillsSkin = (props) => {
                 <i class={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} />
                 <i class={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} />
                 <i class={`fa-brands fa-html5 fa-${mediaMatch ? '3x' : '2x'}`} />
-                <Image src='/'
+                <Image src='/assets/images/tf.svg' width:
             </div>
             <div className={styles.skillsSkinRow} >
                 <i class={`fa-brands fa-css3 fa-${mediaMatch?'3x':'2x'}`} />
