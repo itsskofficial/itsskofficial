@@ -4,7 +4,7 @@ import { useMediaQuery } from 'usehooks-ts'
 import Image from 'next/image'
 
 const SkillsSkin = (props) => {
-    const mediaMatch = useMediaQuery('(mim-width:1201px)')
+    const mediaMatch = useMediaQuery('(min-width:1201px)')
 
     const codeIcons = (
         <Fragment>
