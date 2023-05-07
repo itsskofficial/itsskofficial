@@ -98,7 +98,7 @@ const NavBar = (props) => {
                     )
                 })}
             </ul>
-        </div>
+        </section>
 
     const smallScreen =
         <div className={styles.parent}>
