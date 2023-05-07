@@ -22,6 +22,7 @@ const SkillsSkin = (props) => {
                 <i class={`fa-brands fa-react fa-${mediaMatch?'3x':'2x'}`} />
                 <i class={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/ejs.svg' width='60' height='60' alt='EJs Icon'/>
+                <Image src='/assets/images/mongodb.svg' width='60' height='60' alt='EJs Icon'/>
             </div>
             <div className = {styles.skillsSkinRow } >
                 <i class={`fa-brands fa-react fa-${mediaMatch?'3x':'2x'}`} />
