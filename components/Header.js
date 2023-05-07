@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { useMediaQuery } from 'usehooks-ts'
 
 const Header = forwardRef((props,ref) => {
-    const mediaMatch = useMediaQuery(('min-width:'))
+    const mediaMatch = useMediaQuery(('min-width:1201px'))
     const roles = ["AI", "IOT", "Metaverse"]
     return (
         <section ref={ref} id='home' className={styles.parent}>
