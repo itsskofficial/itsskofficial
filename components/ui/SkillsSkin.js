@@ -46,6 +46,8 @@ const SkillsSkin = (props) => {
             <div className = {styles.skillsSkinRow }>
             <i class={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
             <Image src='/assets/images/canva.svg' width='60' height='60' alt='TF Icon'/>
+            <Image src='/assets/images/canva.svg' width='60' height='60' alt='TF Icon'/>
+            <Image src='/assets/images/canva.svg' width='60' height='60' alt='TF Icon'/>
 
             </div>
         )
