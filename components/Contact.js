@@ -4,7 +4,7 @@ import { forwardRef } from "react"
 import { useMediaQuery } from "usehooks-ts"
 
 const Contact = forwardRef((props, ref) => {
-    const mediaMatch = useMediaQuery(('min-width:1201px'))
+    const mediaMatch = useMediaQuery('(min-width:1201px)')
 
     const bigScreen =
         <section ref={ref} id='contact' className={styles.parent}>
