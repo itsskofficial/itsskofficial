@@ -19,7 +19,7 @@
         display:flex;
         text-align: center;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 40%;
         flex-wrap: wrap;
         justify-items:auto;
