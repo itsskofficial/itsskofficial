@@ -61,8 +61,8 @@ const SkillsSkin = (props) => {
             <div className={styles.skillsSkinRow}>
                 <i class={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/lmms.svg' width='60' height='60' alt='LMMS Icon' />
-                <Image src='/assets/images/inkscape.svg' width='60' height='60' alt='TF Icon'/>
-                <Image src='/assets/images/vscode.svg' width='60' height='60' alt='TF Icon'/>
+                <Image src='/assets/images/inkscape.svg' width='60' height='60' alt='Inkscape Icon'/>
+                <Image src='/assets/images/vscode.svg' width='60' height='60' alt='Vs Icon'/>
                 <i class={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} />
             </div>
             <div className={styles.skillsSkinRow}>
