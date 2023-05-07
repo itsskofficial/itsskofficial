@@ -17,10 +17,10 @@
 
     .navList{
         display:flex;
-        text-align: right;
+        text-align: center;
         align-items: center;
         justify-content: space-evenly;
-        width: 30%;
+        width: 40%;
     }
 
     .navLink{
