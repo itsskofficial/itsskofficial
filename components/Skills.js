@@ -7,6 +7,7 @@ const Skills = forwardRef((props,ref) => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
     const mediaMatch = useMediaQuery(('min-width:1201px'))
+    console.log(mediaMatch)
 
     useEffect(() => {
         if (optionChanged) {
