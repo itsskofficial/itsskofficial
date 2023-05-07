@@ -40,9 +40,7 @@ const NavBar = (props) => {
     }
 
     const handleMenuChange = (state) => {
-        console.log(isMenuOpen)
         setIsMenuOpen(state.isOpen)
-        console.log(isMenuOpen)
     }
 
     const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
