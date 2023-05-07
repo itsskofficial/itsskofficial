@@ -17,7 +17,7 @@
 
     .navList{
         display:flex;
-        text-align: center;
+        text-align: right;
         align-items: center;
         justify-content: space-evenly;
         width: 30%;
