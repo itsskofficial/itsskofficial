@@ -21,8 +21,6 @@
         align-items: center;
         justify-content: space-between;
         width: 40%;
-        flex-wrap: wrap;
-        justify-items:auto;
     }
 
     .navLink{
