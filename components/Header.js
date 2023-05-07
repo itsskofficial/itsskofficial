@@ -2,8 +2,10 @@ import styles from '@styles/Header.module.css'
 import Image from 'next/image'
 import { forwardRef } from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import { useMediaQuery } from 'usehooks-ts'
 
 const Header = forwardRef((props,ref) => {
+    const mediaMatch = useMediaQuery(('min-width:'))
     const roles = ["AI", "IOT", "Metaverse"]
     return (
         <section ref={ref} id='home' className={styles.parent}>
