@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { useMediaQuery } from 'usehooks-ts'
 
 const Header = forwardRef((props,ref) => {
-    const mediaMatch = useMediaQuery(('min-width:1201px'))
+    const mediaMatch = useMediaQuery('(min-width:1201px)')
     console.log(mediaMatch)
     const roles = ["AI", "IOT", "Metaverse"]
     return (
