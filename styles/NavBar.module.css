@@ -22,7 +22,7 @@
         justify-content: flex-end;
         width: 40%;
         flex-wrap: wrap;
-        justify-items: flex-end;
+        justify-items:;
     }
 
     .navLink{
