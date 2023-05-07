@@ -29,6 +29,7 @@ const SkillsSkin = (props) => {
                 <i class={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/tf.svg' width='60' height='60' alt='TF Icon'/>
                 <Image src='/assets/images/numpy.svg' width='60' height='60' alt='TF Icon'/>
+                <Image src='/assets/images/panas.svg' width='60' height='60' alt='TF Icon'/>
             </div>
         </Fragment>
             
