@@ -65,7 +65,7 @@ const NavBar = (props) => {
             <ul className={styles.navList}>
                 {navlinks.map(link => {
                     return (
-                        <li key={}
+                        <li key={link['id']}>
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
                             var tempNavlinks = [
                                 {
@@ -93,7 +93,8 @@ const NavBar = (props) => {
                             setNavlinks(tempNavlinks)
                         }}>
                             {link['name']}
-                        </a>
+                            </a>
+                            </li>
                     )
                 })}
             </ul>
