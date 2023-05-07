@@ -1,6 +1,7 @@
 import styles from '@styles/SkillsSkin.module.css'
 import { Fragment } from 'react'
 import { useMediaQuery } from 'usehooks-ts'
+import Image from 'next/image'
 
 const SkillsSkin = (props) => {
     const mediaMatch = useMediaQuery(('mim-width:1201px'))
