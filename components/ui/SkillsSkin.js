@@ -25,7 +25,7 @@ const SkillsSkin = (props) => {
                 <Image src='/assets/images/mongodb.svg' width='60' height='60' alt='MongoDB Icon'/>
             </div>
             <div className = {styles.skillsSkinRow } >
-                <Image src='/assets/images/mongodb.svg' width='60' height='60' alt='MongoDB Icon'/>
+                <Image src='/assets/images/nextjs.svg' width='60' height='60' alt='NextJS Icon'/>
                 <i class={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/tf.svg' width='60' height='60' alt='TF Icon'/>
             </div>
