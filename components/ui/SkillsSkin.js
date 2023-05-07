@@ -45,6 +45,8 @@ const SkillsSkin = (props) => {
     const toolsIcons = (
             <div className = {styles.skillsSkinRow }>
             <i class={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
+            <Image src='/assets/images/numpy.svg' width='60' height='60' alt='TF Icon'/>
+
             </div>
         )
 
