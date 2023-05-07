@@ -62,7 +62,7 @@ const SkillsSkin = (props) => {
                 <i class={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/lmms.svg' width='60' height='60' alt='TF Icon' />
                 <Image src='/assets/images/inkscape.svg' width='60' height='60' alt='TF Icon'/>
-                <Image src='/assets/images/inkscape.svg' width='60' height='60' alt='TF Icon'/>
+                <Image src='/assets/images/vscode.svg' width='60' height='60' alt='TF Icon'/>
                 <i class={`fa-brands fa-jira fa-${mediaMatch ? '3x' : '2x'}`} />
                 <i class={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} />
             </div>
