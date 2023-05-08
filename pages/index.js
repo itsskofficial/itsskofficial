@@ -47,7 +47,7 @@ export default function Home() {
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
-      </Fragment>
+      </main>
     </>
   )
 }
