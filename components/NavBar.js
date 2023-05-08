@@ -140,7 +140,7 @@ const NavBar = (props) => {
                     )
                 })}
             </Menu>
-        </div>
+        </section>
 
 
     return (
