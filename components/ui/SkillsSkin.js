@@ -52,7 +52,7 @@ const SkillsSkin = (props) => {
     const toolsIcons = (
         <Fragment>
             <div className = {styles.skillsSkinRow }>
-                <i class={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/canva.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Canva Icon'/>
                 <Image src='/assets/images/audacity.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Audacity Icon'/>
                 <Image src='/assets/images/davinci.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Davinci Icon'/>
@@ -61,16 +61,16 @@ const SkillsSkin = (props) => {
             <div className={styles.skillsSkinRow}>
                 <Image src='/assets/images/asana.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Asana Icon' />
                 <Image src='/assets/images/gimp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Gimp Icon'/>
-                <i class={`fa-brands fa-slack fa-${mediaMatch ? '3x' : '2x'}`} />
-                <i class={`fa-brands fa-jira fa-${mediaMatch ? '3x' : '2x'}`} />
-                <i class={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-slack fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-jira fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} />
             </div>
             <div className={styles.skillsSkinRow}>
-                <i class={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/lmms.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='LMMS Icon' />
                 <Image src='/assets/images/inkscape.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Inkscape Icon'/>
                 <Image src='/assets/images/vscode.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='VSCode Icon'/>
-                <i class={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} />
             </div>
             {/* <div className={styles.skillsSkinRow}>
                 <i class={`fa-brands fa-trello fa-${mediaMatch ? '3x' : '2x'}`} />
