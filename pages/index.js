@@ -7,6 +7,8 @@ import Contact from '@components/Contact'
 import Footer from '@components/Footer'
 import { useState, useEffect, createRef, Fragment } from 'react'
 import Script from 'next/script'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
 
@@ -48,8 +50,6 @@ export default function Home() {
         <Contact ref={ contactRef } />
         <Footer />
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
-        <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
-        <Script>AOS.init()</Script>
       </main>
     </>
   )
