@@ -41,13 +41,13 @@ export default function Home() {
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
       <main>
-        <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
         <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
+        <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
         <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
         <Script>AOS.init()</Script>
       </main>
