@@ -1,8 +1,9 @@
 import styles from '@styles/About.module.css'
 import Image from 'next/image'
-import { forwardRef, useRef } from 'react'
+import { forwardRef } from 'react'
 import useDownloader from 'react-use-downloader'
 import { useMediaQuery } from 'usehooks-ts'
+import { useEffect } from 'react'
 
 const About = forwardRef((props, ref) => {
     var mediaMatch=true

@@ -2,6 +2,7 @@ import styles from '@styles/SkillsSkin.module.css'
 import { Fragment } from 'react'
 import { useMediaQuery } from 'usehooks-ts'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 const SkillsSkin = (props) => {
     var mediaMatch=true
