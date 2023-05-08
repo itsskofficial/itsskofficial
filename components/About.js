@@ -5,7 +5,13 @@ import useDownloader from 'react-use-downloader'
 import { useMediaQuery } from 'usehooks-ts'
 
 const About = forwardRef((props, ref) => {
-    const mediaMatch = useMediaQuery('(min-width:1201px)')
+    const mediaMatch=true
+    useEffect(() => {
+        const bigScreen = useMediaQuery('(min-width:1201px)')
+        if (bigScreen == false){
+            mediaMatch=false
+        }
+    },[])
     const { download } = useDownloader()
     return (
         <section ref={ref} id='about' className={styles.parent}>
