@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from '@styles/Contact.module.css'
 import { forwardRef } from "react"
 import { useMediaQuery } from "usehooks-ts"
+import { useEffect } from 'react'
 
 const Contact = forwardRef((props, ref) => {
     var mediaMatch=true
