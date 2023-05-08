@@ -114,7 +114,6 @@ const NavBar = (props) => {
             <Menu className={styles.navbarMenu} right width={150} isOpen={isMenuOpen} onStateChange={handleMenuChange}>
                 {navlinks.map(link => {
                     return (
-                        <li></li>
                         <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
                             var tempNavlinks = [
                                 {
