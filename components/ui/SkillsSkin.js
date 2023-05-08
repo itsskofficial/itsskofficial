@@ -16,11 +16,11 @@ const SkillsSkin = (props) => {
     const codeIcons = (
         <Fragment>
             <div className={styles.skillsSkinRow} >
-                <i class={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} />
-                <i class={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} />
-                <i class={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} />
+                <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} />
+                <i classclassName={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} />
+                <i classclassName={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} />
                 <Image src='/assets/images/cpp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='C++ Icon'/>
-                <i class={`fa-brands fa-html5 fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-html5 fa-${mediaMatch ? '3x' : '2x'}`} />
                 
                 
             </div>
