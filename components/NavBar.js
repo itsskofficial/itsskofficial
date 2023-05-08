@@ -100,7 +100,7 @@ const NavBar = (props) => {
             </ul>
         </section>)
 
-    const smallScreen =(
+    const smallScreen = (
         <section className={styles.parent}>
             <h2 className={styles.navbarLogo}>
                 SK
