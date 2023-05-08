@@ -6,7 +6,12 @@ import { useMediaQuery } from 'usehooks-ts'
 
 const Header = forwardRef((props,ref) => {
     const mediaMatch = useMediaQuery('(min-width:1201px)')
-    const roles = ["AI", "IOT", "Metaverse"]
+    useEffect(() => {
+        const mediaMatch = useMediaQuery('(min-width:1201px)')
+        if (mediaMatch == false){
+            setScreen('small')
+        }
+    },[])
     return (
         <section ref={ref} id='home' className={styles.parent}>
             <div className={styles.headText}>
