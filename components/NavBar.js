@@ -14,7 +14,7 @@ const NavBar = (props) => {
 
     useEffect(() => {
         const mediaMatch = useMediaQuery('(min-width:1201px)')
-    })
+    },[])
 
     const tempNavlinks = [
         {
@@ -148,7 +148,7 @@ const NavBar = (props) => {
 
 
     return (
-        mediaMatch ? bigScreen : smallScreen
+        mediamediaMatch ? bigScreen : smallScreen
     )
 }
 
