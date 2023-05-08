@@ -8,8 +8,8 @@ const Header = forwardRef((props, ref) => {
     const mediaMatch=true
     useEffect(() => {
         const bigScreen = useMediaQuery('(min-width:1201px)')
-        if (mediaMatch == false){
-            setScreen('small')
+        if (bigScreen == false){
+            mediaMatch=false
         }
     },[])
     return (
