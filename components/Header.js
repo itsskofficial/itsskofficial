@@ -5,7 +5,6 @@ import { TypeAnimation } from 'react-type-animation'
 import { useMediaQuery } from 'usehooks-ts'
 
 const Header = forwardRef((props,ref) => {
-    const mediaMatch = useMediaQuery('(min-width:1201px)')
     useEffect(() => {
         const mediaMatch = useMediaQuery('(min-width:1201px)')
         if (mediaMatch == false){
