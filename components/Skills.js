@@ -35,7 +35,7 @@ const Skills = forwardRef((props,ref) => {
                             setOptionChanged(true)
                         }   
                     }}>
-                        <i class='fa-solid fa-code' style={{marginRight: '10px'}} />Code
+                        <i className='fa-solid fa-code' style={{marginRight: '10px'}} />Code
                     </button>
                     <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
@@ -43,7 +43,7 @@ const Skills = forwardRef((props,ref) => {
                             setOptionChanged(true)
                         }
                     }}>
-                        <i class='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
+                        <i className='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px'}} />Tools
                     </button>
                 </div>
             </div>
