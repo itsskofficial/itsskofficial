@@ -5,7 +5,7 @@ import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
-import { useState, useEffect, createRef } from 'react'
+import { useState, useEffect, createRef, Fragment } from 'react'
 import Script from 'next/script'
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Fragment>
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
@@ -47,7 +47,7 @@ export default function Home() {
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
-      </main>
+      </Fragment>
     </>
   )
 }
