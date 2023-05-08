@@ -48,10 +48,10 @@ export default function Home() {
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
-        <Script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
+        <script>
+          AOS.init();
+        </script>
       </main>
     </>
   )
