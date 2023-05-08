@@ -7,7 +7,7 @@ import { useMediaQuery } from 'usehooks-ts'
 const Header = forwardRef((props, ref) => {
     const mediaMatch=true
     useEffect(() => {
-        const mediaMatch = useMediaQuery('(min-width:1201px)')
+        const bigScreen = useMediaQuery('(min-width:1201px)')
         if (mediaMatch == false){
             setScreen('small')
         }
