@@ -62,7 +62,7 @@ const NavBar = (props) => {
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
-            <div className={styles.navList} style={{listStyleType:"none"}}>
+            <ul className={styles.navList} style={{listStyleType:"none"}}>
                 {navlinks.map(link => {
                     return (
                         <li key={link['id']} >
@@ -97,7 +97,7 @@ const NavBar = (props) => {
                             </li>
                     )
                 })}
-            </div>
+            </ul>
         </section>)
 
     const smallScreen = (
