@@ -144,7 +144,7 @@ const NavBar = (props) => {
 
 
     return (
-        mediaMatch?<Fragment></Fragment>bigScreen:smallScreen
+        mediaMatch?<Fragment></Fragment>:smallScreen
     )
 }
 
