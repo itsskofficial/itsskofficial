@@ -5,10 +5,10 @@ import { useMediaQuery } from "usehooks-ts"
 import { useEffect } from 'react'
 
 const Contact = forwardRef((props, ref) => {
+    const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
     useEffect(() => {
-        const bigScreen = useMediaQuery('(min-width:1201px)')
-        if (bigScreen == false){
+        if (isBigScreen == false){
             mediaMatch=false
         }
     },[])
