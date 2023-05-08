@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { forwardRef } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { useMediaQuery } from 'usehooks-ts'
+import { useEffect } from 'react'
 
 const Header = forwardRef((props, ref) => {
     var mediaMatch=true
