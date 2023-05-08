@@ -49,9 +49,8 @@ export default function Home() {
         <Contact ref={ contactRef } />
         <Footer />
         <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
-        <script>
-          AOS.init();
-        </script>
+        <Script>
+          AOS.init();</script>
       </main>
     </>
   )
