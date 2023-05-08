@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <main>
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
-        <NavBar activeSection={activeSection} />
+        {/* <NavBar activeSection={activeSection} /> */}
         <Header ref={ headerRef}/>
         <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
