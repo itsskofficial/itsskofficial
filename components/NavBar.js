@@ -9,7 +9,7 @@ const NavBar = (props) => {
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
-    
+    const []
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     useEffect(() => {
