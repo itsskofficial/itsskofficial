@@ -58,7 +58,7 @@ const NavBar = (props) => {
     }, [activeSection])
     
     const bigScreen = (
-        <Fragment className={styles.parent}>
+        <div className={styles.parent}>
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
@@ -98,7 +98,7 @@ const NavBar = (props) => {
                     )
                 })}
             </ul>
-        </Fragment>)
+        </div>)
 
     const smallScreen =(
         <section className={styles.parent}>
