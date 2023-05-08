@@ -33,7 +33,7 @@ const SkillsSkin = (props) => {
             </div>
             <div className = {styles.skillsSkinRow } >
                 <Image src='/assets/images/nextjs.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='NextJS Icon'/>
-                <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} />
+                {/* <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} /> */}
                 <Image src='/assets/images/tf.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <Image src='/assets/images/numpy.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
                 <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/>
