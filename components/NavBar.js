@@ -140,11 +140,11 @@ const NavBar = (props) => {
                     )
                 })}
             </Menu>
-        </section>)
+        </div>)
 
 
     return (
-        mediaMatch ?{bigScreen} : {smallScreen}
+        mediaMatch ? {bigScreen} : {smallScreen}
     )
 }
 
