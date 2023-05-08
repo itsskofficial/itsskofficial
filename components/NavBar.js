@@ -58,7 +58,7 @@ const NavBar = (props) => {
     }, [activeSection])
     
     const bigScreen = (
-        <section className={styles.parent}>
+        <Fragment className={styles.parent}>
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
