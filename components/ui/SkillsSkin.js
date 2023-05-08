@@ -4,7 +4,13 @@ import { useMediaQuery } from 'usehooks-ts'
 import Image from 'next/image'
 
 const SkillsSkin = (props) => {
-    const mediaMatch = useMediaQuery('(min-width:1201px)')
+    var mediaMatch=true
+    useEffect(() => {
+        const bigScreen = useMediaQuery('(min-width:1201px)')
+        if (bigScreen == false){
+            mediaMatch=false
+        }
+    },[])
 
     const codeIcons = (
         <Fragment>
