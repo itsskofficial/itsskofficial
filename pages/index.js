@@ -7,8 +7,8 @@ import Contact from '@components/Contact'
 import Footer from '@components/Footer'
 import { useState, useEffect, createRef } from 'react'
 import Script from 'next/script'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Home() {
 
@@ -49,7 +49,8 @@ export default function Home() {
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
-        <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous'/>
+        <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
+        {Ao}
       </main>
     </>
   )
