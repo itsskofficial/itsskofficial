@@ -36,11 +36,12 @@ const SkillsSkin = (props) => {
                 {/* <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} /> */}
                 <Image src='/assets/images/tf.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <Image src='/assets/images/numpy.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
-                <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/>
+                <Image src='/assets/images/pandas.svg' width={mediaMatch ? '60' : '30'} height={mediaMatch ? '60' : '30'} alt='Pandas Icon' />
+                <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} />
+
             </div>
             <div className = {styles.skillsSkinRow } >
                 {/* <Image src='/assets/images/sklearn.png' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='ScikitLearn Icon'/> */}
-                <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} />
                 <Image src='/assets/images/solidity.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Solidity Icon'/>
                 <Image src='/assets/images/arduino.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Arduino Icon'/>
                 {/* <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/> */}
