@@ -1,6 +1,6 @@
 import styles from "@styles/NavBar.module.css"
 import { slide as Menu } from "react-burger-menu"
-import { useEffect, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
 
 const NavBar = (props) => {
@@ -144,7 +144,7 @@ const NavBar = (props) => {
 
 
     return (
-        mediaMatch?bigScreen:smallScreen
+        mediaMatch?<Fragment></Fragment>bigScreen:smallScreen
     )
 }
 
