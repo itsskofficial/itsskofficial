@@ -10,10 +10,9 @@ const NavBar = (props) => {
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+    const bigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
     useEffect(() => {
-        const bigScreen = useMediaQuery('(min-width:1201px)')
         if (bigScreen == false){
             mediaMatch=false
         }
