@@ -13,7 +13,7 @@ const NavBar = (props) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
     useEffect(() => {
-        if (isBigSscreen == false){
+        if (isBigScreen == false){
             mediaMatch=false
         }
     },[])
