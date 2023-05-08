@@ -9,8 +9,12 @@ const NavBar = (props) => {
     const firstLetterCap = firstLetter.toUpperCase()
     const remainingLetters = tempActiveSection.slice(1)
     const activeSection = firstLetterCap + remainingLetters
-    const mediaMatch = useMediaQuery('(min-width:1201px)')
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    useEffect(() => {
+        const mediaMatch = useMediaQuery('(min-width:1201px)')
+    })
 
     const tempNavlinks = [
         {
