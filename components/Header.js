@@ -37,7 +37,7 @@ const Header = forwardRef((props, ref) => {
                 </h2>
                 <button className={styles.headContact}>
                     <a href='#contact'>
-                        <i class='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
+                        <i className='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
                     </a>
                 </button>
             </div>
