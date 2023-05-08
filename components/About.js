@@ -29,7 +29,7 @@ const About = forwardRef((props, ref) => {
                 <button className={styles.aboutResume} onClick={()=> {
                     download('/../public/assets/resources/resume.pdf', 'Resume.pdf')
                 }}>
-                    <i class='fa-solid fa-file' style={{marginRight: '10px'}} />Resume
+                    <i className='fa-solid fa-file' style={{marginRight: '10px'}} />Resume
                 </button>
             </div>
         </section>
