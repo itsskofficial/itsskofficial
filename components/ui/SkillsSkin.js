@@ -5,10 +5,10 @@ import Image from 'next/image'
 import { useEffect } from 'react'
 
 const SkillsSkin = (props) => {
+    const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
     useEffect(() => {
-        const bigScreen = useMediaQuery('(min-width:1201px)')
-        if (bigScreen == false){
+        if (isBigScreen == false){
             mediaMatch=false
         }
     },[])
