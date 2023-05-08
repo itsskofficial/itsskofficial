@@ -144,7 +144,8 @@ const NavBar = (props) => {
 
 
     return (
-        mediaMatch ? bigScreen : smallScreen
+        // mediaMatch ? bigScreen : smallScreen
+        {bigScreen}
     )
 }
 
