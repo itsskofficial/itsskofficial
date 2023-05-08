@@ -1,6 +1,6 @@
 import styles from "@styles/NavBar.module.css"
 import { slide as Menu } from "react-burger-menu"
-import { Fragment, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
 
 const NavBar = (props) => {
