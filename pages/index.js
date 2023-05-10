@@ -54,6 +54,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <body>
       <main>
           <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
           <Header ref={ headerRef} mode={mode}/>
@@ -64,6 +65,7 @@ export default function Home() {
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
         
         </main>
+        </body>
     </>
   )
 }
