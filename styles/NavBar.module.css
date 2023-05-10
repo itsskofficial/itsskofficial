@@ -38,18 +38,19 @@
         font-weight: 600;
     }
 
-    .navLink{
+    .navLinkLight{
+        color: #171717;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 400;
     }
 
-    .navLink:hover{
+    .navLinkLight:hover{
         font-weight: 600;
         transform: scale(1.1);
     }
 
-    .navLinkActive{
+    .navLinkActiveLight{
         font-weight: 600;
     }
 
