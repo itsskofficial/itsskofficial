@@ -23,7 +23,7 @@ const Skills = forwardRef((props,ref) => {
     }, [skillsOption])
 
     const bigScreen =
-        <section ref={ref} id='skills' className={styles.parent}>
+        <section data-aos='fade-in' ref={ref} id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
                 <h1 className={styles.skillsTitle}>
                     Skills
@@ -53,7 +53,7 @@ const Skills = forwardRef((props,ref) => {
         </section>
 
     const smallScreen =
-        <section ref={ref} id='skills' className={styles.parent}>
+        <section data-aos='fade-in' ref={ref} id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
                 <h1 className={styles.skillsTitle}>
                     Skills

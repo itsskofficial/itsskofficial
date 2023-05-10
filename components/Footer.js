@@ -2,7 +2,7 @@ import styles from '@styles/Footer.module.css'
 
 const Footer = () => {
     return (
-        <section id='footer' className={styles.parent}>
+        <section data-aos='fade-in' id='footer' className={styles.parent}>
             <div className={styles.footer}>
                 <h3 className={styles.footerLogo}>
                     SK
