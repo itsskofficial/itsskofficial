@@ -106,8 +106,8 @@ const NavBar = (props) => {
                 })}
             </ul>
             <span onClick={() => {
-                if (mode==)
-                setMode('')
+                if (mode=='light')
+                setMode('dark')
             }}>
                 <i className='fa-solid fa-sun'/>
             </span>
