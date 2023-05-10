@@ -48,6 +48,7 @@ export default function Home() {
 
   return (
     <>
+      <Helmet bodyAttributes={{style:`background-color:${mode=='dark'?'#171717':'#ffffff'}`}}>
       <Head>
         <title>Sarthak Karandikar</title>
         <meta name="description" content="SK's personal portfolio" />
@@ -62,8 +63,9 @@ export default function Home() {
           <Contact ref={ contactRef } mode={mode}/>
           <Footer mode={mode}/>
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
+        
+        </main>
         </Helmet>
-      </main>
     </>
   )
 }
