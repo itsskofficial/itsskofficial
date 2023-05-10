@@ -54,8 +54,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar activeSection={activeSection} />
-        <Header ref={ headerRef}/>
+        <NavBar activeSection={activeSection} mode={mode} />
+        <Header ref={ headerRef} mode={mode}/>
         <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
