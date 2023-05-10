@@ -67,6 +67,12 @@
     transform: scale(1.1);
 }
 
+.headContactLight:hover{
+    background-color: #171717;
+    color: #171717;
+    transform: scale(1.1);
+}
+
 .headImage{
     display: flex;
     align-items: center;
