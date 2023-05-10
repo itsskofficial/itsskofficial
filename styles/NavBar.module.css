@@ -38,6 +38,21 @@
         font-weight: 600;
     }
 
+    .navLink{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .navLink:hover{
+        font-weight: 600;
+        transform: scale(1.1);
+    }
+
+    .navLinkActive{
+        font-weight: 600;
+    }
+
     .light{
         color: #171717;
     }
