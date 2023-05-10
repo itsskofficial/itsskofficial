@@ -48,7 +48,6 @@ export default function Home() {
 
   return (
     <>
-      <Helmet bodyAttributes={{style:`background-color:${mode=='dark'?'#171717':'#ffffff'}`}}>
       <Head>
         <title>Sarthak Karandikar</title>
         <meta name="description" content="SK's personal portfolio" />
