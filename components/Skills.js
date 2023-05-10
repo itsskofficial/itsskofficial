@@ -29,7 +29,7 @@ const Skills = forwardRef((props,ref) => {
                     Skills
                 </h1>
                 <div className={styles.skillsToggle}>
-                    <button className={[props.mode=='dark'?styles.skillsCode:styles.skillsCodeLight,skillsOption=='code'?props.mode=='dark'?styles.skillsActiveButton:styles.null].join(' ')} onClick={() => {
+                    <button className={[props.mode=='dark'?styles.skillsCode:styles.skillsCodeLight,skillsOption=='code'?props.mode=='dark'?styles.skillsActiveButton:styles.skillsActiveButtonLight:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
                             setSkillsOption('code')
                             setOptionChanged(true)
