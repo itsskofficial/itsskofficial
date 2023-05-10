@@ -23,17 +23,17 @@ const NavBar = (props) => {
         {
             id: 0,
             name: "Home",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight].join(' ')
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 1,
             name: "About",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight].join(' ')
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 2,
             name: "Skills",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight].join(' ')
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 3,
@@ -78,23 +78,19 @@ const NavBar = (props) => {
                                 {
                                     id: 0,
                                     name: "Home",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]                       },
                                 {
                                     id: 1,
                                     name: "About",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]                       },
                                 {
                                     id: 2,
                                     name: "Skills",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]                       },
                                 {
                                     id: 3,
                                     name: "Contact",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                }
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]                       }
                             ]
                             tempNavlinks[link['id']]['classes'] = [styles.navLink, styles.navLinkActive, props.mode=='dark'?null:styles.light].join(' ')
                             setNavlinks(tempNavlinks)
