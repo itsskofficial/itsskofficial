@@ -20,7 +20,7 @@ export default function Home() {
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
   const [mode,setMode] = useState('dark')
 
-  const 
+  const toggleMode = (m)
 
   useEffect(() => {
 
