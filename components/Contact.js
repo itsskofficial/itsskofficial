@@ -27,7 +27,7 @@ const Contact = forwardRef((props, ref) => {
                 </Link>
             </div>
             <div className={styles.contactText}>
-                <h2 className={styles.contactTitle}>
+                <h2 className={[styles.contactTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     Contact
                 </h2>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light]. join(' ')}>
