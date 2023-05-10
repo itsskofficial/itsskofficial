@@ -51,7 +51,7 @@ export default function Home() {
       <main>
         <NavBar activeSection={activeSection} />
         <Header ref={ headerRef}/>
-        <About data-aos='fade-in' ref={ aboutRef } />
+        <About ref={ aboutRef } />
         <Skills ref={ skillsRef } />
         <Contact ref={ contactRef } />
         <Footer />
