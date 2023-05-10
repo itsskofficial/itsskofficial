@@ -22,12 +22,12 @@ const NavBar = (props) => {
         {
             id: 0,
             name: "Home",
-            classes: [styles.navLink, props.mode=='dark'?null:styles.light].join(' '
+            classes: [styles.navLink, props.mode=='dark'?null:styles.light].join(' ')
         },
         {
             id: 1,
             name: "About",
-            classes: [styles.navLink, props.mode=='dark'?null:styles.light].join(' '
+            classes: [styles.navLink, props.mode=='dark'?null:styles.light].join(' ')
         },
         {
             id: 2,
