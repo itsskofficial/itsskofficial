@@ -59,30 +59,7 @@
   border: none;
 }
 
-.skillsCodeLight, .skillsToolsLight{
-  padding: 12px;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 7px;
-  font-size: 15px;
-  background-color: white;
-  color:#171717;
-  border: 1px solid #171717;
-  cursor: pointer;
-  font-weight: 800;
-  transition: all 0.3s ease-in-out;
-}
 
-.skillsCodeLight:hover, .skillsToolsLight:hover{
-background-color: #171717;
-color: white;
-transform: scale(1.1);
-}
-
-.skillsActiveButtonLight{
-background-color: #171717;
-color: white;
-border: none;
-}
 
 .skillsIcons{
   width: 30%;
