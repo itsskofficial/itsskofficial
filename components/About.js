@@ -16,7 +16,7 @@ const About = forwardRef((props, ref) => {
     const { download } = useDownloader()
     return (
         <section ref={ref} id='about' className={styles.parent}>
-            <div className={styles.aboutImage}>
+            <div data-aos='fade-in' className={styles.aboutImage}>
                 <Image src='/../public/assets/images/aboutImage.jpeg' width={mediaMatch?'400':'300'} height={mediaMatch?'500':'350'} alt='About Image' />
             </div>
             <div className={styles.aboutText}>
