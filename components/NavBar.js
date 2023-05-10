@@ -111,7 +111,7 @@ const NavBar = (props) => {
                     setMode('light')
                 props.getMode(mode)
             }}>
-                <i className={`fa-solid fa-${mode == 'dark' ? 'moon' : 'sun'}`} />
+                <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} />
             </span>
         </section>)
 
