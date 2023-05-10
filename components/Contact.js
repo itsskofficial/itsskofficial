@@ -53,7 +53,7 @@ const Contact = forwardRef((props, ref) => {
                         <i className='fa-solid fa-phone fa-2x'/>
                     </Link>
                 </div>
-                <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light]}>
+                <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light]. join(' ')}>
                     I am available on LinkedIn for discussions and stuff. If LinkedIn is not convenient you can mail me too
                 </h3>
             </div>
