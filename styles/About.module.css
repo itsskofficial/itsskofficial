@@ -74,6 +74,10 @@
 .aboutImage{
     width: 30%;
 }
+
+.light{
+    color: #171717;
+}
 }
 
 @media only screen and (max-width: 600px) {
