@@ -35,7 +35,7 @@ const Header = forwardRef((props, ref) => {
                         deletionSpeed={20} />
                     developer
                 </h2>
-                <button className={props.mode=='dark'?null:styles.lightstyles.headContact}>
+                <button className={props.mode=='dark'?tyles.headContact:styles.headContactLights}>
                     <a href='#contact'>
                         <i className='fa-solid fa-message' style={{marginRight: '10px'}} />Contact Me
                     </a>
