@@ -31,10 +31,6 @@ export default function Home() {
       observer.observe(ref.current)
     })
   },[])
-
-  useEffect(() => {
-    AOS.init();
-  }, [])
   
 
   return (
