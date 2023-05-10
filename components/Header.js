@@ -16,7 +16,7 @@ const Header = forwardRef((props, ref) => {
     return (
         <section ref={ref} id='home' className={styles.parent}>
             <div className={styles.headText}>
-                <h1 className={[styles.headTitle]}>
+                <h1 className={[styles.headTitle,props.mode=='dark'?null:styles.light].join(' ')}>
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={styles.headSubtitle}>
