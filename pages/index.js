@@ -62,7 +62,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body style={{backgroundColor:mode=='dark'?'#171717':'#ffffff'}}>
+      <body style={{backgroundColor:isDarkMode?'#171717':'#ffffff'}}>
         <main>
             <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
             <Header ref={ headerRef} mode={mode}/>
