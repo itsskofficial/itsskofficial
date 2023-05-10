@@ -65,9 +65,9 @@
   font-family: 'Montserrat', sans-serif;
   border-radius: 7px;
   font-size: 18px;
-  background-color: #171717;
-  color:white;
-  border: 1px solid white;
+  background-color: white;
+  color:#171717;
+  border: 1px solid #171717;
   cursor: pointer;
   font-weight: 800;
   transition: all 0.3s ease-in-out;
