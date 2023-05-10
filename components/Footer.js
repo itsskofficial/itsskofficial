@@ -7,7 +7,7 @@ const Footer = () => {
                 <h3 className={[styles.footerLogo, props.mode=='dark'?null:styles.light].join(' ')}>
                     SK
                 </h3>
-                <h3 className={styles.footerCopyright}>
+                <h3 className={styles.footerCopyright, props.mode=='dark'?null:styles.light}>
                     &copy;
                 </h3>
                 <h3 className={styles.footerText}>
