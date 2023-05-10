@@ -9,7 +9,6 @@ import { useState, useEffect, createRef } from 'react'
 import Script from 'next/script'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Helmet } from 'react-helmet'
 
 export default function Home() {
 
