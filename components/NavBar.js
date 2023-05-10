@@ -32,12 +32,12 @@ const NavBar = (props) => {
         {
             id: 2,
             name: "Skills",
-            classes: [styles.navLink]
+            classes: [styles.navLink, props.mode=='dark'?null:styles.light]
         },
         {
             id: 3,
             name: "Contact",
-            classes: [styles.navLink]
+            classes: [styles.navLink, props.mode=='dark'?null:styles.light]
         }
     ]
 
