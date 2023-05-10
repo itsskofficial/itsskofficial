@@ -31,6 +31,8 @@ export default function Home() {
       observer.observe(ref.current)
     })
   },[])
+
+  
   
 
   return (
