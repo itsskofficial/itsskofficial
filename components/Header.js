@@ -45,7 +45,6 @@ const Header = forwardRef((props, ref) => {
                 <Image src='/../public/assets/images/headImage.jpg' style={{width:mediaMatch?'500':'300', height:mediaMatch?'500':'300'}} priority={true} width={mediaMatch ? '450' : '300'} height={mediaMatch ? '450' : '300'} alt='Hero Image'/>
             </div>
         </section>
-        
     )
 })
 
