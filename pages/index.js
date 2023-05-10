@@ -49,7 +49,6 @@ export default function Home() {
         <Contact ref={ contactRef } />
         <Footer />
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
-        AOS.init()
       </main>
     </>
   )
