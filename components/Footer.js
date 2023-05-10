@@ -1,6 +1,6 @@
 import styles from '@styles/Footer.module.css'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <section id='footer' className={styles.parent}>
             <div className={styles.footer}>
