@@ -111,7 +111,7 @@ const NavBar = (props) => {
                 else
                     setMode('light')
             }}>
-                <i className={`fa-solid fa-${mode=='darksun`/>
+                <i className={`fa-solid fa-${mode=='dark'?'moonsun`/>
             </span>
         </section>)
 
