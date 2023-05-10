@@ -75,12 +75,12 @@
 
 .skillsCode:hover, .skillsTools:hover{
 background-color: white;
-color: #171717;
+color: white;
 transform: scale(1.1);
 }
 
 .skillsActiveButton{
-background-color: white;
+background-color: #171717;
 color: white;
 border: none;
 }
