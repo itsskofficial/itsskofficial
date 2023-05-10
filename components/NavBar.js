@@ -105,7 +105,7 @@ const NavBar = (props) => {
                     )
                 })}
             </ul>
-            <span>
+            <span onClick={}>
                 <i className='fa-solid fa-sun'/>
             </span>
         </section>)
