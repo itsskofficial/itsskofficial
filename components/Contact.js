@@ -14,7 +14,7 @@ const Contact = forwardRef((props, ref) => {
     },[])
 
     const bigScreen =
-        <section ref={ref} id='contact' className={styles.parent}>
+        <section data-aos='fade-in' ref={ref} id='contact' className={styles.parent}>
             <div className={styles.contactIcons}>
                 <Link href='https://linkedin.com/'>
                     <i className='fa-brands fa-linkedin fa-3x'/>
@@ -37,7 +37,7 @@ const Contact = forwardRef((props, ref) => {
         </section>
 
     const smallScreen =
-        <section ref={ref} id='contact' className={styles.parent}>
+        <section data-aos='fade-in' ref={ref} id='contact' className={styles.parent}>
             <div className={styles.contactText}>
                 <h2 className={styles.contactTitle}>
                     Contact
