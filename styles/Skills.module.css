@@ -59,7 +59,7 @@
   border: none;
 }
 
-.skillsCode, .skillsTools{
+.skillsCodeLight, .skillsToolsLight{
   margin-right:50px;
   padding: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -73,13 +73,13 @@
   transition: all 0.3s ease-in-out;
 }
 
-.skillsCode:hover, .skillsTools:hover{
+.skillsCodeLight:hover, .skillsToolsLight:hover{
 background-color: #171717;
 color: white;
 transform: scale(1.1);
 }
 
-.skillsActiveButton{
+.skillsActiveButtonLight{
 background-color: #171717;
 color: white;
 border: none;
