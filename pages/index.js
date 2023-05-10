@@ -65,7 +65,6 @@ export default function Home() {
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
         
         </main>
-        </Helmet>
     </>
   )
 }
