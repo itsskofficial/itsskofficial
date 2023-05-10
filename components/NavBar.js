@@ -104,6 +104,7 @@ const NavBar = (props) => {
                     )
                 })}
             </ul>
+            <
         </section>)
 
     const smallScreen = (
