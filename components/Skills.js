@@ -25,7 +25,7 @@ const Skills = forwardRef((props,ref) => {
     const bigScreen =
         <section data-aos='fade-in' ref={ref} id='skills' className={styles.parent}>
             <div className={styles.skillsText}>
-                <h1 className={styles.skillsTitle}>
+                <h1 className={styles.skillsTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     Skills
                 </h1>
                 <div className={styles.skillsToggle}>
