@@ -26,7 +26,7 @@ const About = forwardRef((props, ref) => {
                 <h2 className={[styles.aboutInfo, props.mode=='dark'?null:styles.light].join(' ')}>
                     A passionate guy who likes all things digital, from design to coding to deployment. Majorly interested in AI, IOT and Metaverse. Likes reading a lot and learns from movies/web series. Thinking about a cool future? Hit me up!
                 </h2>
-                <button className={props.mode=='dark'?null:styles.light} onClick={()=> {
+                <button className={props.mode=='dark'?styles.aboutResume:styles.light} onClick={()=> {
                     download('/assets/resources/resume.pdf', 'Resume.pdf')
                 }}>
                     <i className='fa-solid fa-file' style={{marginRight: '10px'}} />Resume
