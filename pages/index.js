@@ -55,7 +55,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Helmet bodyAttributes={{style:`background-color:${mode=='dark'?'#171717':#ffffff'}`}}>
+        <Helmet bodyAttributes={{style:`background-color:${mode=='dark'?'#171717':'#ffffff'}`}}>
           <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
           <Header ref={ headerRef} mode={mode}/>
           <About ref={ aboutRef } mode={mode}/>
