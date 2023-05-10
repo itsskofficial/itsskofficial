@@ -142,21 +142,21 @@
     border-radius: 7px;
     font-size: 15px;
     background-color: #171717;
-    color:white;
-    border: 1px solid white;
+    color:#171717;
+    border: 1px solid #171717;
     cursor: pointer;
     font-weight: 800;
     transition: all 0.3s ease-in-out;
 }
 
 .skillsCodeLight:hover, .skillsToolsLight:hover{
-  background-color: white;
+  background-color: #171717;
   color: #171717;
   transform: scale(1.1);
 }
 
 .skillsActiveButtonLight{
-  background-color: white;
+  background-color: #171717;
   color: #171717;
   border: none;
 }
