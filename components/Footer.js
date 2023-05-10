@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <section id='footer' className={styles.parent}>
             <div className={styles.footer}>
-                <h3 className={styles.footerLogo}>
+                <h3 className={[styles.footerLogo, props.mode=='dark'?null:styles.light].join(' ')}>
                     SK
                 </h3>
                 <h3 className={styles.footerCopyright}>
