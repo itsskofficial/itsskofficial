@@ -10,10 +10,6 @@
         
     }
 
-    .light{
-        color: #171717;
-    }
-
     .navbarLogo{
         font-family: 'Allura', cursive;
         font-weight: 600;
@@ -41,6 +37,9 @@
 
     .navLinkActive{
         font-weight: 600;
+    }
+    .light{
+        color: #171717;
     }
 
 }
