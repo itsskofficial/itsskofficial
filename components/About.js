@@ -23,7 +23,7 @@ const About = forwardRef((props, ref) => {
                 <h1 className={[styles.aboutTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     About
                 </h1>
-                <h2 className={[styles.aboutInfo, props.mode=='dark'?null:styles.light}>
+                <h2 className={[styles.aboutInfo, props.mode=='dark'?null:styles.light].join(' ')}>
                     A passionate guy who likes all things digital, from design to coding to deployment. Majorly interested in AI, IOT and Metaverse. Likes reading a lot and learns from movies/web series. Thinking about a cool future? Hit me up!
                 </h2>
                 <button className={styles.aboutResume} onClick={()=> {
