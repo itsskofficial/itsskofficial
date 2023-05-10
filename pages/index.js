@@ -7,8 +7,6 @@ import Contact from '@components/Contact'
 import Footer from '@components/Footer'
 import { useState, useEffect, createRef } from 'react'
 import Script from 'next/script'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 export default function Home() {
 
