@@ -74,7 +74,7 @@
 }
 
 .skillsCode:hover, .skillsTools:hover{
-background-color: white;
+background-color: #171717;
 color: white;
 transform: scale(1.1);
 }
