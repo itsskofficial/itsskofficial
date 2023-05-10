@@ -105,7 +105,7 @@ const NavBar = (props) => {
                 })}
             </ul>
             <span>
-                <i className="fa-solid fa-sun"></i>
+                <i className='fa-solid fa-sun'></i>
             </span>
         </section>)
 
