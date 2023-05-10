@@ -66,8 +66,8 @@
 }
 
 .aboutResume:hover{
-    background-color: white;
-    color: #171717;
+    background-color: #171717;
+    color: white;
     transform: scale(1.1);
 }
 
