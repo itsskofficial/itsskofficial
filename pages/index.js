@@ -56,9 +56,9 @@ export default function Home() {
       <main>
         <NavBar activeSection={activeSection} mode={mode} />
         <Header ref={ headerRef} mode={mode}/>
-        <About ref={ aboutRef } />
-        <Skills ref={ skillsRef } />
-        <Contact ref={ contactRef } />
+        <About ref={ aboutRef } mode={mode}/>
+        <Skills ref={ skillsRef } mode={mode}/>
+        <Contact ref={ contactRef } mode={mode}/>
         <Footer />
         <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
       </main>
