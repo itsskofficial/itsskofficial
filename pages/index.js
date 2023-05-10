@@ -55,17 +55,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-      <main>
-          <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
-          <Header ref={ headerRef} mode={mode}/>
-          <About ref={ aboutRef } mode={mode}/>
-          <Skills ref={ skillsRef } mode={mode}/>
-          <Contact ref={ contactRef } mode={mode}/>
-          <Footer mode={mode}/>
-          <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
-        
+        <main>
+            <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
+            <Header ref={ headerRef} mode={mode}/>
+            <About ref={ aboutRef } mode={mode}/>
+            <Skills ref={ skillsRef } mode={mode}/>
+            <Contact ref={ contactRef } mode={mode}/>
+            <Footer mode={mode}/>
+            <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
+          
         </main>
-        </body>
+      </body>
     </>
   )
 }
