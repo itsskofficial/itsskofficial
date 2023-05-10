@@ -120,7 +120,7 @@ const NavBar = (props) => {
                     props.toggleMode('light')
                
             }}>
-                <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color}} />
+                <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color:props.mode=='dark'?}} />
             </span>
         </section>)
 
