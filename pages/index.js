@@ -20,6 +20,7 @@ export default function Home() {
   const contactRef = createRef()
   const refs = [headerRef, aboutRef, skillsRef, contactRef]
   const [mode,setMode] = useState('dark')
+  var isDarkMode=true
 
   const toggleMode = (userMode) =>{
     setMode(userMode)
@@ -50,7 +51,7 @@ export default function Home() {
       isDarkMode=true
     else
       isDarkMode = false
-  })
+  },[])
   
 
   return (
