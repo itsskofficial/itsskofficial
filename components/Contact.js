@@ -39,7 +39,7 @@ const Contact = forwardRef((props, ref) => {
     const smallScreen =
         <section data-aos='fade-in' ref={ref} id='contact' className={styles.parent}>
             <div className={styles.contactText}>
-                <h2 className={styles.contactTitle}>
+                <h2 className={[styles.contactTitle, props.mode=='dark'?null:styles.light]}>
                     Contact
                 </h2>
                 <div className={styles.contactIcons}>
