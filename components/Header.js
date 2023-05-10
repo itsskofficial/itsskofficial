@@ -19,7 +19,7 @@ const Header = forwardRef((props, ref) => {
                 <h1 className={[styles.headTitle,props.mode=='dark'?null:styles.light].join(' ')}>
                     Hey, I'm Sarthak
                 </h1>
-                <h2 className={[styles.headSubtitle, props.mode=='dark'?null:styles.light}>
+                <h2 className={[styles.headSubtitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     I am a{' '}
                     <TypeAnimation 
                         sequence={[
