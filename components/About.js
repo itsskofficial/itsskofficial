@@ -27,7 +27,7 @@ const About = forwardRef((props, ref) => {
                     A passionate guy who likes all things digital, from design to coding to deployment. Majorly interested in AI, IOT and Metaverse. Likes reading a lot and learns from movies/web series. Thinking about a cool future? Hit me up!
                 </h2>
                 <button className={styles.aboutResume} onClick={()=> {
-                    download('/../public/assets/resources/resume.pdf', 'Resume.pdf')
+                    download('/assets/resources/resume.pdf', 'Resume.pdf')
                 }}>
                     <i className='fa-solid fa-file' style={{marginRight: '10px'}} />Resume
                 </button>
