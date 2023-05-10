@@ -54,7 +54,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar activeSection={activeSection} mode={mode} toggleMode{toggleMode} />
+        <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
         <Header ref={ headerRef} mode={mode}/>
         <About ref={ aboutRef } mode={mode}/>
         <Skills ref={ skillsRef } mode={mode}/>
