@@ -104,7 +104,7 @@ const NavBar = (props) => {
                                     classes: [isDarkMode?styles.navLink:styles.navLinkLight]
                                 }
                             ]
-                            tempNavlinks[link['id']]['classes'] = [isDarkMode?styles.navLink:styles.navLinkLight,[isDarkMode?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
+                            tempNavlinks[link['id']]['classes'] = [isDarkMode?styles.navLink:styles.navLinkLight,isDarkMode?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
                             setNavlinks(tempNavlinks)
                         }}>
                             {link['name']}
