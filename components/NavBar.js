@@ -21,7 +21,7 @@ const NavBar = (props) => {
     },[])
 
     useEffect(() => {
-        if (mode == 'dark')
+        if (props.mode == 'dark')
         isDarkMode=true
       else
         isDarkMode = false
@@ -31,22 +31,22 @@ const NavBar = (props) => {
         {
             id: 0,
             name: "Home",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+            classes: [?styles.navLink:styles.navLinkLight]
         },
         {
             id: 1,
             name: "About",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+            classes: [?styles.navLink:styles.navLinkLight]
         },
         {
             id: 2,
             name: "Skills",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+            classes: [?styles.navLink:styles.navLinkLight]
         },
         {
             id: 3,
             name: "Contact",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight].join(' ')
+            classes: [?styles.navLink:styles.navLinkLight].join(' ')
         }
     ]
 
@@ -61,7 +61,7 @@ const NavBar = (props) => {
     const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
         id: link['id'],
         name: link['name'],
-        classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight, props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
+        classes: [?styles.navLink:styles.navLinkLight,[?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
     } :
         link
     )
@@ -74,7 +74,7 @@ const NavBar = (props) => {
     
     const bigScreen = (
         <section className={styles.parent}>
-            <h2 className={[styles.navbarLogo, props.mode=='dark'?null:styles.light].join(' ')}>
+            <h2 className={[styles.navbarLogo,[?null:styles.light].join(' ')}>
                 SK
             </h2>
             <ul className={styles.navList} style={{listStyleType:"none"}}>
@@ -86,25 +86,25 @@ const NavBar = (props) => {
                                 {
                                     id: 0,
                                     name: "Home",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+                                    classes: [?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 1,
                                     name: "About",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+                                    classes: [?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 2,
                                     name: "Skills",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+                                    classes: [?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 3,
                                     name: "Contact",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+                                    classes: [?styles.navLink:styles.navLinkLight]
                                 }
                             ]
-                            tempNavlinks[link['id']]['classes'] = [props.mode=='dark'?styles.navLink:styles.navLinkLight, props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
+                            tempNavlinks[link['id']]['classes'] = [?styles.navLink:styles.navLinkLight,[?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
                             setNavlinks(tempNavlinks)
                         }}>
                             {link['name']}
