@@ -33,7 +33,7 @@ export default function Home() {
   },[])
 
   useEffect(() => {
-    AOS.init({
+    Aos.init({
       duration: 2000
     });
   }, [])
