@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
                 <Image src='/../public/assets/images/about.jpg' width={mediaMatch?'450':'300'} height={mediaMatch?'450':'300'} alt='About Image' />
             </div>
             <div className={styles.aboutText}>
-                <h1 className={styles.aboutTitle}>
+                <h1 className={styles.aboutTitle, props.mode=='dark'?null:styles.light}>
                     About
                 </h1>
                 <h2 className={styles.aboutInfo}>
