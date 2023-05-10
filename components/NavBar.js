@@ -38,7 +38,7 @@ const NavBar = (props) => {
         {
             id: 3,
             name: "Contact",
-            classes: [styles.navLink, props.mode=='dark'?null:styles.light].join(' ')
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight].join(' ')
         }
     ]
 
