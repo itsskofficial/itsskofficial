@@ -20,7 +20,9 @@ const NavBar = (props) => {
         }
     },[])
 
-    useEffect(())
+    useEffect(() => {
+        if 
+    })
 
     const tempNavlinks = [
         {
