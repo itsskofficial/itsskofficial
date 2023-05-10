@@ -9,6 +9,7 @@ import { useState, useEffect, createRef } from 'react'
 import Script from 'next/script'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Helmet } from 'react-helmet'
 
 export default function Home() {
 
@@ -54,6 +55,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Helmet></Helmet>
         <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
         <Header ref={ headerRef} mode={mode}/>
         <About ref={ aboutRef } mode={mode}/>
