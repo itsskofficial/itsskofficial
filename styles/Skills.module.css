@@ -135,6 +135,31 @@
     color: #171717;
     border: none;
   }
+
+  .skillsCode, .skillsTools{
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: #171717;
+    color:white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+.skillsCode:hover, .skillsTools:hover{
+  background-color: white;
+  color: #171717;
+  transform: scale(1.1);
+}
+
+.skillsActiveButton{
+  background-color: white;
+  color: #171717;
+  border: none;
+}
   
   .skillsIcons{
     width: 80%;
