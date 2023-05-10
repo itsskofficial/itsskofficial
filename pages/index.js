@@ -44,6 +44,11 @@ export default function Home() {
     })
     Aos.refresh()
   }, [])
+
+  useEffect(() => {
+    if (mode == 'dark')
+        
+  })
   
 
   return (
