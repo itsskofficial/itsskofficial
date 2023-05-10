@@ -24,7 +24,6 @@
     }
 
     .navLink{
-        color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 400;
@@ -38,7 +37,7 @@
     .navLinkActive{
         font-weight: 600;
     }
-    
+
     .light{
         color: #171717;
     }
