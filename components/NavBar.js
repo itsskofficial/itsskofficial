@@ -118,7 +118,7 @@ const NavBar = (props) => {
 
     const smallScreen = (
         <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
-            <h2 className={styles.navbarLogo}>
+            <h2 className={[styles.navbarLogo,props.mode=='dark'?null:styles.light].join(' ')}>
                 SK
             </h2>
             <Menu className={styles.navbarMenu} right width={150} isOpen={isMenuOpen} onStateChange={handleMenuChange}>
