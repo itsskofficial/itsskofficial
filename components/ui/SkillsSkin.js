@@ -2,7 +2,7 @@ import styles from '@styles/SkillsSkin.module.css'
 import { Fragment } from 'react'
 import { useMediaQuery } from 'usehooks-ts'
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const SkillsSkin = (props) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
