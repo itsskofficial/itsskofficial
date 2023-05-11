@@ -140,16 +140,16 @@
         font-family: 'Montserrat', sans-serif;
         border-radius: 7px;
         font-size: 15px;
-        background-color: #171717;
-        color: white;
-        border: 2px solid white;
+        background-color: white;
+        color: #171717;
+        border: 2px solid #171717;
         font-weight: 800;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }
 
     .aboutResumeLight:hover{
-        background-color: white;
+        background-color: #171717;
         color: #171717;
         transform: scale(1.1);
     }
