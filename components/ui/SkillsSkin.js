@@ -21,8 +21,6 @@ const SkillsSkin = (props) => {
                 <i className={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
                 <Image src='/assets/images/cpp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='C++ Icon'/>
                 <i className={`fa-brands fa-html5 fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
-                
-                
             </div>
             <div className={styles.skillsSkinRow} >
                 <i className={`fa-brands fa-css3 fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
