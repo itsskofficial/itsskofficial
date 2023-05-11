@@ -150,7 +150,7 @@
 
     .aboutResumeLight:hover{
         background-color: #171717;
-        color: #171717;
+        color: white;
         transform: scale(1.1);
     }
 
