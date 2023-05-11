@@ -219,12 +219,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Morph shape necessary with bubble or elastic */
-.bm-morph-shape-light {
+.bm-morph-shape {
   fill: white;
 }
 
 /* Wrapper for item list */
-.bm-item-list-light {
+.bm-item-list {
   color: white;
   padding: 0.8em;
 }
