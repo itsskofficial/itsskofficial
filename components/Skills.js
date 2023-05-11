@@ -7,7 +7,7 @@ const Skills = forwardRef((props,ref) => {
     const [skillsOption, setSkillsOption] = useState('code')
     const [optionChanged, setOptionChanged] = useState(false)
     const isBigScreen = useMediaQuery('(min-width:1201px)')
-    var mediaMatch = true
+    const [mediaMatch, setMediaMatch] = useState(true)
     
     useEffect(() => {
         if (isBigScreen == false){
