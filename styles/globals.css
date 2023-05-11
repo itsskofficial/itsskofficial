@@ -183,12 +183,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Color/shape of burger icon bars */
-.bm-burger-bars-light {
+.bm-burger-bars {
   background: #171717;
 }
 
 /* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover-light {
+.bm-burger-bars-hover {
   transform: scale(1.1);
 }
 
