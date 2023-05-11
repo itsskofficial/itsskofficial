@@ -59,7 +59,7 @@ const NavBar = (props) => {
     )
 
     const [navlinks, setNavlinks] = useState(initialNavlinks)
-    console.log(navLin)
+    console.log(navlinks)
     useEffect(() => {
         setNavlinks(initialNavlinks)
     }, [activeSection])
