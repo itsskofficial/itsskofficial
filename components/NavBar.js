@@ -19,7 +19,7 @@ const NavBar = (props) => {
         }
     })
 
-    console.log(mediaMatch)
+    console.log
 
     const tempNavlinks = [
         {
