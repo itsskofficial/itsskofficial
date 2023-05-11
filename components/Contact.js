@@ -61,7 +61,7 @@ const Contact = forwardRef((props, ref) => {
     console.log(isBigScreen)
     console.log(mediaMatch)
     return (
-        mediaMatch?bigScreen:smallScreen
+        isBigScreen?bigScreen:smallScreen
     )
 })
 
