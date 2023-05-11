@@ -58,7 +58,7 @@ export default function Home() {
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel='stylesheet' href={mode=='dark'?'styles/menu.css':'styles/menuLight.css'}/>
+        <link rel='stylesheet' href={mode=='dark'?'/styles/menu.css':'/styles/menuLight.css'}/>
       </Head>
         <main>
           <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
