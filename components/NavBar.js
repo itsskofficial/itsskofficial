@@ -28,22 +28,22 @@ const NavBar = (props) => {
         {
             id: 0,
             name: "Home",
-            classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 1,
             name: "About",
-            classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 2,
             name: "Skills",
-            classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         },
         {
             id: 3,
             name: "Contact",
-            classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
         }
     ]
 
@@ -58,7 +58,7 @@ const NavBar = (props) => {
     const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
         id: link['id'],
         name: link['name'],
-        classes: [isDarkMode?styles.navLink:styles.navLinkLight,isDarkMode?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
+        classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight,props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
     } :
         link
     )
@@ -70,8 +70,8 @@ const NavBar = (props) => {
     }, [activeSection])
     
     const bigScreen = (
-        <section className={isDarkMode?styles.parent:styles.parentLight}>
-            <h2 className={[styles.navbarLogo,isDarkMode?null:styles.light].join(' ')}>
+        <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
+            <h2 className={[styles.navbarLogo,props.mode=='dark'?null:styles.light].join(' ')}>
                 SK
             </h2>
             <ul className={styles.navList} style={{listStyleType:"none"}}>
@@ -83,25 +83,25 @@ const NavBar = (props) => {
                                 {
                                     id: 0,
                                     name: "Home",
-                                    classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 1,
                                     name: "About",
-                                    classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 2,
                                     name: "Skills",
-                                    classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 3,
                                     name: "Contact",
-                                    classes: [isDarkMode?styles.navLink:styles.navLinkLight]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 }
                             ]
-                            tempNavlinks[link['id']]['classes'] = [isDarkMode?styles.navLink:styles.navLinkLight,isDarkMode?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
+                            tempNavlinks[link['id']]['classes'] = [props.mode=='dark'?styles.navLink:styles.navLinkLight,props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
                             setNavlinks(tempNavlinks)
                         }}>
                             {link['name']}
