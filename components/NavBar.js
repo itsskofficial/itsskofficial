@@ -73,7 +73,7 @@ const NavBar = (props) => {
     }, [activeSection])
     
     const bigScreen = (
-        <section className={styles.parent}>
+        <section className={props.mode?styles.parent}>
             <h2 className={[styles.navbarLogo,isDarkMode?null:styles.light].join(' ')}>
                 SK
             </h2>
