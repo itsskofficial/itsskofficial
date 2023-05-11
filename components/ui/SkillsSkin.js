@@ -11,7 +11,7 @@ const SkillsSkin = (props) => {
         if (isBigScreen == false){
             setMediaMatch(false)
         }
-    })
+    },[is])
 
     const codeIcons = (
         <Fragment>
