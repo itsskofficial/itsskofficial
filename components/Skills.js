@@ -12,7 +12,8 @@ const Skills = forwardRef((props,ref) => {
         if (isBigScreen == false){
             mediaMatch=false
         }
-    },[isBigScreen])
+        console.log()
+    },[])
 
     useEffect(() => {
         if (optionChanged) {
