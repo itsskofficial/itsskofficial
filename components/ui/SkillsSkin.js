@@ -30,7 +30,7 @@ const SkillsSkin = (props) => {
                 <Image src='/assets/images/mongodb.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='MongoDB Icon'/>
             </div>
             <div className = {styles.skillsSkinRow } >
-                <Image src='/assets/images/nextjs.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='NextJS Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/nextjs.svg' : 'assets/images/ejslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='NextJS Icon'/>
                 {/* <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} /> */}
                 <Image src='/assets/images/tf.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <Image src='/assets/images/numpy.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
