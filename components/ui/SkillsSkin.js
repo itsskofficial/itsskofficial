@@ -65,7 +65,7 @@ const SkillsSkin = (props) => {
             </div>
             <div className={styles.skillsSkinRow}>
                 <i className={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
-                <Image src={props.mode == 'dark' ? '/assets/images/lmmms.svg' : 'assets/images/lmmmslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='LMMS Icon' />
+                <Image src={props.mode == 'dark' ? '/assets/images/lmmms.svg' : 'assets/images/lmmslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='LMMS Icon' />
                 <Image src={props.mode == 'dark' ? '/assets/images/inkscape.svg' : 'assets/images/inkscapelight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Inkscape Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/vscode.svg' : 'assets/images/vscodelight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='VSCode Icon'/>
                 <i className={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
