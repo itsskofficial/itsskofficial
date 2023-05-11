@@ -24,12 +24,12 @@ export default function Home() {
     setMode(userMode)
   }
   useEffect(() => {
-    
-  })
-  if (mode == 'dark')
+    if (mode == 'dark')
       document.body.style.backgroundColor = '#171717'
     else
       document.body.style.backgroundColor = '#ffffff'
+  },[mode])
+  
 
   useEffect(() => {
 
