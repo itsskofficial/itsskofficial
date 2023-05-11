@@ -47,7 +47,7 @@ export default function Home() {
 
   useEffect(() => {
     if (mode == 'dark')
-      document.body.style.backgroundColor=
+      document.body.style.backgroundColor=#171717
   },[])
   
 
