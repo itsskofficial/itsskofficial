@@ -46,6 +46,7 @@ const NavBar = (props) => {
         setIsMenuOpen(false)
     }
 
+    console.log(mediaMatch)
     const handleMenuChange = (state) => {
         setIsMenuOpen(state.isOpen)
     }
