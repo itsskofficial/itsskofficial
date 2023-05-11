@@ -19,7 +19,7 @@ const NavBar = (props) => {
             mediaMatch=false
         }
         mediaMatch?mediaMatchTemp=true:mediaMatchTemp=false
-    },[])
+    },[props])
 
     console.log(mediaMatchTemp)
 
