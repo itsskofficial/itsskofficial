@@ -117,7 +117,7 @@ const NavBar = (props) => {
             </span>
         </section>)
     
-    console.log(burgerMenuClassesLight.map((c) =>  `styles.` ))
+    console.log(burgerMenuClassesLight.map((c) =>  `styles.${c}` ))
 
     const smallScreen = (
         <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
