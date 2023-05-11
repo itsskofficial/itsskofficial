@@ -9,7 +9,7 @@ const Contact = forwardRef((props, ref) => {
     const [mediaMatch, setMediaMatch] = useState(true)
     useEffect(() => {
         if (isBigScreen == false){
-            setMediaMatch=false
+            setMediaMatch(false)
         }
     },[props])
 
