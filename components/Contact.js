@@ -2,7 +2,7 @@ import Link from "next/link"
 import styles from '@styles/Contact.module.css'
 import { forwardRef } from "react"
 import { useMediaQuery } from "usehooks-ts"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Contact = forwardRef((props, ref) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
