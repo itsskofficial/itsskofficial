@@ -58,7 +58,7 @@ const SkillsSkin = (props) => {
             </div>
             <div className={styles.skillsSkinRow}>
                 <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Asana Icon' />
-                <Image src=props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Gimp Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Gimp Icon'/>
                 <i className={`fa-brands fa-slack fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <i className={`fa-brands fa-jira fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <i className={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
