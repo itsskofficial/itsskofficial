@@ -35,7 +35,7 @@ const Skills = forwardRef((props,ref) => {
                             setOptionChanged(true)
                         }   
                     }}>
-                        <i className='fa-solid fa-code' style={{marginRight: '10px'}} />Code
+                        <i className='fa-solid fa-code' style={{marginRight: '10px', color:props.mode=='light' && '#171717'}} />Code
                     </button>
                     <button className={[props.mode=='dark'?styles.skillsTools:styles.skillsToolsLight,skillsOption=='tools'?props.mode=='dark'?styles.skillsActiveButton:styles.skillsActiveButtonLight:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
