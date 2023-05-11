@@ -89,6 +89,10 @@ body {
   scroll-behavior: smooth;
 }
 
+main{
+  overflow-x: hidden;
+}
+
 
 a {
   color: inherit;
