@@ -40,7 +40,7 @@ const SkillsSkin = (props) => {
             <div className = {styles.skillsSkinRow } >
                 {/* <Image src='/assets/images/sklearn.png' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='ScikitLearn Icon'/> */}
                 <Image src={props.mode == 'dark' ? '/assets/images/solidity.svg' : 'assets/images/soliditylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Solidity Icon'/>
-                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Arduino Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/arduino.svg' : 'assets/images/arduinolight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Arduino Icon'/>
                 {/* <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/> */}
             </div>
         </Fragment>
