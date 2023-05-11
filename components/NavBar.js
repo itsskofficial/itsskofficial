@@ -125,7 +125,7 @@ const NavBar = (props) => {
             <h2 className={[styles.navbarLogo,props.mode=='dark'?null:styles.light].join(' ')}>
                 SK
             </h2>
-            <Menu className={[props.mode=='dark'?burgerMenuClasses:burgerMenuClassesLight].join(' ')} right width={150} isOpen={isMenuOpen} onStateChange={handleMenuChange}>
+            <Menu className={[props.mode=='dark'?burgerMenuClasses:burgerMenuClassesLight.].join(' ')} right width={150} isOpen={isMenuOpen} onStateChange={handleMenuChange}>
                 {navlinks.map(link => {
                     return (
                         <a key={link['id']} href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
