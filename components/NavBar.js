@@ -160,7 +160,7 @@ const NavBar = (props) => {
 
 
     return (
-         2+2==5 ? bigScreen : smallScreen
+         mediaMatch ? bigScreen : smallScreen
     )
 }
 
