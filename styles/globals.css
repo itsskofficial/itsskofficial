@@ -230,13 +230,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Individual item */
-.bm-item-light {
+.bm-item {
   display: inline-block;
   margin-bottom: 20px;
 }
 
 /* Styling of overlay */
-.bm-overlay-light {
+.bm-overlay {
   background: white;
   height: 30%;
 }
