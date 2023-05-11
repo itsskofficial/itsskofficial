@@ -5,7 +5,7 @@ import About from '@components/About'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
 import Footer from '@components/Footer'
-import { useState, useEffect, createRef } from 'react'
+import { useState, useEffect, createRef, Fragment } from 'react'
 import Script from 'next/script'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -54,7 +54,7 @@ export default function Home() {
   
 
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Sarthak Karandikar</title>
         <meta name="description" content="SK's personal portfolio" />
@@ -72,6 +72,6 @@ export default function Home() {
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
         </main>
       </body>}
-    </>
+    </Fragment>
   )
 }
