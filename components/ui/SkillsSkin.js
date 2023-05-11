@@ -54,7 +54,7 @@ const SkillsSkin = (props) => {
                 <Image src='/assets/images/canva.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Canva Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/audacity.svg' : 'assets/images/audacitylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Audacity Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/davinci.svg' : 'assets/images/davincilight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Davinci Icon'/>
-                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/trellolight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Trello Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/trello.svg' : 'assets/images/trellolight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Trello Icon'/>
             </div>
             <div className={styles.skillsSkinRow}>
                 <Image src='/assets/images/asana.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Asana Icon' />
