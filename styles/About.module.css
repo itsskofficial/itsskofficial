@@ -135,9 +135,32 @@
         transform: scale(1.1);
     }
 
+    .aboutResume{
+        padding: 12px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 7px;
+        font-size: 15px;
+        background-color: #171717;
+        color: white;
+        border: 2px solid white;
+        font-weight: 800;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .aboutResume:hover{
+        background-color: white;
+        color: #171717;
+        transform: scale(1.1);
+    }
+
     .aboutImage{
         display: flex;
         align-items: center;
         margin-bottom: 50px
+    }
+
+    .light{
+        color:#171717
     }
 }
