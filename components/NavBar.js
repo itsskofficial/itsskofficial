@@ -12,17 +12,12 @@ const NavBar = (props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
-    var isDarkMode= true
 
     useEffect(() => {
         if (isBigScreen == false){
             mediaMatch=false
         }
     }, [])
-    
-    useEffect(() => {
-       props.mode=='dark'?isDarkMode=true:isDarkMode=false
-    },[props.mode])
 
     const tempNavlinks = [
         {
