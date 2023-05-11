@@ -220,7 +220,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: white;
+  color: #171717;
   padding: 0.8em;
 }
 
@@ -232,6 +232,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Styling of overlay */
 .bm-overlay-light {
-  background: #171717;
+  background: white;
   height: 30%;
 }
