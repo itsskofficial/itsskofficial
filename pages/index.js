@@ -47,7 +47,7 @@ export default function Home() {
 
   useEffect(() => {
     if (mode == 'dark')
-      document.body.cla
+      document.body.style=
   },[])
   
 
