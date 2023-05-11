@@ -62,7 +62,7 @@ const Skills = forwardRef((props,ref) => {
                     <SkillsSkin option={skillsOption} />
                 </div> 
                 <div className={styles.skillsToggle}>
-                    <button className={[styles.skillsCode,skillsOption=='code'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                    <button className={[props.mode=='dark'?styles.skillsCode:styles.skillsCodeLight,skillsOption=='code'?props.mode=='dark'?styles.skillsActiveButton:styles.skillsActiveButtonLight:null].join(' ')} onClick={() => {
                         if (skillsOption != 'code') {
                             setSkillsOption('code')
                             setOptionChanged(true)
@@ -70,7 +70,7 @@ const Skills = forwardRef((props,ref) => {
                     }}>
                         <i className='fa-solid fa-code' style={{marginRight: '10px'}} />Code
                     </button>
-                    <button className={[styles.skillsTools,skillsOption=='tools'?styles.skillsActiveButton:null].join(' ')} onClick={() => {
+                    <button className={[props.mode=='dark'?styles.skillsTools:styles.skillsToolsLight,skillsOption=='tools'?props.mode=='dark'?styles.skillsActiveButton:styles.skillsActiveButtonLight:null].join(' ')} onClick={() => {
                         if (skillsOption != 'tools') {
                             setSkillsOption('tools')
                             setOptionChanged(true)
