@@ -52,7 +52,7 @@ const SkillsSkin = (props) => {
     const toolsIcons = (
         <Fragment>
             <div className = {styles.skillsSkinRow }>
-                <i className={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
                 <Image src='/assets/images/canva.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Canva Icon'/>
                 <Image src='/assets/images/audacity.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Audacity Icon'/>
                 <Image src='/assets/images/davinci.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Davinci Icon'/>
@@ -61,7 +61,7 @@ const SkillsSkin = (props) => {
             <div className={styles.skillsSkinRow}>
                 <Image src='/assets/images/asana.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Asana Icon' />
                 <Image src='/assets/images/gimp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Gimp Icon'/>
-                <i className={`fa-brands fa-slack fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-slack fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
                 <i className={`fa-brands fa-jira fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
                 <i className={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
             </div>
