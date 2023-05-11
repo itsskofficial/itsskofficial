@@ -11,7 +11,7 @@ const Contact = forwardRef((props, ref) => {
         if (isBigScreen == false){
             mediaMatch=false
         }
-    },[props.mode])
+    },[])
 
     const bigScreen =
         <section data-aos='fade-in' ref={ref} id='contact' className={styles.parent}>
