@@ -57,7 +57,7 @@ export default function Home() {
         <title>Sarthak Karandikar</title>
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href='/assets/images/favicon.png' />
+        <link rel="icon" href={mode=='dark'?'/assets/images/favicon.png':'/asset' />
         <link rel='stylesheet' href={mode=='dark'?'/assets/css/menu.css':'/assets/css/menuLight.css'} type='text/css'/>
       </Head>
         <main>
