@@ -74,7 +74,7 @@ const NavBar = (props) => {
     
     const bigScreen = (
         <section className={props.mode?styles.parent:styles.parentLight}>
-            <h2 className={[styles.navbarLogo,isDarkMode?null:styles.light].join(' ')}>
+            <h2 className={[styles.navbarLogo,props.mode?null:styles.light].join(' ')}>
                 SK
             </h2>
             <ul className={styles.navList} style={{listStyleType:"none"}}>
