@@ -20,7 +20,7 @@ const NavBar = (props) => {
     }, [])
     
     useEffect(() => {
-       props.mode=='dark'
+       props.mode=='dark'?isDarkMode=true:isDarkMode=false
     },[])
 
     const tempNavlinks = [
