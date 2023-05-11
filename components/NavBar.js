@@ -17,9 +17,7 @@ const NavBar = (props) => {
         if (isBigScreen == false){
             mediaMatch=false
         }
-        if mediaMatch == false{
-            med
-        }
+        mediaMatch?
     })
 
     console.log(mediaMatch)
