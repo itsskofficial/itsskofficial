@@ -12,14 +12,12 @@ const NavBar = (props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
-    var mediaMatchTemp=true
 
     useEffect(() => {
         if (isBigScreen == false){
             mediaMatch=false
         }
-        mediaMatch?mediaMatchTemp=true:mediaMatchTemp=false
-    },[props])
+    })
 
     console.log(mediaMatchTemp)
 
