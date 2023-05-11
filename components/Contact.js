@@ -47,10 +47,10 @@ const Contact = forwardRef((props, ref) => {
                         <i className='fa-brands fa-linkedin fa-2x' style={{color:props.mode=='light' && '#171717'}}/>
                     </Link>
                     <Link href='mailto:sarthakkarandikar03@gmail.com'>
-                        <i className='fa-solid fa-envelope fa-2x'/>
+                        <i className='fa-solid fa-envelope fa-2x' style={{color:props.mode=='light' && '#171717'}}/>
                     </Link>
                     <Link href='tel:+918275017823'>
-                        <i className='fa-solid fa-phone fa-2x'/>
+                        <i className='fa-solid fa-phone fa-2x' style={{color:props.mode=='light' && '#171717'}}/>
                     </Link>
                 </div>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light]. join(' ')}>
