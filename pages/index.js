@@ -46,11 +46,7 @@ export default function Home() {
   }, [])
 
   
-    if (mode == 'dark')
-      document.body.style.backgroundColor = '#171717'
-    else
-      document.body.style.backgroundColor = '#ffffff'
-  
+    
 
   return (
     <Fragment>
