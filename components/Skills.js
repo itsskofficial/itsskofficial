@@ -14,6 +14,7 @@ const Skills = forwardRef((props,ref) => {
             mediaMatch=false
         }
         console.log("hi")
+        console.log(mediaMatch)
     },[])
 
     useEffect(() => {
