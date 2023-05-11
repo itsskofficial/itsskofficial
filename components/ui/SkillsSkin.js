@@ -15,7 +15,7 @@ const SkillsSkin = (props) => {
 
     const codeIcons = (
         <Fragment>
-            <div className={styles.skillsSkinRow} style={{color:}}>
+            <div className={styles.skillsSkinRow}>
                 <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <i className={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <i className={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
