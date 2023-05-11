@@ -15,7 +15,7 @@ const NavBar = (props) => {
 
     useEffect(() => {
         if (isBigScreen == false){
-            setmediaMatch=false
+            setMediaMatch(false)
         }
     })
 
