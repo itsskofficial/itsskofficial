@@ -85,10 +85,10 @@ const Skills = forwardRef((props,ref) => {
             </div>
         </section>
     
-    return (
+    return ({
         console.log(mediaMatch)
-        mediaMatch?bigScreen:smallScreen
-    )
+        mediaMatch?bigScreen: smallScreen
+    })
 })
 
 export default Skills
