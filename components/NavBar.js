@@ -117,7 +117,7 @@ const NavBar = (props) => {
         </section>)
 
     const smallScreen = (
-        <section className={styles.parent}>
+        <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
             <h2 className={styles.navbarLogo}>
                 SK
             </h2>
