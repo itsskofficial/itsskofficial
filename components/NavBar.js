@@ -19,6 +19,8 @@ const NavBar = (props) => {
         }
     })
 
+    console.log(mediaMatch)
+
     const tempNavlinks = [
         {
             id: 0,
