@@ -23,7 +23,9 @@ export default function Home() {
   const toggleMode = (userMode) =>{
     setMode(userMode)
   }
-
+  useEffect(() => {
+    
+  })
   if (mode == 'dark')
       document.body.style.backgroundColor = '#171717'
     else
