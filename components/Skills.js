@@ -83,7 +83,7 @@ const Skills = forwardRef((props,ref) => {
         </section>
     
     return (
-        isBigScreen?bigScreen:smallScreen
+        2+2==5?bigScreen:smallScreen
     )
 })
 
