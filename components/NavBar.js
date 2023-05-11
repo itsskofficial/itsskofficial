@@ -28,7 +28,7 @@ const NavBar = (props) => {
         {
             id: 0,
             name: "Home",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
+            classes: [isDarkMode?styles.navLink:styles.navLinkLight]
         },
         {
             id: 1,
