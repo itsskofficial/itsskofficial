@@ -49,9 +49,6 @@ export default function Home() {
     Aos.refresh()
   }, [])
 
-  
-    
-
   return (
     <Fragment>
       <Head>
@@ -59,7 +56,6 @@ export default function Home() {
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        {/* <body style={{backgroundColor:mode=='dark'?'#171717':'#ffffff'}}/> */}
       </Head>
         <main>
           <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
