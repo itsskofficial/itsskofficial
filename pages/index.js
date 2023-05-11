@@ -47,9 +47,7 @@ export default function Home() {
 
   useEffect(() => {
     if (mode == 'dark')
-      isDarkMode=true
-    else
-      isDarkMode = false
+      
   },[])
   
 
