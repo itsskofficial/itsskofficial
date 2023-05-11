@@ -7,6 +7,7 @@ import Contact from '@components/Contact'
 import Footer from '@components/Footer'
 import { useState, useEffect, createRef, Fragment } from 'react'
 import Script from 'next/script'
+import Style
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
