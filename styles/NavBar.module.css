@@ -63,6 +63,10 @@
         font-weight: 600;
     }
 
+    .light{
+        color: #171717;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
