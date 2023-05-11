@@ -132,7 +132,6 @@
         font-weight: 800;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-        margin-bottom: 50px;
     }
     
     .headContact:hover{
@@ -163,7 +162,7 @@
     .headImage{
         display: flex;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .light{
