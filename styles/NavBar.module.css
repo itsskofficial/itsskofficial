@@ -80,6 +80,16 @@
         background-color: #171717;
     }
 
+    .parent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: sticky;
+        top:0;
+        background-color: #white;
+    }
+
     .navbarLogo{
         font-family: 'Allura', cursive;
         font-weight: 600;
