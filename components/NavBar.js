@@ -129,22 +129,22 @@ const NavBar = (props) => {
                                 {
                                     id: 0,
                                     name: "Home",
-                                    classes: [styles.navLink]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 1,
                                     name: "About",
-                                    classes: [styles.navLink]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 2,
                                     name: "Skills",
-                                    classes: [styles.navLink]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 },
                                 {
                                     id: 3,
                                     name: "Contact",
-                                    classes: [styles.navLink]
+                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
                                 }
                             ]
                             tempNavlinks[link['id']]['classes'] = [styles.navLink, styles.navLinkActive].join(' ')
