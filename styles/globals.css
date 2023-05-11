@@ -170,6 +170,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #171717;
   height: 30%;
 }
+
+
+
+
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: relative;
@@ -179,7 +184,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: white;
+  background: #171717;
 }
 
 /* Color/shape of burger icon bars on hover*/
