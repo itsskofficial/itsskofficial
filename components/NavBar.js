@@ -157,6 +157,15 @@ const NavBar = (props) => {
                         </a>
                     )
                 })}
+                <span onClick={() => {
+                if (props.mode=='light')
+                    props.toggleMode('dark')
+                else
+                    props.toggleMode('light')
+               
+            }}>
+                <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color:props.mode=='light' && '#171717'}} />
+            </span>
             </Menu>
         </section>)
     return (
