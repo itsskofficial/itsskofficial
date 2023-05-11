@@ -17,7 +17,7 @@ const NavBar = (props) => {
         if (isBigScreen == false){
             mediaMatch=false
         }
-    }, [])
+    })
 
     const tempNavlinks = [
         {
