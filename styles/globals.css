@@ -90,7 +90,7 @@ body {
 }
 
 main{
-  overflow-x: ;
+  overflow-x: clip;
 }
 
 
