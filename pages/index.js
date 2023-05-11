@@ -71,7 +71,8 @@ export default function Home() {
           <Footer mode={mode} />
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
         </main>
-      </body>:}
+      </body> :
+      }
     </Fragment>
   )
 }
