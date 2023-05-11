@@ -119,6 +119,8 @@ const NavBar = (props) => {
                 <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color:props.mode=='light' && '#171717'}} />
             </span>
         </section>)
+    
+    console.log(burgerMenuClassesLight.map((c) => { `styles.${c}` })].join(' '))
 
     const smallScreen = (
         <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
