@@ -135,7 +135,7 @@
         transform: scale(1.1);
     }
 
-    .aboutResume{
+    .aboutResumeLight{
         padding: 12px;
         font-family: 'Montserrat', sans-serif;
         border-radius: 7px;
@@ -148,7 +148,7 @@
         cursor: pointer;
     }
 
-    .aboutResume:hover{
+    .aboutResumeLight:hover{
         background-color: white;
         color: #171717;
         transform: scale(1.1);
