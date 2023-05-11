@@ -19,6 +19,8 @@ const NavBar = (props) => {
         }
     })
 
+    if
+
     const tempNavlinks = [
         {
             id: 0,
