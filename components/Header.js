@@ -42,7 +42,7 @@ const Header = forwardRef((props, ref) => {
                 </button>
             </div>
             <div className={styles.headImage}>
-                <Image src={props.mode == 'dark' ? '/assets/images/header.jpg' : '/../public/assets/images/headerlight.jpg'} style={{width:mediaMatch?'500':'300', height:mediaMatch?'500':'300'}} priority={true} width={mediaMatch ? '450' : '300'} height={mediaMatch ? '450' : '300'} alt='Hero Image'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/header.jpg' : '/assets/images/headerlight.jpg'} style={{width:mediaMatch?'500':'300', height:mediaMatch?'500':'300'}} priority={true} width={mediaMatch ? '450' : '300'} height={mediaMatch ? '450' : '300'} alt='Hero Image'/>
             </div>
         </section>
     )
