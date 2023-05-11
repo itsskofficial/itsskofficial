@@ -72,7 +72,7 @@ export default function Home() {
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />
         </main>
       </body> :
-      <body style={{ backgroundColor: '#171717'}}>
+      <body style={{ backgroundColor: '#ffffff'}}>
         <main>
           <NavBar activeSection={activeSection} mode={mode} toggleMode={toggleMode} />
           <Header ref={headerRef} mode={mode} />
