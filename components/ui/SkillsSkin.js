@@ -15,8 +15,8 @@ const SkillsSkin = (props) => {
 
     const codeIcons = (
         <Fragment>
-            <div className={styles.skillsSkinRow} style={{color:}}>
-                <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?null: '#171717'}}/>
+            <div className={styles.skillsSkinRow} {color:props.mode=='dark'?null: '#171717'}}>
+                <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} style={}/>
                 <i className={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?null: '#171717'}}/>
                 <i className={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?null: '#171717'}}/>
                 <Image src='/assets/images/cpp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='C++ Icon'/>
