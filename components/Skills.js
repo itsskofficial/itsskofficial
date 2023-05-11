@@ -15,7 +15,7 @@ const Skills = forwardRef((props,ref) => {
         }
         console.log("hi")
         console.log(mediaMatch)
-    },[])
+    },[props])
 
     useEffect(() => {
         if (optionChanged) {
