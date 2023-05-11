@@ -224,13 +224,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Wrapper for item list */
-.bm-item-list {
+.bm-item-list-light {
   color: #171717;
   padding: 0.8em;
 }
 
 /* Individual item */
-.bm-item {
+.bm-item-light {
   display: inline-block;
   margin-bottom: 20px;
 }
