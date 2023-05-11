@@ -17,7 +17,7 @@ const About = forwardRef((props, ref) => {
     return (
         <section data-aos='fade-in' ref={ref} id='about' className={styles.parent}>
             <div className={styles.aboutImage}>
-                <Image src={props.mode == 'dark' ? '/../public/assets/images/about.jpg' : '/../public/assets/aboutlight.jpg'} width={mediaMatch?'450':'300'} height={mediaMatch?'450':'300'} alt='About Image' />
+                <Image src={props.mode == 'dark' ? '/../public/assets/images/about.jpg' : '/../public/assets/images/aboutlight.jpg'} width={mediaMatch?'450':'300'} height={mediaMatch?'450':'300'} alt='About Image' />
             </div>
             <div className={styles.aboutText}>
                 <h1 className={[styles.aboutTitle, props.mode=='dark'?null:styles.light].join(' ')}>
