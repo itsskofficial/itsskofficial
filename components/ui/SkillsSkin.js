@@ -66,11 +66,11 @@ const SkillsSkin = (props) => {
                 <i className={`fa-brands fa-confluence fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
             </div>
             <div className={styles.skillsSkinRow}>
-                <i className={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-wordpress fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
                 <Image src='/assets/images/lmms.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='LMMS Icon' />
                 <Image src='/assets/images/inkscape.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Inkscape Icon'/>
                 <Image src='/assets/images/vscode.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='VSCode Icon'/>
-                <i className={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} />
+                <i className={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
             </div>
             {/* <div className={styles.skillsSkinRow}>
                 <i class={`fa-brands fa-trello fa-${mediaMatch ? '3x' : '2x'}`} />
