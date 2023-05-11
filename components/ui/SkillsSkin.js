@@ -6,10 +6,10 @@ import { useEffect } from 'react'
 
 const SkillsSkin = (props) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
-    var mediaMatch=true
+    const [mediaMatch, setMediaMatch] = useState(true)
     useEffect(() => {
         if (isBigScreen == false){
-            mediaMatch=false
+            setMediaMatch=false
         }
     })
 
