@@ -45,12 +45,11 @@ export default function Home() {
     Aos.refresh()
   }, [])
 
-  useEffect(() => {
+  
     if (mode == 'dark')
       document.body.style.backgroundColor = '#171717'
     else
       document.body.style.backgroundColor = '#ffffff'
-  },[])
   
 
   return (
