@@ -14,9 +14,7 @@ const SkillsSkin = (props) => {
     })
 
     const codeIcons = (
-        if (isBigScreen == false){
-            mediaMatch=false
-        }
+        
         <Fragment>
             <div className={styles.skillsSkinRow} >
                 <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='light' && '#171717'}}/>
