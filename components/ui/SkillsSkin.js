@@ -52,8 +52,8 @@ const SkillsSkin = (props) => {
             <div className = {styles.skillsSkinRow }>
                 <i className={`fa-brands fa-figma fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <Image src='/assets/images/canva.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Canva Icon'/>
-                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Audacity Icon'/>
-                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Davinci Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/audacitylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Audacity Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/davincilight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Davinci Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Trello Icon'/>
             </div>
             <div className={styles.skillsSkinRow}>
