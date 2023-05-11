@@ -87,7 +87,6 @@ const Skills = forwardRef((props,ref) => {
     
     console.log(mediaMatch)
     return (
-        
         mediaMatch?bigScreen: smallScreen
     )
 })
