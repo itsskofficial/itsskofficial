@@ -17,6 +17,10 @@ const NavBar = (props) => {
         if (isBigScreen == false){
             mediaMatch=false
         }
+    }, [])
+    
+    useEffect(() => {
+       props.mode?
     },[])
 
     const tempNavlinks = [
