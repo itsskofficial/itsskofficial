@@ -13,7 +13,7 @@ const NavBar = (props) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     const [mediaMatch, setMediaMatch] = useState(true)
     const burgerMenuClasses = ['bm-burger-button', 'bm-burger-bars', 'bm-burger-bars-hover', 'bm-cross-button', 'bm-cross', 'bm-menu-wrap','bm-morph-shape', 'bm-item-list', 'bm-item', 'bm-overlay']
-    const burgerMenuClassesLight = [styles['bm-burger-button'], styles['bm-burger-bars'], styles['bm-burger-bars-hover'], styles['bm-cross-button'], styles['bm-cross'],styles['bm-menu-wrap'],styles['bm-morph-shape'], styles['bm-item-list'], styles['bm-item'], styles['bm-overlay']
+    const burgerMenuClassesLight = [styles['bm-burger-button'], styles['bm-burger-bars'], styles['bm-burger-bars-hover'], styles['bm-cross-button'], styles['bm-cross'],styles['bm-menu-wrap'],styles['bm-morph-shape'], styles['bm-item-list'], styles['bm-item'], styles['bm-overlay']]
 
     useEffect(() => {
         if (isBigScreen == false){
