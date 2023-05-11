@@ -19,7 +19,7 @@ const NavBar = (props) => {
         }
     })
 
-    console.log
+    console.log(mediaMatch)
 
     const tempNavlinks = [
         {
@@ -48,7 +48,6 @@ const NavBar = (props) => {
         setIsMenuOpen(false)
     }
 
-    console.log(mediaMatch)
     const handleMenuChange = (state) => {
         setIsMenuOpen(state.isOpen)
     }
