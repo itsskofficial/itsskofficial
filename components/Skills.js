@@ -43,7 +43,7 @@ const Skills = forwardRef((props,ref) => {
                             setOptionChanged(true)
                         }
                     }}>
-                        <i className='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px' color:props.mode=='light' && '#171717'}} />Tools
+                        <i className='fa-solid fa-screwdriver-wrench' style={{marginRight: '10px', color:props.mode=='light' && '#171717'}} />Tools
                     </button>
                 </div>
             </div>
