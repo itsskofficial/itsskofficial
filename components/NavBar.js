@@ -12,7 +12,7 @@ const NavBar = (props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     const [mediaMatch, setMediaMatch] = useState(true)
-    burgerMenuClasses = ['bm-burger-button', 'bm-burger-bars']
+    burgerMenuClasses = ['bm-burger-button', 'bm-burger-bars', '']
 
     useEffect(() => {
         if (isBigScreen == false){
