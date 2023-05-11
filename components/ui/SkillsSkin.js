@@ -9,7 +9,7 @@ const SkillsSkin = (props) => {
     const [mediaMatch, setMediaMatch] = useState(true)
     useEffect(() => {
         if (isBigScreen == false){
-            setMediaMatch=false
+            setMediaMatch(false)
         }
     })
 
