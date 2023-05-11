@@ -57,7 +57,7 @@ export default function Home() {
         <title>Sarthak Karandikar</title>
         <meta name="description" content="SK's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/images/tf.svg" />
+        <link rel="icon" href="/../public/images/tf.svg" />
         <link rel='stylesheet' href={mode=='dark'?'../styles/menu.css':'../styles/menuLight.css'} type='text/css'/>
       </Head>
         <main>
