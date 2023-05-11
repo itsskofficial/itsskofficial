@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
 
 const NavBar = (props) => {
-    mediaMatch!=undefined&&console.log(mediaMatch)
+    mediaMatch!='undefined'&&console.log(mediaMatch)
     const tempActiveSection = props.activeSection
     const firstLetter = tempActiveSection[0]
     const firstLetterCap = firstLetter.toUpperCase()
