@@ -33,7 +33,7 @@ const SkillsSkin = (props) => {
                 <Image src={props.mode == 'dark' ? '/assets/images/nextjs.svg' : 'assets/images/nextjslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='NextJS Icon'/>
                 {/* <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} /> */}
                 <Image src={props.mode == 'dark' ? '/assets/images/tf.svg' : 'assets/images/tflight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
-                <Image src={props.mode == 'dark' ? '/assets/images/ejs.svg' : 'assets/images/ejslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
+                <Image src={props.mode == 'dark' ? '/assets/images/numpy.svg' : 'assets/images/numpylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/ejs.svg' : 'assets/images/ejslight.svg'} width={mediaMatch ? '60' : '30'} height={mediaMatch ? '60' : '30'} alt='Pandas Icon' />
                 <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
             </div>
