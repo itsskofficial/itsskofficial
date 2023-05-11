@@ -55,7 +55,7 @@ export default function Home() {
     <Fragment>
       <Head>
         <title>Sarthak Karandikar</title>
-        <meta name="description" content="SK's personal portfolio" />
+        <meta name="description" content="SK's Personal Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={mode == 'dark' ? '/assets/images/favicon.png' : '/assets/images/faviconlight.png'} />
         <link rel='stylesheet' href={mode=='dark'?'/assets/css/menu.css':'/assets/css/menuLight.css'} type='text/css'/>
