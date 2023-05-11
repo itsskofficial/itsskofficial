@@ -18,7 +18,7 @@ const NavBar = (props) => {
             mediaMatch=false
         }
         if mediaMatch == false{
-            
+            med
         }
     })
 
