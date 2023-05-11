@@ -44,7 +44,7 @@ const Contact = forwardRef((props, ref) => {
                 </h2>
                 <div className={styles.contactIcons}>
                     <Link href='https://linkedin.com/'>
-                        <i className='fa-brands fa-linkedin fa-2x'/>
+                        <i className='fa-brands fa-linkedin fa-2x' style={{color:props.mode=='light' && '#171717'}}/>
                     </Link>
                     <Link href='mailto:sarthakkarandikar03@gmail.com'>
                         <i className='fa-solid fa-envelope fa-2x'/>
