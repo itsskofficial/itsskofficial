@@ -29,7 +29,6 @@ export default function Home() {
       document.body.style.backgroundColor = '#171717'
     else
       document.body.style.backgroundColor = '#ffffff'
-  
 
   useEffect(() => {
 
