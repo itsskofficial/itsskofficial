@@ -49,7 +49,7 @@ const Skills = forwardRef((props,ref) => {
                 </div>
             </div>
                 <div className={[styles.skillsIcons, optionChanged ? styles.skillsIconsAnimate:null].join(' ')}>
-                    <SkillsSkin option={skillsOption} />
+                <SkillsSkin option={skillsOption} mode={props.mode} />
                 </div> 
         </section>
 
