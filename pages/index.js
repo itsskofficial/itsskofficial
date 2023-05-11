@@ -25,6 +25,12 @@ export default function Home() {
     setMode(userMode)
   }
 
+  if (mode == 'dark')
+      document.body.style.backgroundColor = '#171717'
+    else
+      document.body.style.backgroundColor = '#ffffff'
+  
+
   useEffect(() => {
 
     const observer = new IntersectionObserver((entries) => {
