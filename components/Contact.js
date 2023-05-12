@@ -49,7 +49,7 @@ const Contact = forwardRef((props, ref) => {
                     <Link href='mailto:sk@itsskofficial.com'>
                         <i className='fa-solid fa-envelope fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
-                    <Link href='tel:+918275017823'>
+                    <Link href='https://wa.me/+918275017823'>
                         <i className='fa-brands fa-whatsapp fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
                 </div>
