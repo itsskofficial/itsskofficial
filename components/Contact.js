@@ -46,11 +46,11 @@ const Contact = forwardRef((props, ref) => {
                     <Link href='https://www.linkedin.com/in/sarthak-karandikar-0223b7228/'>
                         <i className='fa-brands fa-linkedin fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
-                    <Link href='mailto:sarthakkarandikar03@gmail.com'>
+                    <Link href='mailto:sk@itsskofficial.com'>
                         <i className='fa-solid fa-envelope fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
                     <Link href='tel:+918275017823'>
-                        <i className='fa-solid fa-phone fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
+                        <i className='fa- fa-whatsapp fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
                 </div>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light].join(' ')}>
