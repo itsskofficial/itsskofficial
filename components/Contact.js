@@ -54,7 +54,7 @@ const Contact = forwardRef((props, ref) => {
                     </Link>
                 </div>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light].join(' ')}>
-                    I generally use LinkedIn for expressing myself. You can mail me for any professional work or Whatsapp me for discussions and stuff
+                    I generally use LinkedIn for expressing myself. You can Whatsapp me for any professional work or Whatsapp me for discussions and stuff
                 </h3>
             </div>
         </section>
