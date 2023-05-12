@@ -50,7 +50,7 @@ const Contact = forwardRef((props, ref) => {
                         <i className='fa-solid fa-envelope fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
                     <Link href='tel:+918275017823'>
-                        <i className='fa- fa-whatsapp fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
+                        <i className='fa-brands fa-whatsapp fa-2x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                     </Link>
                 </div>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light].join(' ')}>
