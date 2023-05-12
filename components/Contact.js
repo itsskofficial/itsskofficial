@@ -54,7 +54,7 @@ const Contact = forwardRef((props, ref) => {
                     </Link>
                 </div>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light].join(' ')}>
-                    I generally use LinkedIn for expressing myself. If LinkedIn is not convenient you can mail me too
+                    I generally use LinkedIn for expressing myself. You can mail me for a
                 </h3>
             </div>
         </section>
