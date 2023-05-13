@@ -9,6 +9,7 @@ import { useState, useEffect, createRef, Fragment } from 'react'
 import Script from 'next/script'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Projects from '@components/Projects'
 
 export default function Home() {
 
@@ -16,8 +17,9 @@ export default function Home() {
   const headerRef = createRef()
   const aboutRef = createRef()
   const skillsRef = createRef()
+  const projectsRef = createRef()
   const contactRef = createRef()
-  const refs = [headerRef, aboutRef, skillsRef, contactRef]
+  const refs = [headerRef, aboutRef, skillsRef, projectsRef, contactRef]
   const [mode, setMode] = useState('dark')
 
   const toggleMode = (userMode) =>{
@@ -65,6 +67,7 @@ export default function Home() {
           <Header ref={headerRef} mode={mode} />
           <About ref={aboutRef} mode={mode} />
           <Skills ref={skillsRef} mode={mode} />
+          <Projects ref={projectsRef} mode={mode}/>
           <Contact ref={contactRef} mode={mode} />
           <Footer mode={mode} />
           <Script src='https://kit.fontawesome.com/638bbcf842.js' crossorigin='anonymous' />

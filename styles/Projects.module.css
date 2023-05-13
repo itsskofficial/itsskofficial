@@ -1,0 +1,86 @@
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    height: 85vh;
+    margin: 100px 0px 100px 0px;
+}
+
+.projectsSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.projectsPrevious{
+    margin-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.projectsNext{
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.projectsText{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+}
+
+.projectsTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:40px;
+}
+
+.projectsInfo{
+    margin: 50px 0px 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+.projectsGithub{
+    margin-right: auto;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: #171717;
+    color: white;
+    border: 2px solid white;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectsGithubLight{
+    margin: auto;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: white;
+    color: #171717;
+    border: 2px solid #171717;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectsGithub:hover{
+    background-color: white;
+    color: #171717;
+    transform: scale(1.1);
+}
+
