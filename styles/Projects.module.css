@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1201px) {
+
 .parent{
     display: flex;
     align-items: center;
@@ -12,6 +14,7 @@
     align-items: center;
     justify-content: center;
     width: 30%;
+    animation: slide-in-left 1s forwards;
 }
 
 .projectsPrevious{
@@ -65,7 +68,7 @@
 }
 
 .projectsGithubLight{
-    margin: auto;
+    margin-right: auto;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
@@ -84,3 +87,109 @@
     transform: scale(1.1);
 }
 
+.projectsGithubLight:hover{
+    background-color: #171717;
+    color: white;
+    transform: scale(1.1);
+}
+
+.light{
+    color: #171717;
+}
+
+@keyframes slide-in-left {
+    100% { left: 0px; }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+}
+
+.projectsSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.projectsPrevious{
+    margin-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.projectsNext{
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.projectsText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.projectsTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:30px;
+}
+
+.projectsInfo{
+    margin: 50px 0px 50px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+.projectsGithub{
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: #171717;
+    color: white;
+    border: 2px solid white;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectsGithubLight{
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+    color: #171717;
+    border: 2px solid #171717;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectsGithub:hover{
+    background-color: white;
+    color: #171717;
+    transform: scale(1.1);
+}
+
+.light{
+    color: #171717;
+}
+}

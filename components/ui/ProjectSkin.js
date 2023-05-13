@@ -1,18 +1,28 @@
 import Image from "next/image"
-import { Fragment } from "react"
+import { Fragment, useState, useEffect } from "react"
 import projectsData from "../../public/assets/js/ProjectsData"
 import styles from '@styles/ProjectsSkin.module.css'
+import { useMediaQuery } from "usehooks-ts"
 
 const ProjectSkin = (props) => {
     const project = projectsData.find(p => p['id'] == props.id)
+    const isBigScreen = useMediaQuery('(min-width:1201px)')
+    const [mediaMatch, setMediaMatch] = useState(true)
+
+    useEffect(() => {
+        if (isBigScreen == false){
+            setMediaMatch(false)
+        }
+    }, [isBigScreen])
+    
     return (
         <Fragment>
             <div className={styles.projectSkinContainer}>
-                <Image src={project['image']} alt={`${project['name']} Image`} height='300' width='600' />
-                <h2 className={styles.projectSkinTitle}>
+                <Image src={project['image']} alt={`${project['name']} Image`} height={mediaMatch ? '300' : '200'} width={mediaMatch ? '600' : '500'} />
+                <h2 className={[styles.projectSkinTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     {project['name']}
                 </h2>
-                <h3 className={styles.projectSkinInfo}>
+                <h3 className={[styles.projectSkinInfo, props.mode == 'dark' ? null : styles.light].join(' ')}>
                     {project['description']}
                 </h3>
                 <div className={styles.projectSkinButtons}>

@@ -1,3 +1,5 @@
+@media only screen and (min-width:1201px){
+
 .projectSkinContainer{
     display:flex;
     flex-direction: column;
@@ -75,4 +77,95 @@
     background-color: #171717;
     color: white;
     transform: scale(1.1);
+}
+
+.light{
+    color: #171717;
+}
+}
+
+@media only screen and (max-width:600px){
+
+.projectSkinContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectSkinTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    font-size:20px;
+    margin: 20px 0px 10px 0px;
+}
+
+.projectSkinInfo{
+    margin: 10px 0px 10px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    font-size: 10px;
+}
+
+.projectSkinButtons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.projectSkinLink, .projectSkinGithub{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: #171717;
+    color: white;
+    border: 2px solid white;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectSkinLinkLight, .projectSkinGithubLight{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: white;
+    color: #171717;
+    border: 2px solid #171717;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.projectSkinLink:hover{
+    background-color: white;
+    color: #171717;
+    transform: scale(1.1);
+}
+
+.projectSkinGithub:hover{
+    background-color: white;
+    color: #171717;
+    transform: scale(1.1);
+}
+
+.projectSkinLinkLight:hover{
+    background-color: #171717;
+    color: white;
+    transform: scale(1.1);
+}
+
+.projectSkinGithubLight:hover{
+    background-color: #171717;
+    color: white;
+    transform: scale(1.1);
+}
+
+.light{
+    color: #171717;
+}
 }
