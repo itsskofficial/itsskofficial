@@ -20,7 +20,7 @@ const Projects = forwardRef((props,ref) => {
     }
 
     const bigScreen = 
-    <section ref={ref} id='projects' className={styles.parent}>
+    <section data-aos='fade-in' ref={ref} id='projects' className={styles.parent}>
             <div className={styles.projectsSlider}>
                 <button className={styles.projectsPrevious} onClick={() => handleKeyChange(projectId - 1)} disabled={projectId==1?true:false}>
                     <i className={`fa-solid fa-chevron-left fa-${mediaMatch?'3x':'2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }}/>
@@ -46,7 +46,7 @@ const Projects = forwardRef((props,ref) => {
         </section>
 
     const smallScreen = 
-    <section ref={ref} id='projects' className={styles.parent}>
+    <section data-aos='fade-in' ref={ref} id='projects' className={styles.parent}>
             <div className={styles.projectsText}>
                 <h1 className={[styles.projectsTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     Projects
