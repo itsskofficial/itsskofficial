@@ -18,7 +18,7 @@ const ProjectSkin = (props) => {
     return (
         <Fragment>
             <div className={styles.projectSkinContainer}>
-                <Image src={project['image']} alt={`${project['name']} Image`} height={mediaMatch ? '300' : '200'} width={mediaMatch ? '600' : '500'} />
+                <Image src={project['image']} alt={`${project['name']} Image`} height={mediaMatch ? '300' : '200'} width={mediaMatch ? '600' : '250'} />
                 <h2 className={[styles.projectSkinTitle, props.mode=='dark'?null:styles.light].join(' ')}>
                     {project['name']}
                 </h2>

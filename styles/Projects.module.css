@@ -96,10 +96,6 @@
 .light{
     color: #171717;
 }
-
-@keyframes slide-in-left {
-    100% { left: 0px; }
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,7 +113,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
+    align-self: center;
 }
 
 .projectsPrevious{
@@ -137,7 +134,7 @@
 .projectsText{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100%;
     justify-content: center;
 }
@@ -146,6 +143,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
     font-size:30px;
+    text-align: center;
 }
 
 .projectsInfo{
@@ -168,6 +166,8 @@
     font-weight: 800;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    width:80%;
+    align-self: center;
 }
 
 .projectsGithubLight{
