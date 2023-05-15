@@ -8,26 +8,43 @@ const Projects = forwardRef((props,ref) => {
     const [projectId, setProjectId] = useState(1)
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     const [mediaMatch, setMediaMatch] = useState(true)
+    const [changeState, setChangeState] = useState(false)
 
     useEffect(() => {
         if (isBigScreen == false){
             setMediaMatch(false)
         }
-    },[isBigScreen])
+    }, [isBigScreen])
+    
+    useEffect(() => {
+        if (changeState) {
+            setTimeout(() => {
+                setChangeState(false)
+            },1000)
+        }
+    }, [projectId])
 
-    const handleKeyChange = (id) => {
-        setProjectId(id)
+    const handleKeyChange = (state) => {
+        if (state == 'previous') {
+            setProjectId(prevState => prevState - 1)
+            setChangeState(true)
+        }
+        else {
+            setProjectId(prevState => prevState + 1)
+            setChangeState(true)
+        }
+        
     }
 
     const bigScreen = 
     <section data-aos='fade-in' ref={ref} id='projects' className={styles.parent}>
             <div className={styles.projectsSlider}>
-                <button className={styles.projectsPrevious} onClick={() => handleKeyChange(projectId - 1)} disabled={projectId==1?true:false}>
-                    <i className={`fa-solid fa-chevron-left fa-${mediaMatch?'3x':'2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }}/>
+                <button className={styles.projectsPrevious} onClick={() => handleKeyChange('previous') } disabled={projectId==1?true:false}>
+                    <i className={`fa-solid fa-chevron-left fa-${mediaMatch?'3x':'2x'}`} style={{ color: projectId==1 ? 'grey' : props.mode == 'dark' ? 'white' : '#171717' }}/>
                 </button>
-                <ProjectSkin id={projectId} mode={props.mode} />
-                <button className={styles.projectsNext} onClick={() => handleKeyChange(projectId + 1)} disabled={projectId==projectsData.length?true:false} >
-                    <i className={`fa-solid fa-chevron-right fa-${mediaMatch?'3x':'2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }}/>
+                <ProjectSkin id={projectId} mode={props.mode} changeState={changeState} />
+                <button className={styles.projectsNext} onClick={() => handleKeyChange('next')} disabled={projectId==projectsData.length?true:false} >
+                    <i className={`fa-solid fa-chevron-right fa-${mediaMatch?'3x':'2x'}`} style={{ color: projectId==projectsData.length ? 'grey' : props.mode == 'dark' ? 'white' : '#171717' }}/>
                 </button>
             </div>
             <div className={styles.projectsText}>
@@ -45,6 +62,8 @@ const Projects = forwardRef((props,ref) => {
             </div>
         </section>
 
+    console.log(changeState)
+
     const smallScreen = 
     <section data-aos='fade-in' ref={ref} id='projects' className={styles.parent}>
             <div className={styles.projectsText}>
@@ -52,12 +71,12 @@ const Projects = forwardRef((props,ref) => {
                     Projects
                 </h1>
                 <div className={styles.projectsSlider}>
-                    <button className={styles.projectsPrevious} onClick={() => handleKeyChange(projectId - 1)} disabled={projectId==1?true:false}>
-                        <i className={`fa-solid fa-chevron-left fa-${mediaMatch ? '3x' : '2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }} />
+                    <button className={styles.projectsPrevious} onClick={() => handleKeyChange('previous')} disabled={projectId==1?true:false}>
+                        <i className={`fa-solid fa-chevron-left fa-${mediaMatch ? '3x' : '2x'}`} style={{ color: projectId==1 ? 'grey' : props.mode == 'dark' ? 'white' : '#171717' }} />
                     </button>
-                    <ProjectSkin id={projectId} mode={props.mode} />
-                    <button className={styles.projectsNext} onClick={() => handleKeyChange(projectId + 1)} disabled={projectId==projectsData.length?true:false} >
-                        <i className={`fa-solid fa-chevron-right fa-${mediaMatch ? '3x' : '2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }} />
+                    <ProjectSkin id={projectId} mode={props.mode} changeState={changeState} />
+                    <button className={styles.projectsNext} onClick={() => handleKeyChange('next')} disabled={projectId==projectsData.length?true:false} >
+                        <i className={`fa-solid fa-chevron-right fa-${mediaMatch ? '3x' : '2x'}`} style={{ color: projectId==projectsData.length ? 'grey' : props.mode == 'dark' ? 'white' : '#171717' }} />
                     </button>
                 </div>
                 <h2 className={[styles.projectsInfo, props.mode=='dark'?null:styles.light].join(' ')}>

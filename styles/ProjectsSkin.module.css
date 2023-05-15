@@ -84,16 +84,19 @@
     color: #171717;
 }
 
-@keyframes slide-in-left {
+.projectSkinAnimate{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
     0% {
-        left:-100px;
-        opacity: 0%;
+      opacity: 0;
     }
-    100% { 
-        left: 0px;
-        opacity: 100%;
+    100% {
+      opacity: 1;
     }
   }
+
 }
 
 @media only screen and (max-width:600px){
@@ -182,4 +185,17 @@
 .light{
     color: #171717;
 }
+
+.projectSkinAnimate{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
