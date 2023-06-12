@@ -1,4 +1,5 @@
-[![SK's GitHub Banner](./github/assets/banner.jpeg)](https://www.deviantart.com/kvacm/art/Outrun-Grip-785598647) 
+![SK's GitHub Banner](https://github.com/itsskofficial/itsskofficial/assets/65887545/5bad5d31-9730-4bfd-8433-5966e78dd8f9)
+
 
 Hey, I am Sarthak 💀
 
