@@ -1,4 +1,5 @@
-[![SK's GitHub Banner](./github/assets/banner.jpg)](https://www.deviantart.com/kvacm/art/Outrun-Grip-785598647) 
+![SK's GitHub Banner](https://github.com/itsskofficial/itsskofficial/assets/65887545/5bad5d31-9730-4bfd-8433-5966e78dd8f9)
+
 
 Hey, I am Sarthak 💀
 
@@ -50,7 +51,8 @@ Skills :
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
-
+![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=#43B02A)
+![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=ethereum&logoColor=white&color=#3C3C3D)
 
 
 
