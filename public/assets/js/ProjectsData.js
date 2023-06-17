@@ -72,8 +72,16 @@ const projectsData = [
         image: '/assets/images/eth-course-marketplace.png'
     },
     {
-        name: '911 Calls Analysis',
+        name: 'Food Vision Model',
         id: 10,
+        description: 'A deep learning model to pred food item type based on images',
+        link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
+        github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
+        image: '/assets/images/food-vison-model.png'
+    },
+    {
+        name: '911 Calls Analysis',
+        id: 11,
         description: 'A data science project to analyze 911 calls',
         link: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project1.ipynb',
         github: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project1.ipynb',
@@ -81,7 +89,7 @@ const projectsData = [
     },
     {
         name: 'Stock Price Analysis',
-        id: 11,
+        id: 12,
         description: 'A data science project to analyze stock prices',
         link: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project2.ipynb',
         github: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project2.ipynb',
@@ -89,7 +97,7 @@ const projectsData = [
     },
     {
         name: 'Google Meet Bot',
-        id: 12,
+        id: 13,
         description: 'A bot which attends your Google Meets for you',
         link: 'https://github.com/itsskofficial/Python/edit/master/Google%20Meet%20Bot/',
         github: 'https://github.com/itsskofficial/Python/edit/master/Google%20Meet%20Bot/',
