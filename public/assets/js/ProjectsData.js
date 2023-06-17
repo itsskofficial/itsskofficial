@@ -77,7 +77,7 @@ const projectsData = [
         description: 'A deep learning model to pred food item type based on images',
         link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
         github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
-        image: '/assets/images/food-vison.png'
+        image: '/assets/images/food-vision.png'
     },
     {
         name: '911 Calls Analysis',
