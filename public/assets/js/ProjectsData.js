@@ -27,8 +27,8 @@ const projectsData = [
         name: 'Campy',
         id: 4,
         description: 'A full stack project which lets you add and rate campgrounds',
-        link: 'https://github.com/itsskofficial/web2/campy/',
-        github: 'https://github.com/itsskofficial/web2/campy/',
+        link: 'https://github.com/itsskofficial/Web2/tree/master/campy',
+        github: 'https://github.com/itsskofficial/Web2/tree/master/campy',
         image: '/assets/images/campy.png'
     },
     {
@@ -67,7 +67,7 @@ const projectsData = [
         name: 'Ethereum Course Marketplace',
         id: 9,
         description: 'A marketplace to explore and buy courses with Ethereum',
-        link: 'https://ethereum-faucet-blush.vercel.app/',
+        link: 'https://ethereum-course-marketplace-itsskofficial.vercel.app/',
         github: 'https://github.com/itsskofficial/Web3/tree/master/course-marketplace',
         image: '/assets/images/eth-course-marketplace.png'
     },
@@ -77,7 +77,7 @@ const projectsData = [
         description: 'A deep learning model to pred food item type based on images',
         link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
         github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
-        image: '/assets/images/food-vison-model.png'
+        image: '/assets/images/food-vison.png'
     },
     {
         name: '911 Calls Analysis',
