@@ -74,14 +74,30 @@ const projectsData = [
     {
         name: 'Food Vision Model',
         id: 10,
-        description: 'A deep learning model to pred food item type based on images',
+        description: 'A deep learning model to predict food item type based on images',
         link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
         github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/food_vision.ipynb',
         image: '/assets/images/food-vision.png'
     },
     {
-        name: '911 Calls Analysis',
+        name: 'Skim Lit',
         id: 11,
+        description: 'A deep learning model to skim through medical research papers and classify the contents into categories',
+        link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/NLP/Skim%20Lit/skim_lit.ipynb',
+        github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/NLP/Skim%20Lit/skim_lit.ipynb',
+        image: '/assets/images/skim-lit.png'
+    },
+    {
+        name: 'Bit Predict',
+        id: 12,
+        description: 'A deep learning model to predict Bitcoin future price based on past prices',
+        link: 'https://github.com/itsskofficial/Deep-Learning/blob/master/NLP/Bit%20Predict/bit-predict.ipynb',
+        github: 'https://github.com/itsskofficial/Deep-Learning/blob/master/CNN/Food%20Vision/bit-predict.ipynb',
+        image: '/assets/images/bit-predict.png'
+    },
+    {
+        name: '911 Calls Analysis',
+        id: 13,
         description: 'A data science project to analyze 911 calls',
         link: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project1.ipynb',
         github: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project1.ipynb',
@@ -89,7 +105,7 @@ const projectsData = [
     },
     {
         name: 'Stock Price Analysis',
-        id: 12,
+        id: 14,
         description: 'A data science project to analyze stock prices',
         link: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project2.ipynb',
         github: 'https://github.com/itsskofficial/Data-Science/blob/master/Capstone%20Projects/project2.ipynb',
@@ -97,7 +113,7 @@ const projectsData = [
     },
     {
         name: 'Google Meet Bot',
-        id: 13,
+        id: 15,
         description: 'A bot which attends your Google Meets for you',
         link: 'https://github.com/itsskofficial/Python/edit/master/Google%20Meet%20Bot/',
         github: 'https://github.com/itsskofficial/Python/edit/master/Google%20Meet%20Bot/',
