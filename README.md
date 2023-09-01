@@ -5,9 +5,9 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 I’m currently working on MetaVision, a text-to-vr algorithm
+🔭 Currently working on a text-to-vr algorithm
 
-🌱 I’m currently into Metaverse, AI & IOT
+🚀 Into Metaverse, AI & IOT
 
 💬 Ask me about anything you want ;)
 
