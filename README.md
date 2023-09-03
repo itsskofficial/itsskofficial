@@ -5,7 +5,7 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Currently working on a text-to-vr algorithm
+🔭 Currently working on a tech startup which promotes the upliftment of consciousness
 
 🚀 Into Metaverse, AI & IOT
 
