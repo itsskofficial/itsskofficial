@@ -1,13 +1,13 @@
 ![SK's GitHub Banner](https://github.com/itsskofficial/itsskofficial/assets/65887545/5bad5d31-9730-4bfd-8433-5966e78dd8f9)
 
 
-Hey, I am Sarthak 💀
+Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 I’m currently working on Bookaholic, a Metaverse startup, essentially the world's first virtual library
+🔭 Currently working on a tech startup which promotes the upliftment of consciousness
 
-🌱 I’m currently into Metaverse, AI & IOT
+🚀 Into Metaverse, AI & IOT
 
 💬 Ask me about anything you want ;)
 
