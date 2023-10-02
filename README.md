@@ -52,8 +52,8 @@ Skills :
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
-![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=#43B02A)
-![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=#3C3C3D)
+![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=43B02A)
+![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=000000)
 
 
 
