@@ -27,7 +27,7 @@ GitHub Stats :
 </a>
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical" alt="Braydon's GitHub Stats" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
 
 ![SK's GitHub Contributions](https://github-readme-streak-stats.herokuapp.com/?&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
@@ -44,6 +44,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-NodeJS-informational?style=flat&logo=node.js&logoColor=white&color=339933)
 ![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
+![](https://img.shields.io/badge/Code-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=4479A1)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
@@ -52,7 +53,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=#43B02A)
-![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=ethereum&logoColor=white&color=#3C3C3D)
+![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=#3C3C3D)
 
 
 
