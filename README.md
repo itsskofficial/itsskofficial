@@ -27,7 +27,7 @@ GitHub Stats :
 </a>
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github" alt="SK's GitHub Stats" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
 
 ![SK's GitHub Contributions](https://github-readme-streak-stats.herokuapp.com/?&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
