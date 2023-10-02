@@ -19,7 +19,7 @@ const Contact = forwardRef((props, ref) => {
                 <Link href='https://www.linkedin.com/in/sarthak-karandikar-0223b7228/'>
                     <i className='fa-brands fa-linkedin fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                 </Link>
-                <Link href='mailto:sarthakkarandikar03@gmail.com'>
+                <Link href='mailto:itsskofficial03@gmail.com'>
                     <i className='fa-solid fa-envelope fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                 </Link>
                 <Link href='https://wa.me/+918275017823/'>
