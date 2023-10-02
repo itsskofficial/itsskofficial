@@ -13,7 +13,7 @@ Here's a quick intro about me :
 
 😄 Pronouns: He/Him/His
 
-⚡ Fun fact: There is no fun for me in this life, maybe next one :)
+⚡ Fun fact: There is no fun for me in this life, maybe next one 
 
 
 My Socials : 
