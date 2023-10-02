@@ -5,11 +5,11 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Currently working on a tech startup which promotes the upliftment of consciousness
+🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness
 
-🚀 Into Metaverse, AI & IOT
+🚀 Into AI, IOT & Metaverse
 
-💬 Ask me about anything you want ;)
+💬 Don't ask me anything ;)
 
 😄 Pronouns: He/Him/His
 
@@ -18,7 +18,9 @@ Here's a quick intro about me :
 
 My Socials : 
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
+[![Mail Badge](https://img.shields.io/badge/Gmail-informational?style=flat&logo=gmail&logoColor=white&color=EA4335)](mailto:itsskofficial03@gmail.com)
+[![WhatsApp Badge](https://img.shields.io/badge/WhatsApp-informational?style=flat&logo=whatsapp&logoColor=white&color=25D366)](https://wa.me/+918275017823/)
 
 GitHub Stats :
 
