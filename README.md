@@ -5,20 +5,22 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Currently working on a tech startup which promotes the upliftment of consciousness
+🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness
 
-🚀 Into Metaverse, AI & IOT
+🚀 Into AI, IOT & Metaverse
 
-💬 Ask me about anything you want ;)
+💬 Don't ask me anything ;)
 
 😄 Pronouns: He/Him/His
 
-⚡ Fun fact: There is no fun for me in this life, maybe next one :)
+⚡ Fun fact: There is no fun for me in this life, maybe next one 
 
 
 My Socials : 
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
+[![Mail Badge](https://img.shields.io/badge/Gmail-informational?style=flat&logo=gmail&logoColor=white&color=EA4335)](mailto:itsskofficial03@gmail.com)
+[![WhatsApp Badge](https://img.shields.io/badge/WhatsApp-informational?style=flat&logo=whatsapp&logoColor=white&color=25D366)](https://wa.me/+918275017823/)
 
 GitHub Stats :
 
@@ -27,7 +29,7 @@ GitHub Stats :
 </a>
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical" alt="Braydon's GitHub Stats" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
 
 ![SK's GitHub Contributions](https://github-readme-streak-stats.herokuapp.com/?&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
@@ -44,6 +46,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-NodeJS-informational?style=flat&logo=node.js&logoColor=white&color=339933)
 ![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
+![](https://img.shields.io/badge/Code-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=4479A1)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
@@ -51,8 +54,8 @@ Skills :
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
-![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=#43B02A)
-![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=ethereum&logoColor=white&color=#3C3C3D)
+![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=43B02A)
+![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=000000)
 
 
 
