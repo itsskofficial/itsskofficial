@@ -16,14 +16,14 @@ const Contact = forwardRef((props, ref) => {
     const bigScreen =
         <section data-aos='fade-in' ref={ref} id='contact' className={styles.parent}>
             <div className={styles.contactIcons}>
-                <Link href='https://linkedin.com/'>
+                <Link href='https://www.linkedin.com/in/sarthak-karandikar-0223b7228/'>
                     <i className='fa-brands fa-linkedin fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                 </Link>
                 <Link href='mailto:sarthakkarandikar03@gmail.com'>
                     <i className='fa-solid fa-envelope fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                 </Link>
-                <Link href='tel:+918275017823'>
-                    <i className='fa-solid fa-phone fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
+                <Link href='https://wa.me/+918275017823/'>
+                    <i className='fa-solid fa-whatsapp fa-3x' style={{color:props.mode=='dark'?null: '#171717'}}/>
                 </Link>
             </div>
             <div className={styles.contactText}>
@@ -31,7 +31,7 @@ const Contact = forwardRef((props, ref) => {
                     Contact
                 </h2>
                 <h3 className={[styles.contactInfo, props.mode=='dark'?null:styles.light].join(' ')}>
-                    I am available on LinkedIn for discussions and stuff. If LinkedIn is not convenient you can mail me too
+                    I generally use LinkedIn for expressing myself. You can WhatsApp me for any professional reasons or mail me for discussions and stuff 
                 </h3>
             </div>
         </section>

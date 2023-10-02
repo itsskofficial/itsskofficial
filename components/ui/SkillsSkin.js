@@ -18,7 +18,6 @@ const SkillsSkin = (props) => {
             <div className={styles.skillsSkinRow}>
                 <i className={`fa-brands fa-python fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <i className={`fa-brands fa-js fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
-                <i className={`fa-brands fa-c fa-${mediaMatch?'3x':'2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <Image src='/assets/images/cpp.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='C++ Icon'/>
                 <i className={`fa-brands fa-html5 fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
             </div>
@@ -29,16 +28,17 @@ const SkillsSkin = (props) => {
                 <Image src={props.mode == 'dark' ? '/assets/images/ejs.svg' : 'assets/images/ejslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='EJS Icon'/>
                 <Image src='/assets/images/mongodb.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='MongoDB Icon'/>
             </div>
-            <div className = {styles.skillsSkinRow } >
+            <div className={styles.skillsSkinRow} >
+                <Image src={props.mode == 'dark' ? '/assets/images/mysql.svg' : 'assets/images/mysqllight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='MySQL Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/nextjs.svg' : 'assets/images/nextjslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='NextJS Icon'/>
                 {/* <i className={`fa-brands fa-node fa-${mediaMatch ? '3x' : '2x'}`} /> */}
                 <Image src={props.mode == 'dark' ? '/assets/images/tf.svg' : 'assets/images/tflight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/numpy.svg' : 'assets/images/numpylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Numpy Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/pandas.svg' : 'assets/images/pandaslight.svg'} width={mediaMatch ? '60' : '30'} height={mediaMatch ? '60' : '30'} alt='Pandas Icon' />
-                <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
             </div>
             <div className = {styles.skillsSkinRow } >
                 {/* <Image src='/assets/images/sklearn.png' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='ScikitLearn Icon'/> */}
+                <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <Image src={props.mode == 'dark' ? '/assets/images/solidity.svg' : 'assets/images/soliditylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Solidity Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/arduino.svg' : 'assets/images/arduinolight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Arduino Icon'/>
                 {/* <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/> */}
