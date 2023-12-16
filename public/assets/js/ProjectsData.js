@@ -38,7 +38,7 @@ const projectsData = [
         description: 'A full stack DALL-E kind of clone to generate images with prompts and share it with others',
         link: 'https://ai-img-gen-itsskofficial.vercel.app/',
         github: 'https://github.com/itsskofficial/Web2/tree/master/Projects/AIImgGen',
-        image: '/assets/images/aesthetic-art.png'
+        image: '/assets/images/ai-img-gen.png'
     },
     {
         name: 'Smart Dustbin',
@@ -179,7 +179,7 @@ const projectsData = [
         link: 'https://itsskofficial-digrec.vercel.app',
         github: 'https://github.com/itsskofficial/Machine-Learning/tree/master/Projects/DigRec',
         image: '/assets/images/digrec.png'
-    },
+    }
 ]
 
 export default projectsData
