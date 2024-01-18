@@ -181,6 +181,18 @@
     cursor: pointer;
 }
 
+.projectSkinCategory{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: #171717;
+    color: white;
+    border: 2px solid white;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
 .projectSkinLinkLight, .projectSkinGithubLight{
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -192,6 +204,18 @@
     font-weight: 800;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.projectSkinCategoryLight{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    font-size: 12px;
+    background-color: white;
+    color: #171717;
+    border: 2px solid #171717;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
 }
 
 .projectSkinLink:hover{
@@ -206,6 +230,12 @@
     transform: scale(1.1);
 }
 
+.projectSkinCategory:hover{
+    background-color: white;
+    color: #171717;
+    transform: scale(1.1);
+}
+
 .projectSkinLinkLight:hover{
     background-color: #171717;
     color: white;
@@ -213,6 +243,12 @@
 }
 
 .projectSkinGithubLight:hover{
+    background-color: #171717;
+    color: white;
+    transform: scale(1.1);
+}
+
+.projectSkinCategoryLight:hover{
     background-color: #171717;
     color: white;
     transform: scale(1.1);
