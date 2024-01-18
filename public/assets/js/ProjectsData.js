@@ -111,7 +111,7 @@ const projectsData = [
         name: 'Whatsapp Chat Analysis',
         id: 12,
         description: 'A whatsapp chat analyzer built with Streamlit',
-        link: 'https://itsskofficial-whatsapp-chat-analyzer.streamlit.io',
+        link: 'https://itsskofficial-whatsapp-chat-analyzer.streamlit.app',
         github: 'https://github.com/itsskofficial/Data-Science/tree/master/Projects/WhatsappChatAnalysis',
         image: '/assets/images/whatsapp-chat-analysis.png',
         category: 'data-science'
