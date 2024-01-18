@@ -25,7 +25,7 @@ My Socials :
 GitHub Stats :
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook&langs_count=3&layout=donut-vertical&theme=radical" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook,purebasic&langs_count=3&layout=donut-vertical&theme=radical" />
 </a>
 <span>&emsp;</span>
 <a href="https://github.com/itsskofficial">
