@@ -62,8 +62,6 @@ const Projects = forwardRef((props,ref) => {
             </div>
         </section>
 
-    console.log(changeState)
-
     const smallScreen = 
     <section data-aos='fade-in' ref={ref} id='projects' className={styles.parent}>
             <div className={styles.projectsText}>

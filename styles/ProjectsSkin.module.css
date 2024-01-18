@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.projectSkinLink, .projectSkinGithub{
+.projectSkinLink, .projectSkinGithub, .projectSkinCategory{
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.projectSkinLinkLight, .projectSkinGithubLight{
+.projectSkinLinkLight, .projectSkinGithubLight, .projectSkinCategoryLight{
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;

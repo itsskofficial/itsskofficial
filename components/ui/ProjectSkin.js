@@ -36,6 +36,9 @@ const ProjectSkin = (props) => {
                             <i className='fa-brands fa-github' style={{marginRight: '10px'}} />GitHub
                         </a>
                     </button>
+                    <span className={props.mode == 'dark' ? styles.projectSkinCategory : styles.projectSkinCategoryLight}>
+                            <i className='fa-solid fa-hashtag' style={{marginRight: '10px'}} />{project["category"]}
+                    </span>
                 </div>
             </div>
         </Fragment>
