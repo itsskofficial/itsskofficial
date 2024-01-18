@@ -20,7 +20,7 @@ const Header = forwardRef((props, ref) => {
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={[styles.headSubtitle, props.mode=='dark'?null:styles.light].join(' ')}>
-                    I am a{' '}
+                    I am an{' '}
                     <TypeAnimation 
                         sequence={[
                             'AI',
@@ -33,7 +33,7 @@ const Header = forwardRef((props, ref) => {
                         repeat={Infinity}
                         speed={20}
                         deletionSpeed={20} />
-                    developer
+                    enthusiast
                 </h2>
                 <button className={props.mode=='dark'?styles.headContact:styles.headContactLight}>
                     <a href='#contact'>
