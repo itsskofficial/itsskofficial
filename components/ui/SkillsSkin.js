@@ -41,10 +41,10 @@ const SkillsSkin = (props) => {
                 <i className={`fa-brands fa-ethereum fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 <Image src={props.mode == 'dark' ? '/assets/images/solidity.svg' : 'assets/images/soliditylight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Solidity Icon'/>
                 <Image src={props.mode == 'dark' ? '/assets/images/arduino.svg' : 'assets/images/arduinolight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Arduino Icon'/>
-                {/* <Image src='/assets/images/pandas.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Pandas Icon'/> */}
+                <i className={`fa-brands fa-docker fa-${mediaMatch ? '3x' : '2x'}`} style={{ color: props.mode == 'dark' ? 'white' : '#171717' }} />
+                <Image src={props.mode == 'dark' ? '/assets/images/kubernetes.svg' : 'assets/images/kuberneteslight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='Kubernetes Icon'/>
             </div>
         </Fragment>
-            
     )
 
     const toolsIcons = (
@@ -70,13 +70,13 @@ const SkillsSkin = (props) => {
                 <Image src={props.mode == 'dark' ? '/assets/images/vscode.svg' : 'assets/images/vscodelight.svg'} width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='VSCode Icon'/>
                 <i className={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
             </div>
-            {/* <div className={styles.skillsSkinRow}>
-                <i class={`fa-brands fa-trello fa-${mediaMatch ? '3x' : '2x'}`} />
+            <div className={styles.skillsSkinRow}>
+                <i className={`fa-brands fa-aws fa-${mediaMatch ? '3x' : '2x'}`} style={{color:props.mode=='dark'?'white': '#171717'}}/>
                 {/* <Image src='/assets/images/lmms.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon' />
                 <Image src='/assets/images/inkscape.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <Image src='/assets/images/vscode.svg' width={mediaMatch?'60':'30'} height={mediaMatch?'60':'30'} alt='TF Icon'/>
                 <i class={`fa-brands fa-github fa-${mediaMatch ? '3x' : '2x'}`} /> */} 
-            {/* </div> */}
+           </div>
         </Fragment>
         )
 
