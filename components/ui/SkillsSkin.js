@@ -158,6 +158,8 @@ const SkillsSkin = (props) => {
           height={mediaMatch ? "60" : "30"}
           alt="Kubernetes Icon"
         />
+      </div>
+      <div className={styles.skillsSkinRow}>
         <Image
           src={
             props.mode == "dark"
