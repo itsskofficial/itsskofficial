@@ -59,6 +59,8 @@ Skills :
 ![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/Code-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=326CE5)
+![](https://img.shields.io/badge/Code-Langchain-informational?style=flat&logo=langchain&logoColor=white&color=A1F78C)
+![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
 
 
 
