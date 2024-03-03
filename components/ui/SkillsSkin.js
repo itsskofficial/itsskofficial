@@ -166,7 +166,7 @@ const SkillsSkin = (props) => {
               ? "/assets/images/langchain.png"
               : "assets/images/langchainlight.png"
           }
-          width={mediaMatch ? "60" : "30"}
+          width={mediaMatch ? "90" : "30"}
           height={mediaMatch ? "60" : "30"}
           alt="Langchain Icon"
         />
