@@ -11,7 +11,7 @@ const Footer = (props) => {
                     &copy;
                 </h3>
                 <h3 className={[styles.footerText, props.mode=='dark'?null:styles.light].join(' ')}>
-                    2023
+                    2024
                 </h3>
                 <h3 className={[styles.footerText, props.mode=='dark'?null:styles.light].join(' ')}>
                     All Rights Reserved
