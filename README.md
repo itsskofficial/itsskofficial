@@ -59,7 +59,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-Ethers-informational?style=flat&logo=ethers&logoColor=white&color=2535A0)
 ![](https://img.shields.io/badge/Code-Wagmi-informational?style=flat&logo=wagmi&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Chainlink-informational?style=flat&logo=chainlink&logoColor=white&color=375BD2)
-![](https://img.shields.io/badge/Code-Hardhat-informational?style=flat&logo=chainlink&logoColor=white&color=375BD2)
+![](https://img.shields.io/badge/Code-Hardhat-informational?style=flat&logo=hardhat&logoColor=white&color=FFFF00)
 ![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/Code-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=326CE5)
 ![](https://img.shields.io/badge/Code-Langchain-informational?style=flat&logo=langchain&logoColor=white&color=A1F78C)
