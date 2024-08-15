@@ -5,7 +5,7 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness
+🔭 Building Existence, an open source club which promotes maintainence and advancement of consciousness
 
 🚀 Into AI, IOT & Metaverse
 
@@ -49,24 +49,23 @@ Skills :
 ![](https://img.shields.io/badge/Code-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=4479A1)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-TailwindCSS-informational?style=flat&logo=tailwindcss&logoColor=white&color=4dc0b5)
+![](https://img.shields.io/badge/Code-Electron-informational?style=flat&logo=electron&logoColor=white&color=9bb7c4)
 ![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
 ![](https://img.shields.io/badge/Code-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=150458)
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
-![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=43B02A)
-![](https://img.shields.io/badge/Code-Ethereum-informational?style=flat&logo=ethereum&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
+![](https://img.shields.io/badge/Code-Ethers-informational?style=flat&logo=ethers&logoColor=white&color=2535A0)
+![](https://img.shields.io/badge/Code-Wagmi-informational?style=flat&logo=wagmi&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-Chainlink-informational?style=flat&logo=chainlink&logoColor=white&color=375BD2)
+![](https://img.shields.io/badge/Code-Hardhat-informational?style=flat&logo=hardhat&logoColor=white&color=FFFF00)
 ![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/Code-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=326CE5)
 ![](https://img.shields.io/badge/Code-Langchain-informational?style=flat&logo=langchain&logoColor=white&color=A1F78C)
 ![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
-
-
-
-
-
-
+![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
@@ -81,4 +80,8 @@ Skills :
 ![](https://img.shields.io/badge/Software-Wordpress-informational?style=flat&logo=wordpress&logoColor=white&color=21759B)
 ![](https://img.shields.io/badge/Software-LMMS-informational?style=flat&logo=lmms&logoColor=white&color=10B146)
 ![](https://img.shields.io/badge/Software-VSCode-informational?style=flat&logo=visualstudiocode&logoColor=white&color=007ACC)
-
+![](https://img.shields.io/badge/Software-HuggingFace-informational?style=flat&logo=huggingface&logoColor=white&color=FFD21E)
+![](https://img.shields.io/badge/Software-GitHub-informational?style=flat&logo=github&logoColor=white&color=181717)
+![](https://img.shields.io/badge/Software-Vercel-informational?style=flat&logo=vercel&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Software-Render-informational?style=flat&logo=render&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Software-Fleek-informational?style=flat&logo=fleek&logoColor=white&color=FF10F0)
