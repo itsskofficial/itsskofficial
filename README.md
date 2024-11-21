@@ -47,6 +47,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
 ![](https://img.shields.io/badge/Code-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=4479A1)
+![](https://img.shields.io/badge/Code-Neo4J-informational?style=flat&logo=neo4j&logoColor=white&color=0A6190)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-TailwindCSS-informational?style=flat&logo=tailwindcss&logoColor=white&color=4dc0b5)
 ![](https://img.shields.io/badge/Code-Electron-informational?style=flat&logo=electron&logoColor=white&color=9bb7c4)
@@ -64,7 +65,9 @@ Skills :
 ![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/Code-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=326CE5)
 ![](https://img.shields.io/badge/Code-Langchain-informational?style=flat&logo=langchain&logoColor=white&color=A1F78C)
+![](https://img.shields.io/badge/Code-LlamaIndex-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
+![](https://img.shields.io/badge/Code-Flwr-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
