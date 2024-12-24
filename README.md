@@ -5,7 +5,7 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Building Existence, an open source club which promotes maintainence and advancement of consciousness
+🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness
 
 🚀 Into AI, IOT & Metaverse
 
@@ -19,8 +19,9 @@ Here's a quick intro about me :
 My Socials : 
 
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/sarthak-karandikar-0223b7228/)
-[![Mail Badge](https://img.shields.io/badge/Gmail-informational?style=flat&logo=gmail&logoColor=white&color=EA4335)](mailto:itsskofficial03@gmail.com)
+[![LinkedIn Badge](https://img.shields.io/badge/X-informational?style=flat&logo=x&logoColor=white&color=000000)](https://x.com/_itsskofficial_/)
 [![WhatsApp Badge](https://img.shields.io/badge/WhatsApp-informational?style=flat&logo=whatsapp&logoColor=white&color=25D366)](https://wa.me/+918275017823/)
+[![Mail Badge](https://img.shields.io/badge/Gmail-informational?style=flat&logo=gmail&logoColor=white&color=EA4335)](mailto:itsskofficial03@gmail.com)
 
 GitHub Stats :
 
