@@ -20,7 +20,10 @@ const NavBar = (props) => {
 		{ id: 3, name: "Philosophy", href: "/philosophy" },
 	];
 
-	const extras = [{ id: 0, name: "Poetry", href: "/poetry" }];
+	const extras = [
+		{ id: 0, name: "Blog", href: "/blog" },
+		{ id: 1, name: "Poetry", href: "/poetry" }
+	];
 
 	const [navlinks, setNavlinks] = useState(links);
 

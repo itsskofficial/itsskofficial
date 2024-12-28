@@ -1,6 +1,6 @@
 import styles from "@styles/Projects.module.css";
 import ProjectSkin from "./ui/ProjectSkin";
-import { forwardRef, useState, useEffect } from "react";
+import {  useState, useEffect } from "react";
 import projectsData from "../public/assets/js/ProjectsData";
 import { useMediaQuery } from "usehooks-ts";
 

@@ -19,8 +19,8 @@ const Existence = (props) => {
 				<Image
 					src={
 						props.mode === "dark"
-							? "/assets/images/existence.jpg"
-							: "/assets/images/existencelight.jpg"
+							? "/assets/images/existence.png"
+							: "/assets/images/existencelight.png"
 					}
 					width={mediaMatch ? "450" : "300"}
 					height={mediaMatch ? "450" : "300"}

@@ -1,21 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import PoetryCard from "@components/ui/PoetryCard";
-import PoetryModal from "@components/ui/PoetryModal";
-import styles from "@styles/Poetry.module.css";
-import { poetries } from "@constants/poetry";
+import BlogCard from "@components/ui/BlogCard";
+import BlogModal from "@components/ui/BlogModal";
+import styles from "@styles/Blog.module.css";
+import { blogs } from "@constants/blogs";
 
-const Poems = (props) => {
-	const [filteredPoetries, setFilteredPoetries] = useState(poetries);
+const Articles = (props) => {
+	const [filteredBlogs, setFilteredBlogs] = useState(blogs);
 	const [categories, setCategories] = useState([]);
 	const [activeCategory, setActiveCategory] = useState("All");
-	const [selectedPoetry, setSelectedPoetry] = useState(null);
+	const [selectedBlog, setSelectedBlog] = useState(null);
 
 	useEffect(() => {
 		const uniqueCategories = [
 			"All",
-			...new Set(poetries.map((poetry) => poetry.category)),
+			...new Set(blogs.map((blog) => blog.category)),
 		];
 		setCategories(uniqueCategories);
 	}, []);
@@ -23,10 +23,10 @@ const Poems = (props) => {
 	const handleCategoryChange = (category) => {
 		setActiveCategory(category);
 		if (category === "All") {
-			setFilteredPoetries(poetries);
+			setFilteredBlogs(blogs);
 		} else {
-			setFilteredPoetries(
-				poetries.filter((poetry) => poetry.category === category)
+			setFilteredBlogs(
+				blogs.filter((blog) => blog.category === category)
 			);
 		}
 	};
@@ -37,14 +37,15 @@ const Poems = (props) => {
 				props.mode === "dark" ? null : styles.light
 			}`}
 		>
-			<h1 className={styles.title}>Poetry</h1>
+			<h1 className={styles.title}>Blogs</h1>
+
 			<div className={styles.categories}>
 				{categories.map((category) => (
 					<button
 						key={category}
 						className={[
-              styles.categoryButton,
-				      props.mode === "dark" ? null : styles.light,
+							styles.categoryButton,
+							props.mode === "dark" ? null : styles.light,
 							activeCategory === category
 								? styles.activeCategory
 								: "",
@@ -55,25 +56,27 @@ const Poems = (props) => {
 					</button>
 				))}
 			</div>
+
 			<div className={styles.cardsWrapper}>
 				<div className={styles.cards}>
-					{filteredPoetries.map((poetry) => (
-						<PoetryCard
-							key={poetry.id}
-							poetry={poetry}
-							onClick={setSelectedPoetry}
+					{filteredBlogs.map((blog) => (
+						<BlogCard
+							key={blog.id}
+							blog={blog}
+							onClick={setSelectedBlog}
 						/>
 					))}
 				</div>
 			</div>
-			{selectedPoetry && (
-				<PoetryModal
-					poetry={selectedPoetry}
-					onClose={() => setSelectedPoetry(null)}
+
+			{selectedBlog && (
+				<BlogModal
+					blog={selectedBlog}
+					onClose={() => setSelectedBlog(null)}
 				/>
 			)}
 		</section>
 	);
 };
 
-export default Poems;
+export default Articles;

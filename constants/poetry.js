@@ -1,9 +1,9 @@
 export const poetries = [
 	{
 		id: 1,
-		title: "Love Poem",
+		title: "Light",
 		category: "Love",
-		images: ["/images/love1.jpg", "/images/love2.jpg"],
+		images: ["/assets/images/poetry/love/light.png"],
 	},
 	{
 		id: 2,
