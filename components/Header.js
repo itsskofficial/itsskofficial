@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { useMediaQuery } from 'usehooks-ts'
 import { useEffect } from 'react'
 
-const Header = forwardRef((props, ref) => {
+const Header = (props) => {
     const isBigScreen = useMediaQuery('(min-width:1201px)')
     var mediaMatch=true
     useEffect(() => {
@@ -14,20 +14,20 @@ const Header = forwardRef((props, ref) => {
         }
     },[])
     return (
-        <section ref={ref} id='home' className={styles.parent}>
+        <section id='home' className={styles.parent}>
             <div className={styles.headText}>
                 <h1 className={[styles.headTitle,props.mode=='dark'?null:styles.light].join(' ')}>
                     Hey, I'm Sarthak
                 </h1>
                 <h2 className={[styles.headSubtitle, props.mode=='dark'?null:styles.light].join(' ')}>
-                    I am an{' '}
+                    I am a{' '}
                     <TypeAnimation 
                         sequence={[
-                            'AI',
+                            'technology',
                             3000,
-                            'IOT',
+                            'science',
                             3000,
-                            'Metaverse',
+                            'philosophy',
                             3000
                         ]}
                         repeat={Infinity}
@@ -46,6 +46,6 @@ const Header = forwardRef((props, ref) => {
             </div>
         </section>
     )
-})
+}
 
 export default Header

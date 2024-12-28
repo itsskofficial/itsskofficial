@@ -1,0 +1,99 @@
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Categories */
+.categories {
+  margin-bottom: 20px;
+}
+
+.categoryButton {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid currentColor;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categoryButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.activeCategory {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.modalImage {
+  max-width: 90%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.modalControls button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 10px;
+}
