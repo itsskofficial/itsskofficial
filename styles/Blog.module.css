@@ -99,6 +99,7 @@
 }
 
 .modalContent {
+  text-align: left;
   position: relative;
   background: #171717;
   font-family: "Montserrat", sans-serif;
