@@ -77,45 +77,59 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff; /* Change to appropriate background color */
+    background-color: #171717; /* Change to appropriate background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 75px;
+    text-align: left;
 }
 
-.dropdown:hover .dropdownMenu {
+.dropdownMenuLight {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdownMenu, .dropdown:hover .dropdownMenuLight {
     display: block;
 }
 
 .dropdownMenu li {
     padding: 10px;
 }
+.dropdownMenuLight li {
+    padding: 10px;
+}
 
 .dropdownMenu li a {
     text-decoration: none;
+    color: #fff;
+    text-align: left;
+}
+
+.dropdownMenuLight li a {
+    text-decoration: none;
     color: #171717;
+    text-align: left;
 }
 
 .dropdownMenu li a:hover {
-    color: #f5a623; /* Change to your desired hover color */
+    color: #f5a623;
 }
 
-/* Styles for dropdown in light mode */
-.parentLight .dropdownMenu {
-    background-color: white; /* Adjust the background color for light mode */
+.dropdownMenuLight li a:hover {
+    color: #f5a623;
 }
-
-.parentLight .dropdownMenu li a {
-    color: #171717; /* Adjust the text color for light mode */
-}
-
-/* Hover effect */
-.parentLight .dropdownMenu li a:hover {
-    color: #f5a623; /* Adjust the hover color for light mode */
-}
-
 
 }
 
@@ -184,4 +198,76 @@
     .navbarLogo{
         width: 30%;
     }
+
+    .dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #171717; /* Change to appropriate background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    text-align: left;
+}
+
+.dropdownMenuLight {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 75px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdownMenu, .dropdown:hover .dropdownMenuLight {
+    display: block;
+}
+
+.dropdownMenu li {
+    padding: 10px;
+}
+.dropdownMenuLight li {
+    padding: 10px;
+}
+
+.dropdownMenu li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+}
+
+.dropdownMenuLight li a {
+    text-decoration: none;
+    color: #171717;
+    text-align: left;
+}
+
+.dropdownMenu li a:hover {
+    color: #f5a623;
+}
+
+.dropdownMenuLight li a:hover {
+    color: #f5a623;
+}
+
+.burgerMenu {
+    color:#fff
+}
+
+.burgerMenuLight {
+    color:#171717
+}
+
 }

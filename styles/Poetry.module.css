@@ -6,14 +6,14 @@
   justify-content: center;
   padding: 30px;
   height: 85vh;
-  margin: 100px 0;
+  margin: 100px 0px 100px 0px;
   text-align: center;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
@@ -22,29 +22,16 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.categoryButton {
-  padding: 12px 20px;
+.categoryButton, .categoryButtonLight {
+  padding: 10px 15px;
   margin: 5px;
   border-radius: 7px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   background-color: transparent;
-  color: #ffffff;
-  border: 2px solid currentColor;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
-}
-
-.categoryButtonLight {
-  padding: 12px 20px;
-  margin: 5px;
-  border-radius: 7px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  background-color: transparent;
-  color: #171717;
   border: 2px solid currentColor;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease-in-out;
@@ -165,7 +152,7 @@
 /* Media Queries */
 
 /* Large screens */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1200px) {
   .container {
     flex-direction: row;
     justify-content: space-evenly;
@@ -179,9 +166,8 @@
   }
 
   .categories {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .cards {
@@ -190,15 +176,45 @@
   }
 }
 
-/* Small screens */
-@media only screen and (max-width: 600px) {
+/* Medium screens (Tablets) */
+@media only screen and (max-width: 1024px) {
   .container {
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     margin: 50px 0;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 32px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .card {
+    width: 180px;
+  }
+}
+
+/* Small screens (Phones) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 20px 0;
+    height: auto;
+
+  }
+
+  .title {
+    font-size: 28px;
   }
 
   .categories {
@@ -206,9 +222,9 @@
     align-items: center;
   }
 
-  .categoryButton {
-    font-size: 15px;
-    padding: 12px;
+  .categoryButton, .categoryButtonLight {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .cards {
@@ -217,17 +233,12 @@
   }
 
   .card {
-    width: 80%;
-    margin-bottom: 20px;
+    width: 90%;
+    margin-bottom: 15px;
   }
 
   .modalImage {
     max-width: 100%;
     margin: 0 auto;
   }
-
-  .light {
-  color: #171717;
 }
-}
-

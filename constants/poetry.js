@@ -7,14 +7,14 @@ export const poetries = [
 	},
 	{
 		id: 2,
-		title: "Sadness",
-		category: "Depression",
-		images: ["/images/depression1.jpg"],
+		title: "Dispassion",
+		category: "Sad",
+		images: ["/assets/images/poetry/sad/dispassion.png"],
 	},
 	{
 		id: 3,
-		title: "Hope",
-		category: "Motivation",
-		images: ["/images/hope1.jpg", "/images/hope2.jpg", "/images/hope3.jpg"],
+		title: "The Laugh",
+		category: "Love",
+		images: ["/assets/images/poetry/love/laugh.png"],
 	},
 ];

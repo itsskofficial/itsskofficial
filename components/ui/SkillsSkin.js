@@ -226,7 +226,7 @@ const SkillsSkin = (props) => {
 					src={
 						props.mode == "dark"
 							? "/assets/images/langchain.png"
-							: "assets/images/langchainlight.png"
+							: "/assets/images/langchainlight.png"
 					}
 					width={mediaMatch ? "60" : "30"}
 					height={mediaMatch ? "60" : "30"}

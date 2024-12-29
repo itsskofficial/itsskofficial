@@ -2,6 +2,7 @@
 
 import NavBar from "@components/NavBar";
 import ComingSoon from "@components/ComingSoon";
+import Footer from "@components/Footer";
 import { useState, useEffect, Fragment } from "react";
 import Script from "next/script";
 import Aos from "aos";
@@ -30,6 +31,7 @@ export default function Science() {
 			<main>
 				<NavBar mode={mode} toggleMode={toggleMode} />
 				<ComingSoon mode={mode} />
+				<Footer mode={mode} />
 				<Script
 					src="https://kit.fontawesome.com/638bbcf842.js"
 					crossorigin="anonymous"

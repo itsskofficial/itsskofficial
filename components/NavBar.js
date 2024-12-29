@@ -1,4 +1,6 @@
 import styles from "@styles/NavBar.module.css";
+import menuStyles from "@public/assets/css/menu.module.css";
+import menuStylesLight from "@public/assets/css/menuLight.module.css";
 import { slide as Menu } from "react-burger-menu";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
@@ -8,6 +10,34 @@ const NavBar = (props) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const isBigScreen = useMediaQuery("(min-width:1201px)");
 	const [mediaMatch, setMediaMatch] = useState(true);
+	const burgerMenuClasses = [
+		menuStyles["bm-burger-button"],
+		menuStyles["bm-burger-bars"],
+		menuStyles["bm-burger-bars-hover"],
+		menuStyles["bm-cross-button"],
+		menuStyles["bm-cross"],
+		menuStyles["bm-menu-wrap"],
+		menuStyles["bm-morph-shape"],
+		menuStyles["bm-item-list"],
+		menuStyles["bm-item"],
+		menuStyles["bm-overlay"],
+	];
+	const burgerMenuClassesLight = [
+		menuStylesLight["bm-burger-button"],
+		menuStylesLight["bm-burger-bars"],
+		menuStylesLight["bm-burger-bars-hover"],
+		menuStylesLight["bm-cross-button"],
+		menuStylesLight["bm-cross"],
+		menuStylesLight["bm-menu-wrap"],
+		menuStylesLight["bm-morph-shape"],
+		menuStylesLight["bm-item-list"],
+		menuStylesLight["bm-item"],
+		menuStylesLight["bm-overlay"],
+	];
+
+	console.log(menuStyles)
+	console.log(menuStylesLight)
+
 
 	useEffect(() => {
 		setMediaMatch(isBigScreen);
@@ -74,7 +104,11 @@ const NavBar = (props) => {
 					>
 						Extras
 					</span>
-					<ul className={styles.dropdownMenu}>
+					<ul className={
+							props.mode === "dark"
+								? styles.dropdownMenu
+								: styles.dropdownMenuLight
+						}>
 						{extras.map((extra) => (
 							<li key={extra.id}>
 								<Link
@@ -123,9 +157,9 @@ const NavBar = (props) => {
 			</h2>
 			<Menu
 				className={[
-					props.mode === "dark"
-						? styles.burgerMenu
-						: styles.burgerMenuLight,
+					props.mode == "dark"
+						? burgerMenuClasses
+						: burgerMenuClassesLight,
 				].join(" ")}
 				right
 				width={150}
@@ -141,8 +175,8 @@ const NavBar = (props) => {
 								? styles.navLink
 								: styles.navLinkLight
 						}
-					>
 						onClick={closeMenu}
+					>
 						{link.name}
 					</Link>
 				))}
@@ -156,7 +190,13 @@ const NavBar = (props) => {
 					>
 						Extras
 					</span>
-					<ul className={styles.dropdownMenu}>
+					<ul
+						className={
+							props.mode === "dark"
+								? styles.dropdownMenu
+								: styles.dropdownMenuLight
+						}
+					>
 						{extras.map((extra) => (
 							<li key={extra.id}>
 								<Link

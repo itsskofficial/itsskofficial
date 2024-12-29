@@ -37,7 +37,7 @@ const Articles = (props) => {
 				props.mode === "dark" ? null : styles.light
 			}`}
 		>
-			<h1 className={styles.title}>Blogs</h1>
+			<h1 className={styles.title}>Blog</h1>
 
 			<div className={styles.categories}>
 				{categories.map((category) => (
@@ -72,6 +72,7 @@ const Articles = (props) => {
 			{selectedBlog && (
 				<BlogModal
 					blog={selectedBlog}
+					mode={props.mode}
 					onClose={() => setSelectedBlog(null)}
 				/>
 			)}
