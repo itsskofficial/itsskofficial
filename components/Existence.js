@@ -45,7 +45,7 @@ const Existence = (props) => {
 					Existence is my startup focused on the upliftment of all
 					existence through cutting-edge technology products. Our
 					current product, <strong>Sentient</strong>, is a completely
-					private, decentralized, and interactive AI companion.
+					private, decentralized, and interactive AI companion
 				</h2>
 				<button
 					className={

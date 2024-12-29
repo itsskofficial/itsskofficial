@@ -49,7 +49,7 @@ const About = (props) => {
 					science, and philosophy. From understanding the complexities
 					of the universe to exploring human creativity, I thrive in
 					the intersection of logical and artistic pursuits. Check out
-					my purpose and vision.
+					my purpose and vision
 				</h2>
 				<button
 					className={
@@ -60,7 +60,7 @@ const About = (props) => {
 					onClick={() => {
 						download(
 							"/assets/resources/purpose.pdf",
-							"purpose.pdf"
+							"SK's Purpose.pdf"
 						);
 					}}
 				>
