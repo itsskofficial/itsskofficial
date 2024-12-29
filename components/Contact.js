@@ -26,7 +26,7 @@ const Contact = (props) => {
 				</Link>
 				<Link href="https://x.com/_itsskofficial_">
 					<i
-						className="fa-brands fa-x fa-3x"
+						className="fa-brands fa-x-twitter fa-3x"
 						style={{
 							color: props.mode == "dark" ? null : "#171717",
 						}}
@@ -94,7 +94,7 @@ const Contact = (props) => {
 					</Link>
 					<Link href="https://x.com/_itsskofficial_">
 						<i
-							className="fa-brands fa-x fa-2x"
+							className="fa-brands fa-x-twitter fa-2x"
 							style={{
 								color: props.mode == "dark" ? null : "#171717",
 							}}

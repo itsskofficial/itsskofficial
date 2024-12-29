@@ -15,8 +15,30 @@ export default function Poetry() {
 		setMode(userMode);
 	};
 	useEffect(() => {
-		if (mode == "dark") document.body.style.backgroundColor = "#171717";
-		else document.body.style.backgroundColor = "#ffffff";
+		document.body.style.backgroundColor =
+			mode === "dark" ? "#171717" : "#ffffff";
+
+		const styleLink = document.createElement("link");
+		styleLink.rel = "stylesheet";
+		styleLink.type = "text/css";
+		styleLink.href =
+			mode === "dark"
+				? "/assets/css/menu.css"
+				: "/assets/css/menuLight.css";
+		document.head.appendChild(styleLink);
+
+		const faviconLink = document.createElement("link");
+		faviconLink.rel = "icon";
+		faviconLink.href =
+			mode === "dark"
+				? "/assets/images/favicon.png"
+				: "/assets/images/faviconlight.png";
+		document.head.appendChild(faviconLink);
+
+		return () => {
+			document.head.removeChild(styleLink);
+			document.head.removeChild(faviconLink);
+		};
 	}, [mode]);
 
 	useEffect(() => {
