@@ -31,7 +31,7 @@
     text-justify: distribute-all-lines;
 }
 
-.aboutResume{
+.aboutButton{
     margin-right: auto;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -45,7 +45,7 @@
     cursor: pointer;
 }
 
-.aboutResumeLight{
+.aboutButtonLight{
     margin-right: auto;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -59,13 +59,13 @@
     cursor: pointer;
 }
 
-.aboutResume:hover{
+.aboutButton:hover{
     background-color: white;
     color: #171717;
     transform: scale(1.1);
 }
 
-.aboutResumeLight:hover{
+.aboutButtonLight:hover{
     background-color: #171717;
     color: white;
     transform: scale(1.1);
@@ -116,7 +116,7 @@
         font-size: 20px;
     }
 
-    .aboutResume{
+    .aboutButton{
         padding: 12px;
         font-family: 'Montserrat', sans-serif;
         border-radius: 7px;
@@ -129,13 +129,13 @@
         cursor: pointer;
     }
 
-    .aboutResume:hover{
+    .aboutButton:hover{
         background-color: white;
         color: #171717;
         transform: scale(1.1);
     }
 
-    .aboutResumeLight{
+    .aboutButtonLight{
         padding: 12px;
         font-family: 'Montserrat', sans-serif;
         border-radius: 7px;
@@ -148,7 +148,7 @@
         cursor: pointer;
     }
 
-    .aboutResumeLight:hover{
+    .aboutButtonLight:hover{
         background-color: #171717;
         color: white;
         transform: scale(1.1);

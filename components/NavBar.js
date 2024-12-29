@@ -1,177 +1,221 @@
-import styles from "@styles/NavBar.module.css"
-import { slide as Menu } from "react-burger-menu"
-import { useEffect, useState } from "react"
-import { useMediaQuery } from "usehooks-ts"
+import styles from "@styles/NavBar.module.css";
+import { slide as Menu } from "react-burger-menu";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "usehooks-ts";
+import Link from "next/link";
 
 const NavBar = (props) => {
-    const tempActiveSection = props.activeSection
-    const firstLetter = tempActiveSection[0]
-    const firstLetterCap = firstLetter.toUpperCase()
-    const remainingLetters = tempActiveSection.slice(1)
-    const activeSection = firstLetterCap + remainingLetters
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const isBigScreen = useMediaQuery('(min-width:1201px)')
-    const [mediaMatch, setMediaMatch] = useState(true)
-    const burgerMenuClasses = ['bm-burger-button', 'bm-burger-bars', 'bm-burger-bars-hover', 'bm-cross-button', 'bm-cross', 'bm-menu-wrap','bm-morph-shape', 'bm-item-list', 'bm-item', 'bm-overlay']
-    const burgerMenuClassesLight = [styles['bm-burger-button'], styles['bm-burger-bars'], styles['bm-burger-bars-hover'], styles['bm-cross-button'], styles['bm-cross'],styles['bm-menu-wrap'],styles['bm-morph-shape'], styles['bm-item-list'], styles['bm-item'], styles['bm-overlay']]
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isExtrasOpen, setIsExtrasOpen] = useState(false); 
+  const isBigScreen = useMediaQuery("(min-width:1201px)");
+  const [mediaMatch, setMediaMatch] = useState(true);
+  const burgerMenuClasses = [
+    "bm-burger-button",
+    "bm-burger-bars",
+    "bm-burger-bars-hover",
+    "bm-cross-button",
+    "bm-cross",
+    "bm-menu-wrap",
+    "bm-morph-shape",
+    "bm-item-list",
+    "bm-item",
+    "bm-overlay",
+  ];
 
-    useEffect(() => {
-        if (isBigScreen == false){
-            setMediaMatch(false)
-        }
-    })
+  useEffect(() => {
+    setMediaMatch(isBigScreen);
+  }, [isBigScreen]);
 
-    const tempNavlinks = [
-        {
-            id: 0,
-            name: "Home",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-        },
-        {
-            id: 1,
-            name: "About",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-        },
-        {
-            id: 2,
-            name: "Skills",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-        },
-        {
-            id: 3,
-            name: "Contact",
-            classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-        }
-    ]
+  const links = [
+    { id: 0, name: "Home", href: "/" },
+    { id: 1, name: "Technology", href: "/technology" },
+    { id: 2, name: "Science", href: "/science" },
+    { id: 3, name: "Philosophy", href: "/philosophy" },
+  ];
 
-    const closeMenu = () => {
-        setIsMenuOpen(false)
-    }
+  const extras = [
+    { id: 0, name: "Blog", href: "/blog" },
+    { id: 1, name: "Poetry", href: "/poetry" },
+  ];
 
-    const handleMenuChange = (state) => {
-        setIsMenuOpen(state.isOpen)
-    }
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
-    const initialNavlinks = tempNavlinks.map(link => link['name'] == activeSection ? {
-        id: link['id'],
-        name: link['name'],
-        classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight,props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
-    } :
-        link
-    )
+  const handleMenuChange = (state) => {
+    setIsMenuOpen(state.isOpen);
+  };
 
-    const [navlinks, setNavlinks] = useState(initialNavlinks)
-    useEffect(() => {
-        setNavlinks(initialNavlinks)
-    }, [activeSection])
-    
-    const bigScreen = (
-        <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
-            <h2 className={[styles.navbarLogo,props.mode=='dark'?null:styles.light].join(' ')}>
-                SK
-            </h2>
-            <ul className={styles.navList} style={{listStyleType:"none"}}>
-                {navlinks.map(link => {
-                    return (
-                        <li key={link['id']} >
-                        <a href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
-                            var tempNavlinks = [
-                                {
-                                    id: 0,
-                                    name: "Home",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 1,
-                                    name: "About",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 2,
-                                    name: "Skills",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 3,
-                                    name: "Contact",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                }
-                            ]
-                            tempNavlinks[link['id']]['classes'] = [props.mode=='dark'?styles.navLink:styles.navLinkLight,props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
-                            setNavlinks(tempNavlinks)
-                        }}>
-                            {link['name']}
-                            </a>
-                            </li>
-                    )
-                })}
+  const toggleExtras = () => {
+    setIsExtrasOpen((prev) => !prev); // Toggle the Extras menu visibility
+  };
+
+  const bigScreen = (
+    <section
+      className={
+        props.mode === "dark" ? styles.parent : styles.parentLight
+      }
+    >
+      <h2
+        className={[
+          styles.navbarLogo,
+          props.mode === "dark" ? null : styles.light,
+        ].join(" ")}
+      >
+        SK
+      </h2>
+      <ul className={styles.navList} style={{ listStyleType: "none" }}>
+        {links.map((link) => (
+          <li key={link.id}>
+            <Link
+              href={link.href}
+              className={
+                props.mode === "dark"
+                  ? styles.navLink
+                  : styles.navLinkLight
+              }
+            >
+              {link.name}
+            </Link>
+          </li>
+        ))}
+        <li className={styles.dropdown}>
+          <span
+            className={
+              props.mode === "dark"
+                ? styles.navLink
+                : styles.navLinkLight
+            }
+          >
+            Extras
+          </span>
+          <ul
+            className={
+              props.mode === "dark"
+                ? styles.dropdownMenu
+                : styles.dropdownMenuLight
+            }
+          >
+            {extras.map((extra) => (
+              <li key={extra.id}>
+                <Link
+                  href={extra.href}
+                  className={
+                    props.mode === "dark"
+                      ? styles.navLink
+                      : styles.navLinkLight
+                  }
+                >
+                  {extra.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </li>
+      </ul>
+      <span
+        onClick={() => {
+          props.toggleMode(props.mode === "light" ? "dark" : "light");
+        }}
+      >
+        <i
+          className={`fa-solid fa-${
+            props.mode === "dark" ? "moon" : "sun"
+          }`}
+          style={{ color: props.mode === "dark" ? null : "#171717" }}
+        />
+      </span>
+    </section>
+  );
+
+  const smallScreen = (
+    <section
+      className={
+        props.mode === "dark" ? styles.parent : styles.parentLight
+      }
+    >
+      <h2
+        className={[
+          styles.navbarLogo,
+          props.mode === "dark" ? null : styles.light,
+        ].join(" ")}
+      >
+        SK
+      </h2>
+      <Menu
+        className={burgerMenuClasses.join(" ")}
+        right
+        width={150}
+        isOpen={isMenuOpen}
+        onStateChange={handleMenuChange}
+      >
+        {links.map((link) => (
+          <Link
+            key={link.id}
+            href={link.href}
+            className={
+              props.mode === "dark"
+                ? styles.navLink
+                : styles.navLinkLight
+            }
+            onClick={closeMenu}
+          >
+            {link.name}
+          </Link>
+        ))}
+        <div>
+          <span
+            className={
+              props.mode === "dark"
+                ? styles.navLink
+                : styles.navLinkLight
+            }
+            onClick={toggleExtras} 
+          >
+            Extras
+          </span>
+          {isExtrasOpen && ( 
+            <ul style={{ listStyleType: "none" }}
+            >
+              {extras.map((extra) => (
+                <li key={extra.id}>
+                  <Link
+                    href={extra.href}
+                    className={
+                      props.mode === "dark"
+                        ? styles.navLink
+                        : styles.navLinkLight
+                    }
+                    onClick={closeMenu}
+                  >
+                    {extra.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
-            <span onClick={() => {
-                if (props.mode=='light')
-                    props.toggleMode('dark')
-                else
-                    props.toggleMode('light')
-               
-            }}>
-                <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color:props.mode=='dark'?null : '#171717'}} />
-            </span>
-        </section>)
-    
-    console.log()
+          )}
+        </div>
+        <span
+          onClick={() => {
+            props.toggleMode(
+              props.mode === "light" ? "dark" : "light"
+            );
+          }}
+        >
+          <i
+            className={`fa-solid fa-${
+              props.mode === "dark" ? "moon" : "sun"
+            }`}
+            style={{
+              color: props.mode === "dark" ? null : "#171717",
+            }}
+          />
+        </span>
+      </Menu>
+    </section>
+  );
 
-    const smallScreen = (
-        <section className={props.mode=='dark'?styles.parent:styles.parentLight}>
-            <h2 className={[styles.navbarLogo,props.mode=='dark'?null:styles.light].join(' ')}>
-                SK
-            </h2>
-            <Menu className={[props.mode == 'dark' ? burgerMenuClasses : burgerMenuClassesLight].join(' ')} right width={150} isOpen={isMenuOpen} onStateChange={handleMenuChange}>
-                {navlinks.map(link => {
-                    return (
-                        <a key={link['id']} href={`/#${link['name'].toLowerCase()}`} className={link['classes']} onClick={() => {
-                            var tempNavlinks = [
-                                {
-                                    id: 0,
-                                    name: "Home",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 1,
-                                    name: "About",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 2,
-                                    name: "Skills",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                },
-                                {
-                                    id: 3,
-                                    name: "Contact",
-                                    classes: [props.mode=='dark'?styles.navLink:styles.navLinkLight]
-                                }
-                            ]
-                            tempNavlinks[link['id']]['classes'] = [props.mode=='dark'?styles.navLink:styles.navLinkLight,props.mode=='dark'?styles.navLinkActive:styles.navLinkActiveLight].join(' ')
-                            setNavlinks(tempNavlinks)
-                            closeMenu()
-                        }}>
-                            {link['name']}
-                        </a>
-                    )
-                })}
-                <span onClick={() => {
-                    if (props.mode=='light')
-                        props.toggleMode('dark')
-                    else
-                        props.toggleMode('light')
-                
-                    }}>
-                    <i className={`fa-solid fa-${props.mode == 'dark' ? 'moon' : 'sun'}`} style={{color:props.mode=='dark'?null: '#171717'}} />
-                </span>
-            </Menu>
-        </section>)
-    return (
-         mediaMatch ? bigScreen : smallScreen
-    )
-}
+  return mediaMatch ? bigScreen : smallScreen;
+};
 
-export default NavBar
+export default NavBar;

@@ -1,0 +1,274 @@
+/* General Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  height: 85vh;
+  margin: 100px 0px 100px 0px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Categories */
+.categories {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categoryButton {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: var(--border-radius);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid currentColor;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) ease, transform var(--transition-duration) ease-in-out;
+}
+
+.categoryButton:hover {
+  background-color: var(--hover-bg-color);
+  transform: scale(1.1);
+}
+
+.activeCategory {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.cardTitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--font-weight-normal);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  overflow-y: auto; /* Allows scrolling within the modal when content exceeds the height */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 15;
+}
+
+.modalContent {
+  position: relative;
+  background: #171717;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90%; /* Ensures it doesn't exceed the screen width */
+  max-height: 90%; /* Ensures it doesn't exceed the screen height */
+  width: 500px; /* Fixed width for desktop */
+  height: auto; /* Adjust height based on content */
+  padding: 20px;
+  border-radius: var(--border-radius);
+  z-index: 20;
+  overflow-y: auto; /* Allows content scrolling within the modal */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow for better focus */
+}
+
+.modalContentLight {
+  position: relative;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90%; /* Ensures it doesn't exceed the screen width */
+  max-height: 90%; /* Ensures it doesn't exceed the screen height */
+  width: 500px; /* Fixed width for desktop */
+  height: auto; /* Adjust height based on content */
+  padding: 20px;
+  border-radius: var(--border-radius);
+  z-index: 20;
+  overflow-y: auto; /* Allows content scrolling within the modal */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow for better focus */
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 60vh; /* Ensures the image does not take up excessive space */
+  display: block;
+  margin: 0 auto;
+}
+
+.modalContent button {
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.modalContent button:hover {
+  transform: scale(1.1);
+}
+
+.modalContentLight button {
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: #171717;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.modalContentLight button:hover {
+  transform: scale(1.1);
+}
+
+
+/* Media Queries */
+
+/* Large screens (Desktops) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 100px 0;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .categories {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cards {
+    justify-content: flex-start;
+  }
+}
+
+/* Medium screens (Tablets) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .card {
+    width: 180px;
+  }
+}
+
+/* Small screens (Mobile) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 20px 0;
+    height: auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoryButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .modalContent {
+    max-width: 90%;
+  }
+
+  .modalImage {
+    max-width: 100%;
+  }
+  .modalContent {
+    width: 90%; /* Full width on smaller screens */
+    max-height: 85%; /* Adjust max-height for better UX on small screens */
+    padding: 15px;
+  }
+}
+
+.light {
+  color: #171717;
+}
