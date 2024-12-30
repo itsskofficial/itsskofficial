@@ -69,6 +69,8 @@ Skills :
 ![](https://img.shields.io/badge/Code-LlamaIndex-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
 ![](https://img.shields.io/badge/Code-Flwr-informational?style=flat&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-MLFlow-informational?style=flat&logo=mlflow&logoColor=white&color=0000FF)
+![](https://img.shields.io/badge/Code-DVC-informational?style=flat&logo=dvc&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
@@ -89,3 +91,5 @@ Skills :
 ![](https://img.shields.io/badge/Software-Vercel-informational?style=flat&logo=vercel&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Software-Render-informational?style=flat&logo=render&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Software-Fleek-informational?style=flat&logo=fleek&logoColor=white&color=FF10F0)
+![](https://img.shields.io/badge/Software-DagsHub-informational?style=flat&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Software-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F05A28)
