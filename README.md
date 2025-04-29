@@ -5,7 +5,7 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness
+🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness as a whole
 
 🚀 Into AI, IOT & Metaverse
 
