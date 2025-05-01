@@ -42,10 +42,7 @@ const Existence = (props) => {
 						props.mode === "dark" ? null : styles.light,
 					].join(" ")}
 				>
-					Existence is my startup focused on the upliftment of all
-					existence through cutting-edge technology products. Our
-					current product, <strong>Sentient</strong>, is a completely
-					private, decentralized, and interactive AI companion
+					Existence is my startup focused on building radical user-centric products using cutting-edge technology. We are currently building <strong>Sentient</strong>, a proactive AI companion to make your digital life simpler
 				</h2>
 				<button
 					className={
