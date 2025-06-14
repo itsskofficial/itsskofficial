@@ -5,15 +5,15 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Building Existence, a tech startup which promotes maintainence and advancement of consciousness as a whole
+🔭 Building cool things at Existence
 
-🚀 Into AI, IOT & Metaverse
+🚀 AI enthusiast
 
-💬 Don't ask me anything ;)
+💬 Don't ask me anything. Jk, drop your message at any of my socials if you wanna talk about something interesting
 
 😄 Pronouns: He/Him/His
 
-⚡ Fun fact: There is no fun for me in this life, maybe next one 
+⚡ Fun fact: There is no fun for me in this life, maybe next one ;)
 
 
 My Socials : 
