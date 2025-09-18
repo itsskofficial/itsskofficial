@@ -3,6 +3,7 @@ import { ThemeProvider } from "@context/ThemeProvider";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
 	title: "Sarthak Karandikar",

@@ -1,15 +1,21 @@
-"use client";
-
 import Articles from "@components/Articles";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import AosWrapper from "@components/AosWrapper";
+import { client } from "@/sanity/lib/client";
+import { postsQuery } from "@/sanity/lib/queries";
 
-export default function BlogPage() {
-	useEffect(() => {
-		Aos.init({ duration: 1000, once: true });
-		Aos.refresh();
-	}, []);
+export const revalidate = 60; // Revalidate this page every 60 seconds
 
-	return <Articles />;
+async function getBlogs() {
+	const blogs = await client.fetch(postsQuery);
+	return blogs;
+}
+
+export default async function BlogPage() {
+	const blogs = await getBlogs();
+
+	return (
+		<AosWrapper>
+			<Articles blogs={blogs} />
+		</AosWrapper>
+	);
 }

@@ -9,12 +9,22 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@portabletext/react": "^4.0.3",
+		"@sanity/code-input": "^6.0.1",
+		"@sanity/icons": "^3.7.4",
+		"@sanity/image-url": "^1.2.0",
+		"@sanity/vision": "^4.9.0",
+		"@vercel/analytics": "^1.5.0",
 		"aos": "^3.0.0-beta.6",
 		"eslint": "8.57.0",
 		"eslint-config-next": "14.2.3",
 		"next": "14.2.3",
+		"next-sanity": "^11.1.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
+		"react-syntax-highlighter": "^15.5.0",
+		"sanity": "^4.9.0",
+		"styled-components": "^6.1.19",
 		"usehooks-ts": "^3.1.0"
 	}
 }

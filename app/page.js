@@ -1,26 +1,24 @@
-"use client";
-
 import Header from "@components/Header";
 import About from "@components/About";
 import Link from "next/link";
-import { blogs } from "@constants/blogs";
 import BlogCard from "@components/ui/BlogCard";
 import styles from "@styles/Home.module.css";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import AosWrapper from "@components/AosWrapper";
+import { client } from "@/sanity/lib/client";
+import { latestPostsQuery } from "@/sanity/lib/queries";
 
-export default function Home() {
-	useEffect(() => {
-		Aos.init({ duration: 1000, once: true });
-		Aos.refresh();
-	}, []);
+export const revalidate = 60; // Revalidate this page every 60 seconds
 
-	// Get the 3 most recent blogs
-	const latestBlogs = blogs.slice(0, 3);
+async function getLatestBlogs() {
+	const blogs = await client.fetch(latestPostsQuery);
+	return blogs;
+}
+
+export default async function Home() {
+	const latestBlogs = await getLatestBlogs();
 
 	return (
-		<>
+		<AosWrapper>
 			<Header />
 			<About />
 			<section
@@ -30,13 +28,13 @@ export default function Home() {
 				<h2 className={styles.sectionTitle}>Latest Articles</h2>
 				<div className={styles.articlesGrid}>
 					{latestBlogs.map((blog) => (
-						<BlogCard key={blog.id} blog={blog} />
+						<BlogCard key={blog._id} blog={blog} />
 					))}
 				</div>
 				<Link href="/blog" className={styles.viewAllButton}>
 					View All Articles
 				</Link>
 			</section>
-		</>
+		</AosWrapper>
 	);
 }

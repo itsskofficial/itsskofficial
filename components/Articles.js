@@ -3,31 +3,28 @@
 import { useState, useMemo } from "react";
 import BlogCard from "@components/ui/BlogCard";
 import styles from "@styles/Blog.module.css";
-import { blogs } from "@constants/blogs";
 
-const Articles = () => {
+const Articles = ({ blogs }) => {
 	const [activeCategory, setActiveCategory] = useState("All");
 	const [searchQuery, setSearchQuery] = useState("");
 
 	const categories = useMemo(() => {
-		const uniqueCategories = [
-			"All",
-			...new Set(blogs.map((blog) => blog.category)),
-		];
+		const allCategories = blogs.flatMap((blog) => blog.categories || []);
+		const uniqueCategories = ["All", ...new Set(allCategories)];
 		return uniqueCategories;
-	}, []);
+	}, [blogs]);
 
 	const filteredBlogs = useMemo(() => {
 		let blogsToFilter = blogs;
 
 		// 1. Filter by the active category
 		if (activeCategory !== "All") {
-			blogsToFilter = blogsToFilter.filter(
-				(blog) => blog.category === activeCategory
+			blogsToFilter = blogsToFilter.filter((blog) =>
+				blog.categories?.includes(activeCategory)
 			);
 		}
 
-		// 2. Filter by the search query on the result of the category filter
+		// 2. Filter by the search query
 		if (searchQuery.trim() !== "") {
 			const lowercasedQuery = searchQuery.toLowerCase();
 			blogsToFilter = blogsToFilter.filter(
@@ -38,7 +35,7 @@ const Articles = () => {
 		}
 
 		return blogsToFilter;
-	}, [activeCategory, searchQuery]);
+	}, [blogs, activeCategory, searchQuery]);
 
 	return (
 		<section className={styles.container} data-aos="fade-in">
@@ -77,7 +74,7 @@ const Articles = () => {
 			{filteredBlogs.length > 0 ? (
 				<div className={styles.cardsGrid}>
 					{filteredBlogs.map((blog) => (
-						<BlogCard key={blog.id} blog={blog} />
+						<BlogCard key={blog._id} blog={blog} />
 					))}
 				</div>
 			) : (

@@ -1,18 +1,21 @@
-import { blogs } from "@constants/blogs";
+// app/blog/[slug]/page.js
 import { notFound } from "next/navigation";
 import styles from "@styles/Article.module.css";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import { postBySlugQuery, postSlugsQuery } from "@/sanity/lib/queries";
+import { urlFor } from "@/sanity/lib/image";
+import PostBody from "@/components/PostBody"; // Import the new component
 
 // Generate static pages for each blog post
 export async function generateStaticParams() {
-	return blogs.map((blog) => ({
-		slug: blog.slug,
-	}));
+	const slugs = await client.fetch(postSlugsQuery);
+	return slugs.map((slug) => ({ slug }));
 }
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }) {
-	const blog = blogs.find((p) => p.slug === params.slug);
+	const blog = await client.fetch(postBySlugQuery, { slug: params.slug });
 	if (!blog) {
 		return {};
 	}
@@ -22,28 +25,35 @@ export async function generateMetadata({ params }) {
 	};
 }
 
-const ArticlePage = ({ params }) => {
+const ArticlePage = async ({ params }) => {
 	const { slug } = params;
-	const blog = blogs.find((p) => p.slug === slug);
+	const blog = await client.fetch(postBySlugQuery, { slug });
 
 	if (!blog) {
 		notFound();
 	}
+
+	const blogImage = urlFor(blog.mainImage).width(1100).height(550).url();
+	const publishedDate = new Date(blog.publishedAt).toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
 
 	return (
 		<article className={styles.articleContainer}>
 			<div className={styles.header}>
 				<h1 className={styles.title}>{blog.title}</h1>
 				<p className={styles.meta}>
-					Published on {blog.date} in{" "}
-					<span className={styles.category}>{blog.category}</span>
+					Published on {publishedDate} in{" "}
+					<span className={styles.category}>{blog.categories?.[0]}</span>
 				</p>
 			</div>
-			<img src={blog.image} alt={blog.title} className={styles.mainImage} />
-			<div
-				className={styles.content}
-				dangerouslySetInnerHTML={{ __html: blog.content }}
-			/>
+			<img src={blogImage} alt={blog.title} className={styles.mainImage} />
+			<div className={styles.content}>
+				{/* Use the new PostBody component here */}
+				<PostBody body={blog.body} />
+			</div>
 			<div className={styles.backLinkContainer}>
 				<Link href="/blog" className={styles.backLink}>
 					&larr; Back to all articles
@@ -53,4 +63,4 @@ const ArticlePage = ({ params }) => {
 	);
 };
 
-export default ArticlePage;
+export default ArticlePage;
