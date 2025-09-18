@@ -1,113 +1,19 @@
-@media only screen and (min-width: 1201px) {
-.parent{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 30px;
-    margin: 100px 0px 100px 0px;
+.contactIcons {
+	display: flex;
+	justify-content: center;
+	gap: var(--spacing-lg);
 }
 
-.contactIcons{
-    display:flex;
-    align-items: center;
-    width: 30%;
-    justify-content: space-between;
+.contactIcons i {
+	color: var(--subtle-text-color);
+	transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.contactIcons i:hover{
-    animation: gentle-tilt 0.25s infinite;
+.contactIcons a:hover {
+	text-decoration: none;
 }
 
-.contactText{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
+.contactIcons a:hover i {
+	color: var(--heading-color);
+	transform: translateY(-3px);
 }
-
-.contactTitle{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:600;
-    font-size:40px;
-}
-
-.contactInfo{
-    margin: 50px 0px 50px 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: justify;
-    text-justify: distribute-all-lines;
-}
-
-.light{
-    color: #171717;
-}
-
-@keyframes gentle-tilt {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-}
-
-@media only screen and (max-width: 600px) {
-    .parent{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-    }
-    
-    .contactIcons{
-        display:flex;
-        align-items: center;
-        width: 80%;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-    
-    .contactIcons i:hover{
-        animation: gentle-tilt 0.25s infinite;
-    }
-    
-    .contactText{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contactTitle{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:600;
-        font-size:30px;
-        margin-bottom: 50px;
-    }
-    
-    .contactInfo{
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        text-align: justify;
-        text-justify: distribute-all-lines;
-        font-size: 20px;
-    }
-
-    .light{
-        color: #171717;
-    }
-    
-    @keyframes gentle-tilt {
-      0% { transform: rotate(0deg); }
-      25% { transform: rotate(5deg); }
-      50% { transform: rotate(0eg); }
-      75% { transform: rotate(-5deg); }
-      100% { transform: rotate(0deg); }
-    }
-    }

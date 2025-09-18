@@ -1,70 +1,42 @@
 "use client";
 
-import NavBar from "@components/NavBar";
 import Header from "@components/Header";
 import About from "@components/About";
-import Contact from "@components/Contact";
-import Footer from "@components/Footer";
-import { useState, useEffect, createRef, Fragment } from "react";
-import Script from "next/script";
+import Link from "next/link";
+import { blogs } from "@constants/blogs";
+import BlogCard from "@components/ui/BlogCard";
+import styles from "@styles/Home.module.css";
+import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
-	const headerRef = createRef();
-	const aboutRef = createRef();
-	const contactRef = createRef();
-	const [mode, setMode] = useState("dark");
-
-	const toggleMode = (userMode) => {
-		setMode(userMode);
-	};
-
 	useEffect(() => {
-		document.body.style.backgroundColor =
-			mode === "dark" ? "#171717" : "#ffffff";
-
-		const styleLink = document.createElement("link");
-		styleLink.rel = "stylesheet";
-		styleLink.type = "text/css";
-		styleLink.href =
-			mode === "dark"
-				? "/assets/css/menu.css"
-				: "/assets/css/menuLight.css";
-		document.head.appendChild(styleLink);
-
-		const faviconLink = document.createElement("link");
-		faviconLink.rel = "icon";
-		faviconLink.href =
-			mode === "dark"
-				? "/assets/images/favicon.png"
-				: "/assets/images/faviconlight.png";
-		document.head.appendChild(faviconLink);
-
-		return () => {
-			document.head.removeChild(styleLink);
-			document.head.removeChild(faviconLink);
-		};
-	}, [mode]);
-
-	useEffect(() => {
-		Aos.init({ duration: 1000 });
+		Aos.init({ duration: 1000, once: true });
 		Aos.refresh();
 	}, []);
 
+	// Get the 3 most recent blogs
+	const latestBlogs = blogs.slice(0, 3);
+
 	return (
-		<Fragment>
-			<main>
-				<NavBar mode={mode} toggleMode={toggleMode} />
-				<Header ref={headerRef} mode={mode} />
-				<About ref={aboutRef} mode={mode} />
-				<Contact ref={contactRef} mode={mode} />
-				<Footer mode={mode} />
-				<Script
-					src="https://kit.fontawesome.com/638bbcf842.js"
-					crossorigin="anonymous"
-				/>
-			</main>
-		</Fragment>
+		<>
+			<Header />
+			<About />
+			<section
+				className={styles.latestArticlesSection}
+				data-aos="fade-up"
+			>
+				<h2 className={styles.sectionTitle}>Latest Articles</h2>
+				<div className={styles.articlesGrid}>
+					{latestBlogs.map((blog) => (
+						<BlogCard key={blog.id} blog={blog} />
+					))}
+				</div>
+				<Link href="/blog" className={styles.viewAllButton}>
+					View All Articles
+				</Link>
+			</section>
+		</>
 	);
 }

@@ -1,166 +1,33 @@
-@media only screen and (min-width: 1201px) {
-
-.parent{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 30px;
-    height: 85vh;
-    margin: 100px 0px 100px 0px;
+.parent {
+	padding: var(--spacing-xl) var(--spacing-lg);
+	text-align: center;
+	background-color: var(--card-bg);
 }
 
-.aboutText{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 100%;
-    justify-content: center;
+.aboutTitle {
+	font-size: 2.5rem;
+	margin-bottom: var(--spacing-md);
 }
 
-.aboutTitle{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:600;
-    font-size:40px;
+.aboutInfo {
+	font-size: 1.1rem;
+	color: var(--subtle-text-color);
+	max-width: 600px;
+	margin: 0 auto var(--spacing-lg) auto;
 }
 
-.aboutInfo{
-    margin: 50px 0px 50px 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: justify;
-    text-justify: distribute-all-lines;
+.aboutButton {
+	display: inline-block;
+	padding: 12px 24px;
+	font-weight: bold;
+	color: var(--heading-color);
+	border: 2px solid var(--interactive-border);
+	border-radius: var(--border-radius);
+	transition: all 0.2s ease-in-out;
 }
 
-.aboutButton{
-    margin-right: auto;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 7px;
-    font-size: 18px;
-    background-color: #171717;
-    color: white;
-    border: 2px solid white;
-    font-weight: 800;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.aboutButtonLight{
-    margin-right: auto;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 7px;
-    font-size: 18px;
-    background-color: white;
-    color: #171717;
-    border: 2px solid #171717;
-    font-weight: 800;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.aboutButton:hover{
-    background-color: white;
-    color: #171717;
-    transform: scale(1.1);
-}
-
-.aboutButtonLight:hover{
-    background-color: #171717;
-    color: white;
-    transform: scale(1.1);
-}
-
-.aboutImage{
-    width: 30%;
-}
-
-.light{
-    color: #171717;
-}
-}
-
-@media only screen and (max-width: 600px) {
-    
-    .parent{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-    }
-
-    .aboutText{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .aboutTitle{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:600;
-        font-size:30px;
-        text-align: center;
-    }
-
-    .aboutInfo{
-        margin: 50px 0px 50px 0px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        text-align: justify;
-        text-justify:auto;
-        font-size: 20px;
-    }
-
-    .aboutButton{
-        padding: 12px;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 7px;
-        font-size: 15px;
-        background-color: #171717;
-        color: white;
-        border: 2px solid white;
-        font-weight: 800;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
-
-    .aboutButton:hover{
-        background-color: white;
-        color: #171717;
-        transform: scale(1.1);
-    }
-
-    .aboutButtonLight{
-        padding: 12px;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 7px;
-        font-size: 15px;
-        background-color: white;
-        color: #171717;
-        border: 2px solid #171717;
-        font-weight: 800;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
-
-    .aboutButtonLight:hover{
-        background-color: #171717;
-        color: white;
-        transform: scale(1.1);
-    }
-
-    .aboutImage{
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px
-    }
-
-    .light{
-        color:#171717
-    }
+.aboutButton:hover {
+	background-color: var(--interactive-bg);
+	color: var(--interactive-text);
+	text-decoration: none;
 }

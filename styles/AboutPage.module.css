@@ -1,0 +1,89 @@
+.container {
+	max-width: 900px;
+	margin: var(--spacing-xl) auto;
+	padding: 0 var(--spacing-lg);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xl);
+}
+
+.aboutSection {
+	display: flex;
+	gap: var(--spacing-xl);
+	align-items: center;
+}
+
+.aboutText {
+	flex: 2;
+}
+
+.title {
+	font-size: 3rem;
+	margin-bottom: var(--spacing-md);
+}
+
+.bio {
+	font-size: 1.1rem;
+	line-height: 1.7;
+	margin-bottom: var(--spacing-md);
+}
+
+.aboutImage {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profilePic {
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid var(--border-color);
+}
+
+.sectionTitle {
+	font-size: 2rem;
+	margin-bottom: var(--spacing-md);
+	padding-bottom: var(--spacing-sm);
+	border-bottom: 2px solid var(--heading-color);
+	display: inline-block;
+}
+
+.workSection p {
+	font-size: 1.1rem;
+	margin-bottom: var(--spacing-lg);
+}
+
+.downloadButton,
+.workButton {
+	display: inline-block;
+	padding: 12px 24px;
+	font-family: var(--font-sans);
+	border-radius: var(--border-radius);
+	font-size: 1rem;
+	background-color: transparent;
+	color: var(--heading-color);
+	border: 2px solid var(--interactive-border);
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	margin-top: var(--spacing-md);
+}
+
+.downloadButton:hover,
+.workButton:hover {
+	background-color: var(--interactive-bg);
+	color: var(--interactive-text);
+	text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.aboutSection {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.title {
+		font-size: 2.5rem;
+	}
+}

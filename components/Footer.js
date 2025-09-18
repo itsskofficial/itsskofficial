@@ -1,24 +1,58 @@
-import styles from '@styles/Footer.module.css'
+"use client";
 
-const Footer = (props) => {
-    return (
-        <section id='footer' className={styles.parent}>
-            <div className={styles.footer}>
-                <h3 className={[styles.footerLogo, props.mode=='dark'?null:styles.light].join(' ')}>
-                    SK
-                </h3>
-                <h3 className={[styles.footerCopyright, props.mode=='dark'?null:styles.light].join(' ')}>
-                    &copy;
-                </h3>
-                <h3 className={[styles.footerText, props.mode=='dark'?null:styles.light].join(' ')}>
-                    2024
-                </h3>
-                <h3 className={[styles.footerText, props.mode=='dark'?null:styles.light].join(' ')}>
-                    All Rights Reserved
-                </h3>
-            </div>
-        </section>
-    )
-}
+import styles from "@styles/Footer.module.css";
+import Link from "next/link";
 
-export default Footer
+const Footer = () => {
+	return (
+		<footer className={styles.footer}>
+			<div className={styles.footerContent}>
+				<div className={styles.footerInfo}>
+					<Link href="/" className={styles.footerLogo}>
+						SK
+					</Link>
+					<p>
+						&copy; {new Date().getFullYear()} Sarthak Karandikar.
+						All Rights Reserved.
+					</p>
+				</div>
+				<div className={styles.footerSocials}>
+					<a
+						href="https://www.linkedin.com/in/sarthak-karandikar-0223b7228/"
+						aria-label="LinkedIn Profile"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fa-brands fa-linkedin fa-lg" />
+					</a>
+					<a
+						href="https://x.com/_itsskofficial_"
+						aria-label="X/Twitter Profile"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fa-brands fa-x-twitter fa-lg" />
+					</a>
+					<a
+						href="https://github.com/itsskofficial"
+						aria-label="GitHub Profile"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fa-brands fa-github fa-lg" />
+					</a>
+					<a
+						href="mailto:itsskofficial03@gmail.com"
+						aria-label="Email"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fa-solid fa-envelope fa-lg" />
+					</a>
+				</div>
+			</div>
+		</footer>
+	);
+};
+
+export default Footer;

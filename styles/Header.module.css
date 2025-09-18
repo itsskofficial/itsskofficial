@@ -1,171 +1,74 @@
-@media only screen and (min-width: 1201px) {
-.parent{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-    height: 85vh;
+.parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--spacing-xl) var(--spacing-lg);
+	max-width: 1100px;
+	margin: 0 auto;
+	min-height: 70vh;
 }
 
-.headText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-    flex-wrap: wrap;
-    align-content: flex-start;
+.headText {
+	flex: 1.5;
+	padding-right: var(--spacing-xl);
 }
 
-.headTitle{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
+.headTitle {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 1.1;
 }
 
-.headSubtitle{
-    text-align: left;
-    width: 100%;
-    margin: 50px 0px 50px 0px;
-    font-family: 'Montserrat', sans-serif;
+.headSubtitle {
+	font-size: 1.25rem;
+	color: var(--subtle-text-color);
+	margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+	max-width: 500px;
 }
 
-.headContact{
-    margin-right: auto;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 7px;
-    font-size: 18px;
-    background-color: #171717;
-    color: white;
-    border: 2px solid white;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.ctaButton {
+	display: inline-block;
+	padding: 14px 28px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--interactive-text);
+	background-color: var(--interactive-bg);
+	border-radius: var(--border-radius);
+	transition: opacity 0.2s ease;
 }
 
-.headContactLight{
-    margin-right: auto;
-    padding: 15px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 7px;
-    font-size: 18px;
-    background-color: white;
-    color: #171717;
-    border: 2px solid #171717;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.ctaButton:hover {
+	opacity: 0.8;
+	text-decoration: none;
 }
 
-.headContact:hover{
-    background-color: white;
-    color: #171717;
-    transform: scale(1.1);
+.headImage {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.headContactLight:hover{
-    background-color: #171717;
-    color: white;
-    transform: scale(1.1);
+.image {
+	border-radius: var(--border-radius);
+	object-fit: cover;
 }
 
-.headImage{
-    display: flex;
-    align-items: center;
-    width: 30%;
-    height: 100%;
-}
-
-.light{
-    color:#171717
-}
-}
-
-@media only screen and (max-width: 600px) {
-    .parent{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin: 25px 0px 50px 0px;
-    }
-    
-    .headText{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 100%;
-    }
-    
-    .headTitle{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        width: 100%;
-
-    }
-    
-    .headSubtitle{
-        text-align: center;
-        width: 100%;
-        margin: 50px 0px 50px 0px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-    }
-    
-    .headContact{
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 7px;
-        font-size: 18px;
-        background-color: #171717;
-        color: white;
-        border: 2px solid white;
-        font-weight: 800;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .headContact:hover{
-        background-color: white;
-        color: #171717;
-        transform: scale(1.1);
-    }
-
-    .headContactLight{
-        padding: 15px;
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 7px;
-        font-size: 18px;
-        background-color: white;
-        color: #171717;
-        border: 2px solid #171717;
-        font-weight: 800;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .headContactLight:hover{
-        background-color: #171717;
-        color: white;
-        transform: scale(1.1);
-    }
-    
-    .headImage{
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    .light{
-        color: #171717;
-    }
+@media (max-width: 768px) {
+	.parent {
+		flex-direction: column-reverse;
+		text-align: center;
+		min-height: auto;
+		padding-top: var(--spacing-lg);
+	}
+	.headText {
+		padding-right: 0;
+		margin-top: var(--spacing-lg);
+	}
+	.headTitle {
+		font-size: 2.5rem;
+	}
+	.headSubtitle {
+		margin: var(--spacing-md) auto var(--spacing-lg) auto;
+	}
 }
