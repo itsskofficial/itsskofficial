@@ -26,7 +26,7 @@ My Socials :
 GitHub Stats :
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook,purebasic&langs_count=3&layout=donut-vertical&theme=radical" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook,purebasic,dockerfile,r&langs_count=3&layout=donut-vertical&theme=radical" />
 </a>
 <span>&emsp;</span>
 <a href="https://github.com/itsskofficial">
@@ -51,6 +51,13 @@ Skills :
 ![](https://img.shields.io/badge/Code-Neo4J-informational?style=flat&logo=neo4j&logoColor=white&color=0A6190)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-TailwindCSS-informational?style=flat&logo=tailwindcss&logoColor=white&color=4dc0b5)
+![](https://img.shields.io/badge/Code-Zustand-informational?style=flat&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-TanstackQuery-informational?style=flat&logo=tanstack&logoColor=white&color=FF4154)
+![](https://img.shields.io/badge/Code-Prisma-informational?style=flat&logo=prisma&logoColor=white&color=2D3748)
+![](https://img.shields.io/badge/Code-Neon-informational?style=flat&logo=neon&logoColor=white&color=00E5C3)
+![](https://img.shields.io/badge/Code-tRPC-informational?style=flat&logo=trpc&logoColor=white&color=398CCB)
+![](https://img.shields.io/badge/Code-Inngest-informational?style=flat&logoColor=white&color=F93358)
+![](https://img.shields.io/badge/Code-Zod-informational?style=flat&logoColor=white&color=3E6F9F)
 ![](https://img.shields.io/badge/Code-Electron-informational?style=flat&logo=electron&logoColor=white&color=9bb7c4)
 ![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
@@ -73,6 +80,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-DVC-informational?style=flat&logo=dvc&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
+
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
 ![](https://img.shields.io/badge/Software-Audacity-informational?style=flat&logo=audacity&logoColor=white&color=0000CC)
@@ -80,6 +88,7 @@ Skills :
 ![](https://img.shields.io/badge/Software-Trello-informational?style=flat&logo=trello&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/Software-Asana-informational?style=flat&logo=asana&logoColor=white&color=273347)
 ![](https://img.shields.io/badge/Software-GIMP-informational?style=flat&logo=gimp&logoColor=white&color=5C5543)
+![](https://img.shields.io/badge/Software-Blender-informational?style=flat&logo=blender&logoColor=white&color=E87D0D)
 ![](https://img.shields.io/badge/Software-Slack-informational?style=flat&logo=slack&logoColor=white&color=4A154B)
 ![](https://img.shields.io/badge/Software-Jira-informational?style=flat&logo=jira&logoColor=white&color=0052CC)
 ![](https://img.shields.io/badge/Software-Confluence-informational?style=flat&logo=confluence&logoColor=white&color=172B4D)
@@ -93,3 +102,4 @@ Skills :
 ![](https://img.shields.io/badge/Software-Fleek-informational?style=flat&logo=fleek&logoColor=white&color=FF10F0)
 ![](https://img.shields.io/badge/Software-DagsHub-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Software-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F05A28)
+![](https://img.shields.io/badge/Software-Postman-informational?style=flat&logo=postman&logoColor=white&color=FF6C37)
