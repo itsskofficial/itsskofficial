@@ -5,9 +5,9 @@ Hey, I am Sarthak
 
 Here's a quick intro about me :
 
-🔭 Building cool things at Existence
+🔭 Seeking answers to life's existential questions
 
-🚀 AI enthusiast
+🚀 Open source enthusiast
 
 💬 Don't ask me anything. Jk, drop your message at any of my socials if you wanna talk about something interesting
 
