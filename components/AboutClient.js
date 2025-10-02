@@ -54,24 +54,22 @@ export default function AboutClient() {
 			<section className={styles.workSection} data-aos="fade-up">
 				<h2 className={styles.sectionTitle}>What I'm Building</h2>
 				<p>
-					My primary focus is my startup, <strong>Existence</strong>.
-					We're dedicated to building radical, user-centric products
+					I am also involved in building an open source community, <strong>Existence</strong>.
+					We're dedicated to building radical, user-centric open source products
 					using cutting-edge technology.
 				</p>
 				<p>
-					Our flagship project is <strong>Sentient</strong>, a
-					proactive AI companion designed to simplify your digital
-					life.
+					Our main goal is to make <strong>technology</strong> accessible to everyone.
 				</p>
 				<button
 					className={styles.workButton}
 					onClick={() => {
-						window.open("https://existence.technology", "_blank");
+						window.open("https://linktr.ee/existence.master", "_blank");
 					}}
 				>
-					Visit Existence Website
+					Learn more about Existence
 				</button>
 			</section>
 		</div>
 	);
-}
+}

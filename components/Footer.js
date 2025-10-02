@@ -34,6 +34,14 @@ const Footer = () => {
 						<i className="fa-brands fa-x-twitter fa-lg" />
 					</a>
 					<a
+						href="https://wa.me/+918275017823"
+						aria-label="WhatsApp Profile"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className="fa-brands fa-whatsapp fa-lg" />
+					</a>
+					<a
 						href="https://github.com/itsskofficial"
 						aria-label="GitHub Profile"
 						target="_blank"
