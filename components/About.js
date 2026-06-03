@@ -6,12 +6,13 @@ const About = () => {
 		<section id="about" className={styles.parent} data-aos="fade-up">
 			<h2 className={styles.aboutTitle}>A Little About Me</h2>
 			<p className={styles.aboutInfo}>
-				I'm a builder and writer, fascinated by the intersection of
-				technology and humanity. I created this space to explore ideas,
-				share what I'm learning, and connect with like-minded people.
+				I&apos;m a builder who also does independent research. I write
+				about technology, science, and philosophy, and over the long
+				run, I hope those threads help me contribute to understanding
+				consciousness. This site is where I think in public.
 			</p>
 			<Link href="/about" className={styles.aboutButton}>
-				Learn More About Me
+				Learn more about me
 			</Link>
 		</section>
 	);

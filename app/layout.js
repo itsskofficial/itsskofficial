@@ -7,7 +7,8 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
 	title: "Sarthak Karandikar",
-	description: "Thoughts on technology, science, and philosophy.",
+	description:
+		"Thoughts on technology, science, and philosophy, and where they might lead us on consciousness.",
 	icons: {
 		icon: [
 			// This provides a fallback for all browsers

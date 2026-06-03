@@ -13,8 +13,8 @@ const Header = () => {
 			<div className={styles.headText}>
 				<h1 className={styles.headTitle}>Hey, I'm Sarthak</h1>
 				<h2 className={styles.headSubtitle}>
-					I write about technology, science, and the ideas that shape
-					our world.
+					I build things, do independent research, and write about
+					technology, science, and philosophy.
 				</h2>
 				<Link href="/blog" className={styles.ctaButton}>
 					Read my articles

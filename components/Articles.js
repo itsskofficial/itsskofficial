@@ -41,7 +41,8 @@ const Articles = ({ blogs }) => {
 		<section className={styles.container} data-aos="fade-in">
 			<h1 className={styles.title}>My Articles</h1>
 			<p className={styles.subtitle}>
-				A collection of my thoughts and explorations.
+				Writing at the intersection of technology, science, and
+				philosophy.
 			</p>
 
 			<div className={styles.searchContainer}>

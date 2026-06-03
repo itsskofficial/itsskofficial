@@ -1,0 +1,181 @@
+Request a spot
+We'll reach out with details if we're able to confirm your attendance.
+Your name*
+Sarthak Karandikar (edit)
+Your email*
+sarthakkarandikar03@gmail.com (edit)
+Age*
+22
+LinkedIn*
+URL should start with https://
+https://www.linkedin.com/in/sarthak-karandikar-0223b7228/
+I don't have a LinkedIn profile
+Autofill your background with LinkedIn
+The import may take a few seconds to populate and could have missing data. Please review the results and make any necessary edits.
+Import from LinkedIn
+Education
+*
+
+Add
+Pune Vidhyarthi Griha's College Of Engineering And Technology
+Jan 2021 - Jan 2025
+Bachelor of Technology - BTech, Artificial Intelligence & Data Science
+Jog Education Trusts P. Jog College of Science & Commerce, Mayur Colony ,Kothrud, . Pune 411 038.
+Jan 2019 - Jan 2021
+Bifocal Science (CS), 93.3 %
+Dnyanganga English Medium School - India
+Jan 2006 - Jan 2019
+97.6 %,
+Work History
+*
+
+Add
+Stealth Company (Sarthak Karandikar) - Founding Engineer
+Oct 2025 - Present
+Building a vertical AI platform for borrowers and lenders with a quant-style matchmaking engine   
+
+Working on tech that handles $291M in contracted loan volume with 4 signed brokerage affiliates across the US 
+  
+Working with a team of repeat founders with experience across CBRE, Northmarq, Greystone, EXP, TCD, Lucosky Brookman, IIT Madras and TU Munich   
+
+Startup based in San Francisco
+
+Existence - Co-Founder
+Sep 2023 - Oct 2025
+Built Sentient, an open-source proactive personal assistant (700+ GitHub stars) designed to replace traditional human assistants. Evolved it into Sentient Cloud, serving 200+ paying users across the US, Germany, Turkey and other markets, generating initial MRR. Grew an organic community to 14M+ total views across YouTube and Instagram, and a 1,000+ member WhatsApp group. Also holds a granted Indian patent and has published 3 research papers from other products built at Existence.
+
+Sinar Mas - AI Engineer
+Jun 2025 - Jul 2025
+Prototyping and deploying AI agents using Python and frameworks like LangChain, LangGraph, CrewAI, and AutoGenIntegrating workflows with automation platforms such as n8n, Zapier, and Airflow to deliver robust operational pipelinesBuilding end-to-end applications, including web crawlers for data acquisition and production-ready APIs/toolsLeveraging AI-powered development environments to accelerate experimentation and prototyping cyclesExploring advanced concepts…  Prototyping and deploying AI agents using Python and frameworks like LangChain, LangGraph, CrewAI, and AutoGenIntegrating workflows with automation platforms such as n8n, Zapier, and Airflow to deliver robust operational pipelinesBuilding end-to-end applications, including web crawlers for data acquisition and production-ready APIs/toolsLeveraging AI-powered development environments to accelerate experimentation and prototyping cyclesExploring advanced concepts like Model Context Protocol (MCP) and Agent-to-Agent (A2A) communication for enhanced performance
+
+Ujwala's Kitchen - Content Manager
+May 2023 - Sep 2023
+Handling social media channels, video editing, graphic design, and video shooting. Monetized the channel, took it to 2K subs.
+
+The Revolution - Content Creator
+Jan 2022 - Apr 2023
+Grew an X account to 300 followers
+Instagram account to 4700 followers
+YouTube channel to 700 subscribers
+
+Was creating content about mental health.
+
+Healthilicious - Co-Founder
+Jun 2020 - Aug 2021
+Built a cloud kitchen with a health-first focus and made content around it. 
+
+Grew a YouTube channel to 170 subscribers.
+
+Carnage - Co-Founder
+Dec 2019 - Jul 2021
+Sold vegan men's grooming products. Gained experience in sourcing deals from vendors, negotiating and branding.
+
+Say It Social - Co-Founder
+Jun 2019 - Jun 2021
+Started my first company at 15 and got into Atal Innovation Mission and closed our first funding round
+
+List any relevant or impressive test scores.*
+MHT CET - 97 %
+JEE - 91.2 %
+
+Also managed to get a CGPA of 9.0 even though I didn't attend college at all and spent all my time building my startup Existence.
+List any entrepreneurship programs or clubs you have participated in or are currently participating in.*
+Sayitsocial was incubated at Atal's Innovation Mission, Goa - we raised a cheque of 5,00,000 INR from an angel investor as well.
+
+Existence was incubated at COEP's BHAU incubation cell. 
+
+Interviewed for Accel Atoms and Antler's Founder-in-Residence programs. Also pitched to gradCapital, Nexus VP, Merak Ventures and more to raise venture capital for Existence.
+
+Gave various talks in my college throughout the years - was invited by the Entrepreneurship Development Cell several times. 
+
+Also pitched my startup at eChai's weekend meetups a few times.
+List any competitions/awards you have won, or papers you’ve published.*
+Published Papers:
+
+"AI-Driven Multimodal Mind Mapping: A Framework for Enhanced Knowledge Modeling and Human-Computer Interaction" — IEEE Xplore, March 2026. Presented at ACAI 2025, Nanjing, China.
+https://ieeexplore.ieee.org/document/11406499
+
+"Revolutionising Educational Assessment using Bloom's Taxonomy Bot" — WSEAS Transactions on Information Science and Applications, July 2025. Presented at ICCAIRO 2025, Paris, France.
+https://wseas.com/journals/isa/2025/a965109-025(2025).pdf
+
+Granted Patent: Indian Patent No. 573090 — granted for the Bloom's Taxonomy Bot project.
+
+Upcoming Publications:
+
+"A Proactive, Interoperable, and Multi-Agent Virtual Assistant System" — ICSCA 2026, Langkawi, Malaysia.
+
+"Efficient One-Shot Attendance on the Edge: A Hybrid System for Classroom Biometrics" — CVCI 2026, Sapporo, Japan.
+
+"VideoVCS: A Semantic-Heuristic Framework for Sustainable Resource Optimization in NLE Workflows" - IndiaCOM 2026
+
+Competitions: Smart India Hackathon 2024 — Runner-up, National Grand Finals. Advanced past 200+ teams nationwide.
+
+Recipient of NTSE, MTSE, secondary & higher secondary scholarships, Homi Bhabha, IMO, IEO, NSO, and NCO awards.
+
+Awarded "Best Student" in both secondary and higher secondary education.
+Tell us about things you've built before. For example apps you've built, websites, open source contributions. Include URLs if possible.*
+I’ve built and shipped multiple AI and full-stack products, most of them open source.
+
+Sentient – Proactive, Personal AI assistant
+https://existence.technology/sentient
+
+Built a personal AI assistant combining local models, long-term memory graphs, and federated learning concepts. 
+
+Stack: FastAPI, PostgreSQL, Neo4j, Next.js, Ollama.
+→ 650+ GitHub stars, 400+ users, ~₹30k MRR at peak.
+
+Vibe – Prompt-to-App AI Builder
+https://github.com/itsskofficial/Agentic-AI/tree/master/Projects/Vibe
+
+An AI coding agent that converts a single prompt into a complete deployable Next.js application. The agent writes code, installs dependencies, and runs the app inside a secure sandbox.
+
+Sketchify – Wireframe to Code
+https://github.com/itsskofficial/Web2/tree/master/Projects/Sketchify
+
+An AI SaaS that converts UI wireframe sketches into production HTML/CSS with a real-time streaming code interface.
+
+Bloomify – AI for Educational Assessment (Patent Published)
+https://existence-bloomify.vercel.app
+
+Automates question generation based on Bloom’s taxonomy using LLMs and agent workflows. This system resulted in a published Indian patent.
+
+MindSync – Multimodal Knowledge Mapping
+https://existence-mindsync.vercel.app
+
+AI system that compresses multimodal information into structured knowledge graphs and mind maps.
+Research paper: https://ieeexplore.ieee.org/document/11406499
+
+Other projects include:
+
+Full-stack TikTok-style video platform
+https://github.com/itsskofficial/Web2/tree/master/Projects/VideoFun
+
+Edge AI facial recognition attendance system (Jetson Nano)
+https://github.com/itsskofficial/Computer-Vision/tree/master/Projects/AttendanceSystem
+
+ICO Web3 marketplace
+https://github.com/itsskofficial/Web3/tree/master/Projects/ICOMarketplace
+
+Custom Agentic Dev Workflow — Built a two-model coding pipeline (Planner LLM + Coder LLM) with a VSCode context-packing extension and a custom docs scraper to replace paid agentic IDEs like Cursor. Used this to ship the entire Sentient codebase for free — unified diff outputs, surgical context management, live docs injection. Essentially designed and ran a coding agent manually before building one. https://github.com/existence-master/sentient
+
+I’ve also built multiple ML systems (NLP, computer vision, time-series forecasting) and contributed to the HuggingFace Transformers library.
+Please tell us about a time you most successfully hacked some (non-computer) system to your advantage.*
+While building Bloomify, I needed a large dataset of exam questions to train on. Our university's question papers were publicly available on their website but scattered across hundreds of PDFs with no structured access. So I scraped the entire site, pulled every past paper I could find, and ran OCR across them to build a bank of 12,000+ questions spanning several years.
+
+While cleaning the dataset, I noticed a pattern: a meaningful subset of questions repeated across years, often with only minor wording changes. I built an ML model to formalize this — it analyzed historical trends to predict which questions were likely to appear in upcoming exams, and generated variations of each to improve coverage across different phrasings.
+
+It worked. 
+
+Please tell us in one or two sentences about the most impressive thing that you have built or achieved.*
+Sentient is the project I am most proud of till date. 
+
+https://github.com/existence-master/sentient
+
+We built, marketed, launched to over 400 users, built a community of 7000+ people across LinkedIn, YouTube, Instagram and WhatsApp and generated 30,000 INR in MRR from this product. It is a fully open source (675+ stars), proactive, personal assistant. We were building OpenClaw before OpenClaw :)
+
+i am interested in consiousness studies and really want to find out how i can contribute through science, technology especially ai and philosophy to find out the answers to unsolved problems about consiousness
+
+
+
+
+
