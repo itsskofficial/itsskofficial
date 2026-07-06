@@ -1,5 +1,5 @@
 :root {
-	/* Typography — font families set via next/font on <html> */
+	/* Typography: font families set via next/font on <html> */
 	--font-display: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
 	--font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
 	--font-mono: var(--font-jetbrains-mono), "JetBrains Mono", monospace;

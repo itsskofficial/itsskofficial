@@ -92,23 +92,23 @@ Also pitched my startup at eChai's weekend meetups a few times.
 List any competitions/awards you have won, or papers you’ve published.*
 Published Papers:
 
-"AI-Driven Multimodal Mind Mapping: A Framework for Enhanced Knowledge Modeling and Human-Computer Interaction" — IEEE Xplore, March 2026. Presented at ACAI 2025, Nanjing, China.
+"AI-Driven Multimodal Mind Mapping: A Framework for Enhanced Knowledge Modeling and Human-Computer Interaction" ,  IEEE Xplore, March 2026. Presented at ACAI 2025, Nanjing, China.
 https://ieeexplore.ieee.org/document/11406499
 
-"Revolutionising Educational Assessment using Bloom's Taxonomy Bot" — WSEAS Transactions on Information Science and Applications, July 2025. Presented at ICCAIRO 2025, Paris, France.
+"Revolutionising Educational Assessment using Bloom's Taxonomy Bot" ,  WSEAS Transactions on Information Science and Applications, July 2025. Presented at ICCAIRO 2025, Paris, France.
 https://wseas.com/journals/isa/2025/a965109-025(2025).pdf
 
-Granted Patent: Indian Patent No. 573090 — granted for the Bloom's Taxonomy Bot project.
+Granted Patent: Indian Patent No. 573090 ,  granted for the Bloom's Taxonomy Bot project.
 
 Upcoming Publications:
 
-"A Proactive, Interoperable, and Multi-Agent Virtual Assistant System" — ICSCA 2026, Langkawi, Malaysia.
+"A Proactive, Interoperable, and Multi-Agent Virtual Assistant System" ,  ICSCA 2026, Langkawi, Malaysia.
 
-"Efficient One-Shot Attendance on the Edge: A Hybrid System for Classroom Biometrics" — CVCI 2026, Sapporo, Japan.
+"Efficient One-Shot Attendance on the Edge: A Hybrid System for Classroom Biometrics" ,  CVCI 2026, Sapporo, Japan.
 
 "VideoVCS: A Semantic-Heuristic Framework for Sustainable Resource Optimization in NLE Workflows" - IndiaCOM 2026
 
-Competitions: Smart India Hackathon 2024 — Runner-up, National Grand Finals. Advanced past 200+ teams nationwide.
+Competitions: Smart India Hackathon 2024 ,  Runner-up, National Grand Finals. Advanced past 200+ teams nationwide.
 
 Recipient of NTSE, MTSE, secondary & higher secondary scholarships, Homi Bhabha, IMO, IEO, NSO, and NCO awards.
 
@@ -116,7 +116,7 @@ Awarded "Best Student" in both secondary and higher secondary education.
 Tell us about things you've built before. For example apps you've built, websites, open source contributions. Include URLs if possible.*
 I’ve built and shipped multiple AI and full-stack products, most of them open source.
 
-Sentient – Proactive, Personal AI assistant
+Sentient - Proactive, Personal AI assistant
 https://existence.technology/sentient
 
 Built a personal AI assistant combining local models, long-term memory graphs, and federated learning concepts. 
@@ -124,22 +124,22 @@ Built a personal AI assistant combining local models, long-term memory graphs, a
 Stack: FastAPI, PostgreSQL, Neo4j, Next.js, Ollama.
 → 650+ GitHub stars, 400+ users, ~₹30k MRR at peak.
 
-Vibe – Prompt-to-App AI Builder
+Vibe - Prompt-to-App AI Builder
 https://github.com/itsskofficial/Agentic-AI/tree/master/Projects/Vibe
 
 An AI coding agent that converts a single prompt into a complete deployable Next.js application. The agent writes code, installs dependencies, and runs the app inside a secure sandbox.
 
-Sketchify – Wireframe to Code
+Sketchify - Wireframe to Code
 https://github.com/itsskofficial/Web2/tree/master/Projects/Sketchify
 
 An AI SaaS that converts UI wireframe sketches into production HTML/CSS with a real-time streaming code interface.
 
-Bloomify – AI for Educational Assessment (Patent Published)
+Bloomify - AI for Educational Assessment (Patent Published)
 https://existence-bloomify.vercel.app
 
 Automates question generation based on Bloom’s taxonomy using LLMs and agent workflows. This system resulted in a published Indian patent.
 
-MindSync – Multimodal Knowledge Mapping
+MindSync - Multimodal Knowledge Mapping
 https://existence-mindsync.vercel.app
 
 AI system that compresses multimodal information into structured knowledge graphs and mind maps.
@@ -156,13 +156,13 @@ https://github.com/itsskofficial/Computer-Vision/tree/master/Projects/Attendance
 ICO Web3 marketplace
 https://github.com/itsskofficial/Web3/tree/master/Projects/ICOMarketplace
 
-Custom Agentic Dev Workflow — Built a two-model coding pipeline (Planner LLM + Coder LLM) with a VSCode context-packing extension and a custom docs scraper to replace paid agentic IDEs like Cursor. Used this to ship the entire Sentient codebase for free — unified diff outputs, surgical context management, live docs injection. Essentially designed and ran a coding agent manually before building one. https://github.com/existence-master/sentient
+Custom Agentic Dev Workflow ,  Built a two-model coding pipeline (Planner LLM + Coder LLM) with a VSCode context-packing extension and a custom docs scraper to replace paid agentic IDEs like Cursor. Used this to ship the entire Sentient codebase for free ,  unified diff outputs, surgical context management, live docs injection. Essentially designed and ran a coding agent manually before building one. https://github.com/existence-master/sentient
 
 I’ve also built multiple ML systems (NLP, computer vision, time-series forecasting) and contributed to the HuggingFace Transformers library.
 Please tell us about a time you most successfully hacked some (non-computer) system to your advantage.*
 While building Bloomify, I needed a large dataset of exam questions to train on. Our university's question papers were publicly available on their website but scattered across hundreds of PDFs with no structured access. So I scraped the entire site, pulled every past paper I could find, and ran OCR across them to build a bank of 12,000+ questions spanning several years.
 
-While cleaning the dataset, I noticed a pattern: a meaningful subset of questions repeated across years, often with only minor wording changes. I built an ML model to formalize this — it analyzed historical trends to predict which questions were likely to appear in upcoming exams, and generated variations of each to improve coverage across different phrasings.
+While cleaning the dataset, I noticed a pattern: a meaningful subset of questions repeated across years, often with only minor wording changes. I built an ML model to formalize this ,  it analyzed historical trends to predict which questions were likely to appear in upcoming exams, and generated variations of each to improve coverage across different phrasings.
 
 It worked. 
 
