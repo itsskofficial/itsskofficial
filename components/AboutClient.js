@@ -107,7 +107,7 @@ export default function AboutClient() {
 							<p className={styles.doPara}>
 								I have founded and worked across multiple startups, shipped
 								open source, and built AI products from scratch. I have
-								published research in IEEE and WSEAS, presented at
+								published research, presented at
 								international conferences, and hold a granted Indian patent.
 							</p>
 						</Reveal>
