@@ -4,7 +4,6 @@ import Providers from "@components/Providers";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import GrainOverlay from "@components/GrainOverlay";
-import PageTransition from "@components/motion/PageTransition";
 
 const instrumentSerif = Instrument_Serif({
 	subsets: ["latin"],
@@ -63,9 +62,7 @@ export default function RootLayout({ children }) {
 				<Providers>
 					<GrainOverlay />
 					<NavBar />
-					<main>
-						<PageTransition>{children}</PageTransition>
-					</main>
+					<main>{children}</main>
 					<Footer />
 				</Providers>
 			</body>

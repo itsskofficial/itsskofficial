@@ -2,6 +2,7 @@
 
 import "lenis/dist/lenis.css";
 import { useEffect, useState, createContext, useContext } from "react";
+import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 import { useReducedMotion } from "framer-motion";
 
@@ -12,6 +13,7 @@ export const useLenis = () => useContext(LenisContext);
 export default function SmoothScroll({ children }) {
 	const [lenis, setLenis] = useState(null);
 	const shouldReduceMotion = useReducedMotion();
+	const pathname = usePathname();
 
 	useEffect(() => {
 		if (shouldReduceMotion) return;
@@ -39,7 +41,16 @@ export default function SmoothScroll({ children }) {
 		};
 	}, [shouldReduceMotion]);
 
+	useEffect(() => {
+		if (lenis) {
+			lenis.scrollTo(0, { immediate: true });
+		} else {
+			window.scrollTo(0, 0);
+		}
+	}, [pathname, lenis]);
+
 	return (
 		<LenisContext.Provider value={lenis}>{children}</LenisContext.Provider>
 	);
 }
+
