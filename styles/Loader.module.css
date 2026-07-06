@@ -1,0 +1,31 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 99999;
+	background-color: var(--bg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--spacing-lg);
+}
+
+.line {
+	width: 120px;
+	height: 1px;
+	background-color: var(--border-strong);
+	transform-origin: left;
+}
+
+.logo {
+	font-family: var(--font-logo);
+	font-weight: 400;
+	font-size: 2.5rem;
+	color: var(--heading-color);
+}

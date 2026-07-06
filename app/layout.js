@@ -1,13 +1,10 @@
 import "@styles/globals.css";
-import { ThemeProvider } from "@context/ThemeProvider";
+import { Instrument_Serif, Inter, JetBrains_Mono, Allura } from "next/font/google";
+import Providers from "@components/Providers";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import GrainOverlay from "@components/GrainOverlay";
-import {
-	Instrument_Serif,
-	Inter,
-	JetBrains_Mono,
-} from "next/font/google";
+import PageTransition from "@components/motion/PageTransition";
 
 const instrumentSerif = Instrument_Serif({
 	subsets: ["latin"],
@@ -27,6 +24,13 @@ const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
 	weight: ["400", "500"],
 	variable: "--font-jetbrains-mono",
+	display: "swap",
+});
+
+const allura = Allura({
+	subsets: ["latin"],
+	weight: ["400"],
+	variable: "--font-allura",
 	display: "swap",
 });
 
@@ -53,15 +57,17 @@ export default function RootLayout({ children }) {
 	return (
 		<html
 			lang="en"
-			className={`dark ${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+			className={`dark ${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable} ${allura.variable}`}
 		>
 			<body>
-				<ThemeProvider>
+				<Providers>
 					<GrainOverlay />
 					<NavBar />
-					<main>{children}</main>
+					<main>
+						<PageTransition>{children}</PageTransition>
+					</main>
 					<Footer />
-				</ThemeProvider>
+				</Providers>
 			</body>
 		</html>
 	);

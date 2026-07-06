@@ -42,7 +42,6 @@ const Articles = ({ blogs }) => {
 	return (
 		<section className={styles.container}>
 			<Reveal>
-				<p className="sectionLabel">// WRITING</p>
 				<h1 className={styles.title}>
 					<TextReveal text="My Articles" as="span" />
 				</h1>
@@ -53,60 +52,59 @@ const Articles = ({ blogs }) => {
 			</Reveal>
 
 			<Reveal delay={0.1}>
-				<div className={styles.searchContainer}>
-					<input
-						type="text"
-						placeholder="Search articles..."
-						className={styles.searchInput}
-						value={searchQuery}
-						onChange={(e) => setSearchQuery(e.target.value)}
-					/>
-					<svg
-						className={styles.searchIcon}
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="1.5"
-						aria-hidden="true"
-					>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+				<div className={styles.filtersSticky}>
+					<div className={styles.searchContainer}>
+						<input
+							type="text"
+							placeholder="Search articles..."
+							className={styles.searchInput}
+							value={searchQuery}
+							onChange={(e) => setSearchQuery(e.target.value)}
 						/>
-					</svg>
-				</div>
-			</Reveal>
-
-			<Reveal delay={0.15}>
-				<div className={styles.categories}>
-					{categories.map((category) => (
-						<button
-							key={category}
-							className={`${styles.categoryButton} ${
-								activeCategory === category
-									? shouldReduceMotion
-										? styles.activeCategoryStatic
-										: styles.activeCategory
-									: ""
-							}`}
-							onClick={() => setActiveCategory(category)}
+						<svg
+							className={styles.searchIcon}
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="1.5"
+							aria-hidden="true"
 						>
-							{activeCategory === category &&
-								!shouldReduceMotion && (
-									<motion.span
-										className={styles.categoryHighlight}
-										layoutId="categoryHighlight"
-										transition={{
-											type: "spring",
-											stiffness: 400,
-											damping: 30,
-										}}
-									/>
-								)}
-							{category}
-						</button>
-					))}
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+							/>
+						</svg>
+					</div>
+					<div className={styles.categories}>
+						{categories.map((category) => (
+							<button
+								key={category}
+								className={`${styles.categoryButton} ${
+									activeCategory === category
+										? shouldReduceMotion
+											? styles.activeCategoryStatic
+											: styles.activeCategory
+										: ""
+								}`}
+								onClick={() => setActiveCategory(category)}
+							>
+								{activeCategory === category &&
+									!shouldReduceMotion && (
+										<motion.span
+											className={styles.categoryHighlight}
+											layoutId="categoryHighlight"
+											transition={{
+												type: "spring",
+												stiffness: 400,
+												damping: 30,
+											}}
+										/>
+									)}
+								{category}
+							</button>
+						))}
+					</div>
 				</div>
 			</Reveal>
 
@@ -114,7 +112,7 @@ const Articles = ({ blogs }) => {
 				<Stagger className={styles.cardsGrid}>
 					{filteredBlogs.map((blog, index) => (
 						<StaggerItem key={blog._id}>
-							<BlogCard blog={blog} index={index} />
+							<BlogCard blog={blog} index={index} editorial />
 						</StaggerItem>
 					))}
 				</Stagger>

@@ -105,11 +105,12 @@
 }
 
 .cardsGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	justify-content: center;
-	gap: var(--spacing-lg);
+	display: flex;
+	flex-direction: column;
+	gap: 0;
 	text-align: left;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 .noResults {
@@ -226,4 +227,109 @@
 
 .card:hover .cardArrow {
 	transform: translateX(4px);
+}
+
+/* Editorial index cards (home) */
+.cardEditorial {
+	flex-direction: row;
+	align-items: center;
+	padding: var(--spacing-lg) var(--spacing-md);
+	border: none;
+	border-bottom: 1px solid var(--border);
+	border-radius: 0;
+	gap: var(--spacing-lg);
+	min-height: 120px;
+}
+
+.cardEditorial:hover {
+	border-color: var(--border);
+}
+
+.editorialIndex {
+	position: static;
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-family: var(--font-display);
+	color: var(--text-faint);
+	line-height: 1;
+	min-width: 64px;
+}
+
+.editorialBody {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xs);
+}
+
+.editorialTitle {
+	font-family: var(--font-display);
+	font-size: clamp(1.1rem, 2vw, 1.4rem);
+	font-weight: 400;
+	line-height: 1.25;
+	color: var(--heading-color);
+	letter-spacing: -0.02em;
+}
+
+.editorialDate {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	color: var(--text-muted);
+	letter-spacing: 0.05em;
+}
+
+.editorialImageWrap {
+	width: 0;
+	height: 80px;
+	overflow: hidden;
+	border-radius: var(--radius-sm);
+	opacity: 0;
+	transition: width var(--duration-normal) var(--ease-out-expo),
+		opacity var(--duration-normal) ease;
+	flex-shrink: 0;
+}
+
+.cardEditorial:hover .editorialImageWrap {
+	width: 120px;
+	opacity: 1;
+}
+
+.editorialImage {
+	width: 120px;
+	height: 80px;
+	object-fit: cover;
+	filter: grayscale(100%);
+}
+
+.editorialArrow {
+	font-family: var(--font-mono);
+	color: var(--text-faint);
+	transition: transform var(--duration-normal) var(--ease-out-expo),
+		color var(--duration-normal) ease;
+}
+
+.cardEditorial:hover .editorialArrow {
+	transform: translateX(6px);
+	color: var(--heading-color);
+}
+
+@media (hover: none) {
+	.editorialImageWrap {
+		width: 72px;
+		opacity: 0.7;
+	}
+
+	.cardEditorial {
+		padding: var(--spacing-md) 0;
+	}
+}
+
+.filtersSticky {
+	position: sticky;
+	top: 72px;
+	z-index: 40;
+	background-color: color-mix(in srgb, var(--bg) 88%, transparent);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	padding: var(--spacing-md) 0 var(--spacing-lg);
+	margin-bottom: var(--spacing-md);
 }

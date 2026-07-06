@@ -28,7 +28,7 @@
 
 	/* Legacy aliases (used during migration) */
 	--border-radius: var(--radius-md);
-	--font-logo: var(--font-display);
+	--font-logo: var(--font-allura), "Allura", cursive;
 }
 
 /* Light Theme */
@@ -124,6 +124,21 @@ body {
 
 main {
 	min-height: 100vh;
+	padding-top: 72px;
+}
+
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button {
+	cursor: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+	body.custom-cursor-active,
+	body.custom-cursor-active a,
+	body.custom-cursor-active button {
+		cursor: auto;
+	}
 }
 
 ::selection {
@@ -182,18 +197,25 @@ h6 {
 	letter-spacing: -0.02em;
 }
 
-.sectionLabel {
-	font-family: var(--font-mono);
-	font-size: 0.7rem;
-	font-weight: 500;
-	letter-spacing: 0.15em;
-	text-transform: uppercase;
-	color: var(--text-muted);
-	margin-bottom: var(--spacing-md);
-}
-
 @media (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
+}
+
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
 }

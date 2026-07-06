@@ -1,20 +1,45 @@
 .latestArticlesSection {
-	padding: var(--spacing-2xl) var(--spacing-lg);
+	position: relative;
+	padding: var(--spacing-2xl) var(--spacing-lg) clamp(80px, 12vh, 140px);
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
+.articlesDivider {
+	margin-bottom: var(--spacing-2xl);
+}
+
 .sectionTitle {
-	font-size: clamp(2rem, 4vw, 2.75rem);
-	margin-bottom: var(--spacing-lg);
-	letter-spacing: -0.02em;
+	position: relative;
+	z-index: 1;
+	font-size: clamp(2rem, 5vw, 3.25rem);
+	margin-bottom: var(--spacing-xl);
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	display: inline-block;
+}
+
+.sectionTitleGhost {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--font-display);
+	font-size: clamp(4rem, 12vw, 9rem);
+	font-weight: 400;
+	color: transparent;
+	-webkit-text-stroke: 1px var(--border);
+	opacity: 0.2;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 0;
 }
 
 .articlesGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: var(--spacing-lg);
+	display: flex;
+	flex-direction: column;
+	gap: 0;
 	margin-bottom: var(--spacing-xl);
 	text-align: left;
 }

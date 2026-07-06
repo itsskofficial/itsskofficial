@@ -7,6 +7,7 @@ import { postBySlugQuery, postSlugsQuery } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
 import PostBody from "@/components/PostBody";
 import ReadingProgressBar from "@/components/ArticleClient";
+import ArticleHeader from "@/components/ArticleHeader";
 import Reveal from "@/components/motion/Reveal";
 
 export async function generateStaticParams() {
@@ -45,16 +46,11 @@ const ArticlePage = async ({ params }) => {
 			<ReadingProgressBar />
 			<article className={styles.articleContainer}>
 				<Reveal>
-					<div className={styles.header}>
-						<h1 className={styles.title}>{blog.title}</h1>
-						<p className={styles.meta}>
-							<span className={styles.category}>
-								{blog.categories?.[0]}
-							</span>
-							{" · "}
-							{publishedDate}
-						</p>
-					</div>
+					<ArticleHeader
+						title={blog.title}
+						category={blog.categories?.[0]}
+						date={publishedDate}
+					/>
 				</Reveal>
 				<Reveal delay={0.1}>
 					<img

@@ -21,12 +21,10 @@
 }
 
 .footerLogo {
-	font-family: var(--font-display);
-	font-style: italic;
+	font-family: var(--font-logo);
 	font-weight: 400;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	color: var(--heading-color);
-	letter-spacing: -0.02em;
 }
 
 .footerLogo:hover {
