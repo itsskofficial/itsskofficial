@@ -105,12 +105,22 @@
 }
 
 .cardsGrid {
-	display: flex;
-	flex-direction: column;
-	gap: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--spacing-lg);
 	text-align: left;
-	max-width: 900px;
-	margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.cardsGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 640px) {
+	.cardsGrid {
+		grid-template-columns: 1fr;
+	}
 }
 
 .noResults {

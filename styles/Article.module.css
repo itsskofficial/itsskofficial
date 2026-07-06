@@ -189,6 +189,64 @@
 	opacity: 0.7;
 }
 
+.ptFootnoteRef {
+	font-family: var(--font-mono);
+	font-size: 0.65em;
+	line-height: 0;
+	vertical-align: super;
+}
+
+.ptFootnoteRef a {
+	color: var(--heading-color);
+	text-decoration: none;
+}
+
+.ptFootnoteRef a:hover {
+	text-decoration: underline;
+}
+
+.ptFootnotes {
+	margin-top: 3em;
+	padding-top: 2em;
+	border-top: 1px solid var(--border);
+}
+
+.ptFootnotesTitle {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	margin-bottom: 1.25em;
+}
+
+.ptFootnotesList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.ptFootnoteItem {
+	display: flex;
+	gap: 0.5em;
+	font-size: 0.9rem;
+	line-height: 1.7;
+	color: var(--text-muted);
+	scroll-margin-top: 100px;
+}
+
+.ptFootnoteNum {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	color: var(--heading-color);
+	flex-shrink: 0;
+	margin-top: 0.15em;
+}
+
 @media (max-width: 768px) {
 	.title {
 		font-size: 2rem;

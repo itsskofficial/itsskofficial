@@ -35,9 +35,9 @@ export default async function Home() {
 					</h2>
 				</Reveal>
 				<Stagger className={styles.articlesGrid}>
-					{latestBlogs.map((blog, index) => (
+					{latestBlogs.map((blog) => (
 						<StaggerItem key={blog._id}>
-							<BlogCard blog={blog} index={index} editorial />
+							<BlogCard blog={blog} />
 						</StaggerItem>
 					))}
 				</Stagger>

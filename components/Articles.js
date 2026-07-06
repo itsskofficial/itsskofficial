@@ -110,9 +110,9 @@ const Articles = ({ blogs }) => {
 
 			{filteredBlogs.length > 0 ? (
 				<Stagger className={styles.cardsGrid}>
-					{filteredBlogs.map((blog, index) => (
+					{filteredBlogs.map((blog) => (
 						<StaggerItem key={blog._id}>
-							<BlogCard blog={blog} index={index} editorial />
+							<BlogCard blog={blog} />
 						</StaggerItem>
 					))}
 				</Stagger>

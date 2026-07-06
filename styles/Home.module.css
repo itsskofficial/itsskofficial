@@ -2,7 +2,7 @@
 	position: relative;
 	padding: var(--spacing-2xl) var(--spacing-lg) clamp(80px, 12vh, 140px);
 	text-align: center;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -37,11 +37,23 @@
 }
 
 .articlesGrid {
-	display: flex;
-	flex-direction: column;
-	gap: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--spacing-lg);
 	margin-bottom: var(--spacing-xl);
 	text-align: left;
+}
+
+@media (max-width: 1024px) {
+	.articlesGrid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 640px) {
+	.articlesGrid {
+		grid-template-columns: 1fr;
+	}
 }
 
 .viewAllButton {

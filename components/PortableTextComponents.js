@@ -6,6 +6,42 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import Reveal from "@components/motion/Reveal";
 import styles from "@styles/Article.module.css";
 
+function renderFootnoteText(text) {
+	if (!text) return null;
+	const parts = [];
+	let remaining = text;
+	let index = 0;
+
+	while (remaining.length > 0) {
+		const linkMatch = remaining.match(/^\[([^\]]+)\]\(([^)]+)\)/);
+		if (linkMatch) {
+			const href = linkMatch[2];
+			const isExternal = href.startsWith("http");
+			parts.push(
+				<a
+					key={`fn-link-${index++}`}
+					href={href}
+					className={styles.ptLink}
+					rel={isExternal ? "noreferrer noopener" : undefined}
+					target={isExternal ? "_blank" : undefined}
+				>
+					{linkMatch[1]}
+				</a>
+			);
+			remaining = remaining.slice(linkMatch[0].length);
+			continue;
+		}
+
+		const nextLink = remaining.search(/\[([^\]]+)\]\(([^)]+)\)/);
+		const end = nextLink === -1 ? remaining.length : nextLink;
+		const plain = remaining.slice(0, end);
+		if (plain) parts.push(plain);
+		remaining = remaining.slice(end);
+	}
+
+	return parts;
+}
+
 const bwCodeTheme = {
 	"hljs": {
 		display: "block",
@@ -88,6 +124,26 @@ export const PortableTextComponents = {
 				</div>
 			);
 		},
+		footnotes: ({ value }) => {
+			if (!value?.items?.length) return null;
+			return (
+				<aside className={styles.ptFootnotes}>
+					<h4 className={styles.ptFootnotesTitle}>Footnotes</h4>
+					<ol className={styles.ptFootnotesList}>
+						{value.items.map((item) => (
+							<li
+								key={item._key || item.number}
+								id={`footnote-${item.number}`}
+								className={styles.ptFootnoteItem}
+							>
+								<sup className={styles.ptFootnoteNum}>{item.number}</sup>
+								<span>{renderFootnoteText(item.text)}</span>
+							</li>
+						))}
+					</ol>
+				</aside>
+			);
+		},
 	},
 	block: {
 		h2: ({ children }) => (
@@ -102,19 +158,23 @@ export const PortableTextComponents = {
 	},
 	marks: {
 		link: ({ children, value }) => {
-			const rel = !value.href.startsWith("/")
-				? "noreferrer noopener"
-				: undefined;
+			const href = value?.href || "";
+			const isExternal = href.startsWith("http");
 			return (
 				<a
-					href={value.href}
-					rel={rel}
-					target="_blank"
+					href={href}
+					rel={isExternal ? "noreferrer noopener" : undefined}
+					target={isExternal ? "_blank" : undefined}
 					className={styles.ptLink}
 				>
 					{children}
 				</a>
 			);
 		},
+		footnote: ({ children, value }) => (
+			<sup className={styles.ptFootnoteRef}>
+				<a href={`#footnote-${value.number}`}>{children}</a>
+			</sup>
+		),
 	},
 };

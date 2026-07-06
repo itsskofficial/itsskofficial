@@ -54,6 +54,28 @@ export const blockContentType = defineType({
                 title: 'URL',
                 name: 'href',
                 type: 'url',
+                validation: (Rule) =>
+                  Rule.uri({
+                    allowRelative: true,
+                    scheme: ['http', 'https', 'mailto', 'tel'],
+                  }),
+              },
+            ],
+          },
+          {
+            title: 'Footnote',
+            name: 'footnote',
+            type: 'object',
+            fields: [
+              {
+                name: 'number',
+                type: 'string',
+                title: 'Number',
+              },
+              {
+                name: 'text',
+                type: 'text',
+                title: 'Text',
               },
             ],
           },
@@ -91,5 +113,25 @@ export const blockContentType = defineType({
         highlightedLines: true, // optional
       },
     }),
+    defineArrayMember({
+      name: 'footnotes',
+      title: 'Footnotes',
+      type: 'object',
+      fields: [
+        {
+          name: 'items',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {name: 'number', type: 'string', title: 'Number'},
+                {name: 'text', type: 'text', title: 'Text'},
+              ],
+            },
+          ],
+        },
+      ],
+    }),
   ],
-})
+})
