@@ -1,63 +1,120 @@
-// Note: react-syntax-highlighter is a client component.
-// To use it in a server component, you need to either add "use client" to this file
-// or create a separate client component for the code block.
-// For simplicity, let's make this whole component file a client component.
 "use client";
 
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'; // Choose a style
+import SyntaxHighlighter from "react-syntax-highlighter";
+import Reveal from "@components/motion/Reveal";
+import styles from "@styles/Article.module.css";
+
+const bwCodeTheme = {
+	"hljs": {
+		display: "block",
+		overflowX: "auto",
+		padding: "1.5em",
+		background: "var(--bg-subtle)",
+		color: "var(--text)",
+		border: "1px solid var(--border)",
+		borderBottomLeftRadius: "var(--radius-md)",
+		borderBottomRightRadius: "var(--radius-md)",
+	},
+	"hljs-comment": { color: "var(--text-faint)", fontStyle: "italic" },
+	"hljs-quote": { color: "var(--text-faint)", fontStyle: "italic" },
+	"hljs-keyword": { color: "var(--heading-color)", fontWeight: "600" },
+	"hljs-selector-tag": { color: "var(--heading-color)", fontWeight: "600" },
+	"hljs-string": { color: "var(--text-muted)" },
+	"hljs-number": { color: "var(--text-muted)" },
+	"hljs-title": { color: "var(--heading-color)" },
+	"hljs-function": { color: "var(--heading-color)" },
+	"hljs-built_in": { color: "var(--text-muted)" },
+	"hljs-type": { color: "var(--heading-color)" },
+	"hljs-attr": { color: "var(--text)" },
+	"hljs-variable": { color: "var(--text)" },
+	"hljs-params": { color: "var(--text)" },
+};
 
 export const PortableTextComponents = {
-  types: {
-    image: ({ value }) => {
-      if (!value?.asset?._ref) {
-        return null;
-      }
-      return (
-        <div style={{ margin: '2em 0' }}>
-          <Image
-            src={urlFor(value).width(1000).fit('max').auto('format').url()}
-            width={1000}
-            height={600}
-            alt={value.alt || ' '}
-            loading="lazy"
-            style={{
-              width: '100%',
-              height: 'auto',
-              borderRadius: 'var(--border-radius)',
-            }}
-          />
-          {value.caption && <figcaption style={{ textAlign: 'center', color: 'var(--subtle-text-color)', fontSize: '0.9rem', marginTop: '0.5em' }}>{value.caption}</figcaption>}
-        </div>
-      );
-    },
-    codeBlock: ({ value }) => {
-      const { code, language, filename } = value;
-      return (
-        <div style={{ margin: '2em 0' }}>
-          {filename && <div style={{ backgroundColor: '#3a404d', color: '#f0f0f0', padding: '0.5em 1em', borderTopLeftRadius: 'var(--border-radius)', borderTopRightRadius: 'var(--border-radius)', fontSize: '0.9rem' }}>{filename}</div>}
-          <SyntaxHighlighter language={language || 'text'} style={atomOneDark} customStyle={{ padding: '1.5em', borderBottomLeftRadius: 'var(--border-radius)', borderBottomRightRadius: 'var(--border-radius)', margin: 0 }}>
-            {code}
-          </SyntaxHighlighter>
-        </div>
-      );
-    },
-  },
-  block: {
-    h2: ({ children }) => <h2 style={{ marginTop: '1.5em', marginBottom: '0.5em' }}>{children}</h2>,
-    h3: ({ children }) => <h3 style={{ marginTop: '1.5em', marginBottom: '0.5em' }}>{children}</h3>,
-    blockquote: ({ children }) => <blockquote style={{ borderLeft: '3px solid var(--heading-color)', paddingLeft: '1em', margin: '1.5em 0', fontStyle: 'italic', color: 'var(--subtle-text-color)' }}>{children}</blockquote>,
-  },
-  marks: {
-    link: ({ children, value }) => {
-      const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined;
-      return (
-        <a href={value.href} rel={rel} target="_blank" style={{ textDecoration: 'underline' }}>
-          {children}
-        </a>
-      );
-    },
-  },
-};
+	types: {
+		image: ({ value }) => {
+			if (!value?.asset?._ref) {
+				return null;
+			}
+			return (
+				<Reveal>
+					<figure className={styles.ptImage}>
+						<Image
+							src={urlFor(value)
+								.width(1000)
+								.fit("max")
+								.auto("format")
+								.url()}
+							width={1000}
+							height={600}
+							alt={value.alt || " "}
+							loading="lazy"
+							style={{
+								width: "100%",
+								height: "auto",
+								filter: "grayscale(100%)",
+							}}
+						/>
+						{value.caption && (
+							<figcaption className={styles.ptCaption}>
+								{value.caption}
+							</figcaption>
+						)}
+					</figure>
+				</Reveal>
+			);
+		},
+		codeBlock: ({ value }) => {
+			const { code, language, filename } = value;
+			return (
+				<div className={styles.ptCodeBlock}>
+					{filename && (
+						<div className={styles.ptCodeFilename}>{filename}</div>
+					)}
+					<SyntaxHighlighter
+						language={language || "text"}
+						style={bwCodeTheme}
+						customStyle={{
+							padding: "1.5em",
+							margin: 0,
+							borderTopLeftRadius: filename ? 0 : "var(--radius-md)",
+							borderTopRightRadius: filename ? 0 : "var(--radius-md)",
+						}}
+					>
+						{code}
+					</SyntaxHighlighter>
+				</div>
+			);
+		},
+	},
+	block: {
+		h2: ({ children }) => (
+			<h2 style={{ marginTop: "1.5em", marginBottom: "0.5em" }}>{children}</h2>
+		),
+		h3: ({ children }) => (
+			<h3 style={{ marginTop: "1.5em", marginBottom: "0.5em" }}>{children}</h3>
+		),
+		blockquote: ({ children }) => (
+			<blockquote className={styles.ptBlockquote}>{children}</blockquote>
+		),
+	},
+	marks: {
+		link: ({ children, value }) => {
+			const rel = !value.href.startsWith("/")
+				? "noreferrer noopener"
+				: undefined;
+			return (
+				<a
+					href={value.href}
+					rel={rel}
+					target="_blank"
+					className={styles.ptLink}
+				>
+					{children}
+				</a>
+			);
+		},
+	},
+};

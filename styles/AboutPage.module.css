@@ -1,10 +1,10 @@
 .container {
-	max-width: 900px;
-	margin: var(--spacing-xl) auto;
+	max-width: 1000px;
+	margin: var(--spacing-2xl) auto;
 	padding: 0 var(--spacing-lg);
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacing-xl);
+	gap: var(--spacing-2xl);
 }
 
 .aboutSection {
@@ -14,18 +14,35 @@
 }
 
 .aboutText {
-	flex: 2;
+	flex: 1.5;
+}
+
+.sectionLabel {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	margin-bottom: var(--spacing-md);
 }
 
 .title {
-	font-size: 3rem;
-	margin-bottom: var(--spacing-md);
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
+	margin-bottom: var(--spacing-lg);
+	letter-spacing: -0.03em;
 }
 
 .bio {
 	font-size: 1.1rem;
-	line-height: 1.7;
+	line-height: 1.75;
 	margin-bottom: var(--spacing-md);
+	color: var(--text);
+}
+
+.bio strong {
+	font-weight: 600;
+	color: var(--heading-color);
 }
 
 .aboutImage {
@@ -35,47 +52,66 @@
 	align-items: center;
 }
 
-.profilePic {
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: center 25%;
-	border: 5px solid var(--border-color);
+.imageWrapper {
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--radius-lg);
+	border: 1px solid var(--border);
 }
 
-.sectionTitle {
-	font-size: 2rem;
-	margin-bottom: var(--spacing-md);
-	padding-bottom: var(--spacing-sm);
-	border-bottom: 2px solid var(--heading-color);
-	display: inline-block;
+.profilePic {
+	border-radius: var(--radius-lg);
+	object-fit: cover;
+	object-position: center 25%;
+	filter: grayscale(100%);
 }
 
 .historySection {
 	margin-top: var(--spacing-md);
 }
 
+.sectionTitle {
+	font-size: clamp(1.75rem, 3vw, 2.25rem);
+	margin-bottom: var(--spacing-lg);
+	letter-spacing: -0.02em;
+}
+
 .historyText {
 	font-size: 1.1rem;
-	line-height: 1.7;
+	line-height: 1.75;
+	color: var(--text);
 }
 
 .historyText a {
+	position: relative;
 	color: var(--heading-color);
-	text-decoration: underline;
-	text-underline-offset: 3px;
+	text-decoration: none;
 }
 
-.historyText a:hover {
-	color: var(--interactive-text);
+.historyText a::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: currentColor;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform var(--duration-normal) var(--ease-out-expo);
 }
 
-/* Responsive Styles */
+.historyText a:hover::after {
+	transform: scaleX(1);
+}
+
+.divider {
+	margin: var(--spacing-lg) 0;
+}
+
 @media (max-width: 768px) {
 	.aboutSection {
 		flex-direction: column-reverse;
 		text-align: center;
-	}
-	.title {
-		font-size: 2.5rem;
 	}
 }

@@ -5,15 +5,15 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { postBySlugQuery, postSlugsQuery } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";
-import PostBody from "@/components/PostBody"; // Import the new component
+import PostBody from "@/components/PostBody";
+import ReadingProgressBar from "@/components/ArticleClient";
+import Reveal from "@/components/motion/Reveal";
 
-// Generate static pages for each blog post
 export async function generateStaticParams() {
 	const slugs = await client.fetch(postSlugsQuery);
 	return slugs.map((slug) => ({ slug }));
 }
 
-// Generate metadata for each blog post
 export async function generateMetadata({ params }) {
 	const blog = await client.fetch(postBySlugQuery, { slug: params.slug });
 	if (!blog) {
@@ -41,25 +41,41 @@ const ArticlePage = async ({ params }) => {
 	});
 
 	return (
-		<article className={styles.articleContainer}>
-			<div className={styles.header}>
-				<h1 className={styles.title}>{blog.title}</h1>
-				<p className={styles.meta}>
-					Published on {publishedDate} in{" "}
-					<span className={styles.category}>{blog.categories?.[0]}</span>
-				</p>
-			</div>
-			<img src={blogImage} alt={blog.title} className={styles.mainImage} />
-			<div className={styles.content}>
-				{/* Use the new PostBody component here */}
-				<PostBody body={blog.body} />
-			</div>
-			<div className={styles.backLinkContainer}>
-				<Link href="/blog" className={styles.backLink}>
-					&larr; Back to all articles
-				</Link>
-			</div>
-		</article>
+		<>
+			<ReadingProgressBar />
+			<article className={styles.articleContainer}>
+				<Reveal>
+					<div className={styles.header}>
+						<h1 className={styles.title}>{blog.title}</h1>
+						<p className={styles.meta}>
+							<span className={styles.category}>
+								{blog.categories?.[0]}
+							</span>
+							{" · "}
+							{publishedDate}
+						</p>
+					</div>
+				</Reveal>
+				<Reveal delay={0.1}>
+					<img
+						src={blogImage}
+						alt={blog.title}
+						className={styles.mainImage}
+					/>
+				</Reveal>
+				<div className={styles.content}>
+					<PostBody body={blog.body} />
+				</div>
+				<div className={styles.backLinkContainer}>
+					<Link href="/blog" className={styles.backLink}>
+						<span className={styles.backArrow} aria-hidden="true">
+							&larr;
+						</span>
+						Back to all articles
+					</Link>
+				</div>
+			</article>
+		</>
 	);
 };
 

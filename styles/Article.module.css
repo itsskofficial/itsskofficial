@@ -1,52 +1,63 @@
-.articleContainer {
-	/* Increased width for a more expansive feel */
-	max-width: 1100px;
-	margin: var(--spacing-xl) auto;
-	/* Adjusted padding for the new layout */
-	padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl)
-		var(--spacing-lg);
+.progressBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: var(--border-strong);
+	transform-origin: left;
+	z-index: 100;
+}
 
-	/* Removed container-like styles to feel "freeform" */
-	/* background-color: var(--card-bg); */
-	/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
-	/* border-radius: var(--border-radius); */
+.articleContainer {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-2xl);
 }
 
 .header {
 	text-align: center;
-	margin-bottom: var(--spacing-lg);
+	margin-bottom: var(--spacing-xl);
 	padding-bottom: var(--spacing-lg);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border);
 }
 
 .title {
-	font-size: 3.2rem; /* Slightly larger for more impact */
-	font-weight: 900;
-	margin-bottom: var(--spacing-sm);
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	font-weight: 400;
+	margin-bottom: var(--spacing-md);
+	letter-spacing: -0.03em;
+	line-height: 1.1;
 }
 
 .meta {
-	color: var(--subtle-text-color);
-	font-size: 0.9rem;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--text-muted);
 }
 
 .category {
-	font-weight: bold;
-	color: var(--text-color);
+	color: var(--heading-color);
 }
 
 .mainImage {
 	width: 100%;
 	height: auto;
-	border-radius: var(--border-radius);
-	margin-bottom: var(--spacing-lg);
+	border-radius: var(--radius-lg);
+	margin-bottom: var(--spacing-xl);
+	filter: grayscale(100%);
+	border: 1px solid var(--border);
 }
 
 .content {
-	font-family: var(--font-sans);
-	font-size: 1.15rem;
+	max-width: 68ch;
+	margin: 0 auto;
+	font-size: 1.1rem;
 	line-height: 1.8;
-	color: var(--text-color);
+	color: var(--text);
 }
 
 .content p {
@@ -56,14 +67,15 @@
 .content h1,
 .content h2,
 .content h3 {
-	font-family: var(--font-sans);
+	font-family: var(--font-display);
 	margin-top: 2em;
-	margin-bottom: 1em;
+	margin-bottom: 0.75em;
+	letter-spacing: -0.02em;
 }
 
 .content ul,
 .content ol {
-	margin-left: 2em;
+	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
 
@@ -72,37 +84,118 @@
 }
 
 .content strong {
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--heading-color);
 }
 
 .backLinkContainer {
-	margin-top: var(--spacing-xl);
+	margin-top: var(--spacing-2xl);
 	text-align: center;
+	padding-top: var(--spacing-xl);
+	border-top: 1px solid var(--border);
 }
 
 .backLink {
-	font-weight: bold;
-	display: inline-block;
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-sm);
 	color: var(--heading-color);
-	transition: transform 0.2s ease;
+	transition: gap var(--duration-normal) var(--ease-out-expo);
 }
 
 .backLink:hover {
-	transform: translateX(-4px);
 	text-decoration: none;
+	gap: var(--spacing-md);
+}
+
+.backArrow {
+	transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.backLink:hover .backArrow {
+	transform: translateX(-4px);
+}
+
+/* Portable Text styles */
+.ptImage {
+	margin: 2em 0;
+}
+
+.ptImage img {
+	border-radius: var(--radius-md);
+	border: 1px solid var(--border);
+}
+
+.ptCaption {
+	font-family: var(--font-mono);
+	text-align: center;
+	color: var(--text-muted);
+	font-size: 0.75rem;
+	margin-top: 0.75em;
+	letter-spacing: 0.03em;
+}
+
+.ptCodeBlock {
+	margin: 2em 0;
+}
+
+.ptCodeFilename {
+	font-family: var(--font-mono);
+	background-color: var(--bg-subtle);
+	color: var(--text-muted);
+	padding: 0.5em 1em;
+	border: 1px solid var(--border);
+	border-bottom: none;
+	border-top-left-radius: var(--radius-md);
+	border-top-right-radius: var(--radius-md);
+	font-size: 0.75rem;
+	letter-spacing: 0.03em;
+}
+
+.ptBlockquote {
+	position: relative;
+	margin: 2em 0;
+	padding: 1em 0 1em 2em;
+	font-family: var(--font-display);
+	font-size: 1.25rem;
+	font-style: italic;
+	color: var(--text-muted);
+	line-height: 1.6;
+}
+
+.ptBlockquote::before {
+	content: "\201C";
+	position: absolute;
+	left: 0;
+	top: -0.1em;
+	font-size: 3rem;
+	line-height: 1;
+	color: var(--text-faint);
+	font-style: normal;
+}
+
+.ptLink {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	transition: opacity var(--duration-fast) ease;
+}
+
+.ptLink:hover {
+	opacity: 0.7;
 }
 
 @media (max-width: 768px) {
 	.title {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 }
 
 @media (max-width: 600px) {
-	.title {
-		font-size: 2rem;
-	}
 	.content {
 		font-size: 1.05rem;
 	}

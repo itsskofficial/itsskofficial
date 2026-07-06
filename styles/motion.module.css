@@ -1,0 +1,29 @@
+.grain {
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 9999;
+	opacity: var(--grain-opacity);
+}
+
+.linkUnderline {
+	position: relative;
+	display: inline-block;
+}
+
+.linkUnderline::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	width: 0;
+	height: 1px;
+	background-color: currentColor;
+	transition: width var(--duration-normal) var(--ease-out-expo),
+		left var(--duration-normal) var(--ease-out-expo);
+}
+
+.linkUnderline:hover::after {
+	width: 100%;
+	left: 0;
+}

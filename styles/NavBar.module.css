@@ -2,8 +2,10 @@
 	position: sticky;
 	top: 0;
 	z-index: 50;
-	background-color: var(--background-color);
-	border-bottom: 1px solid var(--border-color);
+	background-color: color-mix(in srgb, var(--bg) 85%, transparent);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid var(--border);
 	padding: var(--spacing-md) var(--spacing-lg);
 }
 
@@ -16,18 +18,19 @@
 }
 
 .logo {
-	font-family: var(--font-logo);
+	font-family: var(--font-display);
+	font-style: italic;
 	font-weight: 400;
-	font-size: 2.5rem;
+	font-size: 1.75rem;
 	color: var(--heading-color);
 	line-height: 1;
 	text-decoration: none;
-	z-index: 100; /* Ensure logo is above mobile menu */
+	letter-spacing: -0.02em;
+	z-index: 100;
 }
 
 .logo:hover {
-	text-decoration: none;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .navLinksContainer {
@@ -43,59 +46,147 @@
 }
 
 .navLink {
-	font-weight: 700;
-	color: var(--subtle-text-color);
-	transition: color 0.2s ease-in-out;
+	position: relative;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	transition: color var(--duration-normal) ease;
+	padding-bottom: 4px;
 }
 
-.navLink:hover {
+.navLink::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 1px;
+	background-color: var(--heading-color);
+	transition: width var(--duration-normal) var(--ease-out-expo),
+		left var(--duration-normal) var(--ease-out-expo);
+}
+
+.navLink:hover,
+.navLinkActive {
 	color: var(--heading-color);
 	text-decoration: none;
 }
 
+.navLink:hover::after,
+.navLinkActive::after {
+	width: 100%;
+	left: 0;
+}
+
 .themeToggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
 	background: none;
-	border: none;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-full);
 	cursor: pointer;
-	font-size: 1.25rem;
-	color: var(--subtle-text-color);
-	transition: color 0.2s ease-in-out, transform 0.2s ease;
+	color: var(--text-muted);
+	transition: color var(--duration-normal) ease,
+		border-color var(--duration-normal) ease,
+		transform var(--duration-fast) ease;
 }
 
 .themeToggle:hover {
 	color: var(--heading-color);
-	transform: scale(1.1);
+	border-color: var(--heading-color);
+	transform: scale(1.05);
+}
+
+.themeIcon {
+	width: 16px;
+	height: 16px;
+	transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.themeToggle:hover .themeIcon {
+	transform: rotate(15deg);
 }
 
 .hamburgerButton {
-	display: none; /* Hidden by default */
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
 	background: none;
-	border: none;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-full);
 	cursor: pointer;
-	font-size: 1.5rem;
 	color: var(--heading-color);
-	z-index: 100; /* Ensure it's above the menu */
+	z-index: 100;
 }
 
-/* --- Mobile Styles --- */
+.hamburgerIcon {
+	width: 18px;
+	height: 2px;
+	background: currentColor;
+	position: relative;
+	transition: background var(--duration-fast) ease;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: currentColor;
+	transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.hamburgerIcon::before {
+	top: -6px;
+}
+
+.hamburgerIcon::after {
+	top: 6px;
+}
+
+.hamburgerOpen .hamburgerIcon {
+	background: transparent;
+}
+
+.hamburgerOpen .hamburgerIcon::before {
+	transform: translateY(6px) rotate(45deg);
+}
+
+.hamburgerOpen .hamburgerIcon::after {
+	transform: translateY(-6px) rotate(-45deg);
+}
+
+.navLinkMotion {
+	display: contents;
+}
+
 @media (max-width: 768px) {
 	.navLinksContainer {
 		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: var(--background-color);
+		inset: 0;
+		background-color: var(--bg);
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: var(--spacing-xl);
-		transform: translateX(100%);
-		transition: transform 0.3s ease-in-out;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity var(--duration-normal) ease;
 	}
 
 	.navLinksContainer.active {
-		transform: translateX(0);
+		opacity: 1;
+		pointer-events: auto;
 	}
 
 	.navList {
@@ -105,14 +196,14 @@
 	}
 
 	.navLink {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 
-	.themeToggle {
-		font-size: 1.8rem;
+	.navLinkMotion {
+		display: block;
 	}
 
 	.hamburgerButton {
-		display: block; /* Show on mobile */
+		display: flex;
 	}
 }

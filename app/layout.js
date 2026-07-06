@@ -2,8 +2,33 @@ import "@styles/globals.css";
 import { ThemeProvider } from "@context/ThemeProvider";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
-import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next"
+import GrainOverlay from "@components/GrainOverlay";
+import {
+	Instrument_Serif,
+	Inter,
+	JetBrains_Mono,
+} from "next/font/google";
+
+const instrumentSerif = Instrument_Serif({
+	subsets: ["latin"],
+	weight: ["400"],
+	variable: "--font-instrument-serif",
+	display: "swap",
+});
+
+const inter = Inter({
+	subsets: ["latin"],
+	weight: ["400", "500", "600"],
+	variable: "--font-inter",
+	display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ["latin"],
+	weight: ["400", "500"],
+	variable: "--font-jetbrains-mono",
+	display: "swap",
+});
 
 export const metadata = {
 	title: "Sarthak Karandikar",
@@ -11,9 +36,7 @@ export const metadata = {
 		"Thoughts on technology, science, and philosophy, and where they might lead us on consciousness.",
 	icons: {
 		icon: [
-			// This provides a fallback for all browsers
 			{ url: "/assets/images/favicon.png" },
-			// These are specific to light/dark modes
 			{
 				url: "/assets/images/faviconlight.png",
 				media: "(prefers-color-scheme: light)",
@@ -28,17 +51,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className={`dark ${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+		>
 			<body>
 				<ThemeProvider>
+					<GrainOverlay />
 					<NavBar />
 					<main>{children}</main>
 					<Footer />
 				</ThemeProvider>
-				<Script
-					src="https://kit.fontawesome.com/638bbcf842.js"
-					crossOrigin="anonymous"
-				/>
 			</body>
 		</html>
 	);

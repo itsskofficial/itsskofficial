@@ -15,10 +15,15 @@ export const ThemeProvider = ({ children }) => {
 	}, []);
 
 	useEffect(() => {
-		// This sets the class on the <html> tag for CSS styling
-		document.documentElement.className = mode;
-		// This saves the user's preference for future visits
+		const root = document.documentElement;
+		root.classList.remove("light", "dark");
+		root.classList.add(mode, "theme-transition");
 		localStorage.setItem("themeMode", mode);
+
+		const timer = setTimeout(() => {
+			root.classList.remove("theme-transition");
+		}, 250);
+		return () => clearTimeout(timer);
 	}, [mode]);
 
 	const toggleMode = () => {

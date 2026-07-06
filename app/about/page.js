@@ -1,4 +1,3 @@
-import AosWrapper from "@components/AosWrapper";
 import AboutClient from "@components/AboutClient";
 
 export const metadata = {
@@ -8,9 +7,5 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-	return (
-		<AosWrapper>
-			<AboutClient />
-		</AosWrapper>
-	);
+	return <AboutClient />;
 }

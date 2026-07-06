@@ -3,11 +3,12 @@ import About from "@components/About";
 import Link from "next/link";
 import BlogCard from "@components/ui/BlogCard";
 import styles from "@styles/Home.module.css";
-import AosWrapper from "@components/AosWrapper";
+import Reveal from "@components/motion/Reveal";
+import { Stagger, StaggerItem } from "@components/motion/Stagger";
 import { client } from "@/sanity/lib/client";
 import { latestPostsQuery } from "@/sanity/lib/queries";
 
-export const revalidate = 60; // Revalidate this page every 60 seconds
+export const revalidate = 60;
 
 async function getLatestBlogs() {
 	const blogs = await client.fetch(latestPostsQuery);
@@ -18,23 +19,30 @@ export default async function Home() {
 	const latestBlogs = await getLatestBlogs();
 
 	return (
-		<AosWrapper>
+		<>
 			<Header />
 			<About />
-			<section
-				className={styles.latestArticlesSection}
-				data-aos="fade-up"
-			>
-				<h2 className={styles.sectionTitle}>Latest Articles</h2>
-				<div className={styles.articlesGrid}>
-					{latestBlogs.map((blog) => (
-						<BlogCard key={blog._id} blog={blog} />
+			<section className={styles.latestArticlesSection}>
+				<Reveal>
+					<p className="sectionLabel">// LATEST</p>
+					<h2 className={styles.sectionTitle}>Latest Articles</h2>
+				</Reveal>
+				<Stagger className={styles.articlesGrid}>
+					{latestBlogs.map((blog, index) => (
+						<StaggerItem key={blog._id}>
+							<BlogCard blog={blog} index={index} />
+						</StaggerItem>
 					))}
-				</div>
-				<Link href="/blog" className={styles.viewAllButton}>
-					View All Articles
-				</Link>
+				</Stagger>
+				<Reveal delay={0.2}>
+					<Link href="/blog" className={styles.viewAllButton}>
+						View All Articles
+						<span className={styles.viewAllArrow} aria-hidden="true">
+							&rarr;
+						</span>
+					</Link>
+				</Reveal>
 			</section>
-		</AosWrapper>
+		</>
 	);
 }

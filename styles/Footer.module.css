@@ -1,7 +1,7 @@
 .footer {
-	padding: var(--spacing-lg);
-	border-top: 1px solid var(--border-color);
-	background-color: var(--card-bg);
+	padding: var(--spacing-xl) var(--spacing-lg);
+	border-top: 1px solid var(--border);
+	background-color: var(--bg);
 }
 
 .footerContent {
@@ -21,40 +21,68 @@
 }
 
 .footerLogo {
-	font-family: var(--font-logo);
+	font-family: var(--font-display);
+	font-style: italic;
 	font-weight: 400;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	color: var(--heading-color);
+	letter-spacing: -0.02em;
 }
 
 .footerLogo:hover {
+	opacity: 0.7;
 	text-decoration: none;
 }
 
-.footerInfo p {
-	font-size: 0.9rem;
-	color: var(--subtle-text-color);
+.copyright {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--text-muted);
 }
 
 .footerSocials {
 	display: flex;
-	gap: var(--spacing-lg);
+	gap: var(--spacing-md);
 }
 
-.footerSocials a {
-	color: var(--subtle-text-color);
-	transition: color 0.2s ease, transform 0.2s ease;
+.socialLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-full);
+	color: var(--text-muted);
+	transition: color var(--duration-normal) ease,
+		background-color var(--duration-normal) ease,
+		border-color var(--duration-normal) ease,
+		transform var(--duration-fast) var(--ease-out-expo);
 }
 
-.footerSocials a:hover {
-	color: var(--heading-color);
+.socialLink:hover {
+	color: var(--interactive-text);
+	background-color: var(--interactive-bg);
+	border-color: var(--interactive-bg);
 	transform: translateY(-2px);
 	text-decoration: none;
+}
+
+.socialIcon {
+	width: 16px;
+	height: 16px;
 }
 
 @media (max-width: 600px) {
 	.footerContent {
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.footerInfo {
+		flex-direction: column;
 	}
 }
