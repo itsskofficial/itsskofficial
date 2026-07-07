@@ -8,7 +8,8 @@
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	border-bottom: 1px solid var(--border);
-	padding: var(--spacing-md) var(--spacing-lg);
+	padding: var(--spacing-md) var(--page-gutter);
+	padding-top: calc(var(--spacing-md) + env(safe-area-inset-top, 0px));
 }
 
 .nav {
@@ -22,7 +23,7 @@
 .logo {
 	font-family: var(--font-logo);
 	font-weight: 400;
-	font-size: 2.5rem;
+	font-size: clamp(1.75rem, 5vw, 2.5rem);
 	color: var(--heading-color);
 	line-height: 1;
 	text-decoration: none;
@@ -174,6 +175,7 @@
 	.navLinksContainer {
 		position: fixed;
 		inset: 0;
+		z-index: 90;
 		background-color: var(--bg);
 		flex-direction: column;
 		justify-content: center;
@@ -182,6 +184,8 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity var(--duration-normal) ease;
+		padding: env(safe-area-inset-top, 0px) var(--page-gutter)
+			env(safe-area-inset-bottom, 0px);
 	}
 
 	.navLinksContainer.active {
@@ -196,7 +200,7 @@
 	}
 
 	.navLink {
-		font-size: 1rem;
+		font-size: clamp(1rem, 4vw, 1.25rem);
 	}
 
 	.navLinkMotion {
@@ -205,5 +209,9 @@
 
 	.hamburgerButton {
 		display: flex;
+	}
+
+	.nav {
+		padding: 0;
 	}
 }

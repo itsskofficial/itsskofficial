@@ -1,7 +1,9 @@
 .contactIcons {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 }
 
 .contactIcons i {

@@ -1,6 +1,6 @@
 .latestArticlesSection {
 	position: relative;
-	padding: var(--spacing-2xl) var(--spacing-lg) clamp(80px, 12vh, 140px);
+	padding: var(--spacing-2xl) var(--page-gutter) clamp(80px, 12vh, 140px);
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -18,6 +18,7 @@
 	letter-spacing: -0.03em;
 	line-height: 1.1;
 	display: inline-block;
+	max-width: 100%;
 }
 
 .sectionTitleGhost {
@@ -83,4 +84,17 @@
 
 .viewAllButton:hover .viewAllArrow {
 	transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+	.sectionTitleGhost {
+		font-size: clamp(3rem, 22vw, 5.5rem);
+		white-space: normal;
+		opacity: 0.15;
+	}
+
+	.viewAllButton {
+		width: 100%;
+		justify-content: center;
+	}
 }

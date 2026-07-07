@@ -1,5 +1,6 @@
 .footer {
-	padding: var(--spacing-xl) var(--spacing-lg);
+	padding: var(--spacing-xl) var(--page-gutter);
+	padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom, 0px));
 	border-top: 1px solid var(--border);
 	background-color: var(--bg);
 }
@@ -74,7 +75,7 @@
 	height: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.footerContent {
 		flex-direction: column;
 		text-align: center;
@@ -82,5 +83,10 @@
 
 	.footerInfo {
 		flex-direction: column;
+	}
+
+	.footerSocials {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }

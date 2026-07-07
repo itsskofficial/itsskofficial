@@ -7,7 +7,7 @@
 	min-height: 70vh;
 	display: flex;
 	align-items: center;
-	padding: var(--spacing-2xl) var(--spacing-lg);
+	padding: var(--spacing-2xl) var(--page-gutter);
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -49,12 +49,12 @@
 .dividerWrap {
 	max-width: 1300px;
 	margin: 0 auto;
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 }
 
 /* Lenses grid */
 .lensesSection {
-	padding: clamp(64px, 10vh, 120px) var(--spacing-lg);
+	padding: clamp(64px, 10vh, 120px) var(--page-gutter);
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -115,7 +115,7 @@
 
 /* What I do */
 .doSection {
-	padding: clamp(64px, 10vh, 120px) var(--spacing-lg);
+	padding: clamp(64px, 10vh, 120px) var(--page-gutter);
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -135,7 +135,7 @@
 	letter-spacing: -0.03em;
 	line-height: 1.1;
 	position: sticky;
-	top: calc(var(--spacing-2xl) + 80px);
+	top: calc(var(--nav-height) + var(--spacing-lg));
 }
 
 .doColumns {
@@ -168,7 +168,7 @@
 
 /* Consciousness */
 .consciousnessSection {
-	padding: clamp(80px, 14vh, 160px) var(--spacing-lg);
+	padding: clamp(80px, 14vh, 160px) var(--page-gutter);
 }
 
 .consciousnessInner {
@@ -245,5 +245,23 @@
 	.hero {
 		min-height: auto;
 		padding-top: var(--spacing-xl);
+	}
+
+	.lensCard {
+		padding: var(--spacing-lg) var(--spacing-md);
+	}
+
+	.sectionIntro {
+		font-size: 1rem;
+		max-width: 100%;
+	}
+
+	.doPara {
+		font-size: 1.05rem;
+		line-height: 1.8;
+	}
+
+	.consciousnessQuote {
+		font-size: clamp(1.35rem, 5vw, 2rem);
 	}
 }

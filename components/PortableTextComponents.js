@@ -85,6 +85,7 @@ export const PortableTextComponents = {
 								.url()}
 							width={1000}
 							height={600}
+							sizes="(max-width: 768px) 100vw, 68ch"
 							alt={value.alt || " "}
 							loading="lazy"
 							style={{

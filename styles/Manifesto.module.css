@@ -29,7 +29,7 @@
 }
 
 .fallback {
-	padding: var(--spacing-2xl) var(--spacing-lg);
+	padding: var(--spacing-2xl) var(--page-gutter);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -43,5 +43,9 @@
 @media (max-width: 768px) {
 	.section {
 		height: 150vh;
+	}
+
+	.word {
+		font-size: clamp(2.25rem, 14vw, 4.5rem);
 	}
 }

@@ -5,13 +5,13 @@
 .divider {
 	max-width: 1200px;
 	margin: 0 auto var(--spacing-xl);
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 }
 
 .inner {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 }
 
 .list {
@@ -53,12 +53,21 @@
 }
 
 @media (max-width: 768px) {
+	.section {
+		padding: var(--spacing-xl) 0;
+	}
+
 	.row {
 		grid-template-columns: 1fr;
 		gap: var(--spacing-sm);
+		padding: var(--spacing-lg) 0;
 	}
 
 	.rowAlt {
 		padding-left: 0;
+	}
+
+	.text {
+		font-size: 1.05rem;
 	}
 }

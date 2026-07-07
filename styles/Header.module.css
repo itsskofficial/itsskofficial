@@ -114,15 +114,30 @@
 	overflow: hidden;
 	border-radius: var(--radius-lg);
 	border: 1px solid var(--border);
+	width: 100%;
+	max-width: min(360px, 85vw);
 }
 
 .portrait {
 	display: block;
+	width: 100%;
+	height: auto;
 	filter: grayscale(100%);
 	object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+	.hero {
+		gap: var(--spacing-lg);
+		padding: var(--spacing-xl) var(--page-gutter);
+	}
+
+	.content {
+		padding-left: var(--spacing-lg);
+	}
+}
+
+@media (max-width: 900px) {
 	.hero {
 		grid-template-columns: 1fr;
 		min-height: auto;
@@ -152,5 +167,20 @@
 
 	.regLine {
 		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		padding: var(--spacing-xl) var(--page-gutter) var(--spacing-2xl);
+	}
+
+	.displayTitle {
+		font-size: clamp(2.5rem, 12vw, 4rem);
+	}
+
+	.ctaButton {
+		width: 100%;
+		justify-content: center;
 	}
 }

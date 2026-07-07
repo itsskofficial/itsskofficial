@@ -1,6 +1,6 @@
 .parent {
 	position: relative;
-	padding: clamp(80px, 15vh, 160px) var(--spacing-lg);
+	padding: clamp(80px, 15vh, 160px) var(--page-gutter);
 	text-align: center;
 	overflow: hidden;
 }
@@ -103,12 +103,12 @@
 .divider {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 }
 
 .cornerMarks {
 	position: absolute;
-	inset: var(--spacing-xl) var(--spacing-lg);
+	inset: var(--spacing-xl) var(--page-gutter);
 	pointer-events: none;
 }
 
@@ -141,5 +141,10 @@
 
 	.cornerMarks {
 		display: none;
+	}
+
+	.aboutButton {
+		width: 100%;
+		max-width: 280px;
 	}
 }

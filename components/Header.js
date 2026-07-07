@@ -83,6 +83,7 @@ const Header = () => {
 						priority
 						width={360}
 						height={360}
+						sizes="(max-width: 900px) 85vw, 360px"
 						alt="Sarthak Karandikar"
 						className={styles.portrait}
 					/>

@@ -1,7 +1,7 @@
 .container {
 	max-width: 1200px;
 	margin: var(--spacing-2xl) auto;
-	padding: 0 var(--spacing-lg);
+	padding: 0 var(--page-gutter);
 	text-align: center;
 }
 
@@ -335,11 +335,72 @@
 
 .filtersSticky {
 	position: sticky;
-	top: 72px;
+	top: var(--nav-height);
 	z-index: 40;
 	background-color: color-mix(in srgb, var(--bg) 88%, transparent);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	padding: var(--spacing-md) 0 var(--spacing-lg);
 	margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+	.container {
+		margin: var(--spacing-xl) auto;
+	}
+
+	.subtitle {
+		font-size: clamp(1rem, 2.5vw, 1.1rem);
+		padding: 0 var(--spacing-sm);
+	}
+
+	.filtersSticky {
+		position: relative;
+		top: auto;
+		padding: var(--spacing-sm) 0 var(--spacing-md);
+	}
+
+	.categoryButton {
+		padding: 6px 14px;
+		font-size: 0.7rem;
+	}
+
+	.cardTitle {
+		font-size: 1.1rem;
+	}
+
+	.cardSummary {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.cardFooter {
+		flex-wrap: wrap;
+		gap: var(--spacing-sm);
+	}
+
+	.cardEditorial {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--spacing-sm);
+		min-height: auto;
+	}
+
+	.editorialIndex {
+		min-width: auto;
+		font-size: 1.75rem;
+	}
+
+	.editorialImageWrap {
+		width: 100%;
+		height: auto;
+		opacity: 0.85;
+	}
+
+	.editorialImage {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+	}
 }
