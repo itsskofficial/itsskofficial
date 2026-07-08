@@ -1,5 +1,6 @@
 import "@styles/globals.css";
 import { Instrument_Serif, Inter, JetBrains_Mono, Allura } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Providers from "@components/Providers";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
@@ -101,6 +102,7 @@ export default function RootLayout({ children }) {
 					<main>{children}</main>
 					<Footer />
 				</Providers>
+				<Analytics />
 			</body>
 		</html>
 	);
