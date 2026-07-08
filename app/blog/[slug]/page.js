@@ -9,6 +9,9 @@ import PostBody from "@/components/PostBody";
 import ReadingProgressBar from "@/components/ArticleClient";
 import ArticleHeader from "@/components/ArticleHeader";
 import Reveal from "@/components/motion/Reveal";
+import JsonLd from "@/components/JsonLd";
+import { createMetadata, absoluteUrl } from "@/lib/seo";
+import { getSiteUrl, siteConfig } from "@/lib/site";
 
 export async function generateStaticParams() {
 	const slugs = await client.fetch(postSlugsQuery);
@@ -20,10 +23,22 @@ export async function generateMetadata({ params }) {
 	if (!blog) {
 		return {};
 	}
-	return {
-		title: `${blog.title} | Sarthak Karandikar`,
+
+	const imageUrl = blog.mainImage
+		? urlFor(blog.mainImage).width(1200).height(630).fit("crop").url()
+		: undefined;
+
+	return createMetadata({
+		title: blog.title,
 		description: blog.summary,
-	};
+		path: `/blog/${params.slug}`,
+		image: imageUrl,
+		type: "article",
+		publishedTime: blog.publishedAt,
+		modifiedTime: blog._updatedAt,
+		authors: [blog.authorName || siteConfig.author],
+		tags: blog.categories,
+	});
 }
 
 const ArticlePage = async ({ params }) => {
@@ -41,8 +56,35 @@ const ArticlePage = async ({ params }) => {
 		day: "numeric",
 	});
 
+	const articleJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		headline: blog.title,
+		description: blog.summary,
+		image: [blogImage],
+		datePublished: blog.publishedAt,
+		dateModified: blog._updatedAt || blog.publishedAt,
+		author: {
+			"@type": "Person",
+			name: blog.authorName || siteConfig.author,
+			url: getSiteUrl(),
+		},
+		publisher: {
+			"@type": "Person",
+			name: siteConfig.author,
+			url: getSiteUrl(),
+		},
+		mainEntityOfPage: {
+			"@type": "WebPage",
+			"@id": absoluteUrl(`/blog/${slug}`),
+		},
+		articleSection: blog.categories?.[0],
+		keywords: blog.categories?.join(", "),
+	};
+
 	return (
 		<>
+			<JsonLd data={articleJsonLd} />
 			<ReadingProgressBar />
 			<article className={styles.articleContainer}>
 				<Reveal>

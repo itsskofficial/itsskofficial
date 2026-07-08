@@ -231,6 +231,16 @@ html.lenis body {
 	height: auto;
 }
 
+html.nav-menu-open,
+html.nav-menu-open body {
+	overflow: hidden;
+}
+
+html.lenis.nav-menu-open,
+html.lenis.nav-menu-open body {
+	height: 100%;
+}
+
 .lenis.lenis-smooth {
 	scroll-behavior: auto !important;
 }

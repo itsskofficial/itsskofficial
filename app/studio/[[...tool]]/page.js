@@ -9,10 +9,22 @@
 
 import { NextStudio } from "next-sanity/studio";
 import config from "../../../sanity.config";
+import { createMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-export { metadata, viewport } from "next-sanity/studio";
+export const metadata = {
+	...createMetadata({
+		title: "Studio",
+		description: "Sanity Studio",
+		path: "/studio",
+		noIndex: true,
+	}),
+	robots: {
+		index: false,
+		follow: false,
+	},
+};
 
 export default function StudioPage() {
 	return <NextStudio config={config} />;

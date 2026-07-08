@@ -31,4 +31,11 @@ export const postBySlugQuery = groq`
 
 export const postSlugsQuery = groq`
 *[_type == "post" && defined(slug.current)][].slug.current
-`;
+`;
+
+export const postSitemapQuery = groq`
+*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
+  "slug": slug.current,
+  publishedAt,
+  _updatedAt
+}`;

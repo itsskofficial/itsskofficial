@@ -4,6 +4,9 @@ import Providers from "@components/Providers";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import GrainOverlay from "@components/GrainOverlay";
+import JsonLd from "@components/JsonLd";
+import { createMetadata } from "@/lib/seo";
+import { getSiteUrl, siteConfig } from "@/lib/site";
 
 const instrumentSerif = Instrument_Serif({
 	subsets: ["latin"],
@@ -34,9 +37,15 @@ const allura = Allura({
 });
 
 export const metadata = {
-	title: "Sarthak Karandikar",
-	description:
-		"Thoughts on technology, science, and philosophy, and where they might lead us on consciousness.",
+	...createMetadata({
+		title: siteConfig.title,
+		description: siteConfig.description,
+		path: "/",
+	}),
+	title: {
+		default: siteConfig.title,
+		template: `%s | ${siteConfig.name}`,
+	},
 	icons: {
 		icon: [
 			{ url: "/assets/images/favicon.png" },
@@ -52,6 +61,32 @@ export const metadata = {
 	},
 };
 
+const websiteJsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": `${getSiteUrl()}/#website`,
+			url: getSiteUrl(),
+			name: siteConfig.name,
+			description: siteConfig.description,
+			inLanguage: "en-US",
+		},
+		{
+			"@type": "Person",
+			"@id": `${getSiteUrl()}/#person`,
+			name: siteConfig.author,
+			url: getSiteUrl(),
+			sameAs: [
+				"https://www.linkedin.com/in/sarthak-karandikar-0223b7228/",
+				"https://x.com/_itsskofficial_",
+				"https://github.com/itsskofficial",
+				"https://www.youtube.com/@itsskofficial3",
+			],
+		},
+	],
+};
+
 export default function RootLayout({ children }) {
 	return (
 		<html
@@ -59,6 +94,7 @@ export default function RootLayout({ children }) {
 			className={`dark ${instrumentSerif.variable} ${inter.variable} ${jetbrainsMono.variable} ${allura.variable}`}
 		>
 			<body>
+				<JsonLd data={websiteJsonLd} />
 				<Providers>
 					<GrainOverlay />
 					<NavBar />

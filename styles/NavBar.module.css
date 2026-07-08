@@ -12,6 +12,10 @@
 	padding-top: calc(var(--spacing-md) + env(safe-area-inset-top, 0px));
 }
 
+.headerMenuOpen {
+	z-index: 200;
+}
+
 .nav {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -175,20 +179,23 @@
 	.navLinksContainer {
 		position: fixed;
 		inset: 0;
-		z-index: 90;
+		z-index: 150;
 		background-color: var(--bg);
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: var(--spacing-xl);
+		visibility: hidden;
 		opacity: 0;
 		pointer-events: none;
-		transition: opacity var(--duration-normal) ease;
-		padding: env(safe-area-inset-top, 0px) var(--page-gutter)
-			env(safe-area-inset-bottom, 0px);
+		transition: opacity var(--duration-normal) ease,
+			visibility var(--duration-normal) ease;
+		padding: calc(var(--nav-height) + env(safe-area-inset-top, 0px))
+			var(--page-gutter) env(safe-area-inset-bottom, 0px);
 	}
 
 	.navLinksContainer.active {
+		visibility: visible;
 		opacity: 1;
 		pointer-events: auto;
 	}
@@ -209,6 +216,13 @@
 
 	.hamburgerButton {
 		display: flex;
+		position: relative;
+		z-index: 160;
+	}
+
+	.logo {
+		position: relative;
+		z-index: 160;
 	}
 
 	.nav {

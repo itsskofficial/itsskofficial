@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import styles from "@styles/NavBar.module.css";
 import Link from "next/link";
@@ -13,6 +13,8 @@ const links = [
 	{ id: 1, name: "Blog", href: "/blog" },
 	{ id: 2, name: "About", href: "/about" },
 ];
+
+const COMPACT_NAV_QUERY = "(max-width: 768px)";
 
 function SunIcon() {
 	return (
@@ -31,24 +33,16 @@ function MoonIcon() {
 	);
 }
 
-const linkVariants = {
-	hidden: { opacity: 0, y: 24 },
-	visible: (i) => ({
-		opacity: 1,
-		y: 0,
-		transition: { delay: i * 0.08, duration: 0.4, ease: [0.16, 1, 0.3, 1] },
-	}),
-};
-
 const NavBar = () => {
 	const { mode, toggleMode } = useTheme();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [hidden, setHidden] = useState(false);
+	const [isCompactNav, setIsCompactNav] = useState(false);
 	const pathname = usePathname();
-	const shouldReduceMotion = useReducedMotion();
 	const lenis = useLenis();
 
 	const closeMenu = () => setIsMenuOpen(false);
+	const toggleMenu = () => setIsMenuOpen((open) => !open);
 
 	const isActive = (href) => {
 		if (href === "/") return pathname === "/";
@@ -60,17 +54,46 @@ const NavBar = () => {
 	}, [pathname]);
 
 	useEffect(() => {
+		const mq = window.matchMedia(COMPACT_NAV_QUERY);
+		const update = () => setIsCompactNav(mq.matches);
+		update();
+		mq.addEventListener("change", update);
+		return () => mq.removeEventListener("change", update);
+	}, []);
+
+	useEffect(() => {
+		if (!isCompactNav) {
+			closeMenu();
+		}
+	}, [isCompactNav]);
+
+	useEffect(() => {
+		document.documentElement.classList.toggle("nav-menu-open", isMenuOpen);
+
 		if (isMenuOpen) {
 			document.body.style.overflow = "hidden";
 		} else {
 			document.body.style.overflow = "";
 		}
+
 		return () => {
+			document.documentElement.classList.remove("nav-menu-open");
 			document.body.style.overflow = "";
 		};
 	}, [isMenuOpen]);
 
 	useEffect(() => {
+		if (!lenis) return;
+		if (isMenuOpen) {
+			lenis.stop();
+		} else {
+			lenis.start();
+		}
+	}, [isMenuOpen, lenis]);
+
+	useEffect(() => {
+		if (isCompactNav) return;
+
 		let lastScroll = 0;
 
 		const onScroll = ({ scroll, direction }) => {
@@ -98,57 +121,39 @@ const NavBar = () => {
 		};
 		window.addEventListener("scroll", fallback, { passive: true });
 		return () => window.removeEventListener("scroll", fallback);
-	}, [lenis]);
+	}, [lenis, isCompactNav]);
 
 	return (
 		<motion.header
-			className={styles.header}
+			className={`${styles.header} ${isMenuOpen ? styles.headerMenuOpen : ""}`}
 			initial={false}
-			animate={{ y: hidden && !isMenuOpen ? -100 : 0 }}
+			animate={{ y: hidden && !isMenuOpen && !isCompactNav ? -100 : 0 }}
 			transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
 		>
-			<nav className={styles.nav}>
+			<nav className={styles.nav} aria-label="Main navigation">
 				<Link href="/" className={styles.logo} onClick={closeMenu}>
 					SK
 				</Link>
 
 				<div
+					id="mobile-nav"
 					className={`${styles.navLinksContainer} ${
-						isMenuOpen ? styles.active : ""
+						isCompactNav && isMenuOpen ? styles.active : ""
 					}`}
+					aria-hidden={isCompactNav ? !isMenuOpen : undefined}
 				>
 					<ul className={styles.navList}>
-						{links.map((link, i) => (
+						{links.map((link) => (
 							<li key={link.id}>
-								{shouldReduceMotion ? (
-									<Link
-										href={link.href}
-										className={`${styles.navLink} ${
-											isActive(link.href) ? styles.navLinkActive : ""
-										}`}
-										onClick={closeMenu}
-									>
-										{link.name}
-									</Link>
-								) : (
-									<motion.div
-										className={styles.navLinkMotion}
-										custom={i}
-										initial={isMenuOpen ? "hidden" : false}
-										animate={isMenuOpen ? "visible" : false}
-										variants={linkVariants}
-									>
-										<Link
-											href={link.href}
-											className={`${styles.navLink} ${
-												isActive(link.href) ? styles.navLinkActive : ""
-											}`}
-											onClick={closeMenu}
-										>
-											{link.name}
-										</Link>
-									</motion.div>
-								)}
+								<Link
+									href={link.href}
+									className={`${styles.navLink} ${
+										isActive(link.href) ? styles.navLinkActive : ""
+									}`}
+									onClick={closeMenu}
+								>
+									{link.name}
+								</Link>
 							</li>
 						))}
 					</ul>
@@ -158,10 +163,12 @@ const NavBar = () => {
 				</div>
 
 				<button
+					type="button"
 					className={`${styles.hamburgerButton} ${isMenuOpen ? styles.hamburgerOpen : ""}`}
-					onClick={() => setIsMenuOpen(!isMenuOpen)}
-					aria-label="Toggle menu"
+					onClick={toggleMenu}
+					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					aria-expanded={isMenuOpen}
+					aria-controls="mobile-nav"
 				>
 					<span className={styles.hamburgerIcon} />
 				</button>

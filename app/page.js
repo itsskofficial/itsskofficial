@@ -8,8 +8,16 @@ import MagneticButton from "@components/motion/MagneticButton";
 import LineDraw from "@components/motion/LineDraw";
 import { client } from "@/sanity/lib/client";
 import { latestPostsQuery } from "@/sanity/lib/queries";
+import { createMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const revalidate = 60;
+
+export const metadata = createMetadata({
+	title: siteConfig.title,
+	description: siteConfig.tagline,
+	path: "/",
+});
 
 async function getLatestBlogs() {
 	return client.fetch(latestPostsQuery);
