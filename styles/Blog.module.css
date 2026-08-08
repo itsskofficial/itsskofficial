@@ -280,13 +280,6 @@
 	letter-spacing: -0.02em;
 }
 
-.editorialDate {
-	font-family: var(--font-mono);
-	font-size: 0.65rem;
-	color: var(--text-muted);
-	letter-spacing: 0.05em;
-}
-
 .editorialImageWrap {
 	width: 0;
 	height: 80px;

@@ -11,7 +11,8 @@ import { useLenis } from "@components/SmoothScroll";
 const links = [
 	{ id: 0, name: "Home", href: "/" },
 	{ id: 1, name: "Blog", href: "/blog" },
-	{ id: 2, name: "About", href: "/about" },
+	{ id: 2, name: "Artifacts", href: "/artifacts" },
+	{ id: 3, name: "About", href: "/about" },
 ];
 
 const COMPACT_NAV_QUERY = "(max-width: 768px)";

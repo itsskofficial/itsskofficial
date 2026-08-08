@@ -7,15 +7,6 @@ const BlogCard = ({ blog, index, editorial = false }) => {
 		? urlFor(blog.mainImage).width(400).height(225).url()
 		: "/assets/images/blog/placeholder.jpg";
 
-	const publishedDate = new Date(blog.publishedAt).toLocaleDateString(
-		"en-US",
-		{
-			year: "numeric",
-			month: "long",
-			day: "numeric",
-		}
-	);
-
 	const indexLabel =
 		index !== undefined ? String(index + 1).padStart(2, "0") : null;
 
@@ -33,7 +24,6 @@ const BlogCard = ({ blog, index, editorial = false }) => {
 						{blog.categories?.[0] || "General"}
 					</span>
 					<h3 className={styles.editorialTitle}>{blog.title}</h3>
-					<span className={styles.editorialDate}>{publishedDate}</span>
 				</div>
 				<div className={styles.editorialImageWrap}>
 					<img
@@ -64,7 +54,6 @@ const BlogCard = ({ blog, index, editorial = false }) => {
 				<h3 className={styles.cardTitle}>{blog.title}</h3>
 				<p className={styles.cardSummary}>{blog.summary}</p>
 				<div className={styles.cardFooter}>
-					<span>{publishedDate}</span>
 					<span className={styles.cardArrow}>Read More &rarr;</span>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import { getSiteUrl } from "@/lib/site";
+import { ARTIFACTS } from "@constants/artifacts";
 import { client } from "@/sanity/lib/client";
 import { postSitemapQuery } from "@/sanity/lib/queries";
 
@@ -25,7 +26,20 @@ export default async function sitemap() {
 			changeFrequency: "weekly",
 			priority: 0.9,
 		},
+		{
+			url: `${base}/artifacts`,
+			lastModified: new Date(),
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
 	];
+
+	const artifactRoutes = ARTIFACTS.map((artifact) => ({
+		url: `${base}/artifacts/${artifact.slug}`,
+		lastModified: new Date(),
+		changeFrequency: "weekly",
+		priority: 0.7,
+	}));
 
 	const postRoutes = posts.map((post) => ({
 		url: `${base}/blog/${post.slug}`,
@@ -34,5 +48,5 @@ export default async function sitemap() {
 		priority: 0.7,
 	}));
 
-	return [...staticRoutes, ...postRoutes];
+	return [...staticRoutes, ...artifactRoutes, ...postRoutes];
 }

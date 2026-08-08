@@ -50,11 +50,6 @@ const ArticlePage = async ({ params }) => {
 	}
 
 	const blogImage = urlFor(blog.mainImage).width(1100).height(550).url();
-	const publishedDate = new Date(blog.publishedAt).toLocaleDateString("en-US", {
-		year: "numeric",
-		month: "long",
-		day: "numeric",
-	});
 
 	const articleJsonLd = {
 		"@context": "https://schema.org",
@@ -91,7 +86,6 @@ const ArticlePage = async ({ params }) => {
 					<ArticleHeader
 						title={blog.title}
 						category={blog.categories?.[0]}
-						date={publishedDate}
 					/>
 				</Reveal>
 				<Reveal delay={0.1}>

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import styles from "@styles/Article.module.css";
 
-export default function ArticleHeader({ title, category, date }) {
+export default function ArticleHeader({ title, category }) {
 	const ref = useRef(null);
 	const shouldReduceMotion = useReducedMotion();
 	const { scrollYProgress } = useScroll({
@@ -22,11 +22,11 @@ export default function ArticleHeader({ title, category, date }) {
 			>
 				{title}
 			</motion.h1>
-			<p className={styles.meta}>
-				<span className={styles.category}>{category}</span>
-				{" · "}
-				{date}
-			</p>
+			{category && (
+				<p className={styles.meta}>
+					<span className={styles.category}>{category}</span>
+				</p>
+			)}
 		</div>
 	);
 }
