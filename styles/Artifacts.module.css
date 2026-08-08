@@ -392,12 +392,13 @@
 	cursor: grabbing;
 }
 
-.viewportDrillable :global(g.node) {
+.viewport :global(g.node) {
 	cursor: pointer;
 }
 
-.viewportDrillable :global(g.node.group:hover rect) {
-	stroke-width: 2px;
+.viewport :global(g.node:hover rect),
+.viewport :global(g.node:hover circle) {
+	stroke-width: 2.5px;
 }
 
 .scaler {
@@ -556,11 +557,23 @@
 }
 
 .signalItem {
+	display: block;
+	width: 100%;
 	padding: var(--spacing-sm) 0;
+	border: none;
 	border-bottom: 1px solid var(--border);
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+	font-family: var(--font-sans);
 	font-size: 0.9rem;
 	line-height: 1.55;
 	color: var(--text-muted);
+	transition: color var(--duration-normal) ease;
+}
+
+.signalItem:hover {
+	color: var(--heading-color);
 }
 
 .signalDomain {
@@ -631,6 +644,169 @@
 	line-height: 1.6;
 	color: var(--text-muted);
 	white-space: pre;
+}
+
+/* Node explainer ---------------------------------------------------------- */
+
+.drawerScrim {
+	position: fixed;
+	inset: 0;
+	z-index: 590;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+}
+
+.drawer {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 600;
+	display: flex;
+	flex-direction: column;
+	width: min(440px, 100vw);
+	background-color: var(--bg);
+	border-left: 1px solid var(--border);
+	text-align: left;
+	overscroll-behavior: contain;
+}
+
+.drawerBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacing-md);
+	flex-shrink: 0;
+	padding: var(--spacing-md) var(--spacing-lg);
+	border-bottom: 1px solid var(--border);
+}
+
+.drawerStatus {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-sm);
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+}
+
+.drawerStatus .legendSwatch {
+	margin-top: 0;
+}
+
+.drawerClose {
+	width: 28px;
+	height: 28px;
+	font-size: 1.1rem;
+	line-height: 1;
+	color: var(--text-muted);
+	background: transparent;
+	border: 1px solid var(--border);
+	border-radius: var(--radius-full);
+	cursor: pointer;
+	transition: color var(--duration-normal) ease,
+		border-color var(--duration-normal) ease;
+}
+
+.drawerClose:hover {
+	color: var(--heading-color);
+	border-color: var(--border-strong);
+}
+
+.drawerBody {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+	padding: var(--spacing-lg);
+}
+
+.drawerDomain {
+	font-family: var(--font-mono);
+	font-size: 0.62rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+}
+
+.drawerTitle {
+	margin-top: var(--spacing-sm);
+	font-family: var(--font-display);
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+	color: var(--heading-color);
+}
+
+.drawerPlain {
+	margin-top: var(--spacing-md);
+	font-size: 1rem;
+	line-height: 1.75;
+	color: var(--text);
+}
+
+.drawerSection {
+	margin-top: var(--spacing-lg);
+	padding-top: var(--spacing-md);
+	border-top: 1px solid var(--border);
+}
+
+.drawerSectionTitle {
+	font-family: var(--font-mono);
+	font-size: 0.62rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+	margin-bottom: var(--spacing-sm);
+}
+
+.drawerList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.drawerJump {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-sm);
+	width: 100%;
+	padding: 6px 0;
+	background: transparent;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	font-family: var(--font-sans);
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--text-muted);
+	transition: color var(--duration-normal) ease;
+}
+
+.drawerJump:hover {
+	color: var(--heading-color);
+}
+
+.drawerJump .legendSwatch {
+	margin-top: 7px;
+}
+
+.drawerArticle {
+	display: inline-block;
+	padding: 6px 0;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--text-muted);
+	transition: color var(--duration-normal) ease;
+}
+
+.drawerArticle:hover {
+	color: var(--heading-color);
 }
 
 .backLinkContainer {
@@ -728,6 +904,31 @@
 
 	.artifactFactValue {
 		font-size: 1.5rem;
+	}
+
+	/* The explainer becomes a bottom sheet on narrow screens. */
+	.drawer {
+		top: auto;
+		left: 0;
+		right: 0;
+		width: auto;
+		max-height: 82vh;
+		max-height: 82dvh;
+		border-left: none;
+		border-top: 1px solid var(--border);
+		border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+	}
+
+	.drawerBar {
+		padding: var(--spacing-md);
+	}
+
+	.drawerBody {
+		padding: var(--spacing-md) var(--spacing-md) var(--spacing-xl);
+	}
+
+	.drawerTitle {
+		font-size: 1.3rem;
 	}
 }
 

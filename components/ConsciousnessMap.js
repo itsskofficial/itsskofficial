@@ -5,13 +5,15 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import Reveal from "@components/motion/Reveal";
 import TextReveal from "@components/motion/TextReveal";
-import MermaidDiagram from "@components/MermaidDiagram";
+import MermaidDiagram, { nodeIdFromElement } from "@components/MermaidDiagram";
 import { useTheme } from "@context/ThemeProvider";
 import {
+	ARTICLES,
 	BRANCHES,
 	STATUS_META,
 	STATUS_ORDER,
 	countStatuses,
+	getNodeDetail,
 } from "@constants/consciousnessMap";
 import { buildBranchChart, buildOverviewChart } from "@/lib/consciousnessChart";
 import styles from "@styles/Artifacts.module.css";
@@ -31,11 +33,18 @@ const SIGNAL_GROUPS = [
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-/** Mermaid node ids look like `artifact-graph-3-flowchart-physics-7`. */
-function branchIdFromTarget(target) {
-	const node = target?.closest?.("g.node");
-	const id = node?.id.match(/-flowchart-(.+)-\d+$/)?.[1];
-	return id && BRANCHES.some((branch) => branch.id === id) ? id : null;
+const nodeIdFromTarget = (target) =>
+	nodeIdFromElement(target?.closest?.("g.node"));
+
+const isBranchId = (id) => BRANCHES.some((branch) => branch.id === id);
+
+/** The short version, for the browser tooltip on hover. */
+function tooltipFor(id) {
+	const detail = getNodeDetail(id);
+	if (!detail?.plain) return null;
+
+	const [first] = detail.plain.split(". ");
+	return `${first}. Click to open.`;
 }
 
 export default function ConsciousnessMap() {
@@ -43,6 +52,7 @@ export default function ConsciousnessMap() {
 	const shouldReduceMotion = useReducedMotion();
 
 	const [activeId, setActiveId] = useState(OVERVIEW);
+	const [selectedId, setSelectedId] = useState(null);
 	const [zoom, setZoom] = useState(1);
 	const [expanded, setExpanded] = useState(false);
 	const [sourceOpen, setSourceOpen] = useState(false);
@@ -62,6 +72,11 @@ export default function ConsciousnessMap() {
 				? buildBranchChart(activeBranch, mode)
 				: buildOverviewChart(mode),
 		[activeBranch, mode]
+	);
+
+	const detail = useMemo(
+		() => (selectedId ? getNodeDetail(selectedId) : null),
+		[selectedId]
 	);
 
 	const totals = useMemo(() => countStatuses(BRANCHES), []);
@@ -120,20 +135,27 @@ export default function ConsciousnessMap() {
 		return () => window.removeEventListener("resize", onResize);
 	}, [fitToViewport]);
 
+	/* The expanded canvas and the explainer both take over the screen. */
 	useEffect(() => {
-		if (!expanded) return;
+		if (!expanded && !selectedId) return;
 
-		const onKeyDown = (event) => {
-			if (event.key === "Escape") setExpanded(false);
-		};
 		document.body.style.overflow = "hidden";
-		window.addEventListener("keydown", onKeyDown);
-
 		return () => {
 			document.body.style.overflow = "";
-			window.removeEventListener("keydown", onKeyDown);
 		};
-	}, [expanded]);
+	}, [expanded, selectedId]);
+
+	useEffect(() => {
+		const onKeyDown = (event) => {
+			if (event.key !== "Escape") return;
+			// Peel one layer at a time: explainer first, then fullscreen.
+			if (selectedId) setSelectedId(null);
+			else if (expanded) setExpanded(false);
+		};
+
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [expanded, selectedId]);
 
 	useEffect(() => {
 		const frame = requestAnimationFrame(fitToViewport);
@@ -153,7 +175,7 @@ export default function ConsciousnessMap() {
 
 	const onPointerDown = (event) => {
 		// Pointer capture retargets the later click, so read the hit up front.
-		hitRef.current = branchIdFromTarget(event.target);
+		hitRef.current = nodeIdFromTarget(event.target);
 
 		const viewport = viewportRef.current;
 		if (!viewport || event.pointerType === "touch") return;
@@ -189,13 +211,20 @@ export default function ConsciousnessMap() {
 		dragRef.current = null;
 	};
 
-	/* On the overview, a domain box is a way into that domain. */
+	/*
+	 * On the overview a domain box is a way into that domain. Inside a domain
+	 * every box opens the plain-language explainer instead.
+	 */
 	const onCanvasClick = (event) => {
-		const id = hitRef.current || branchIdFromTarget(event.target);
+		const id = hitRef.current || nodeIdFromTarget(event.target);
 		hitRef.current = null;
 
-		if (activeBranch || draggedRef.current || !id) return;
-		setActiveId(id);
+		if (draggedRef.current || !id) return;
+		if (!activeBranch && isBranchId(id)) {
+			setActiveId(id);
+			return;
+		}
+		if (getNodeDetail(id)) setSelectedId(id);
 	};
 
 	const copySource = async () => {
@@ -344,9 +373,7 @@ export default function ConsciousnessMap() {
 
 				<div
 					ref={viewportRef}
-					className={`${styles.viewport} ${
-						activeBranch ? "" : styles.viewportDrillable
-					}`}
+					className={styles.viewport}
 					data-lenis-prevent
 					onPointerDown={onPointerDown}
 					onPointerMove={onPointerMove}
@@ -359,12 +386,13 @@ export default function ConsciousnessMap() {
 						mode={mode}
 						zoom={zoom}
 						onMeasure={handleMeasure}
+						describe={tooltipFor}
 					/>
 				</div>
 
 				<p className={styles.canvasHint}>
 					{activeBranch
-						? "Drag to pan"
+						? "Click any box for the plain-language version"
 						: "Click a domain to open it"}{" "}
 					&middot; {branchTotals.total} claims in view
 				</p>
@@ -413,20 +441,25 @@ export default function ConsciousnessMap() {
 								</h3>
 								<ul className={styles.signalList}>
 									{group.items.map((item) => (
-										<li
-											key={item.id}
-											className={styles.signalItem}
-										>
-											{item.domain && (
-												<span
-													className={
-														styles.signalDomain
-													}
-												>
-													{item.domain}
-												</span>
-											)}
-											{item.label}
+										<li key={item.id}>
+											<button
+												type="button"
+												className={styles.signalItem}
+												onClick={() =>
+													setSelectedId(item.id)
+												}
+											>
+												{item.domain && (
+													<span
+														className={
+															styles.signalDomain
+														}
+													>
+														{item.domain}
+													</span>
+												)}
+												{item.label}
+											</button>
 										</li>
 									))}
 								</ul>
@@ -476,7 +509,122 @@ export default function ConsciousnessMap() {
 					<span aria-hidden="true">&larr;</span> Back to all artifacts
 				</Link>
 			</div>
+
+			{detail && (
+				<NodeExplainer
+					detail={detail}
+					onSelect={setSelectedId}
+					onClose={() => setSelectedId(null)}
+				/>
+			)}
 		</section>
+	);
+}
+
+function NodeExplainer({ detail, onSelect, onClose }) {
+	return (
+		<>
+			<div
+				className={styles.drawerScrim}
+				onClick={onClose}
+				aria-hidden="true"
+			/>
+			<aside
+				className={styles.drawer}
+				role="dialog"
+				aria-label={detail.label}
+				data-lenis-prevent
+			>
+				<div className={styles.drawerBar}>
+					<span className={styles.drawerStatus}>
+						<span
+							className={styles.legendSwatch}
+							data-status={detail.status}
+							aria-hidden="true"
+						/>
+						{STATUS_META[detail.status]?.label || "Claim"}
+					</span>
+					<button
+						type="button"
+						className={styles.drawerClose}
+						onClick={onClose}
+						aria-label="Close"
+					>
+						&times;
+					</button>
+				</div>
+
+				<div className={styles.drawerBody}>
+					<p className={styles.drawerDomain}>{detail.domain}</p>
+					<h3 className={styles.drawerTitle}>{detail.label}</h3>
+					<p className={styles.drawerPlain}>{detail.plain}</p>
+
+					{detail.parent && (
+						<section className={styles.drawerSection}>
+							<h4 className={styles.drawerSectionTitle}>
+								Follows from
+							</h4>
+							<button
+								type="button"
+								className={styles.drawerJump}
+								onClick={() => onSelect(detail.parent.id)}
+							>
+								{detail.parent.label}
+							</button>
+						</section>
+					)}
+
+					{detail.children.length > 0 && (
+						<section className={styles.drawerSection}>
+							<h4 className={styles.drawerSectionTitle}>
+								Leads to
+							</h4>
+							<ul className={styles.drawerList}>
+								{detail.children.map((child) => (
+									<li key={child.id}>
+										<button
+											type="button"
+											className={styles.drawerJump}
+											onClick={() => onSelect(child.id)}
+										>
+											<span
+												className={styles.legendSwatch}
+												data-status={child.status}
+												aria-hidden="true"
+											/>
+											{child.label}
+										</button>
+									</li>
+								))}
+							</ul>
+						</section>
+					)}
+
+					{detail.articles.length > 0 && (
+						<section className={styles.drawerSection}>
+							<h4 className={styles.drawerSectionTitle}>
+								Written up in
+							</h4>
+							<ul className={styles.drawerList}>
+								{detail.articles.map((slug) => (
+									<li key={slug}>
+										<Link
+											href={`/blog/${slug}`}
+											className={styles.drawerArticle}
+										>
+											{ARTICLES[slug] || slug}
+											<span aria-hidden="true">
+												&nbsp;&rarr;
+											</span>
+										</Link>
+									</li>
+								))}
+							</ul>
+						</section>
+					)}
+				</div>
+			</aside>
+		</>
 	);
 }
 

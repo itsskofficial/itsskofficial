@@ -36,10 +36,22 @@ function normalizeSvg(markup) {
 	return { svg, width, height };
 }
 
-export default function MermaidDiagram({ chart, mode, zoom = 1, onMeasure }) {
+/** Mermaid node ids look like `artifact-graph-3-flowchart-physics-7`. */
+export function nodeIdFromElement(element) {
+	return element?.id?.match(/-flowchart-(.+)-\d+$/)?.[1] || null;
+}
+
+export default function MermaidDiagram({
+	chart,
+	mode,
+	zoom = 1,
+	onMeasure,
+	describe,
+}) {
 	const [svg, setSvg] = useState("");
 	const [error, setError] = useState(null);
 	const [size, setSize] = useState({ width: 0, height: 0 });
+	const hostRef = useRef(null);
 	const measureRef = useRef(onMeasure);
 
 	useEffect(() => {
@@ -78,6 +90,27 @@ export default function MermaidDiagram({ chart, mode, zoom = 1, onMeasure }) {
 		};
 	}, [chart, mode]);
 
+	/* Native SVG tooltips, so hovering a node gives the short version. */
+	useEffect(() => {
+		const host = hostRef.current;
+		if (!svg || !host || !describe) return;
+
+		for (const node of host.querySelectorAll("g.node")) {
+			const text = describe(nodeIdFromElement(node));
+			if (!text) continue;
+
+			let title = node.querySelector(":scope > title");
+			if (!title) {
+				title = document.createElementNS(
+					"http://www.w3.org/2000/svg",
+					"title"
+				);
+				node.insertBefore(title, node.firstChild);
+			}
+			title.textContent = text;
+		}
+	}, [svg, describe]);
+
 	if (error) {
 		return <p className={styles.canvasMessage}>{error}</p>;
 	}
@@ -88,6 +121,7 @@ export default function MermaidDiagram({ chart, mode, zoom = 1, onMeasure }) {
 
 	return (
 		<div
+			ref={hostRef}
 			className={styles.scaler}
 			style={{
 				width: size.width ? size.width * zoom : "100%",
