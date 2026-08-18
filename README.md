@@ -26,14 +26,14 @@ My Socials :
 GitHub Stats :
 
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook,purebasic,dockerfile,r&langs_count=3&layout=donut-vertical&theme=radical" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.shion.dev/api/top-langs/?username=itsskofficial&size_weight=0&count_weight=1&hide=html,css,jupyter%20notebook,purebasic,dockerfile,r&langs_count=3&layout=donut-vertical&theme=radical" />
 </a>
 <span>&emsp;</span>
 <a href="https://github.com/itsskofficial">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.shion.dev/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
 
-![SK's GitHub Contributions](https://github-readme-streak-stats.herokuapp.com/?&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
+![SK's GitHub Contributions](https://streak-stats.demolab.com/?theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
 
 Skills :
 
@@ -47,9 +47,19 @@ Skills :
 ![](https://img.shields.io/badge/Code-NodeJS-informational?style=flat&logo=node.js&logoColor=white&color=339933)
 ![](https://img.shields.io/badge/Code-ExpressJS-informational?style=flat&logo=express&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-NestJS-informational?style=flat&logo=nestjs&logoColor=white&color=E0234E)
+![](https://img.shields.io/badge/Code-FastAPI-informational?style=flat&logo=fastapi&logoColor=white&color=009688)
+![](https://img.shields.io/badge/Code-Flask-informational?style=flat&logo=flask&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-Streamlit-informational?style=flat&logo=streamlit&logoColor=white&color=FF4B4B)
+![](https://img.shields.io/badge/Code-Celery-informational?style=flat&logo=celery&logoColor=white&color=37814A)
+![](https://img.shields.io/badge/Code-ReactNative-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
+![](https://img.shields.io/badge/Code-Appwrite-informational?style=flat&logo=appwrite&logoColor=white&color=FD366E)
 ![](https://img.shields.io/badge/Code-Shadcn/UI-informational?style=flat&logo=shadcn/ui&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-GraphQL-informational?style=flat&logo=graphql&logoColor=white&color=E10098)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
+![](https://img.shields.io/badge/Code-PostgreSQL-informational?style=flat&logo=postgresql&logoColor=white&color=4169E1)
+![](https://img.shields.io/badge/Code-Redis-informational?style=flat&logo=redis&logoColor=white&color=DC382D)
+![](https://img.shields.io/badge/Code-Supabase-informational?style=flat&logo=supabase&logoColor=white&color=3ECF8E)
+![](https://img.shields.io/badge/Code-DuckDB-informational?style=flat&logo=duckdb&logoColor=white&color=FFF000)
 ![](https://img.shields.io/badge/Code-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=4479A1)
 ![](https://img.shields.io/badge/Code-Neo4J-informational?style=flat&logo=neo4j&logoColor=white&color=0A6190)
 ![](https://img.shields.io/badge/Code-NextJS-informational?style=flat&logo=nextjs&logoColor=white&color=000000)
@@ -63,25 +73,41 @@ Skills :
 ![](https://img.shields.io/badge/Code-Inngest-informational?style=flat&logoColor=white&color=F93358)
 ![](https://img.shields.io/badge/Code-Zod-informational?style=flat&logoColor=white&color=3E6F9F)
 ![](https://img.shields.io/badge/Code-Electron-informational?style=flat&logo=electron&logoColor=white&color=9bb7c4)
+![](https://img.shields.io/badge/Code-PyTorch-informational?style=flat&logo=pytorch&logoColor=white&color=EE4C2C)
 ![](https://img.shields.io/badge/Code-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=FF6F00)
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
 ![](https://img.shields.io/badge/Code-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=150458)
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
+![](https://img.shields.io/badge/Code-LightGBM-informational?style=flat&logoColor=white&color=02569B)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
+![](https://img.shields.io/badge/Code-RaspberryPi-informational?style=flat&logo=raspberrypi&logoColor=white&color=A22846)
+![](https://img.shields.io/badge/Code-Jetson-informational?style=flat&logo=nvidia&logoColor=white&color=76B900)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=43B02A)
+![](https://img.shields.io/badge/Code-Playwright-informational?style=flat&logo=playwright&logoColor=white&color=2EAD33)
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
 ![](https://img.shields.io/badge/Code-Ethers-informational?style=flat&logo=ethers&logoColor=white&color=2535A0)
 ![](https://img.shields.io/badge/Code-Wagmi-informational?style=flat&logo=wagmi&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-Chainlink-informational?style=flat&logo=chainlink&logoColor=white&color=375BD2)
 ![](https://img.shields.io/badge/Code-Hardhat-informational?style=flat&logo=hardhat&logoColor=white&color=FFFF00)
+![](https://img.shields.io/badge/Code-Truffle-informational?style=flat&logo=truffle&logoColor=white&color=3FE0C5)
 ![](https://img.shields.io/badge/Code-Docker-informational?style=flat&logo=docker&logoColor=white&color=2496ED)
 ![](https://img.shields.io/badge/Code-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=326CE5)
 ![](https://img.shields.io/badge/Code-Langchain-informational?style=flat&logo=langchain&logoColor=white&color=A1F78C)
+![](https://img.shields.io/badge/Code-LangGraph-informational?style=flat&logoColor=white&color=1C3C3C)
+![](https://img.shields.io/badge/Code-CrewAI-informational?style=flat&logoColor=white&color=FF5A1F)
+![](https://img.shields.io/badge/Code-AutoGen-informational?style=flat&logoColor=white&color=0078D4)
+![](https://img.shields.io/badge/Code-MCP-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-LlamaIndex-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
+![](https://img.shields.io/badge/Code-FAISS-informational?style=flat&logoColor=white&color=0055FF)
 ![](https://img.shields.io/badge/Code-Flwr-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-MLFlow-informational?style=flat&logo=mlflow&logoColor=white&color=0000FF)
+![](https://img.shields.io/badge/Code-Langfuse-informational?style=flat&logo=langfuse&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-DVC-informational?style=flat&logo=dvc&logoColor=white&color=000000)
+![](https://img.shields.io/badge/Code-Prefect-informational?style=flat&logo=prefect&logoColor=white&color=024DFD)
+![](https://img.shields.io/badge/Code-Airflow-informational?style=flat&logo=apacheairflow&logoColor=white&color=017CEE)
+![](https://img.shields.io/badge/Code-dbt-informational?style=flat&logo=dbt&logoColor=white&color=FF694B)
+![](https://img.shields.io/badge/Code-Snowflake-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
 
@@ -106,5 +132,11 @@ Skills :
 ![](https://img.shields.io/badge/Software-Fleek-informational?style=flat&logo=fleek&logoColor=white&color=FF10F0)
 ![](https://img.shields.io/badge/Software-DagsHub-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Software-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F05A28)
+![](https://img.shields.io/badge/Software-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
+![](https://img.shields.io/badge/Software-GitHubActions-informational?style=flat&logo=githubactions&logoColor=white&color=2088FF)
+![](https://img.shields.io/badge/Software-GCP-informational?style=flat&logo=googlecloud&logoColor=white&color=4285F4)
+![](https://img.shields.io/badge/Software-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
+![](https://img.shields.io/badge/Software-n8n-informational?style=flat&logo=n8n&logoColor=white&color=EA4B71)
+![](https://img.shields.io/badge/Software-Zapier-informational?style=flat&logo=zapier&logoColor=white&color=FF4A00)
 ![](https://img.shields.io/badge/Software-Postman-informational?style=flat&logo=postman&logoColor=white&color=FF6C37)
 ![](https://img.shields.io/badge/Software-CodeRabbit-informational?style=flat&logo=coderabbit&logoColor=white&color=FF570A)
