@@ -33,7 +33,7 @@ GitHub Stats :
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.shion.dev/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
 
-![SK's GitHub Contributions](https://streak-stats.demolab.com/?theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085&user=itsskofficial)
+![SK's GitHub Contributions](https://github-readme-streak-stats-salesp07.vercel.app/?user=itsskofficial&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085)
 
 Skills :
 
@@ -52,11 +52,13 @@ Skills :
 ![](https://img.shields.io/badge/Code-Streamlit-informational?style=flat&logo=streamlit&logoColor=white&color=FF4B4B)
 ![](https://img.shields.io/badge/Code-Celery-informational?style=flat&logo=celery&logoColor=white&color=37814A)
 ![](https://img.shields.io/badge/Code-ReactNative-informational?style=flat&logo=react&logoColor=white&color=61DAFB)
+![](https://img.shields.io/badge/Code-NativeWind-informational?style=flat&logo=tailwindcss&logoColor=white&color=4dc0b5)
 ![](https://img.shields.io/badge/Code-Appwrite-informational?style=flat&logo=appwrite&logoColor=white&color=FD366E)
 ![](https://img.shields.io/badge/Code-Shadcn/UI-informational?style=flat&logo=shadcn/ui&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-GraphQL-informational?style=flat&logo=graphql&logoColor=white&color=E10098)
 ![](https://img.shields.io/badge/Code-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=47A248)
 ![](https://img.shields.io/badge/Code-PostgreSQL-informational?style=flat&logo=postgresql&logoColor=white&color=4169E1)
+![](https://img.shields.io/badge/Code-pgvector-informational?style=flat&logo=postgresql&logoColor=white&color=4169E1)
 ![](https://img.shields.io/badge/Code-Redis-informational?style=flat&logo=redis&logoColor=white&color=DC382D)
 ![](https://img.shields.io/badge/Code-Supabase-informational?style=flat&logo=supabase&logoColor=white&color=3ECF8E)
 ![](https://img.shields.io/badge/Code-DuckDB-informational?style=flat&logo=duckdb&logoColor=white&color=FFF000)
@@ -79,6 +81,11 @@ Skills :
 ![](https://img.shields.io/badge/Code-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=150458)
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
 ![](https://img.shields.io/badge/Code-LightGBM-informational?style=flat&logoColor=white&color=02569B)
+![](https://img.shields.io/badge/Code-SHAP-informational?style=flat&logoColor=white&color=1B4F72)
+![](https://img.shields.io/badge/Code-HDBSCAN-informational?style=flat&logoColor=white&color=2E86AB)
+![](https://img.shields.io/badge/Code-UMAP-informational?style=flat&logoColor=white&color=6C3483)
+![](https://img.shields.io/badge/Code-SentenceTransformers-informational?style=flat&logoColor=white&color=FF6F00)
+![](https://img.shields.io/badge/Code-Whisper-informational?style=flat&logo=openai&logoColor=white&color=412991)
 ![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
 ![](https://img.shields.io/badge/Code-RaspberryPi-informational?style=flat&logo=raspberrypi&logoColor=white&color=A22846)
 ![](https://img.shields.io/badge/Code-Jetson-informational?style=flat&logo=nvidia&logoColor=white&color=76B900)
@@ -96,6 +103,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-LangGraph-informational?style=flat&logoColor=white&color=1C3C3C)
 ![](https://img.shields.io/badge/Code-CrewAI-informational?style=flat&logoColor=white&color=FF5A1F)
 ![](https://img.shields.io/badge/Code-AutoGen-informational?style=flat&logoColor=white&color=0078D4)
+![](https://img.shields.io/badge/Code-QwenAgent-informational?style=flat&logoColor=white&color=615CED)
 ![](https://img.shields.io/badge/Code-MCP-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-LlamaIndex-informational?style=flat&logoColor=white&color=000000)
 ![](https://img.shields.io/badge/Code-ChromaDB-informational?style=flat&logo=chromadb&logoColor=white&color=FFFF00)
@@ -108,6 +116,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-Airflow-informational?style=flat&logo=apacheairflow&logoColor=white&color=017CEE)
 ![](https://img.shields.io/badge/Code-dbt-informational?style=flat&logo=dbt&logoColor=white&color=FF694B)
 ![](https://img.shields.io/badge/Code-Snowflake-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
+![](https://img.shields.io/badge/Code-Snowpark-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 
 
