@@ -80,15 +80,6 @@ Skills :
 ![](https://img.shields.io/badge/Code-NumPy-informational?style=flat&logo=numpy&logoColor=white&color=013243)
 ![](https://img.shields.io/badge/Code-Pandas-informational?style=flat&logo=pandas&logoColor=white&color=150458)
 ![](https://img.shields.io/badge/Code-ScikitLearn-informational?style=flat&logo=scikit-learn&logoColor=white&color=F7931E)
-![](https://img.shields.io/badge/Code-LightGBM-informational?style=flat&logoColor=white&color=02569B)
-![](https://img.shields.io/badge/Code-SHAP-informational?style=flat&logoColor=white&color=1B4F72)
-![](https://img.shields.io/badge/Code-HDBSCAN-informational?style=flat&logoColor=white&color=2E86AB)
-![](https://img.shields.io/badge/Code-UMAP-informational?style=flat&logoColor=white&color=6C3483)
-![](https://img.shields.io/badge/Code-SentenceTransformers-informational?style=flat&logoColor=white&color=FF6F00)
-![](https://img.shields.io/badge/Code-Whisper-informational?style=flat&logo=openai&logoColor=white&color=412991)
-![](https://img.shields.io/badge/Code-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
-![](https://img.shields.io/badge/Code-RaspberryPi-informational?style=flat&logo=raspberrypi&logoColor=white&color=A22846)
-![](https://img.shields.io/badge/Code-Jetson-informational?style=flat&logo=nvidia&logoColor=white&color=76B900)
 ![](https://img.shields.io/badge/Code-Selenium-informational?style=flat&logo=selenium&logoColor=white&color=43B02A)
 ![](https://img.shields.io/badge/Code-Playwright-informational?style=flat&logo=playwright&logoColor=white&color=2EAD33)
 ![](https://img.shields.io/badge/Code-Solidity-informational?style=flat&logo=solidity&logoColor=white&color=363636)
@@ -116,9 +107,7 @@ Skills :
 ![](https://img.shields.io/badge/Code-Airflow-informational?style=flat&logo=apacheairflow&logoColor=white&color=017CEE)
 ![](https://img.shields.io/badge/Code-dbt-informational?style=flat&logo=dbt&logoColor=white&color=FF694B)
 ![](https://img.shields.io/badge/Code-Snowflake-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
-![](https://img.shields.io/badge/Code-Snowpark-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
 ![](https://img.shields.io/badge/Code-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
-
 
 ![](https://img.shields.io/badge/Software-Figma-informational?style=flat&logo=figma&logoColor=white&color=F24E1E)
 ![](https://img.shields.io/badge/Software-Canva-informational?style=flat&logo=canva&logoColor=white&color=00C4CC)
@@ -149,3 +138,7 @@ Skills :
 ![](https://img.shields.io/badge/Software-Zapier-informational?style=flat&logo=zapier&logoColor=white&color=FF4A00)
 ![](https://img.shields.io/badge/Software-Postman-informational?style=flat&logo=postman&logoColor=white&color=FF6C37)
 ![](https://img.shields.io/badge/Software-CodeRabbit-informational?style=flat&logo=coderabbit&logoColor=white&color=FF570A)
+
+![](https://img.shields.io/badge/Hardware-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=00979D)
+![](https://img.shields.io/badge/Hardware-RaspberryPi-informational?style=flat&logo=raspberrypi&logoColor=white&color=A22846)
+![](https://img.shields.io/badge/Hardware-JetsonNano-informational?style=flat&logo=nvidia&logoColor=white&color=76B900)
