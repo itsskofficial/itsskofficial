@@ -194,17 +194,44 @@ async function seedArticle(article, authorId, categoryId) {
 	return created._id;
 }
 
+// Pass --only=tech_7.md (repeatable, or comma separated) to seed a subset.
+// Re-seeding an article re-uploads its main image, so scoping the run avoids
+// leaving orphaned image assets behind for posts that did not change.
+function selectArticles() {
+	const requested = process.argv
+		.filter((arg) => arg.startsWith("--only="))
+		.flatMap((arg) => arg.slice("--only=".length).split(","))
+		.map((name) => name.trim())
+		.filter(Boolean);
+
+	if (requested.length === 0) return articles;
+
+	const unknown = requested.filter(
+		(name) => !articles.some((article) => article.file === name)
+	);
+	if (unknown.length > 0) {
+		throw new Error(`Unknown article(s): ${unknown.join(", ")}`);
+	}
+
+	return articles.filter((article) => requested.includes(article.file));
+}
+
 async function main() {
-	console.log("Seeding tech articles to Sanity production...\n");
+	const selected = selectArticles();
+	console.log(
+		`Seeding ${selected.length} tech article(s) to Sanity production...\n`
+	);
 
 	const authorId = await ensureAuthor();
 	const categoryId = await ensureCategory();
 
-	for (const article of articles) {
+	for (const article of selected) {
 		await seedArticle(article, authorId, categoryId);
 	}
 
-	console.log("\nDone. 7 tech articles seeded with footnote support.");
+	console.log(
+		`\nDone. ${selected.length} tech article(s) seeded with footnote support.`
+	);
 }
 
 main().catch((err) => {
