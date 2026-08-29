@@ -95,6 +95,13 @@ const articles = [
 			"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1400&q=80&auto=format&fit=crop",
 		imageAlt: "Lines of code on a developer monitor",
 	},
+	{
+		file: "tech_7.md",
+		publishedAt: "2026-08-29T10:00:00.000Z",
+		imageUrl:
+			"https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1400&q=80&auto=format&fit=crop",
+		imageAlt: "A terminal and editor open side by side on a developer workstation",
+	},
 ];
 
 async function ensureAuthor() {
@@ -197,7 +204,7 @@ async function main() {
 		await seedArticle(article, authorId, categoryId);
 	}
 
-	console.log("\nDone. 6 tech articles seeded with footnote support.");
+	console.log("\nDone. 7 tech articles seeded with footnote support.");
 }
 
 main().catch((err) => {
