@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Articles from "@components/Articles";
 import { client } from "@/sanity/lib/client";
 import { postsQuery } from "@/sanity/lib/queries";
@@ -20,5 +21,11 @@ async function getBlogs() {
 export default async function BlogPage() {
 	const blogs = await getBlogs();
 
-	return <Articles blogs={blogs} />;
+	// Articles reads the ?category= param, which needs a Suspense boundary for
+	// this page to stay statically prerendered.
+	return (
+		<Suspense fallback={null}>
+			<Articles blogs={blogs} />
+		</Suspense>
+	);
 }

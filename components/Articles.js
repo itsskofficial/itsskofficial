@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { motion, useReducedMotion } from "framer-motion";
 import BlogCard from "@components/ui/BlogCard";
 import TextReveal from "@components/motion/TextReveal";
@@ -8,15 +9,51 @@ import Reveal from "@components/motion/Reveal";
 import { Stagger, StaggerItem } from "@components/motion/Stagger";
 import styles from "@styles/Blog.module.css";
 
+// Categories live in the URL as ?category=technology so a filtered view can be
+// shared. The slug is matched back to the category title case insensitively,
+// and anything unrecognised falls back to showing everything.
+const categorySlug = (category) =>
+	category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
 const Articles = ({ blogs }) => {
-	const [activeCategory, setActiveCategory] = useState("All");
 	const [searchQuery, setSearchQuery] = useState("");
 	const shouldReduceMotion = useReducedMotion();
+	const router = useRouter();
+	const pathname = usePathname();
+	const searchParams = useSearchParams();
 
 	const categories = useMemo(() => {
 		const allCategories = blogs.flatMap((blog) => blog.categories || []);
 		return ["All", ...new Set(allCategories)];
 	}, [blogs]);
+
+	const categoryParam = searchParams.get("category");
+
+	const activeCategory = useMemo(() => {
+		if (!categoryParam) return "All";
+		const match = categories.find(
+			(category) => categorySlug(category) === categoryParam.toLowerCase()
+		);
+		return match || "All";
+	}, [categoryParam, categories]);
+
+	const setActiveCategory = useCallback(
+		(category) => {
+			const params = new URLSearchParams(searchParams.toString());
+
+			if (category === "All") {
+				params.delete("category");
+			} else {
+				params.set("category", categorySlug(category));
+			}
+
+			const query = params.toString();
+			router.replace(query ? `${pathname}?${query}` : pathname, {
+				scroll: false,
+			});
+		},
+		[pathname, router, searchParams]
+	);
 
 	const filteredBlogs = useMemo(() => {
 		let blogsToFilter = blogs;
