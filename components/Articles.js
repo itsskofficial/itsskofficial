@@ -157,7 +157,7 @@ const Articles = ({ blogs }) => {
 			</Reveal>
 
 			{filteredBlogs.length > 0 ? (
-				<Stagger className={styles.cardsGrid}>
+				<Stagger className={styles.cardsGrid} animateOnMount>
 					{filteredBlogs.map((blog) => (
 						<StaggerItem key={blog._id}>
 							<BlogCard blog={blog} />

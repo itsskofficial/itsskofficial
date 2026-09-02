@@ -21,19 +21,29 @@ const itemVariants = {
 	},
 };
 
-export function Stagger({ children, className, ...props }) {
+export function Stagger({ children, className, animateOnMount = false, ...props }) {
 	const shouldReduceMotion = useReducedMotion();
 
 	if (shouldReduceMotion) {
 		return <div className={className}>{children}</div>;
 	}
 
+	// Viewport triggering only fires once, after which the observer detaches.
+	// Any child mounted later then stays stuck on the hidden variant, which is
+	// invisible. Lists whose items change after mount, such as a filtered grid,
+	// pass animateOnMount so children reveal themselves as they arrive.
+	const trigger = animateOnMount
+		? { animate: "visible" }
+		: {
+				whileInView: "visible",
+				viewport: { once: true, margin: "-60px" },
+		  };
+
 	return (
 		<motion.div
 			className={className}
 			initial="hidden"
-			whileInView="visible"
-			viewport={{ once: true, margin: "-60px" }}
+			{...trigger}
 			variants={containerVariants}
 			{...props}
 		>
