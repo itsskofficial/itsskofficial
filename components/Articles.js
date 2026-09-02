@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { motion, useReducedMotion } from "framer-motion";
 import BlogCard from "@components/ui/BlogCard";
 import TextReveal from "@components/motion/TextReveal";
@@ -15,10 +15,17 @@ import styles from "@styles/Blog.module.css";
 const categorySlug = (category) =>
 	category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
+const matchCategory = (param, availableCategories) => {
+	if (!param) return "All";
+	const match = availableCategories.find(
+		(category) => categorySlug(category) === param.toLowerCase()
+	);
+	return match || "All";
+};
+
 const Articles = ({ blogs }) => {
 	const [searchQuery, setSearchQuery] = useState("");
 	const shouldReduceMotion = useReducedMotion();
-	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
 
@@ -27,19 +34,21 @@ const Articles = ({ blogs }) => {
 		return ["All", ...new Set(allCategories)];
 	}, [blogs]);
 
-	const categoryParam = searchParams.get("category");
+	// The filter is entirely client side, so the URL only mirrors local state.
+	// Routing through the app router instead would refetch this server rendered
+	// route on every click and blank the list while the payload is in flight.
+	const [activeCategory, setActiveCategory] = useState(() =>
+		matchCategory(
+			searchParams.get("category"),
+			blogs.flatMap((blog) => blog.categories || [])
+		)
+	);
 
-	const activeCategory = useMemo(() => {
-		if (!categoryParam) return "All";
-		const match = categories.find(
-			(category) => categorySlug(category) === categoryParam.toLowerCase()
-		);
-		return match || "All";
-	}, [categoryParam, categories]);
-
-	const setActiveCategory = useCallback(
+	const selectCategory = useCallback(
 		(category) => {
-			const params = new URLSearchParams(searchParams.toString());
+			setActiveCategory(category);
+
+			const params = new URLSearchParams(window.location.search);
 
 			if (category === "All") {
 				params.delete("category");
@@ -48,11 +57,13 @@ const Articles = ({ blogs }) => {
 			}
 
 			const query = params.toString();
-			router.replace(query ? `${pathname}?${query}` : pathname, {
-				scroll: false,
-			});
+			window.history.replaceState(
+				null,
+				"",
+				query ? `${pathname}?${query}` : pathname
+			);
 		},
-		[pathname, router, searchParams]
+		[pathname]
 	);
 
 	const filteredBlogs = useMemo(() => {
@@ -124,7 +135,7 @@ const Articles = ({ blogs }) => {
 											: styles.activeCategory
 										: ""
 								}`}
-								onClick={() => setActiveCategory(category)}
+								onClick={() => selectCategory(category)}
 							>
 								{activeCategory === category &&
 									!shouldReduceMotion && (
