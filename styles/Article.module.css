@@ -66,11 +66,34 @@
 
 .content h1,
 .content h2,
-.content h3 {
+.content h3,
+.content h4:not(.ptFootnotesTitle) {
 	font-family: var(--font-display);
 	margin-top: 2em;
 	margin-bottom: 0.75em;
 	letter-spacing: -0.02em;
+}
+
+/* Without these, headings fall back to the browser defaults, which leaves an
+   h3 barely above the surrounding text and an h4 identical to it. The display
+   face is narrow with a small x-height, so it needs a bigger step than usual
+   to read as a heading beside the sans body copy. Sized in em so the ratio
+   holds at every breakpoint. The footnotes heading is excluded because it is
+   deliberately small, uppercase mono. */
+.content h1 {
+	font-size: 2.2em;
+}
+
+.content h2 {
+	font-size: 1.9em;
+}
+
+.content h3 {
+	font-size: 1.55em;
+}
+
+.content h4:not(.ptFootnotesTitle) {
+	font-size: 1.25em;
 }
 
 .content ul,
