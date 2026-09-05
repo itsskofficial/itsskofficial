@@ -124,12 +124,22 @@ async function seedArticle(article, authorId) {
 	}
 
 	const existing = await client.fetch(
-		`*[_type == "post" && slug.current == $slug][0]._id`,
+		`*[_type == "post" && slug.current == $slug][0]{_id, "assetId": mainImage.asset._ref}`,
 		{ slug }
 	);
 
-	console.log(`Uploading image for: ${title}`);
-	const asset = await uploadImageFromUrl(article.imageUrl, `${slug}.jpg`);
+	// Re-uploading on every run leaves an orphaned asset behind each time a
+	// post is edited, so an existing image is kept unless asked otherwise.
+	const reupload = process.argv.includes("--reupload-image");
+	let assetId = existing?.assetId;
+
+	if (assetId && !reupload) {
+		console.log(`Reusing existing image for: ${title}`);
+	} else {
+		console.log(`Uploading image for: ${title}`);
+		const asset = await uploadImageFromUrl(article.imageUrl, `${slug}.jpg`);
+		assetId = asset._id;
+	}
 
 	const doc = {
 		_type: "post",
@@ -145,16 +155,16 @@ async function seedArticle(article, authorId) {
 		publishedAt: article.publishedAt,
 		mainImage: {
 			_type: "image",
-			asset: { _type: "reference", _ref: asset._id },
+			asset: { _type: "reference", _ref: assetId },
 			alt: article.imageAlt,
 		},
 		body,
 	};
 
 	if (existing) {
-		await client.patch(existing).set(doc).commit();
+		await client.patch(existing._id).set(doc).commit();
 		console.log(`Updated: ${title}`);
-		return existing;
+		return existing._id;
 	}
 
 	const created = await client.create(doc);
