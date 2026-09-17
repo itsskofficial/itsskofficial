@@ -189,8 +189,19 @@
 	flex-grow: 1;
 }
 
+/* Tags sit on a single row. Letting them wrap would make a card with several
+   tags taller than its neighbours, so extra tags are clipped instead. */
+.cardCategories {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 6px;
+	overflow: hidden;
+	margin-bottom: var(--spacing-sm);
+}
+
 .cardCategory {
 	display: inline-block;
+	flex-shrink: 0;
 	font-family: var(--font-mono);
 	font-size: 0.65rem;
 	font-weight: 500;
@@ -200,8 +211,8 @@
 	border: 1px solid var(--border);
 	border-radius: var(--radius-full);
 	padding: 4px 10px;
-	margin-bottom: var(--spacing-sm);
 	width: fit-content;
+	white-space: nowrap;
 }
 
 .cardTitle {

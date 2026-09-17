@@ -73,7 +73,7 @@ const ArticlePage = async ({ params }) => {
 			"@type": "WebPage",
 			"@id": absoluteUrl(`/blog/${slug}`),
 		},
-		articleSection: blog.categories?.[0],
+		articleSection: blog.categories,
 		keywords: blog.categories?.join(", "),
 	};
 
@@ -85,7 +85,7 @@ const ArticlePage = async ({ params }) => {
 				<Reveal>
 					<ArticleHeader
 						title={blog.title}
-						category={blog.categories?.[0]}
+						categories={blog.categories}
 					/>
 				</Reveal>
 				<Reveal delay={0.1}>

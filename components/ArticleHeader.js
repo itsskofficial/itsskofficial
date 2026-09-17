@@ -1,10 +1,12 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import styles from "@styles/Article.module.css";
+import { categoryHref } from "@lib/categories";
 
-export default function ArticleHeader({ title, category }) {
+export default function ArticleHeader({ title, categories }) {
 	const ref = useRef(null);
 	const shouldReduceMotion = useReducedMotion();
 	const { scrollYProgress } = useScroll({
@@ -22,9 +24,20 @@ export default function ArticleHeader({ title, category }) {
 			>
 				{title}
 			</motion.h1>
-			{category && (
+			{categories?.length > 0 && (
 				<p className={styles.meta}>
-					<span className={styles.category}>{category}</span>
+					{categories.map((category, index) => (
+						<span key={category}>
+							{index > 0 && (
+								<span className={styles.categorySeparator} aria-hidden="true">
+									·
+								</span>
+							)}
+							<Link href={categoryHref(category)} className={styles.category}>
+								{category}
+							</Link>
+						</span>
+					))}
 				</p>
 			)}
 		</div>

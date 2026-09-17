@@ -8,13 +8,11 @@ import TextReveal from "@components/motion/TextReveal";
 import Reveal from "@components/motion/Reveal";
 import { Stagger, StaggerItem } from "@components/motion/Stagger";
 import styles from "@styles/Blog.module.css";
+import { categorySlug } from "@lib/categories";
 
 // Categories live in the URL as ?category=technology so a filtered view can be
 // shared. The slug is matched back to the category title case insensitively,
 // and anything unrecognised falls back to showing everything.
-const categorySlug = (category) =>
-	category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
 const matchCategory = (param, availableCategories) => {
 	if (!param) return "All";
 	const match = availableCategories.find(

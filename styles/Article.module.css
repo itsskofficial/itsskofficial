@@ -41,6 +41,17 @@
 
 .category {
 	color: var(--heading-color);
+	transition: opacity var(--duration-fast) ease;
+}
+
+.category:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.categorySeparator {
+	margin: 0 0.75em;
+	color: var(--text-faint);
 }
 
 .mainImage {
