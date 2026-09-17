@@ -159,6 +159,26 @@ export function markdownToPortableText(markdown) {
 	while (i < bodyLines.length) {
 		const line = bodyLines[i].trim();
 
+		// Fenced code blocks keep their lines verbatim, since trimming or
+		// splitting them into paragraphs destroys diagrams and indentation.
+		const fence = line.match(/^```(\w*)\s*$/);
+		if (fence) {
+			const codeLines = [];
+			i++;
+			while (i < bodyLines.length && bodyLines[i].trim() !== "```") {
+				codeLines.push(bodyLines[i].replace(/\r$/, ""));
+				i++;
+			}
+			i++;
+			blocks.push({
+				_type: "codeBlock",
+				_key: key(),
+				language: fence[1] || "text",
+				code: codeLines.join("\n"),
+			});
+			continue;
+		}
+
 		if (!line || line === "***" || line === "---") {
 			i++;
 			continue;
