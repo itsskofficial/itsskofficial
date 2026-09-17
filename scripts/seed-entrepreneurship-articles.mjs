@@ -71,7 +71,32 @@ const articles = [
 		imageAlt:
 			"Two colleagues working through code together in a small office",
 	},
+	{
+		file: "entrepreneurship_4.md",
+		publishedAt: "2026-09-17T09:00:00.000Z",
+		categories: ["entrepreneurship", "technology"],
+		summary:
+			"A framework for jobs, ventures, and the thing you would do unpaid. What a job is for, what a venture needs, and why the purpose is a separate thing.",
+		imageUrl:
+			"https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1400&q=80&auto=format&fit=crop",
+		imageAlt: "A fountain pen writing on lined paper",
+	},
 ];
+
+// Articles default to Entrepreneurship. The first category is the one a blog
+// card shows as its label.
+const CATEGORY_DEFINITIONS = {
+	entrepreneurship: {
+		title: "Entrepreneurship",
+		description:
+			"Essays on building companies, and what starting one is worth now that building is cheap.",
+	},
+	technology: {
+		title: "Technology",
+		description:
+			"Essays on software engineering, AI, and the craft of building technology.",
+	},
+};
 
 async function ensureAuthor() {
 	const existing = await client.fetch(
@@ -81,18 +106,21 @@ async function ensureAuthor() {
 	throw new Error("Author not found. Run the tech seed script first.");
 }
 
-async function ensureCategory() {
+async function ensureCategory(slug) {
+	const definition = CATEGORY_DEFINITIONS[slug];
+	if (!definition) throw new Error(`Unknown category: ${slug}`);
+
 	const existing = await client.fetch(
-		`*[_type == "category" && slug.current == "entrepreneurship"][0]._id`
+		`*[_type == "category" && slug.current == $slug][0]._id`,
+		{ slug }
 	);
 	if (existing) return existing;
 
 	const doc = await client.create({
 		_type: "category",
-		title: "Entrepreneurship",
-		slug: { _type: "slug", current: "entrepreneurship" },
-		description:
-			"Essays on building companies, and what starting one is worth now that building is cheap.",
+		title: definition.title,
+		slug: { _type: "slug", current: slug },
+		description: definition.description,
 	});
 	return doc._id;
 }
@@ -105,24 +133,40 @@ function preprocessArticle(filePath) {
 	return content;
 }
 
-async function seedArticle(article, authorId, categoryId) {
+async function seedArticle(article, authorId) {
 	const filePath = path.join(root, "articles", article.file);
 	const cleaned = preprocessArticle(filePath);
 	const title = extractTitle(cleaned);
 	const slug = slugify(title);
 	const body = markdownToPortableText(cleaned);
-	const summary = extractSummary(
-		body,
-		"A perspective on building companies."
-	);
+	// An explicit summary wins, for articles whose own description is better
+	// than their opening paragraph.
+	const summary =
+		article.summary ||
+		extractSummary(body, "A perspective on building companies.");
+
+	const categoryIds = [];
+	for (const categorySlug of article.categories || ["entrepreneurship"]) {
+		categoryIds.push(await ensureCategory(categorySlug));
+	}
 
 	const existing = await client.fetch(
-		`*[_type == "post" && slug.current == $slug][0]._id`,
+		`*[_type == "post" && slug.current == $slug][0]{_id, "assetId": mainImage.asset._ref}`,
 		{ slug }
 	);
 
-	console.log(`Uploading image for: ${title}`);
-	const asset = await uploadImageFromUrl(article.imageUrl, `${slug}.jpg`);
+	// Re-uploading on every run leaves an orphaned asset behind each time a
+	// post is edited, so an existing image is kept unless asked otherwise.
+	const reupload = process.argv.includes("--reupload-image");
+	let assetId = existing?.assetId;
+
+	if (assetId && !reupload) {
+		console.log(`Reusing existing image for: ${title}`);
+	} else {
+		console.log(`Uploading image for: ${title}`);
+		const asset = await uploadImageFromUrl(article.imageUrl, `${slug}.jpg`);
+		assetId = asset._id;
+	}
 
 	const doc = {
 		_type: "post",
@@ -130,20 +174,24 @@ async function seedArticle(article, authorId, categoryId) {
 		slug: { _type: "slug", current: slug },
 		summary,
 		author: { _type: "reference", _ref: authorId },
-		categories: [{ _type: "reference", _ref: categoryId, _key: key() }],
+		categories: categoryIds.map((id) => ({
+			_type: "reference",
+			_ref: id,
+			_key: key(),
+		})),
 		publishedAt: article.publishedAt,
 		mainImage: {
 			_type: "image",
-			asset: { _type: "reference", _ref: asset._id },
+			asset: { _type: "reference", _ref: assetId },
 			alt: article.imageAlt,
 		},
 		body,
 	};
 
 	if (existing) {
-		await client.patch(existing).set(doc).commit();
+		await client.patch(existing._id).set(doc).commit();
 		console.log(`Updated: ${title}`);
-		return existing;
+		return existing._id;
 	}
 
 	const created = await client.create(doc);
@@ -180,10 +228,9 @@ async function main() {
 	);
 
 	const authorId = await ensureAuthor();
-	const categoryId = await ensureCategory();
 
 	for (const article of selected) {
-		await seedArticle(article, authorId, categoryId);
+		await seedArticle(article, authorId);
 	}
 
 	console.log(
