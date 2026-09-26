@@ -81,6 +81,14 @@ const articles = [
 			"https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1400&q=80&auto=format&fit=crop",
 		imageAlt: "A fountain pen writing on lined paper",
 	},
+	{
+		file: "entrepreneurship_5.md",
+		publishedAt: "2026-09-26T09:00:00.000Z",
+		categories: ["entrepreneurship", "technology"],
+		imageUrl:
+			"https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1400&q=80&auto=format&fit=crop",
+		imageAlt: "Hands typing on a laptop keyboard",
+	},
 ];
 
 // Articles default to Entrepreneurship. The first category is the one a blog
