@@ -11,8 +11,6 @@ import TextReveal from "@components/motion/TextReveal";
 // Each entry is a paragraph. Strings render as plain text; arrays mix text
 // with links.
 const SENTIENT = "https://github.com/existence-master/sentient";
-const X = "https://x.com/_itsskofficial_";
-const LINKEDIN = "https://www.linkedin.com/in/sarthak-karandikar-0223b7228/";
 
 const story = [
 	[
@@ -32,13 +30,7 @@ const story = [
 	"After that I joined one of Indonesia’s largest conglomerates and shipped three internal AI agent tools in two months. Today I’m the founding engineer at CapMatch, building the AI platform behind $291M in contracted commercial real estate loans.",
 	"7 years. 5 companies. 2 internships. 2 jobs. A patent. 5 papers. A lot that didn’t work, but no regrets.",
 	"My long-term goal is to build a non-profit institution where I can work with the smartest people on the biggest questions we have: the origin of life, free will, the nature of space and time, and why anything exists at all, starting with consciousness.",
-	[
-		"If you’re working on something hard, or just like thinking about this stuff, my DMs are open on ",
-		{ href: X, text: "X" },
-		" and ",
-		{ href: LINKEDIN, text: "LinkedIn" },
-		".",
-	],
+	"If you’re working on something hard, or just like thinking about this stuff, my DMs are open.",
 ];
 
 const renderPart = (part, i) => {
