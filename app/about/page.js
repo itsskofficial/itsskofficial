@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
 	title: "About",
 	description:
-		"Builder and independent researcher. Technology, science, and philosophy as lenses; consciousness as a long-term goal.",
+		"How I went from coding at 8 to starting companies, building AI products, and working on the biggest open questions.",
 	path: "/about",
 });
 

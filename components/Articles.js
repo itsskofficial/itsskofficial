@@ -92,8 +92,8 @@ const Articles = ({ blogs }) => {
 					<TextReveal text="My Articles" as="span" />
 				</h1>
 				<p className={styles.subtitle}>
-					Writing at the intersection of technology, science, and
-					philosophy.
+					Articles on technology, science, philosophy, and
+					entrepreneurship.
 				</p>
 			</Reveal>
 

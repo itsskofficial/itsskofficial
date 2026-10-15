@@ -9,7 +9,7 @@ export const revalidate = 60;
 export const metadata = createMetadata({
 	title: "Blog",
 	description:
-		"Articles on technology, science, and philosophy by Sarthak Karandikar.",
+		"Articles on technology, science, philosophy, and entrepreneurship by Sarthak Karandikar.",
 	path: "/blog",
 });
 

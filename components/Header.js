@@ -46,8 +46,8 @@ const Header = () => {
 					className={styles.subtitle}
 					style={shouldReduceMotion ? {} : { opacity: subtitleOpacity }}
 				>
-					I build systems, do independent research, and write where
-					technology, science, and philosophy meet.
+					I share my insights on technology, science, philosophy, and
+					entrepreneurship.
 				</motion.p>
 
 				<motion.div

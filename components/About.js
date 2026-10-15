@@ -39,14 +39,14 @@ const About = () => {
 								ease: [0.16, 1, 0.3, 1],
 							}}
 						>
-							I build things, follow hard questions, and write when
-							something is worth saying out loud. There is more to it than
-							fits on a homepage.
+							I&apos;ve spent the last seven years starting companies,
+							building AI products, doing research, thinking about life,
+							and learning from what didn&apos;t work.
 						</motion.p>
 					</Reveal>
 					<Reveal delay={0.2}>
 						<MagneticButton href="/about" className={styles.aboutButton}>
-							Learn More
+							Read my story
 						</MagneticButton>
 					</Reveal>
 				</div>
