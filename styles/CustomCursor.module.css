@@ -4,7 +4,10 @@
 	left: 0;
 	width: 8px;
 	height: 8px;
-	background-color: var(--border-strong);
+	/* Always white: with the difference blend this inverts whatever is behind
+	   it, so it shows black on the light theme and white on the dark one. A
+	   theme colour would cancel itself out against its own background. */
+	background-color: #ffffff;
 	border-radius: 50%;
 	pointer-events: none;
 	z-index: 10000;
@@ -17,7 +20,7 @@
 	left: 0;
 	width: 40px;
 	height: 40px;
-	border: 1px solid var(--border-strong);
+	border: 1px solid #ffffff;
 	border-radius: 50%;
 	pointer-events: none;
 	z-index: 9999;
