@@ -26,45 +26,26 @@ Open source at [@existence-master](https://github.com/existence-master).
 
 ### Skills
 
-**Languages and frameworks**
+**Full Stack**
 
-[![Languages and frameworks](https://skillicons.dev/icons?i=python,ts,cpp,react,nextjs,nodejs,express,nestjs,fastapi,flask,tailwind,prisma,graphql,electron&theme=dark&perline=14)](https://github.com/itsskofficial)
+[![Full Stack](https://skillicons.dev/icons?i=python,js,ts,c,cpp,html,css,react,nodejs,express,nestjs,fastapi,flask,appwrite,graphql,mongodb,postgres,redis,supabase,mysql,nextjs,tailwind,prisma,electron,selenium&theme=dark&perline=13)](https://github.com/itsskofficial)
 
 **AI / ML**
 
 [![AI and ML](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark)](https://github.com/itsskofficial)
 
-![HuggingFace](https://img.shields.io/badge/HuggingFace-informational?style=flat&logo=huggingface&logoColor=white&color=FFD21E)
-![LangChain](https://img.shields.io/badge/LangChain-informational?style=flat&logo=langchain&logoColor=white&color=1C3C3C)
-![LangGraph](https://img.shields.io/badge/LangGraph-informational?style=flat&logoColor=white&color=1C3C3C)
-![LlamaIndex](https://img.shields.io/badge/LlamaIndex-informational?style=flat&logoColor=white&color=000000)
-![MCP](https://img.shields.io/badge/MCP-informational?style=flat&logoColor=white&color=000000)
-![Qwen-Agent](https://img.shields.io/badge/Qwen--Agent-informational?style=flat&logoColor=white&color=615CED)
-![pgvector](https://img.shields.io/badge/pgvector-informational?style=flat&logo=postgresql&logoColor=white&color=4169E1)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-informational?style=flat&logoColor=white&color=FF6F00)
-![FAISS](https://img.shields.io/badge/FAISS-informational?style=flat&logoColor=white&color=0055FF)
-![Neo4j](https://img.shields.io/badge/Neo4j-informational?style=flat&logo=neo4j&logoColor=white&color=0A6190)
-![MLflow](https://img.shields.io/badge/MLflow-informational?style=flat&logo=mlflow&logoColor=white&color=0194E2)
-![Langfuse](https://img.shields.io/badge/Langfuse-informational?style=flat&logoColor=white&color=000000)
-![Flower](https://img.shields.io/badge/Flower_FL-informational?style=flat&logoColor=white&color=000000)
+**Web3**
 
-**Data and infrastructure**
+[![Web3](https://skillicons.dev/icons?i=solidity&theme=dark)](https://github.com/itsskofficial)
 
-[![Data and infrastructure](https://skillicons.dev/icons?i=postgres,mongodb,redis,supabase,docker,kubernetes,githubactions,gcp,aws,vercel,prometheus,grafana&theme=dark&perline=12)](https://github.com/itsskofficial)
+**DevOps**
 
-![Celery](https://img.shields.io/badge/Celery-informational?style=flat&logo=celery&logoColor=white&color=37814A)
-![Prefect](https://img.shields.io/badge/Prefect-informational?style=flat&logo=prefect&logoColor=white&color=024DFD)
-![Airflow](https://img.shields.io/badge/Airflow-informational?style=flat&logo=apacheairflow&logoColor=white&color=017CEE)
-![dbt](https://img.shields.io/badge/dbt-informational?style=flat&logo=dbt&logoColor=white&color=FF694B)
-![Snowflake](https://img.shields.io/badge/Snowflake-informational?style=flat&logo=snowflake&logoColor=white&color=29B5E8)
-![DVC](https://img.shields.io/badge/DVC-informational?style=flat&logo=dvc&logoColor=white&color=945DD6)
-![Playwright](https://img.shields.io/badge/Playwright-informational?style=flat&logo=playwright&logoColor=white&color=2EAD33)
+[![DevOps](https://skillicons.dev/icons?i=docker,kubernetes,git,github,githubactions,vercel,grafana,prometheus,gcp,aws&theme=dark&perline=13)](https://github.com/itsskofficial)
 
-**Hardware and tools**
+**Hardware**
 
-[![Hardware and tools](https://skillicons.dev/icons?i=arduino,raspberrypi,solidity,git,figma,blender&theme=dark)](https://github.com/itsskofficial)
+[![Hardware](https://skillicons.dev/icons?i=arduino,raspberrypi&theme=dark)](https://github.com/itsskofficial)
 
-![Jetson Nano](https://img.shields.io/badge/Jetson_Nano-informational?style=flat&logo=nvidia&logoColor=white&color=76B900)
-![Claude Code](https://img.shields.io/badge/Claude_Code-informational?style=flat&logo=claude&logoColor=white&color=D97757)
-![CodeRabbit](https://img.shields.io/badge/CodeRabbit-informational?style=flat&logo=coderabbit&logoColor=white&color=FF570A)
-![n8n](https://img.shields.io/badge/n8n-informational?style=flat&logo=n8n&logoColor=white&color=EA4B71)
+**Tools**
+
+[![Tools](https://skillicons.dev/icons?i=figma,blender,wordpress,vscode,postman&theme=dark)](https://github.com/itsskofficial)
