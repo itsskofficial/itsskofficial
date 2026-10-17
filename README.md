@@ -28,24 +28,24 @@ Open source at [@existence-master](https://github.com/existence-master).
 
 **Full Stack**
 
-[![Full Stack](https://skillicons.dev/icons?i=python,js,ts,c,cpp,html,css,react,nodejs,express,nestjs,fastapi,flask,appwrite,graphql,mongodb,postgres,redis,supabase,mysql,nextjs,tailwind,prisma,electron,selenium&theme=dark&perline=13)](https://github.com/itsskofficial)
+![Full Stack](./skills-fullstack.svg)
 
 **AI / ML**
 
-[![AI and ML](https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark)](https://github.com/itsskofficial)
+![AI and ML](./skills-aiml.svg)
 
 **Web3**
 
-[![Web3](https://skillicons.dev/icons?i=solidity&theme=dark)](https://github.com/itsskofficial)
+![Web3](./skills-web3.svg)
 
 **DevOps**
 
-[![DevOps](https://skillicons.dev/icons?i=docker,kubernetes,git,github,githubactions,vercel,grafana,prometheus,gcp,aws&theme=dark&perline=13)](https://github.com/itsskofficial)
+![DevOps](./skills-devops.svg)
 
 **Hardware**
 
-[![Hardware](https://skillicons.dev/icons?i=arduino,raspberrypi&theme=dark)](https://github.com/itsskofficial)
+![Hardware](./skills-hardware.svg)
 
 **Tools**
 
-[![Tools](https://skillicons.dev/icons?i=figma,blender,wordpress,vscode,postman&theme=dark)](https://github.com/itsskofficial)
+![Tools](./skills-tools.svg)
