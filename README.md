@@ -24,28 +24,28 @@ Open source at [@existence-master](https://github.com/existence-master).
 
 ![SK's GitHub Contributions](https://github-readme-streak-stats-salesp07.vercel.app/?user=itsskofficial&theme=radical&hide_border=true&currStreakNum=F6A085&currStreakLabel=F6A085)
 
-### Skills
+## Skills
 
-**Full Stack**
+### Full Stack
 
 ![Full Stack](./skills-fullstack.svg)
 
-**AI / ML**
+### AI / ML
 
 ![AI and ML](./skills-aiml.svg)
 
-**Web3**
+### Web3
 
 ![Web3](./skills-web3.svg)
 
-**DevOps**
+### DevOps
 
 ![DevOps](./skills-devops.svg)
 
-**Hardware**
+### Hardware
 
 ![Hardware](./skills-hardware.svg)
 
-**Tools**
+### Tools
 
 ![Tools](./skills-tools.svg)
