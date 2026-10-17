@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="285" viewBox="0 0 300 285" role="img" aria-label="Most used languages: Python, TypeScript, C++">
+<style>text{font-family:"Segoe UI",Ubuntu,"Helvetica Neue",Sans-Serif}.t{font-weight:600;font-size:18px;fill:#FE428E}.l{font-size:11px;fill:#A9FEF7}</style>
+<rect x="0.5" y="0.5" rx="4.5" width="299" height="284" fill="#141321" stroke="#e4e2e2" stroke-opacity="1"/>
+<text x="25" y="35" class="t">Most Used Languages</text>
+<circle cx="150" cy="115" r="60" fill="none" stroke="#FFD43B" stroke-width="22" stroke-dasharray="208.34 168.65" stroke-dashoffset="-0.00" transform="rotate(-90 150 115)"/>
+<circle cx="150" cy="115" r="60" fill="none" stroke="#3178C6" stroke-width="22" stroke-dasharray="138.89 238.10" stroke-dashoffset="-208.34" transform="rotate(-90 150 115)"/>
+<circle cx="150" cy="115" r="60" fill="none" stroke="#F34B7D" stroke-width="22" stroke-dasharray="29.76 347.23" stroke-dashoffset="-347.23" transform="rotate(-90 150 115)"/>
+<rect x="25" y="196" width="10" height="10" rx="2" fill="#FFD43B"/>
+<text x="42" y="205" class="l">Python 55.26%</text>
+<rect x="25" y="218" width="10" height="10" rx="2" fill="#3178C6"/>
+<text x="42" y="227" class="l">TypeScript 36.84%</text>
+<rect x="25" y="240" width="10" height="10" rx="2" fill="#F34B7D"/>
+<text x="42" y="249" class="l">C++ 7.89%</text>
+</svg>
