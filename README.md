@@ -14,11 +14,10 @@ Open source at [@existence-master](https://github.com/existence-master).
 [![Mail Badge](https://img.shields.io/badge/Gmail-informational?style=flat&logo=gmail&logoColor=white&color=EA4335)](mailto:itsskofficial03@gmail.com)
 [![Blog Badge](https://img.shields.io/badge/Blog-informational?style=flat&logo=rss&logoColor=white&color=FFA500)](https://itsskofficial.com)
 
-Mostly
-![TypeScript](https://img.shields.io/badge/TypeScript-informational?style=flat&logo=typescript&logoColor=white&color=3178C6)
-![Python](https://img.shields.io/badge/Python-informational?style=flat&logo=python&logoColor=3776AB&color=FFD43B)
-![C++](https://img.shields.io/badge/C++-informational?style=flat&logo=cplusplus&logoColor=white&color=00599C)
-
+<a href="https://github.com/itsskofficial">
+  <img align="center" style="margin:0.5rem" src="./top-langs.svg" alt="Most used languages: Python, TypeScript, C++" />
+</a>
+<span>&emsp;</span>
 <a href="https://github.com/itsskofficial">
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.shion.dev/api?username=itsskofficial&show_icons=true&line_height=27&count_private=true&theme=radical&rank_icon=github&include_all_commits=true" alt="SK's GitHub Stats" />
 </a>
